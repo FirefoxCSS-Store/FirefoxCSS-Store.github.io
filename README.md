@@ -3,7 +3,7 @@ A recopilatori site of Firefox userchrome themes, mostly from FirefoxCSS Reddit
 ```
 How to add a theme via PullRequest:
 -Edit index.html
--Add a your theme in "<div id="main">" line 31 in the code with this code
+-Add a your theme in "<div id="main">" below line 31 in the code with this code
 ```
 ```html
 <article class="thumb">
