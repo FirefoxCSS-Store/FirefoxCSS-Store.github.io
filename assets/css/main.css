@@ -1278,9 +1278,18 @@ input, select, textarea {
 			z-index: 2;
 		}
 
-			.poptrox-popup .caption h2, .poptrox-popup .caption h3, .poptrox-popup .caption h4, .poptrox-popup .caption h5, .poptrox-popup .caption h6 {
+			.poptrox-popup .caption h2, , .poptrox-popup .caption h4, .poptrox-popup .caption h5, .poptrox-popup .caption h6 {
 				margin: 0 0 0.5em 0;
 				text-shadow: 2px 2px 8px #000000;
+			}
+			.poptrox-popup .caption h3{
+				margin: 0 0 0.5em 0;
+				position: absolute;
+				bottom: 15%;
+				font-size: 1.6em;
+				right: 4%;
+				text-shadow: 2px 2px 8px #000000;
+
 			}
 
 			.poptrox-popup .caption p {
@@ -1654,6 +1663,19 @@ input, select, textarea {
 				margin: 0;
 				position: absolute;
 				z-index: 1;
+				text-shadow: 2px 2px 15px #000000,0px 0px 8px #000000,0px 0px 4px #000000;
+			}
+			#main .thumb > h3 {
+				pointer-events: none;
+				bottom: 1.0em;
+				font-size: 1.6em;
+				right: 1.1875em;
+				margin: 0;
+				text-align: right;
+				position: absolute;
+				float:right;
+				text-shadow: 2px 2px 15px #000000,0px 0px 8px #000000,0px 0px 4px #000000;
+				z-index: 2;
 			}
 
 			#main .thumb > p {
