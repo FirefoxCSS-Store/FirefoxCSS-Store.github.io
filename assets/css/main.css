@@ -243,6 +243,7 @@ input, select, textarea {
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
 	}
+	
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
@@ -1278,7 +1279,7 @@ input, select, textarea {
 			z-index: 2;
 		}
 
-			.poptrox-popup .caption h2, , .poptrox-popup .caption h4, .poptrox-popup .caption h5, .poptrox-popup .caption h6 {
+			.poptrox-popup .caption h2,  .poptrox-popup .caption h5, .poptrox-popup .caption h6 {
 				margin: 0 0 0.5em 0;
 				text-shadow: 2px 2px 8px #000000;
 			}
@@ -1290,6 +1291,9 @@ input, select, textarea {
 				right: 4%;
 				text-shadow: 2px 2px 8px #000000;
 
+			}
+			.poptrox-popup .caption h4{
+				visibility: hidden;
 			}
 
 			.poptrox-popup .caption p {
