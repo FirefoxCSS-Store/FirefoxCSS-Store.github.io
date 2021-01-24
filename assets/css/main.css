@@ -1265,10 +1265,10 @@ input, select, textarea {
 
 		.poptrox-popup .caption {
 			padding: 2em 2em 0.1em 2em ;
-			background-image: -moz-linear-gradient(to top, rgba(16,16,16,0.45) 25%, rgba(16,16,16,0) 100%);
-			background-image: -webkit-linear-gradient(to top, rgba(16,16,16,0.45) 25%, rgba(16,16,16,0) 100%);
-			background-image: -ms-linear-gradient(to top, rgba(16,16,16,0.45) 25%, rgba(16,16,16,0) 100%);
-			background-image: linear-gradient(to top, rgba(16,16,16,0.45) 25%, rgba(16,16,16,0) 100%);
+			background-image: -moz-linear-gradient(to top, rgba(16, 16, 16, 0.70) 25%, rgba(16,16,16,0) 100%);
+			background-image: -webkit-linear-gradient(to top, rgba(16, 16, 16, 0.70) 25%, rgba(16,16,16,0) 100%);
+			background-image: -ms-linear-gradient(to top, rgba(16, 16, 16, 0.70) 25%, rgba(16,16,16,0) 100%);
+			background-image: linear-gradient(to top, rgba(16, 16, 16, 0.70) 25%, rgba(16,16,16,0) 100%);
 			bottom: 0;
 			cursor: default;
 			left: 0;
@@ -1280,10 +1280,12 @@ input, select, textarea {
 
 			.poptrox-popup .caption h2, .poptrox-popup .caption h3, .poptrox-popup .caption h4, .poptrox-popup .caption h5, .poptrox-popup .caption h6 {
 				margin: 0 0 0.5em 0;
+				text-shadow: 2px 2px 8px #000000;
 			}
 
 			.poptrox-popup .caption p {
 				color: #ffffff;
+				text-shadow: 2px 2px 8px #000000;
 			}
 
 		.poptrox-popup .loader {
