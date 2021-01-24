@@ -1665,7 +1665,7 @@ input, select, textarea {
 				z-index: 1;
 				text-shadow: 2px 2px 15px #000000,0px 0px 8px #000000,0px 0px 4px #000000;
 			}
-			#main .thumb > h3 {
+			#main .thumb > h4 {
 				pointer-events: none;
 				bottom: 1.0em;
 				font-size: 1.6em;
