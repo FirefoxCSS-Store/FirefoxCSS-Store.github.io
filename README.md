@@ -15,3 +15,4 @@ How to add a theme via PullRequest:
 	<p>DESCRIPTION OF THEME</p>
 </article>
 ```
+feel fre to say whatever feedback via issue or my twitter @Neikon66
