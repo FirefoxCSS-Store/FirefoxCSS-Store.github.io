@@ -1,5 +1,6 @@
 # FirefoxCSS-Store
-A recopilatori site of Firefox userchrome themes, mostly from FirefoxCSS Reddit
+A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit. 
+Link to web https://neikon.github.io/FirefoxCSS-Store/
 ```
 How to add a theme via PullRequest:
 -Edit index.html
