@@ -1,13 +1,13 @@
 # FirefoxCSS-Store
-A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit. 
-Link to web https://firefoxcss-store.github.io/
-```
-How to add a theme via PullRequest:
--Edit index.html
--Add a your theme in "<div id="main">" below line 31 in the code with this code.
--You must sustitute capitalized text with this info:
-    ·links to pictures, link to repo o simple download, Theme name, Author, description
-```
+<p align="center">A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit. <a href="https://firefoxcss-store.github.io/">Preview here.</a></p>
+
+**How to add a theme via PullRequest:**
+
+1. Edit ```index.html```.
+2. Add your theme in ```<div id="main">``` below line 31 in the code with the next code,
+3. You must sustitute capitalized text with the following info:
+4. Links to pictures, link to repository or simple download, theme name, author and description.
+	
 ```html
 <article class="thumb">
 	<a href="LINK TO THUMBNAIL PICTURE BETTER A NO-ANIMATED PICTURE" class="image"><img src="LINK TO PICTURE, CAN BE A GIF" alt="" /></a>
@@ -15,4 +15,5 @@ How to add a theme via PullRequest:
 	<p>DESCRIPTION OF THEME</p>
 </article>
 ```
-feel free to send me any feedback via issue or my twitter @Neikon66
+
+Feel free to send me any feedback via issue or my twitter [@Neikon66](https://twitter.com/Neikon66).
