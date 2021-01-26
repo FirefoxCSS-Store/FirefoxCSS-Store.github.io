@@ -1,0 +1,100 @@
+[
+
+	{
+		"title": "Generic Tutorial",
+		"link": "https://github.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/blob/main/generic-tutorial.md",
+		"description": "This is a tutorial with basic a common things to do to install whatever theme that you can find here. Click download button to go to tutorial 👉",
+		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/generic-guide.png"
+	},
+
+	{
+		"title": "FirefoxCss",
+		"link": "https://github.com/h4wwk3ye/firefoxCSS",
+		"description": "Custom userChrome.css for firefox based on Material Fox and Flying Fox with few small changes.",
+		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/firefoxcss%20picture%20simple.jpg"
+	},
+
+	{
+		"title": "Flying Fox",
+		"link": "https://github.com/akshat46/FlyingFox",
+		"description": "An opinionated set of configurations for firefox with Material Fox, github-moonlight userstyle",
+		"image": "https://raw.githubusercontent.com/Neikon/FirefoxCSS-Store/main/images/fulls/flying.jpg"
+	},
+
+	{
+		"title": "nord-firefox",
+		"link": "https://github.com/daaniiieel/nord-firefox",
+		"description": "Firefox userChrome.css theme, based on https://github.com/AnubisZ9/Global-Dark-Nordic-theme/.",
+		"image": "https://raw.githubusercontent.com/Daaniiieel/nord-firefox/master/ff1.png"
+	},
+
+	{
+		"title": "My Firefox Theme - not-holar",
+		"link": "https://github.com/not-holar/my_firefox_theme",
+		"description": "Welcome to the repo for my Firefox theme, a theme that aims to look nice and clean while not compromising functionality.",
+		"image": "https://raw.githubusercontent.com/not-holar/my_firefox_theme/main/screenshots/screenshot.png"
+	},
+
+	{
+		"title": "blurredfox",
+		"link": "https://github.com/manilarome/blurredfox",
+		"description": "A modern Firefox CSS Theme",
+		"image": "https://raw.githubusercontent.com/manilarome/blurredfox/master/scrots/blurred.webp"
+	},
+
+	{
+		"title": "MaterialFox",
+		"link": "https://github.com/muckSponge/MaterialFox",
+		"description": "A Material Design-inspired userChrome.css theme for Firefox",
+		"image": "https://user-images.githubusercontent.com/5405629/45172944-21d91900-b24a-11e8-8bc5-03814121b0de.png"
+	},
+
+	{
+		"title": "quietfox",
+		"link": "https://github.com/coekuss/quietfox",
+		"description": "This userChrome mod was created to make the Firefox UI cleaner and more modern without sacrificing any of its original features. You can still use themes, and you can still use Compact Mode and Touch Mode. You can pretty much forget that you have a mod installed, it works quietly in the background. Here are some of the notable features:",
+		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/quietfox.jpg"
+	},
+
+	{
+		"title": "minimalFOX",
+		"link": "https://github.com/marmmaz/FirefoxCSS",
+		"description": "A compact & minimal Firefox theme built for macOS.",
+		"image": "https://camo.githubusercontent.com/591c0e209e35126f92c4055e93250b6082cb8e93f8ed22dfae0f8f07cb11de77/68747470733a2f2f692e696d6775722e636f6d2f593169394a33752e706e67"
+	},
+
+	{
+		"title": "minimal-functional-fox",
+		"link": "https://github.com/mut-ex/minimal-functional-fox",
+		"description": "A minimal, yet functional configuration for Firefox!",
+		"image": "https://raw.githubusercontent.com/Neikon/FirefoxCSS-Store/main/images/fulls/minimalfuntions.jpg"
+	},
+
+	{
+		"title": "FirefoxCSS-Plus",
+		"link": "https://github.com/ElseEmperor/FirefoxCSS-Plus",
+		"description": "FirefoxCSS+ is based on h4wwk3ye release (https://github.com/h4wwk3ye/firefoxCSS), MaterialFox (https://github.com/muckSponge/MaterialFox) and FlyingFox (https://github.com/akshat46/FlyingFox).",
+		"image": "https://raw.githubusercontent.com/Neikon/FirefoxCSS-Store/main/images/fulls/Captura%20de%20pantalla%202021-01-24%20175301.png"
+	},
+
+	{
+		"title": "Firefox Review",
+		"link": "https://github.com/fellowish/firefox-review",
+		"description": "Firefox Review is a css redesign of the browser, changing the look of Firefox to match the color scheme and design language of Firefox Preview, a newer mobile version of Firefox being developed. With v1.1, both light and dark themes are available, and with v1.1.3, both themes are easily selectable both within the browser and from your Operating System. There's even a new theme for private browsing!",
+		"image": "https://camo.githubusercontent.com/0e974c539d3c69a017d91ba63b4785f266b045ae2409efef8fb7e9d70ef62cab/68747470733a2f2f692e696d6775722e636f6d2f574b454e5136662e706e67"
+	},
+
+	{
+		"title": "Firefox-Mod-Blur",
+		"link": "https://github.com/datguypiko/Firefox-Mod-Blur",
+		"description": "Tested 84.0.1 Windows 10 / Default Dark Theme ",
+		"image": "https://camo.githubusercontent.com/f0edddf9baef699c81c33cb89df9c447186bbd8bd6d10cc35d0d6c163d5812c3/68747470733a2f2f692e696d6775722e636f6d2f4869316f6376542e706e67"
+	},
+
+	{
+		"title": "Firefox UWP Style",
+		"link": "https://github.com/Guerra24/Firefox-UWP-Style",
+		"description": "A theme that follows MDL2 styling with the accent color and gray-on-black or gray-on-white elements",
+		"image": "https://s3.guerra24.net/projects/firefox-uwp/screenshots/01.png"
+	}
+]
