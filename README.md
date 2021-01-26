@@ -1,5 +1,5 @@
 # FirefoxCSS-Store
-<p align="center">A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit. <a href="https://firefoxcss-store.github.io/">Preview here.</a></p>
+<p align="center"><img src="images/icon.png" style="float:left">A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit. <a href="https://firefoxcss-store.github.io/">Preview here.</a></p>
 
 ## Generic Installation
 
