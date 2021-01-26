@@ -32,15 +32,16 @@
 
 ## Add your theme <3
 
-1. If you have a Github account:
++ If you have a Github account:
   1. Fork this repository.
   2. Look for a file called `themes.json`, open and edit it.
   3. Add a comma `,` right after the last **curly bracket }**.
-  4. Copy the [following code](###Code) and paste it in the file.
+  4. Copy the [following code](#code) and paste it in the file.
   5. Add the properties of your theme: **title**, **link**, **description** and **image**.
   6. Send it as a pull request in the repository.
-2. If you have a Twitter account:
-  1. Send **at least** the following properties: **picture**, **link** to [@Neikon66](https://twitter.com/Neikon66). 
+
++ If you have a Twitter account:
+  1. Send **at least** the following properties: **picture** and **link** to [@Neikon66](https://twitter.com/Neikon66). 
 
 ### Code
 
@@ -55,4 +56,4 @@
 
 # What you think =?
 
-<p align="center">Feel free to send me any feedback via issue or my twitter [@Neikon66](https://twitter.com/Neikon66).</p>
+<p align="center">Feel free to send me any feedback via issue or my twitter <a href="https://twitter.com/Neikon66">@Neikon66</a>.</p>
