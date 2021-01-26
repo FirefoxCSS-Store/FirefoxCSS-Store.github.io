@@ -1,7 +1,7 @@
 # FirefoxCSS-Store
 <p align="center">
 <img src="images/icon.png"><br>
-A collection site of Firefwddwox userchrome themes, mostly from FirefoxCSS Reddit. <a href="https://firefoxcss-store.github.io/">Preview here.</a></p>
+A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit. <a href="https://firefoxcss-store.github.io/">Preview here.</a></p>
 
 ## Generic Installation
 
