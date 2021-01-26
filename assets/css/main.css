@@ -1364,10 +1364,8 @@ input, select, textarea {
 				display: none;
 			}
 
-			.poptrox-popup .caption {
-				display: none !important;
-			}
-
+			.poptrox-popup .caption > p,
+      .poptrox-popup .caption > h2,
 			.poptrox-popup .closer,
 			.poptrox-popup .nav-previous,
 			.poptrox-popup .nav-next {
