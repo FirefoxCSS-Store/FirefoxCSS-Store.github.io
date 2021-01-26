@@ -154,10 +154,8 @@
 				display: none;
 			}
 
-			.caption {
-				display: none !important;
-			}
-
+      .caption > p,
+			.caption > h2,
 			.closer,
 			.nav-previous,
 			.nav-next {
