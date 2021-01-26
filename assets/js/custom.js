@@ -2,15 +2,26 @@ fetch('themes.json')
 .then(data => data.json())
 .then(parsedData => {
 
-  Object.entries(parsedData).forEach(entry => {
-
-    const [key, value] = entry
+  parsedData.forEach(entry => {
 
     const output = document.createElement('article')
           output.classList.add('thumb')
-          output.innerHTML = `
-            <a href="${value.link}" class="image" style="background-image: url(${value.image})">
-            <h2><a href="${value.link}" class="icon brands fa-github"> ${value.title}</a></h2><h4 class="fas fa-chevron-circle-right"></h4>`
+
+    const listImage = document.createElement('a')
+          listImage.href = entry.link
+          listImage.classList.add('image')
+          listImage.style.backgroundImage = `url(${entry.image})`
+
+    const listTitle = document.createElement('h2')
+          listTitle.classList.add('icon', 'brands', 'fa-github')
+          listTitle.innerText = ` ${entry.title}`
+
+    const listDownload = document.createElement('h4')
+          listDownload.classList.add('fas', 'fa-chevron-circle-right')
+
+    output.appendChild(listImage)
+    output.appendChild(listTitle)
+    output.appendChild(listDownload)
 
     const container = document.getElementById('main')
           container.appendChild(output)
