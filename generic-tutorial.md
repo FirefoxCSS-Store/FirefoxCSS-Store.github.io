@@ -1,8 +1,9 @@
 ### Generic Installation
 
-A. Go to wanted theme click download button.
-B. You should now be on the github page for that topic.
-C. Below you should see a guide on how to install that particular theme and a few preview pictures. Anyway, here are some common steps for all themes.
+
++ Go to wanted theme click download button.
++ You should now be on the github page for that topic.
++ Below you should see a guide on how to install that particular theme and a few preview pictures. Anyway, here are some common steps for all themes.
 
 0. Download theme with the big green button "Code" >> Download.zip
 1. Open `about:config` page.
