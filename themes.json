@@ -97,10 +97,20 @@
 		"description": "A theme that follows MDL2 styling with the accent color and gray-on-black or gray-on-white elements",
 		"image": "https://s3.guerra24.net/projects/firefox-uwp/screenshots/01.png"
 	},
+  
+	{
+		"title": "Sweet_Pop!",
+		"link": "https://github.com/PROxZIMA/Firefox-Theme",
+		"description": "Sweet_Pop! Minimalist oneliner theme for Firefox perfectly matching Sweet Dark.",
+		"image": "https://raw.githubusercontent.com/PROxZIMA/Firefox-Theme/master/assets/preview.png"
+	},
+  
+
 	{
 		"title": "SimplerentFox",
 		"link": "https://github.com/MiguelRAvila/SimplerentFox",
 		"description": "🦊 A Userstyle theme for Firefox minimalist, transparent and Keyboard centered",
 		"image": "https://raw.githubusercontent.com/MiguelRAvila/SimplerentFox/master/Images/Header.png"
-	}
+  },
+  
 ]
