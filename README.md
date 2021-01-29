@@ -1,7 +1,7 @@
-# FirefoxCSS-Store
+<h1 align="center">FirefoxCSS-Store</h1>
 <p align="center">
 <img src="images/icon.png"><br>
-A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit. <a href="https://firefoxcss-store.github.io/">Preview here.</a></p>
+A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<br><a href="https://firefoxcss-store.github.io/">Preview here.</a></p>
 
 ## Generic Installation
 
@@ -56,6 +56,6 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit. <
 }
 ```
 
-# What you think =?
+<h1 align="center">What do you think =?</h1>
 
 <p align="center">Feel free to send me any feedback via issue or my twitter <a href="https://twitter.com/Neikon66">@Neikon66</a>.</p>

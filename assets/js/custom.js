@@ -18,7 +18,7 @@ fetch('themes.json')
 
     const listDownload = document.createElement('h4')
           listDownload.classList.add('fas', 'fa-chevron-circle-right')
-
+  
     output.appendChild(listImage)
     output.appendChild(listTitle)
     output.appendChild(listDownload)
