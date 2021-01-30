@@ -110,6 +110,20 @@
 		"link": "https://github.com/MiguelRAvila/SimplerentFox",
 		"description": "🦊 A Userstyle theme for Firefox minimalist, transparent and Keyboard centered",
 		"image": "https://raw.githubusercontent.com/MiguelRAvila/SimplerentFox/master/Images/Header.png"
+	},
+
+	{
+		"title": "Simplify Darkish for Firefox",
+		"link": "https://github.com/CristianDragos/FirefoxThemes/tree/master/Simplify%20Darkish",
+		"description": "A minimal Firefox Theme for those who would like to properly enjoy my Simplify 10 Darkish - Windows 10 Themes",
+		"image": "https://raw.githubusercontent.com/CristianDragos/FirefoxThemes/master/Simplify%20Darkish/simplify_darkish_for_firefox_preview.png"
+	},
+
+	{
+		"title": "Simplify Silver Peach for Firefox",
+		"link": "https://github.com/CristianDragos/FirefoxThemes/tree/master/Simplify%20Silver%20Peach",
+		"description": "A minimal Firefox Theme for those who would like to properly enjoy my Simplify 10 Silver Peach - Windows 10 Themes",
+		"image": "https://raw.githubusercontent.com/CristianDragos/FirefoxThemes/master/Simplify%20Silver%20Peach/simplify_silver_peach_for_firefox_preview.png"
 	}
 
 ]
