@@ -42,8 +42,11 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
   5. Add the properties of your theme: **title**, **link**, **description** and **image**.
   6. Send it as a pull request in the repository.
 
++ Or create a Issue:
+  1. when creating an issue you will find a template for submitting theme, use that one. it's easy.
+
 + If you have a Twitter account:
-  1. Send **at least** the following properties: **picture** and **link** to [@Neikon66](https://twitter.com/Neikon66). 
+  1. Send **at least** the following properties: **title**, **link**, **description** and **picture** to [@Neikon66](https://twitter.com/Neikon66). 
 
 ### Code
 
