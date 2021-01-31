@@ -6,19 +6,30 @@ fetch('themes.json').then(function (data) {
   parsedData.forEach(function (entry) {
     var output = document.createElement('div');
     output.classList.add('card');
-    output.innerHTML = "\n    <header>\n      <h3 class=\"theme-title\"><a href=\"".concat(entry.link, "\">").concat(entry.title, "</a></h3>\n      <a class=\"btn-download\" href=\"").concat(entry.link, "\"><i class=\"fas fa-chevron-circle-down\"></i></a>\n    </header>\n    <a class=\"meta\" href=\"").concat(entry.link, "\">\n      <img src=\"").concat(entry.image, "\">\n      <p class=\"description\">").concat(entry.description, "</p>\n    </a>\n    "); // const listImage = document.createElement('a')
-    //       listImage.href = entry.link
-    //       listImage.classList.add('image')
-    //       listImage.style.backgroundImage = `url(images/placeholder.jpg)`
-    // const listTitle = document.createElement('h2')
-    //       listTitle.classList.add('icon', 'brands', 'fa-github')
-    //       listTitle.innerText = ` ${entry.title}`
-    // const listDownload = document.createElement('h4')
-    //       listDownload.classList.add('fas', 'fa-chevron-circle-right')
-    // output.appendChild(listImage)
-    // output.appendChild(listTitle)
-    // output.appendChild(listDownload)
-
+    var cardHeader = document.createElement('header');
+    var themeTitle = document.createElement('h3');
+    themeTitle.classList.add('theme-title');
+    var themeTitleLink = document.createElement('a');
+    themeTitleLink.href = entry.link;
+    themeTitleLink.innerText = entry.title;
+    var themeDownloadIcon = document.createElement('i');
+    themeDownloadIcon.classList.add('fas', 'fa-chevron-circle-down');
+    var themeMeta = document.createElement('a');
+    themeMeta.classList.add('meta');
+    themeMeta.href = entry.link;
+    var themeImage = document.createElement('img');
+    themeImage.src = entry.image;
+    themeImage.alt = entry.title;
+    var themeDesc = document.createElement('p');
+    themeDesc.classList.add('description');
+    themeDesc.innerText = entry.description;
+    themeTitle.appendChild(themeTitleLink);
+    cardHeader.appendChild(themeTitle);
+    cardHeader.appendChild(themeDownloadIcon);
+    themeMeta.appendChild(themeImage);
+    themeMeta.appendChild(themeDesc);
+    output.appendChild(cardHeader);
+    output.appendChild(themeMeta);
     var container = document.getElementById('main_content');
     container.appendChild(output);
   });

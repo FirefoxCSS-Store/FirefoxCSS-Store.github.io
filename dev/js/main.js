@@ -7,32 +7,41 @@ fetch('themes.json')
     const output = document.createElement('div')
           output.classList.add('card')
 
-    output.innerHTML=`
-    <header>
-      <h3 class="theme-title"><a href="${entry.link}">${entry.title}</a></h3>
-      <a class="btn-download" href="${entry.link}"><i class="fas fa-chevron-circle-down"></i></a>
-    </header>
-    <a class="meta" href="${entry.link}">
-      <img src="${entry.image}">
-      <p class="description">${entry.description}</p>
-    </a>
-    `
+    const cardHeader = document.createElement('header')
 
-    // const listImage = document.createElement('a')
-    //       listImage.href = entry.link
-    //       listImage.classList.add('image')
-    //       listImage.style.backgroundImage = `url(images/placeholder.jpg)`
+    const themeTitle = document.createElement('h3')
+          themeTitle.classList.add('theme-title')
 
-    // const listTitle = document.createElement('h2')
-    //       listTitle.classList.add('icon', 'brands', 'fa-github')
-    //       listTitle.innerText = ` ${entry.title}`
+    const themeTitleLink = document.createElement('a')
+          themeTitleLink.href = entry.link
+          themeTitleLink.innerText = entry.title
 
-    // const listDownload = document.createElement('h4')
-    //       listDownload.classList.add('fas', 'fa-chevron-circle-right')
+    const themeDownloadIcon = document.createElement('i')
+          themeDownloadIcon.classList.add('fas', 'fa-chevron-circle-down')
 
-    // output.appendChild(listImage)
-    // output.appendChild(listTitle)
-    // output.appendChild(listDownload)
+    const themeMeta = document.createElement('a')
+          themeMeta.classList.add('meta')
+          themeMeta.href = entry.link
+
+    const themeImage = document.createElement('img')
+          themeImage.src = entry.image
+          themeImage.alt = entry.title
+
+    const themeDesc = document.createElement('p')
+          themeDesc.classList.add('description')
+          themeDesc.innerText = entry.description
+
+
+    themeTitle.appendChild(themeTitleLink)
+
+    cardHeader.appendChild(themeTitle)
+    cardHeader.appendChild(themeDownloadIcon)
+
+    themeMeta.appendChild(themeImage)
+    themeMeta.appendChild(themeDesc)
+
+    output.appendChild(cardHeader)
+    output.appendChild(themeMeta)
 
     const container = document.getElementById('main_content')
           container.appendChild(output)
