@@ -2,22 +2,22 @@
 
   display: flex; flex-direction: column;
 
-  border-radius: 12px;
-  background: #FFFFFF;
-  box-shadow: 0 .5rem 2rem 0 #EAEAEC;
+  border-radius: $border-radius;
+  background: var(--body-background-lighter);
+  box-shadow: 0 .5rem 2rem 0 $shadow;
 
   overflow: hidden;
 
 
   header {
 
-    padding: 0 12px;
+    padding: 0 $space-m;
 
     display: flex;
     align-items: center; justify-content: space-between;
 
 
-    h3 { margin: 12px 0; padding: 0; }
+    h3 { margin: $space-m 0; padding: 0; }
 
   }
 
@@ -26,9 +26,7 @@
 
     display: inline-block;
 
-    padding: 6px 12px;
-
-    border-radius: 3px;
+    padding: $space-s $space-m;
 
     text-align: center;
 
@@ -42,8 +40,8 @@
     width: 100%;
     padding-top: 75%;
 
-    border-radius: 12px;
-    background: #E1E1E2;
+    border-radius: $border-radius;
+    background: var(--body-background-darker);
 
     overflow: hidden;
 
@@ -72,11 +70,11 @@
     position: absolute;
     top: 0; left: 0;
 
-    margin: 0; padding: 0 12px 12px 12px;
-    width: calc(100% - 24px);
+    margin: 0; padding: 0 $space-m $space-m $space-m;
+    width: calc(100% - #{$space-m * 2});
 
-    border-radius: 12px;
-    background: #FFFFFF;
+    border-radius: $border-radius;
+    background: var(--body-background-lighter);
 
     transform: translateY(-100%);
 
