@@ -1,0 +1,89 @@
+.card {
+
+  display: flex; flex-direction: column;
+
+  border-radius: 12px;
+  background: #FFFFFF;
+  box-shadow: 0 .5rem 2rem 0 #EAEAEC;
+
+  overflow: hidden;
+
+
+  header {
+
+    padding: 0 12px;
+
+    display: flex;
+    align-items: center; justify-content: space-between;
+
+
+    h3 { margin: 12px 0; padding: 0; }
+
+  }
+
+
+  .btn-download {
+
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 3px;
+
+    text-align: center;
+
+  }
+
+
+  .meta {
+
+    position: relative;
+
+    width: 100%;
+    padding-top: 75%;
+
+    border-radius: 12px;
+    background: #E1E1E2;
+
+    overflow: hidden;
+
+  }
+
+
+  .meta img {
+
+    position: absolute;
+    top: 50%; left: 50%;
+
+    width: 100%; height: 100%;
+
+    object-fit: cover;
+    transform: translate( -50%, -50% );
+
+    transition: transform 300ms ease-in-out;
+
+  }
+
+  &:hover .meta img { transform: translate(-50%, -45%); }
+
+
+  .meta .description {
+
+    position: absolute;
+    top: 0; left: 0;
+
+    margin: 0; padding: 0 12px 12px 12px;
+    width: calc(100% - 24px);
+
+    border-radius: 12px;
+    background: #FFFFFF;
+
+    transform: translateY(-100%);
+
+    transition: transform 300ms ease-in-out;
+
+  }
+
+  &:hover .meta .description { transform: translateY(0); }
+
+}

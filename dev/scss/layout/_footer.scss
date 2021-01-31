@@ -1,0 +1,12 @@
+#main_footer {
+
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+
+  margin: $space-xxl 0; padding: 0 $space-xl;
+
+}
+
+
+
+.social_links-icon { font-size: $font-size-l; }

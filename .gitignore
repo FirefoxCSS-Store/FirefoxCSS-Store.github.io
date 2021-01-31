@@ -1,0 +1,5 @@
+/node_modules/
+/public
+
+.DS_Store
+config.codekit3

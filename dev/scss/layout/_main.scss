@@ -1,0 +1,8 @@
+#main_content {
+
+  margin: 0; padding: 24px;
+
+  display: grid; gap: 24px;
+  grid-template: auto / repeat(auto-fit, minmax(360px, 1fr));
+
+}
