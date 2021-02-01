@@ -1,0 +1,33 @@
+doctype html
+head
+  title FirefoxCSS Store
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=no')
+  link(rel='stylesheet' href='assets/css/main.min.css')
+  link(rel='icon' href='images/icon.png')
+
+body
+  header#main_header
+    h3.header-branding FirefoxCSS Store
+
+    nav#main_nav
+      a(href='https://github.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/blob/main/README.md#generic-installation') Installation Guide
+      a(href='https://github.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/blob/main/README.md#add-your-theme-3') Submit your Theme
+      a#js-themeSwitcher(href='#')
+        i.fas.fa-moon
+
+  main#main_content
+
+  footer#main_footer
+    .social_links
+      a.social_links-icon(href='https://www.reddit.com/r/firefoxcss')
+        i.fab.fa-reddit
+      a.social_links-icon(href='https://github.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io')
+        i.fab.fa-github
+    p
+      strong FirefoxCSS Store
+      |  is maintained by the community with 
+      i.fas.fa-heart
+
+  script(src='assets/js/main.js')
+  script(src='https://kit.fontawesome.com/1c8bd05656.js' crossorigin='anonymous')

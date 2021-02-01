@@ -2,6 +2,9 @@ body {
 
   background: var(--body-background);
 
+}
+
+html {
 
   &.nightmode {
 
@@ -13,7 +16,6 @@ body {
 
   }
 
-
   &.daymode {
 
     --body-background: #{$light};
@@ -23,5 +25,6 @@ body {
     --font-colour: #{$dark};
 
   }
+
 
 }

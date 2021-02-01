@@ -49,27 +49,42 @@ fetch('themes.json')
   })
 })
 
+// Themes
 
-const prefDark         = window.matchMedia("(prefers-color-scheme: dark)").matches
-const themeTrigger     = document.getElementById('js-themeSwitcher')
-const themeTriggerIcon = themeTrigger.querySelector('i')
+const prefDark         = window.matchMedia("(prefers-color-scheme: dark)").matches,
+      prefTheme        = localStorage['theme'],
+      themeTrigger     = document.getElementById('js-themeSwitcher'),
+      themeTriggerIcon = themeTrigger.querySelector('i');
 
-if (prefDark) {
-
-  document.body.classList.add('nightmode')
-  themeTriggerIcon.classList.remove('fa-moon')
-  themeTriggerIcon.classList.add('fa-sun')
-
-}
-
-if (!prefDark) { document.body.classList.add('daymode') }
-
-themeTrigger.addEventListener('click', event => {
-
-  document.body.classList.toggle('nightmode')
-  document.body.classList.toggle('daymode')
+const toggleTheme = () => { 
+  document.documentElement.classList.toggle('nightmode')
+  document.documentElement.classList.toggle('daymode')
 
   themeTriggerIcon.classList.toggle('fa-sun')
   themeTriggerIcon.classList.toggle('fa-moon')
+}
 
+
+if (prefDark) {
+  document.documentElement.classList.add('nightmode')
+  themeTriggerIcon.classList.remove('fa-moon')
+  themeTriggerIcon.classList.add('fa-sun')
+}
+if (!prefDark) { document.body.classList.add('daymode') }
+
+
+if (prefTheme === 'day') {
+  toggleTheme();
+}  
+else
+  localStorage['theme'] = 'night';
+
+
+themeTrigger.addEventListener('click', event => {
+  if (localStorage['theme'] === 'night')
+    localStorage['theme'] = 'day'
+  else
+    localStorage['theme'] = 'night';
+
+  toggleTheme()
 })
