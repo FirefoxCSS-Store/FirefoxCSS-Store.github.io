@@ -2,4 +2,15 @@ body {
 
   background: var(--body-background);
 
+
+  &.nightmode {
+
+    --body-background: #{$dark};
+    --body-background-lighter: #{$dark-l1};
+    --body-background-darker: #{$dark-s1};
+
+    --font-colour: #{$light};
+
+  }
+
 }

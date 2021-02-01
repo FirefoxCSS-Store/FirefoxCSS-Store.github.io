@@ -48,3 +48,17 @@ fetch('themes.json')
 
   })
 })
+
+
+
+const themeTrigger     = document.getElementById('js-themeSwitcher')
+const themeTriggerIcon = themeTrigger.querySelector('i')
+
+themeTrigger.addEventListener('click', event => {
+
+  document.body.classList.toggle('nightmode')
+
+  themeTriggerIcon.classList.toggle('fa-sun')
+  themeTriggerIcon.classList.toggle('fa-moon')
+
+})
