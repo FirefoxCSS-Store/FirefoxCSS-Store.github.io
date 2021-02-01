@@ -4,34 +4,35 @@ fetch('themes.json').then(function (data) {
   return data.json();
 }).then(function (parsedData) {
   parsedData.forEach(function (entry) {
-    var output = document.createElement('div');
-    output.classList.add('card');
-    var cardHeader = document.createElement('header');
-    var themeTitle = document.createElement('h3');
-    themeTitle.classList.add('theme-title');
-    var themeTitleLink = document.createElement('a');
-    themeTitleLink.href = entry.link;
-    themeTitleLink.innerText = entry.title;
-    var themeDownloadIcon = document.createElement('i');
-    themeDownloadIcon.classList.add('fas', 'fa-chevron-circle-down');
-    var themeMeta = document.createElement('a');
-    themeMeta.classList.add('meta');
-    themeMeta.href = entry.link;
-    var themeImage = document.createElement('img');
-    themeImage.src = entry.image;
-    themeImage.alt = entry.title;
-    var themeDesc = document.createElement('p');
-    themeDesc.classList.add('description');
-    themeDesc.innerText = entry.description;
-    themeTitle.appendChild(themeTitleLink);
-    cardHeader.appendChild(themeTitle);
-    cardHeader.appendChild(themeDownloadIcon);
-    themeMeta.appendChild(themeImage);
-    themeMeta.appendChild(themeDesc);
-    output.appendChild(cardHeader);
-    output.appendChild(themeMeta);
+    /*const output = document.createElement('div')
+          output.classList.add('card')
+     const cardHeader = document.createElement('header')
+     const themeTitle = document.createElement('h3')
+          themeTitle.classList.add('theme-title')
+     const themeTitleLink = document.createElement('a')
+          themeTitleLink.href = entry.link
+          themeTitleLink.innerText = entry.title
+     const themeDownloadIcon = document.createElement('i')
+          themeDownloadIcon.classList.add('fas', 'fa-chevron-circle-down')
+     const themeMeta = document.createElement('a')
+          themeMeta.classList.add('meta')
+          themeMeta.href = entry.link
+     const themeImage = document.createElement('img')
+          themeImage.src = entry.image
+          themeImage.alt = entry.title
+     const themeDesc = document.createElement('p')
+          themeDesc.classList.add('description')
+          themeDesc.innerText = entry.description
+      themeTitle.appendChild(themeTitleLink)
+     cardHeader.appendChild(themeTitle)
+    cardHeader.appendChild(themeDownloadIcon)
+     themeMeta.appendChild(themeImage)
+    themeMeta.appendChild(themeDesc)
+     output.appendChild(cardHeader)
+    output.appendChild(themeMeta)*/
+    var elemns = "\n      <div class=\"card\">\n        <header>\n          <h3 class=\"theme-title\"><a href=\"".concat(entry.link, "\">").concat(entry.title, "</a></h3>\n          <i class=\"fas fa-chevron-circle-down\"></i>\n        </header>\n        <a class=\"meta\" href=\"").concat(entry.link, "\">\n          <img src=\"").concat(entry.image, "\" alt=\"").concat(entry.title, "\">\n          <p class=\"description\">").concat(entry.description, "</p>\n        </a>\n      </div>\n    ");
     var container = document.getElementById('main_content');
-    container.appendChild(output);
+    container.insertAdjacentHTML('beforeend', elemns);
   });
 }); // Themes
 
