@@ -1,0 +1,20 @@
+#main_header {
+
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: space-between;
+
+  margin: $space-xxl 0; padding: 0 $space-xl;
+
+
+  @media (min-width: 792px) { flex-direction: row; }
+
+}
+
+
+
+.header-branding {
+
+  font-size: $font-size-l;
+  font-weight: $font-weight-bold;
+
+}

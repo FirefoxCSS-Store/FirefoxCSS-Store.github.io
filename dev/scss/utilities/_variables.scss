@@ -1,0 +1,75 @@
+//  Colours
+//  =======
+
+$light-l1:  #FFFFFF;  $light:     #FAFAFC;  $light-s1:  #DADADC;
+$mid-l1:    #909095;  $mid:       #808085;  $mid-s1:    #606065;
+$dark-l1:   #404045;  $dark:      #303035;  $dark-s1:   #202025;
+
+$shadow:    rgba(0, 0, 0, .2);
+
+
+
+//  Spacing
+//  =======
+
+$base-size: .6rem;
+
+$space-s:   $base-size;
+$space-m:   $base-size * 2;
+$space-l:   $base-size * 3;
+$space-xl:  $base-size * 5;
+$space-xxl: $base-size * 8;
+
+$border-radius: 12px;
+
+
+
+//  Typography
+//  ==========
+
+$font-size-s:   80%;
+$font-size:     1.5rem;
+$font-size-l:   150%;
+$font-size-xl:  200%;
+
+$font-family: 'Jost';
+$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$line-height: 1.6;
+$font-weight-regular: 400;
+$font-weight-bold:    600;
+
+$font-colour: $mid-s1;
+$font-colour-highlight: $dark-l1;
+
+
+
+//  Scaffholding
+//  ============
+
+$background-l1: $light-l1;
+$background:    $light;
+$background-s1: $light-s1;
+
+
+
+:root {
+
+  --body-background: #{$light};
+  --body-background-lighter: #{$light-l1};
+  --body-background-darker: #{$light-s1};
+
+  --font-colour: #{$dark};
+
+
+  @media (prefers-color-scheme: dark) {
+
+    --body-background: #{$dark};
+    --body-background-lighter: #{$dark-l1};
+    --body-background-darker: #{$dark-s1};
+
+    --font-colour: #{$light};
+
+  }
+
+}

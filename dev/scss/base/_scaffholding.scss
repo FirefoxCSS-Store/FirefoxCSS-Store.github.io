@@ -1,0 +1,27 @@
+body {
+
+  background: var(--body-background);
+
+
+  &.nightmode {
+
+    --body-background: #{$dark};
+    --body-background-lighter: #{$dark-l1};
+    --body-background-darker: #{$dark-s1};
+
+    --font-colour: #{$light};
+
+  }
+
+
+  &.daymode {
+
+    --body-background: #{$light};
+    --body-background-lighter: #{$light-l1};
+    --body-background-darker: #{$light-s1};
+
+    --font-colour: #{$dark};
+
+  }
+
+}
