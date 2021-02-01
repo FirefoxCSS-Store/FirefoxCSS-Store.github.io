@@ -1,3 +1,8 @@
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--font-colour) var(--body-background);
+}
+
 #main_content {
 
   margin: 0; padding: $space-xl;
