@@ -50,13 +50,24 @@ fetch('themes.json')
 })
 
 
-
+const prefDark         = window.matchMedia("(prefers-color-scheme: dark)").matches
 const themeTrigger     = document.getElementById('js-themeSwitcher')
 const themeTriggerIcon = themeTrigger.querySelector('i')
+
+if (prefDark) {
+
+  document.body.classList.add('nightmode')
+  themeTriggerIcon.classList.remove('fa-moon')
+  themeTriggerIcon.classList.add('fa-sun')
+
+}
+
+if (!prefDark) { document.body.classList.add('daymode') }
 
 themeTrigger.addEventListener('click', event => {
 
   document.body.classList.toggle('nightmode')
+  document.body.classList.toggle('daymode')
 
   themeTriggerIcon.classList.toggle('fa-sun')
   themeTriggerIcon.classList.toggle('fa-moon')

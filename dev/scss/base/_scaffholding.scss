@@ -13,4 +13,15 @@ body {
 
   }
 
+
+  &.daymode {
+
+    --body-background: #{$light};
+    --body-background-lighter: #{$light-l1};
+    --body-background-darker: #{$light-s1};
+
+    --font-colour: #{$dark};
+
+  }
+
 }

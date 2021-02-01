@@ -61,4 +61,15 @@ $background-s1: $light-s1;
 
   --font-colour: #{$dark};
 
+
+  @media (prefers-color-scheme: dark) {
+
+    --body-background: #{$dark};
+    --body-background-lighter: #{$dark-l1};
+    --body-background-darker: #{$dark-s1};
+
+    --font-colour: #{$light};
+
+  }
+
 }
