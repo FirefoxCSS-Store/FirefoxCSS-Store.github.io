@@ -40,7 +40,9 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
   3. Add a comma `,` right after the last **curly bracket }**.
   4. Copy the [following code](#code) and paste it in the file.
   5. Add the properties of your theme: **title**, **link**, **description** and **image**.
-  6. Send it as a pull request in the repository.
+  6. **Avoid the use of escaped characters and the order matters**.
+  7. Please, do not use a very big image, preferably (650x500).
+  8. Send it as a pull request in the repository.
 
 + Or create a Issue:
   1. when creating an issue you will find a template for submitting theme, use that one. it's easy.

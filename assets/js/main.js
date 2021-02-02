@@ -1,38 +1,78 @@
 "use strict";
 
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+var cleanStuff = function cleanStuff(obj) {
+  // clean main checks // weird, but useful for security reason
+  var safObj = {},
+      // will need help (clean more the string to avoid escaped characters)
+  cleanString = new RegExp(/"|'/, 'g'),
+      bugs = [];
+
+  try {
+    // names
+    var keys = Object.keys(obj); // object
+
+    if (_typeof(obj) !== 'object') bugs.push('Only objects allowed.');
+
+    if (keys.length === 4) {
+      if (keys[0] !== 'title' || typeof obj[keys[0]] !== 'string' || keys[1] !== 'link' || typeof obj[keys[1]] !== 'string' || keys[2] !== 'description' || typeof obj[keys[2]] !== 'string' || keys[3] !== 'image' || typeof obj[keys[3]] !== 'string') bugs.push('Verify name of object keys, respectively, it must be: title, link, description, image. All must be strings types without escaped characters.');else {
+        var props = keys.map(function (k) {
+          return obj[k];
+        });
+        props = props.map(function (w) {
+          return w.replace(cleanString, '');
+        }); // parse already
+
+        var _ref = [props[0], props[1], props[2], props[3]];
+        safObj.title = _ref[0];
+        safObj.link = _ref[1];
+        safObj.description = _ref[2];
+        safObj.image = _ref[3];
+      }
+    } else bugs.push('Only 4 object keys allowed.'); // all bugs
+
+
+    if (bugs.length !== 0) throw bugs.length;
+  } catch (e) {
+    console.log("Theme called ".concat(obj.title, " has the following bug(s), please resolve (").concat(e, "):\n").concat(bugs.join('\n')));
+    return null;
+  } // need to verify image manually
+
+
+  return safObj;
+}; // count each card to parse 
+
+
 fetch('themes.json').then(function (data) {
   return data.json();
 }).then(function (parsedData) {
+  var i = 0;
   parsedData.forEach(function (entry) {
-    /*const output = document.createElement('div')
-          output.classList.add('card')
-     const cardHeader = document.createElement('header')
-     const themeTitle = document.createElement('h3')
-          themeTitle.classList.add('theme-title')
-     const themeTitleLink = document.createElement('a')
-          themeTitleLink.href = entry.link
-          themeTitleLink.innerText = entry.title
-     const themeDownloadIcon = document.createElement('i')
-          themeDownloadIcon.classList.add('fas', 'fa-chevron-circle-down')
-     const themeMeta = document.createElement('a')
-          themeMeta.classList.add('meta')
-          themeMeta.href = entry.link
-     const themeImage = document.createElement('img')
-          themeImage.src = entry.image
-          themeImage.alt = entry.title
-     const themeDesc = document.createElement('p')
-          themeDesc.classList.add('description')
-          themeDesc.innerText = entry.description
-      themeTitle.appendChild(themeTitleLink)
-     cardHeader.appendChild(themeTitle)
-    cardHeader.appendChild(themeDownloadIcon)
-     themeMeta.appendChild(themeImage)
-    themeMeta.appendChild(themeDesc)
-     output.appendChild(cardHeader)
-    output.appendChild(themeMeta)*/
-    var elemns = "\n      <div class=\"card\">\n        <header>\n          <h3 class=\"theme-title\"><a href=\"".concat(entry.link, "\">").concat(entry.title, "</a></h3>\n          <i class=\"fas fa-chevron-circle-down\"></i>\n        </header>\n        <a class=\"meta\" href=\"").concat(entry.link, "\">\n          <img src=\"").concat(entry.image, "\" alt=\"").concat(entry.title, "\">\n          <p class=\"description\">").concat(entry.description, "</p>\n        </a>\n      </div>\n    ");
-    var container = document.getElementById('main_content');
-    container.insertAdjacentHTML('beforeend', elemns);
+    var cleanObj = cleanStuff(entry),
+        id = "card-".concat(i);
+    i++; //console.log(safeObj.title);
+
+    if (cleanObj !== null) {
+      var _ref2 = [cleanObj.title, cleanObj.link, cleanObj.image, cleanObj.description],
+          title = _ref2[0],
+          link = _ref2[1],
+          image = _ref2[2],
+          description = _ref2[3];
+      var elemns = "\n      <div class=\"card\" id=\"".concat(id, "\">\n        <header>\n          <h3 class=\"theme-title\">\n            <a></a>\n          </h3>\n          <i class=\"fas fa-chevron-circle-down\"></i>\n        </header>\n        <a class=\"meta\">\n          <img>\n          <p class=\"description\"></p>\n        </a>\n      </div>\n      ");
+      var container = document.getElementById('main_content');
+      container.insertAdjacentHTML('beforeend', elemns);
+      var card = document.getElementById(id),
+          titlehead = card.getElementsByTagName('header')[0].getElementsByClassName('theme-title')[0],
+          meta = card.getElementsByClassName('meta')[0],
+          img = card.getElementsByTagName('img')[0]; // 100% security
+
+      meta.href = titlehead.href = link;
+      img.alt = title;
+      titlehead.getElementsByTagName('a')[0].innerText = title;
+      img.src = image;
+      meta.getElementsByClassName('description')[0].innerText = description;
+    }
   });
 }); // Themes
 
