@@ -80,7 +80,7 @@ class Card {
     </div>
     `
 
-    outputContainer.insertAdjacentHTML('beforeend', template);
+    outputContainer.insertAdjacentHTML('beforeend', template)
 
   }
 }
@@ -88,6 +88,10 @@ class Card {
 
 
 (() => { // IIFE to avoid globals
+
+  /*  Load Content
+   *  ============
+   */
 
   fetch('themes.json')
   .then(data => data.json())
@@ -102,4 +106,44 @@ class Card {
 
     })
   })
+
+
+  /*  Theme Handling
+   *  ==============
+   */
+
+  const systemPref       = window.matchMedia("(prefers-color-scheme: dark)").matches ? 'night' : 'day',
+        themeTrigger     = document.getElementById('js-themeSwitcher'),
+        themeTriggerIcon = themeTrigger.querySelector('i')
+
+  // when local storage is not populated set the system preferrence as value
+  if (!localStorage['theme']) localStorage['theme'] = systemPref === 'day' ? 'day' : 'night'
+
+  // set nightmode when according to local storage
+  if (localStorage['theme'] === 'night') {
+
+    themeTriggerIcon.classList.toggle('fa-sun')
+    themeTriggerIcon.classList.toggle('fa-moon')
+
+    document.documentElement.classList.add('nightmode')
+
+  } else { document.documentElement.classList.add('daymode') }
+
+
+  function toggleTheme () {
+
+    document.documentElement.classList.toggle('nightmode')
+    document.documentElement.classList.toggle('daymode')
+
+    themeTriggerIcon.classList.toggle('fa-sun')
+    themeTriggerIcon.classList.toggle('fa-moon')
+
+    // update local storage
+    if (localStorage['theme'] === 'night') localStorage['theme'] = 'day'
+    else localStorage['theme'] = 'night'
+
+  }
+
+  themeTrigger.addEventListener('click', event => toggleTheme())
+
 })()
