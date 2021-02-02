@@ -1,133 +1,149 @@
-const cleanStuff = obj => {
-  // clean main checks // weird, but useful for security reason
+class Card {
 
-  let safObj = {},
-      // will need help (clean more the string to avoid escaped characters)
-      cleanString = new RegExp(/"|'/, 'g'),
-      bugs = [];
+  constructor (data, id) {
 
-  try {
-    // names
-    const keys = Object.keys(obj);
-    // object
-    if (typeof obj !== 'object') bugs.push('Only objects allowed.');
+    this._id           = id + 1
+    this._themeIsValid = this.validateTheme(data)
 
-    if (keys.length === 4) {
-      if (keys[0] !== 'title'       || typeof obj[keys[0]] !== 'string' ||
-          keys[1] !== 'link'        || typeof obj[keys[1]] !== 'string' ||
-          keys[2] !== 'description' || typeof obj[keys[2]] !== 'string' ||
-          keys[3] !== 'image'       || typeof obj[keys[3]] !== 'string')
-        bugs.push('Verify name of object keys, respectively, it must be: title, link, description, image. All must be strings types without escaped characters.')
-
-      else {
-        let props = keys.map(k => obj[k]);
-            props = props.map(w => w.replace(cleanString, ''));
-        
-        // parse already
-        [safObj.title, safObj.link, safObj.description, safObj.image ] = 
-        [props[0]    ,    props[1],           props[2],      props[3]];
-      }
-    }  
-    else bugs.push('Only 4 object keys allowed.');
-
-    // all bugs
-    if (bugs.length !== 0) throw bugs.length;
-  }
-  catch (e) {
-    console.log(`Theme called ${obj.title} has the following bug(s), please resolve (${e}):\n${bugs.join('\n')}`)
-    return null;
-  }
-
-  // need to verify image manually
-  return safObj;
-}
-
-// count each card to parse 
-fetch('themes.json').then(function (data) {
-  return data.json();
-}).then(function (parsedData) {
-  let i = 0;
-  parsedData.forEach(function (entry) {
-
-    const cleanObj = cleanStuff(entry),
-          id      = `card-${i}`; i++;
-    //console.log(safeObj.title);
-
-    if (cleanObj !== null) {
-      const [title         , link         , image         ,  description        ] = 
-            [cleanObj.title, cleanObj.link, cleanObj.image, cleanObj.description];
-
-      const elemns = `
-      <div class="card" id="${id}">
-        <header>
-          <h3 class="theme-title">
-            <a></a>
-          </h3>
-          <i class="fas fa-chevron-circle-down"></i>
-        </header>
-        <a class="meta">
-          <img>
-          <p class="description"></p>
-        </a>
-      </div>
-      `;
-      
-      let container = document.getElementById('main_content');
-          container.insertAdjacentHTML('beforeend', elemns);
-
-      let card      = document.getElementById(id),
-          titlehead = card.getElementsByTagName('header')[0]
-                     .getElementsByClassName('theme-title')[0],
-          meta      = card.getElementsByClassName('meta')[0],
-          img       = card.getElementsByTagName('img')[0];
-
-      
-      // 100% security
-      meta.href = titlehead.href = link;
-      img.alt   = title;
-      titlehead.getElementsByTagName('a')[0].innerText = title;
-      img.src   = image;
-      meta.getElementsByClassName('description')[0].innerText = description;
+    if (this._themeIsValid) {
+      this._title        = this.sanatise(data.title)
+      this._description  = this.sanatise(data.description)
+      this._link         = this.sanatise(data.link)
+      this._image        = this.sanatise(data.image)
     }
-  });
-});
+  }
 
-// Themes
 
-const prefDark         = window.matchMedia("(prefers-color-scheme: dark)").matches,
-      prefTheme        = localStorage['theme'],
-      themeTrigger     = document.getElementById('js-themeSwitcher'),
-      themeTriggerIcon = themeTrigger.querySelector('i');
+  validateTheme (data) {
 
-const toggleTheme = () => { 
-  document.documentElement.classList.toggle('nightmode')
-  document.documentElement.classList.toggle('daymode')
+    let bugs = []
 
-  themeTriggerIcon.classList.toggle('fa-sun')
-  themeTriggerIcon.classList.toggle('fa-moon')
+    try {
+
+      const keys       =  Object.keys(data)
+      const objectKeys =  keys[0] !== 'title'       ||
+                          keys[1] !== 'link'        ||
+                          keys[2] !== 'description' ||
+                          keys[3] !== 'image'
+      const objectTypes = typeof data[keys[0]] !== 'string' ||
+                          typeof data[keys[1]] !== 'string' ||
+                          typeof data[keys[2]] !== 'string' ||
+                          typeof data[keys[3]] !== 'string'
+
+      if (typeof data !== 'object') bugs.push('This theme is not an object.')
+      if (keys.length !== 4) bugs.push(`Is expected to have 4 key but has ${keys.length}.`)
+      if (objectKeys) bugs.push('Verify name of object keys, respectively, it must be: title, link, description, image.')
+      if (objectTypes) bugs.push('All object entries must be strings!')
+
+      if (bugs.length !== 0) throw bugs.length
+
+    }
+
+    catch (errorCount) {
+
+      console.warn(`Theme ${this._id} has the following ${errorCount} bug(s):\n${bugs.join('\n')}`)
+      return false
+
+    }
+
+    return true
+
+  }
+
+
+  sanatise (unsanatisedInput) {
+
+    const tempEl = document.createElement('div')
+          tempEl.innerText = unsanatisedInput
+
+    const sanatisedOutput = tempEl.innerHTML
+    return sanatisedOutput
+
+  }
+
+
+  render (outputContainer) {
+
+    // don't render anything when the theme format is invalid
+    if (!this._themeIsValid) return
+
+    const template = `
+    <div id="theme-${this._id}" class="card">
+      <header>
+        <h3 class="theme-title"><a hef="${this._link}">${this._title}</a></h3>
+        <i class="fas fa-chevron-circle-down"></i>
+      </header>
+      <a class="meta" href="${this._link}">
+        <img src="${this._image}">
+        <p class="description">${this._description}</p>
+      </a>
+    </div>
+    `
+
+    outputContainer.insertAdjacentHTML('beforeend', template)
+
+  }
 }
 
 
-if (prefDark) {
-  document.documentElement.classList.add('nightmode')
-  themeTriggerIcon.classList.remove('fa-moon')
-  themeTriggerIcon.classList.add('fa-sun')
-}
-if (!prefDark) { document.body.classList.add('daymode') }
+
+(() => { // IIFE to avoid globals
+
+  /*  Load Content
+   *  ============
+   */
+
+  fetch('themes.json')
+  .then(data => data.json())
+  .then(parsedData => {
+
+    parsedData.forEach((entry, index)  => {
+
+      const outputContainer = document.getElementById('main_content')
+      const card = new Card (entry, index)
+
+      card.render(outputContainer)
+
+    })
+  })
 
 
-if (prefTheme === 'day') {
-  toggleTheme();
-}  
-else
-  localStorage['theme'] = 'night';
+  /*  Theme Handling
+   *  ==============
+   */
+
+  const systemPref       = window.matchMedia("(prefers-color-scheme: dark)").matches ? 'night' : 'day',
+        themeTrigger     = document.getElementById('js-themeSwitcher'),
+        themeTriggerIcon = themeTrigger.querySelector('i')
+
+  // when local storage is not populated set the system preferrence as value
+  if (!localStorage['theme']) localStorage['theme'] = systemPref === 'day' ? 'day' : 'night'
+
+  // set nightmode when according to local storage
+  if (localStorage['theme'] === 'night') {
+
+    themeTriggerIcon.classList.toggle('fa-sun')
+    themeTriggerIcon.classList.toggle('fa-moon')
+
+    document.documentElement.classList.add('nightmode')
+
+  } else { document.documentElement.classList.add('daymode') }
 
 
-themeTrigger.addEventListener('click', event => {
-  if (localStorage['theme'] === 'night')
-    localStorage['theme'] = 'day'
-  else
-    localStorage['theme'] = 'night';
+  function toggleTheme () {
 
-  toggleTheme()
-})
+    document.documentElement.classList.toggle('nightmode')
+    document.documentElement.classList.toggle('daymode')
+
+    themeTriggerIcon.classList.toggle('fa-sun')
+    themeTriggerIcon.classList.toggle('fa-moon')
+
+    // update local storage
+    if (localStorage['theme'] === 'night') localStorage['theme'] = 'day'
+    else localStorage['theme'] = 'night'
+
+  }
+
+  themeTrigger.addEventListener('click', event => toggleTheme())
+
+})()
