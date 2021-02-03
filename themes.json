@@ -3,126 +3,126 @@
 		"title": "FirefoxCss",
 		"link": "https://github.com/h4wwk3ye/firefoxCSS",
 		"description": "Custom userChrome.css for firefox based on Material Fox and Flying Fox with few small changes.",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/firefoxcss.webp"
+		"image": "assets/img/themes/firefoxcss.webp"
 	},
 
 	{
 		"title": "Flying Fox",
 		"link": "https://github.com/akshat46/FlyingFox",
 		"description": "An opinionated set of configurations for firefox with Material Fox, github-moonlight userstyle",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/flying.webp"
+		"image": "assets/img/themes/flying.webp"
 	},
 
 	{
 		"title": "nord-firefox",
 		"link": "https://github.com/daaniiieel/nord-firefox",
 		"description": "Firefox userChrome.css theme, based on https://github.com/AnubisZ9/Global-Dark-Nordic-theme/.",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/nord.webp"
+		"image": "assets/img/themes/nord.webp"
 	},
 
 	{
 		"title": "My Firefox Theme - not-holar",
 		"link": "https://github.com/not-holar/my_firefox_theme",
 		"description": "Welcome to the repo for my Firefox theme, a theme that aims to look nice and clean while not compromising functionality.",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/MyFirefoxThemenotholar.webp"
+		"image": "assets/img/themes/MyFirefoxThemenotholar.webp"
 	},
 
 	{
 		"title": "blurredfox",
 		"link": "https://github.com/manilarome/blurredfox",
 		"description": "A modern Firefox CSS Theme",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/blurred.webp"
+		"image": "assets/img/themes/blurred.webp"
 	},
 
 	{
 		"title": "MaterialFox",
 		"link": "https://github.com/muckSponge/MaterialFox",
 		"description": "A Material Design-inspired userChrome.css theme for Firefox",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/materialfox.webp"
+		"image": "assets/img/themes/materialfox.webp"
 	},
 
 	{
 		"title": "quietfox",
 		"link": "https://github.com/coekuss/quietfox",
 		"description": "This userChrome mod was created to make the Firefox UI cleaner and more modern without sacrificing any of its original features. You can still use themes, and you can still use Compact Mode and Touch Mode. You can pretty much forget that you have a mod installed, it works quietly in the background. Here are some of the notable features:",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/quietfox.webp"
+		"image": "assets/img/themes/quietfox.webp"
 	},
 
 	{
 		"title": "minimalFOX",
 		"link": "https://github.com/marmmaz/FirefoxCSS",
 		"description": "A compact & minimal Firefox theme built for macOS.",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/minimalfox.webp"
+		"image": "assets/img/themes/minimalfox.webp"
 	},
 
 	{
 		"title": "minimal-functional-fox",
 		"link": "https://github.com/mut-ex/minimal-functional-fox",
 		"description": "A minimal, yet functional configuration for Firefox!",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/minimalfuntionalfox.webp"
+		"image": "assets/img/themes/minimalfuntionalfox.webp"
 	},
 
 	{
 		"title": "FirefoxCSS-Plus",
 		"link": "https://github.com/ElseEmperor/FirefoxCSS-Plus",
 		"description": "FirefoxCSS+ is based on h4wwk3ye release (https://github.com/h4wwk3ye/firefoxCSS), MaterialFox (https://github.com/muckSponge/MaterialFox) and FlyingFox (https://github.com/akshat46/FlyingFox).",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/firefoxcssplus.webp"
+		"image": "assets/img/themes/firefoxcssplus.webp"
 	},
 
 	{
 		"title": "Firefox Review",
 		"link": "https://github.com/fellowish/firefox-review",
 		"description": "Firefox Review is a css redesign of the browser, changing the look of Firefox to match the color scheme and design language of Firefox Preview, a newer mobile version of Firefox being developed. With v1.1, both light and dark themes are available, and with v1.1.3, both themes are easily selectable both within the browser and from your Operating System. There's even a new theme for private browsing!",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/firefoxreview.webp"
+		"image": "assets/img/themes/firefoxreview.webp"
 	},
 
 	{
 		"title": "Firefox-Mod-Blur",
 		"link": "https://github.com/datguypiko/Firefox-Mod-Blur",
 		"description": "Tested 84.0.1 Windows 10 / Default Dark Theme ",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/firefoxmodblur.webp"
+		"image": "assets/img/themes/firefoxmodblur.webp"
 	},
 
 	{
 		"title": "Firefox UWP Style",
 		"link": "https://github.com/Guerra24/Firefox-UWP-Style",
 		"description": "A theme that follows MDL2 styling with the accent color and gray-on-black or gray-on-white elements",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/firefoxuwpstyle.webp"
+		"image": "assets/img/themes/firefoxuwpstyle.webp"
 	},
 
 	{
 		"title": "Sweet_Pop!",
 		"link": "https://github.com/PROxZIMA/Firefox-Theme",
 		"description": "Sweet_Pop! Minimalist oneliner theme for Firefox perfectly matching Sweet Dark.",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/sweetpop.webp"
+		"image": "assets/img/themes/sweetpop.webp"
 	},
 
 	{
 		"title": "SimplerentFox",
 		"link": "https://github.com/MiguelRAvila/SimplerentFox",
 		"description": "🦊 A Userstyle theme for Firefox minimalist, transparent and Keyboard centered",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/simplerentfox.webp"
+		"image": "assets/img/themes/simplerentfox.webp"
 	},
 
 	{
 		"title": "Simplify Darkish for Firefox",
 		"link": "https://github.com/CristianDragos/FirefoxThemes/tree/master/Simplify%20Darkish",
 		"description": "A minimal Firefox Theme for those who would like to properly enjoy my Simplify 10 Darkish - Windows 10 Themes",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/simplify_darkish_for_firefox_preview.webp"
+		"image": "assets/img/themes/simplify_darkish_for_firefox_preview.webp"
 	},
 
 	{
 		"title": "My Firefox theme - u/FffDtark",
 		"link": "https://github.com/Ikrom27/Firefox",
 		"description": "Oneline theme",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/My_Firefox_theme_-_uFffDtark.webp"
+		"image": "assets/img/themes/My_Firefox_theme_-_uFffDtark.webp"
 	},
 
 	{
 		"title": "Simplify Silver Peach for Firefox",
 		"link": "https://github.com/CristianDragos/FirefoxThemes/tree/master/Simplify%20Silver%20Peach",
 		"description": "A minimal Firefox Theme for those who would like to properly enjoy my Simplify 10 Silver Peach - Windows 10 Themes",
-		"image": "https://raw.githubusercontent.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/main/images/fulls/simplify_silver_peach_for_firefox_preview.webp"
+		"image": "assets/img/themes/simplify_silver_peach_for_firefox_preview.webp"
 	}
 
 ]

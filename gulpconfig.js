@@ -60,7 +60,7 @@ module.exports = {
   },
 
   images: {
-    src:  `${pathSource}/img/**/*.{jpg,png,gif,svg}`,
+    src:  `./images/**/*.{jpg,png,gif,svg,webp}`,
     dest: `${pathAssets}/img/`,
   },
 
