@@ -37,6 +37,12 @@ task('configHidden', () => {
 task('config', parallel('configText', 'configHidden'))
 
 
+task('themes', () => {
+  return src(config.themes.src)
+  .pipe(dest(config.themes.dest))
+})
+
+
 
 task('pug', () => {
   return src(config.pug.src)
@@ -87,7 +93,8 @@ task('default', parallel(
   'sass',
   'js',
   'images',
-  'fonts'
+  'fonts',
+  'themes'
 ))
 
 

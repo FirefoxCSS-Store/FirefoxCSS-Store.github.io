@@ -19,6 +19,11 @@ module.exports = {
     }
   },
 
+  themes: {
+    src:  `./themes.json`,
+    dest: `${pathBuild}/`
+  },
+
   pug: {
     src:  `${pathSource}/pug/*.pug`,
     dest: `${pathBuild}/`,
