@@ -93,7 +93,7 @@ class Card {
    *  ============
    */
 
-  fetch('../themes.json')
+  fetch('themes.json')
   .then(data => data.json())
   .then(parsedData => {
 
