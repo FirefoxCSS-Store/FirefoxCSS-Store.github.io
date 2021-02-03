@@ -16,6 +16,9 @@ const prefix = require('gulp-autoprefixer')
 const babel  = require('gulp-babel')
 const minify = require('gulp-minify')
 
+// images
+const cwebp  = require('gulp-cwebp')
+
 
 
 
@@ -71,10 +74,23 @@ task('js', () => {
 
 
 
-task('images', () => {
-  return src(config.images.src)
+task('convertImages', () => {
+  return src(config.images.toConvert)
+  .pipe(cwebp())
   .pipe(dest(config.images.dest))
 })
+
+task('copyImages', () => {
+  return src(config.images.toCopy)
+  .pipe(dest(config.images.dest))
+})
+
+task('copyFavicon', () => {
+  return src(config.images.favicon)
+  .pipe(dest(config.images.faviconDest))
+})
+
+task('images', parallel('convertImages', 'copyImages', 'copyFavicon'))
 
 
 
