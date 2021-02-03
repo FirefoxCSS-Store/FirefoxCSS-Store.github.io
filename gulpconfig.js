@@ -1,5 +1,5 @@
 const pathSource = './dev'
-const pathBuild  = '.'
+const pathBuild  = './docs'
 const pathAssets = `${pathBuild}/assets`
 
 

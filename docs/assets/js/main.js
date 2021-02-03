@@ -71,7 +71,7 @@ var Card = /*#__PURE__*/function () {
   /*  Load Content
    *  ============
    */
-  fetch('themes.json').then(function (data) {
+  fetch('../themes.json').then(function (data) {
     return data.json();
   }).then(function (parsedData) {
     parsedData.forEach(function (entry, index) {
