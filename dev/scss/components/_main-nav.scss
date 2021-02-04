@@ -1,5 +1,7 @@
 #main_nav {
 
+  --linkc: var(--font-colour);
+
   > a + a { margin-left: $space-l; }
 
 }

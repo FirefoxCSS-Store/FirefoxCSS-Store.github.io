@@ -1,5 +1,8 @@
 .card {
 
+  --linkc: var(--font-colour);
+  --linkc-hover: var(--font-colour);
+
   display: flex; flex-direction: column;
 
   border-radius: $border-radius;

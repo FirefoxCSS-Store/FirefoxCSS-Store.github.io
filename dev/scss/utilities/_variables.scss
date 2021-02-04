@@ -7,6 +7,8 @@ $dark-l1:   #404045;  $dark:      #303035;  $dark-s1:   #202025;
 
 $shadow:    rgba(0, 0, 0, .2);
 
+$accents: #3498DB; $accents-s1: #2980B9;
+
 
 
 //  Spacing
@@ -60,6 +62,8 @@ $background-s1: $light-s1;
   --body-background-darker: #{$light-s1};
 
   --font-colour: #{$dark};
+  --linkc: #{$accents};
+  --linkc-hover: #{$accents-s1};
 
 
   @media (prefers-color-scheme: dark) {

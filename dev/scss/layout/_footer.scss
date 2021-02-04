@@ -9,4 +9,12 @@
 
 
 
-.social_links-icon { font-size: $font-size-l; margin-right: 5px;}
+.social_links-icon {
+
+  --linkc: var(--font-colour);
+
+  margin-right: 5px;
+
+  font-size: $font-size-l;
+
+}

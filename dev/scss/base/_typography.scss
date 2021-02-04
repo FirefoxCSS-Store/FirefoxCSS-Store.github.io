@@ -17,18 +17,40 @@ body {
 a {
 
   text-decoration: none;
-  color: inherit;
+  color: var(--linkc);
 
-  transition: opacity 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
 
 
-  // :hover:not(.meta *) { opacity: .8; }
+  &:hover { color: var(--linkc-hover) }
 
 }
 
 
 
-h1,
-h2,
-h3,
+h1, h2, h3, h4,
 strong { font-weight: $font-weight-bold; }
+
+h1 {
+
+  margin: 0 0 $space-l 0;
+
+  font-size: $font-size-xl;
+
+}
+
+h2 {
+
+  margin: $space-xl 0 $space-l 0;
+
+  font-size: $font-size-l;
+
+}
+
+h3 {
+
+  margin: $space-l 0 $space-m 0;
+
+  font-size: $font-size;
+
+}
