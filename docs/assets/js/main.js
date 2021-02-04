@@ -46,7 +46,7 @@ var Card = /*#__PURE__*/function () {
     return data.json();
   }).then(function (parsedData) {
     parsedData.forEach(function (entry, index) {
-      var outputContainer = document.getElementById('main_content');
+      var outputContainer = document.getElementById('themes_container');
       var card = new Card(entry, index);
       card.render(outputContainer);
     });

@@ -56,7 +56,7 @@ class Card {
 
     parsedData.forEach((entry, index)  => {
 
-      const outputContainer = document.getElementById('main_content')
+      const outputContainer = document.getElementById('themes_container')
       const card = new Card (entry, index)
 
       card.render(outputContainer)
