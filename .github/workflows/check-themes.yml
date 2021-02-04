@@ -3,6 +3,8 @@ name: Check themes.json
 on:
   pull_request:
     branches: [ main ]
+    paths:
+      - 'themes.json'
 
 jobs:
   test_pull_requests:
