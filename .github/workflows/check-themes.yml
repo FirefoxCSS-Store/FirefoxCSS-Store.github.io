@@ -1,0 +1,16 @@
+name: Check themes.json
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test_pull_requests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: npm i
+      - run: npm test

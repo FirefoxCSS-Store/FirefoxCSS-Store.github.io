@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Firefox CSS Store",
   "scripts": {
-    "build": "gulp"
+	"build": "gulp",
+	"test": "node tests/themes.check.js"
   },
   "repository": {
     "type": "git",
