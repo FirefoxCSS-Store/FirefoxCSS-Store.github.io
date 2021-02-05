@@ -42,18 +42,22 @@ var Card = /*#__PURE__*/function () {
   /*  Load Content
    *  ============
    */
-  fetch('themes.json').then(function (data) {
-    return data.json();
-  }).then(function (parsedData) {
-    parsedData.forEach(function (entry, index) {
-      var outputContainer = document.getElementById('themes_container');
-      var card = new Card(entry, index);
-      card.render(outputContainer);
+  var outputContainer = document.getElementById('themes_container');
+
+  if (outputContainer) {
+    fetch('themes.json').then(function (data) {
+      return data.json();
+    }).then(function (parsedData) {
+      parsedData.forEach(function (entry, index) {
+        var card = new Card(entry, index);
+        card.render(outputContainer);
+      });
     });
-  });
+  }
   /*  Theme Handling
    *  ==============
    */
+
 
   var systemPref = window.matchMedia("(prefers-color-scheme: dark)").matches ? 'night' : 'day',
       themeTrigger = document.getElementById('js-themeSwitcher'),

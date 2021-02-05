@@ -50,19 +50,22 @@ class Card {
    *  ============
    */
 
-  fetch('themes.json')
-  .then(data => data.json())
-  .then(parsedData => {
+  const outputContainer = document.getElementById('themes_container')
 
-    parsedData.forEach((entry, index)  => {
+  if (outputContainer) {
+    fetch('themes.json')
+    .then(data => data.json())
+    .then(parsedData => {
 
-      const outputContainer = document.getElementById('themes_container')
-      const card = new Card (entry, index)
+      parsedData.forEach((entry, index)  => {
 
-      card.render(outputContainer)
+        const card = new Card (entry, index)
 
+        card.render(outputContainer)
+
+      })
     })
-  })
+  }
 
 
   /*  Theme Handling
