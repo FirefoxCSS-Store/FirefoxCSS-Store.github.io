@@ -54,3 +54,12 @@ h3 {
   font-size: $font-size;
 
 }
+
+
+
+em { font-style: italic; }
+
+
+ul, ol { margin-left: $space-xl; }
+ul { list-style-type: '— '; }
+ol { list-style-type: upper-roman; }
