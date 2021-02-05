@@ -1,5 +1,12 @@
 [
 	{
+		"title": "Almost Dark Proton",
+		"link": "https://github.com/Neikon/Almost-Dark-Grey-Colorfull-Proton---FirefoxCSS-Themes",
+		"description": "Based on Simplify Darkish with few small changes based too in Mod Blur theme. It is intended to be used together with the new firefox elements with the new design called Proton, as the new tab page design. ",
+		"image": "assets/img/themes/almostdarkproton.webp"
+	},
+
+	{
 		"title": "FirefoxCss",
 		"link": "https://github.com/h4wwk3ye/firefoxCSS",
 		"description": "Custom userChrome.css for firefox based on Material Fox and Flying Fox with few small changes.",
