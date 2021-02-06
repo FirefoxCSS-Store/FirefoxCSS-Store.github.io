@@ -130,6 +130,12 @@
 		"link": "https://github.com/CristianDragos/FirefoxThemes/tree/master/Simplify%20Silver%20Peach",
 		"description": "A minimal Firefox Theme for those who would like to properly enjoy my Simplify 10 Silver Peach - Windows 10 Themes",
 		"image": "assets/img/themes/simplify_silver_peach_for_firefox_preview.webp"
-	}
+	},
 
+	{
+		"title": "Monochrome Tree",
+		"link": "https://github.com/MatejKafka/FirefoxTheme",
+		"description": "A custom minimalist theme for Firefox with Tree Style Tab support",
+		"image": "assets/img/themes/19.webp"
+	}
 ]
