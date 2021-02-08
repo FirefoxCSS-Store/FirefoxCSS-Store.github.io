@@ -48,6 +48,7 @@ var Card = /*#__PURE__*/function () {
     fetch('themes.json').then(function (data) {
       return data.json();
     }).then(function (parsedData) {
+      parsedData.reverse();
       parsedData.forEach(function (entry, index) {
         var card = new Card(entry, index);
         card.render(outputContainer);

@@ -1,24 +1,4 @@
 [
-	{
-		"title": "Almost Dark Proton",
-		"link": "https://github.com/Neikon/Almost-Dark-Grey-Colorfull-Proton---FirefoxCSS-Themes",
-		"description": "Based on Simplify Darkish with few small changes based too in Mod Blur theme. It is intended to be used together with the new firefox elements with the new design called Proton, as the new tab page design. ",
-		"image": "assets/img/themes/almostdarkproton.webp"
-	},
-
-	{
-		"title": "Flying Fox",
-		"link": "https://github.com/akshat46/FlyingFox",
-		"description": "An opinionated set of configurations for firefox with Material Fox, github-moonlight userstyle",
-		"image": "assets/img/themes/flying.webp"
-	},
-
-	{
-		"title": "Monochrome Tree",
-		"link": "https://github.com/MatejKafka/FirefoxTheme",
-		"description": "A custom minimalist theme for Firefox with Tree Style Tab support",
-		"image": "assets/img/themes/19.webp"
-	},
 
 	{
 		"title": "My Firefox theme - u/FffDtark",
@@ -137,6 +117,34 @@
 		"link": "https://github.com/Guerra24/Firefox-UWP-Style",
 		"description": "A theme that follows MDL2 styling with the accent color and gray-on-black or gray-on-white elements",
 		"image": "assets/img/themes/firefoxuwpstyle.webp"
+	},
+
+	{
+		"title": "Almost Dark Proton",
+		"link": "https://github.com/Neikon/Almost-Dark-Grey-Colorfull-Proton---FirefoxCSS-Themes",
+		"description": "Based on Simplify Darkish with few small changes based too in Mod Blur theme. It is intended to be used together with the new firefox elements with the new design called Proton, as the new tab page design. ",
+		"image": "assets/img/themes/almostdarkproton.webp"
+	},
+
+	{
+		"title": "Monochrome Tree",
+		"link": "https://github.com/MatejKafka/FirefoxTheme",
+		"description": "A custom minimalist theme for Firefox with Tree Style Tab support",
+		"image": "assets/img/themes/19.webp"
+	},
+
+	{
+		"title": "Flying Fox",
+		"link": "https://github.com/akshat46/FlyingFox",
+		"description": "An opinionated set of configurations for firefox with Material Fox, github-moonlight userstyle",
+		"image": "assets/img/themes/flying.webp"
+	},
+
+	{
+		"title": "FirefoxW10ContextMenus",
+		"link": "https://github.com/M1ch431/FirefoxW10ContextMenus",
+		"description": "Emulates the Windows 10 context menus in Firefox.",
+		"image": "assets/img/themes/20.webp"
 	}
 
 ]

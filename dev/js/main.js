@@ -57,6 +57,11 @@ class Card {
     .then(data => data.json())
     .then(parsedData => {
 
+      // sort from the most recent theme added
+      // temporary since we're going to add a button to sort
+      // in different ways
+      parsedData.reverse()
+
       parsedData.forEach((entry, index)  => {
 
         const card = new Card (entry, index)
