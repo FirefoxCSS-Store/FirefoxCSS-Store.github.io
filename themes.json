@@ -145,13 +145,6 @@
 		"link": "https://github.com/M1ch431/FirefoxW10ContextMenus",
 		"description": "Emulates the Windows 10 context menus in Firefox.",
 		"image": "assets/img/themes/20.webp"
-	},
-
-	{
-		"title": "Oceano Theme",
-		"link": "There's no theme at all, but whatever :)",
-		"description": "Emulates a ocean in your browser.",
-		"image": "https://s1.static.brasilescola.uol.com.br/be/2020/06/oceano.jpg"
 	}
 
 ]
