@@ -1,5 +1,5 @@
 ---
-name: "❤Send Your Theme"
+name: "❤ Send Your Theme"
 about: An easy way to submit your theme if you don't know how to do it via pull request.
 title: "[NEWTHEME] Name of your theme"
 labels: new theme
