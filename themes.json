@@ -66,7 +66,7 @@
 	{
 		"title": "Firefox Review",
 		"link": "https://github.com/fellowish/firefox-review",
-		"description": "Firefox Review is a css redesign of the browser, changing the look of Firefox to match the color scheme and design language of Firefox Preview, a newer mobile version of Firefox being developed. With v1.1, both light and dark themes are available, and with v1.1.3, both themes are easily selectable both within the browser and from your Operating System. There's even a new theme for private browsing!",
+		"description": "Firefox Review is a CSS redesign of the browser, changing the look of Firefox to match the color scheme and design language of Firefox Preview, the previous name of Mozilla's new mobile app.",
 		"image": "assets/img/themes/firefoxreview.webp"
 	},
 
