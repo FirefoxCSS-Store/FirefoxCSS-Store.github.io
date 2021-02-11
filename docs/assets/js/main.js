@@ -48,6 +48,9 @@ var Card = /*#__PURE__*/function () {
     fetch('themes.json').then(function (data) {
       return data.json();
     }).then(function (parsedData) {
+      // sort from the most recent theme added
+      // temporary since we're going to add a button to sort
+      // in different ways
       parsedData.reverse();
       parsedData.forEach(function (entry, index) {
         var card = new Card(entry, index);
