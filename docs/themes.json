@@ -1,13 +1,6 @@
 [
 
 	{
-		"title": "EdgeFox",
-		"link": "https://github.com/23Bluemaster23/EdgeFox",
-		"description": "Is a userchrome that imitates (or attempts to imitate) the style of Microsoft's Edge Chromiun browser.",
-		"image": "images/themes/edgefox.png"
-	},
-
-	{
 		"title": "My Firefox theme - u/FffDtark",
 		"link": "https://github.com/Ikrom27/Firefox",
 		"description": "Oneline theme",
@@ -152,6 +145,15 @@
 		"link": "https://github.com/M1ch431/FirefoxW10ContextMenus",
 		"description": "Emulates the Windows 10 context menus in Firefox.",
 		"image": "assets/img/themes/20.webp"
+	},
+
+	
+	{
+		"title": "EdgeFox",
+		"link": "https://github.com/23Bluemaster23/EdgeFox",
+		"description": "Is a userchrome that imitates (or attempts to imitate) the style of Microsoft's Edge Chromiun browser.",
+		"image": "assets/img/themes/edgefox.webp"
 	}
+
 
 ]
