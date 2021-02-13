@@ -153,7 +153,12 @@
 		"link": "https://github.com/23Bluemaster23/EdgeFox",
 		"description": "Is a userchrome that imitates (or attempts to imitate) the style of Microsoft's Edge Chromiun browser.",
 		"image": "assets/img/themes/edgefox.webp"
+	},
+
+	{
+	  "title": "Firefox i3wm theme",
+	  "link": "https://github.com/aadilayub/firefox-i3wm-theme",
+	  "description": "A theme for Firefox meant to emulate qutebrowser and integrate with the i3 window manager.",
+	  "image": "assets/img/themes/ff-i3wm.png"  
 	}
-
-
 ]
