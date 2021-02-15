@@ -35,13 +35,16 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
 ## Add your theme <3
 
 + If you have a Github account:
-  1. Fork this repository.
-  2. Look for a file called `themes.json`, open and edit it.
-  3. Below the first `[` copy the [following code](#code) and paste it in the file.
-  4. Add the properties of your theme: **title**, **link**, **description** and **image**.
-  5. **Avoid the use of escaped characters and the order matters**.
-  6. Please, do not use a very big image, preferably (650x500).
-  7. Send it as a pull request in the repository.
+  1. Fork this repository
+  2. Look for a file called `themes.json`, open and edit it
+  3. Below the first `[` copy the [following code](#code) and paste it in the file
+  4. Add the properties of your theme: **title**, **link**, **description** and **image**
+  5. **Avoid the use of escaped characters and the order matters**
+  6. Please, do not use a very big image, preferably (650x500)
+  7. Image property:
+    - You can put an image url
+    - Or an image file in `/images/themes/` (it doesn't matter the file extension). And then reference it in your code with the following `assets/img/themes/YOUR_FILE_NAME_WITHOUT_EXTENSION.webp`
+  8. Then send it as a pull request in the repository.
 
 + Or create a Issue:
   1. when creating an issue you will find a template for submitting theme, use that one. it's easy.
