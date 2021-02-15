@@ -147,7 +147,6 @@
 		"image": "assets/img/themes/20.webp"
 	},
 
-	
 	{
 		"title": "EdgeFox",
 		"link": "https://github.com/23Bluemaster23/EdgeFox",
@@ -156,9 +155,16 @@
 	},
 
 	{
-	  "title": "Firefox i3wm theme",
-	  "link": "https://github.com/aadilayub/firefox-i3wm-theme",
-	  "description": "A theme for Firefox meant to emulate qutebrowser and integrate with the i3 window manager.",
-	  "image": "assets/img/themes/ff-i3wm.webp"  
+	  	"title": "Firefox i3wm theme",
+	  	"link": "https://github.com/aadilayub/firefox-i3wm-theme",
+	  	"description": "A theme for Firefox meant to emulate qutebrowser and integrate with the i3 window manager.",
+	  	"image": "assets/img/themes/ff-i3wm.webp"  
+	},
+
+	{
+		"title": "Universal minimal style for Firefox and Sidebery",
+		"link": "https://github.com/ongots/firefox-sidebery-minimal-style",
+		"description": "Universal minimal style for Firefox and Sidebery",
+		"image": "assets/img/themes/UMS.webp"
 	}
 ]
