@@ -173,5 +173,13 @@
 		"link": "https://github.com/bmFtZQ/Edge-FrFox",
 		"description": "A theme that replicates the look of Microsoft Edge",
 		"image": "assets/img/themes/Edge-FrFox.webp"
-	}
+	},
+
+  {
+		"title": "NicoFox",
+		"link": "https://github.com/SlowNicoFish/NicoFox",
+		"description": "A simple rounded theme",
+		"image": "assets/img/themes/22381112138598-fe8cd400-8bd1-11eb-8eed-edcca2c689d8.webp"
+  }
+
 ]
