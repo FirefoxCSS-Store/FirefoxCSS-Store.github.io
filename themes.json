@@ -1,10 +1,4 @@
 [
-  {
-    "title": "Elegant Nord Theme",
-    "link": "https://github.com/rafamadriz/Firefox-Elegant-NordTheme",
-    "description": "Elegant Nord Theme with material design",
-    "image": "assets/img/themes/Elegant-Nord-Theme.webp"
-  },
 
   {
     "title": "My Firefox theme - u/FffDtark",
@@ -186,5 +180,13 @@
     "link": "https://github.com/SlowNicoFish/NicoFox",
     "description": "A simple rounded theme",
     "image": "assets/img/themes/22381112138598-fe8cd400-8bd1-11eb-8eed-edcca2c689d8.webp"
+  },
+  
+  {
+    "title": "Elegant Nord Theme",
+    "link": "https://github.com/rafamadriz/Firefox-Elegant-NordTheme",
+    "description": "Elegant Nord Theme with material design",
+    "image": "assets/img/themes/Elegant-Nord-Theme.webp"
   }
+
 ]
