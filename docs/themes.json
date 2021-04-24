@@ -1,5 +1,5 @@
 [
-
+ 
   {
     "title": "My Firefox theme - u/FffDtark",
     "link": "https://github.com/Ikrom27/Firefox",
@@ -187,6 +187,13 @@
     "link": "https://github.com/rafamadriz/Firefox-Elegant-NordTheme",
     "description": "Elegant Nord Theme with material design",
     "image": "assets/img/themes/Elegant-Nord-Theme.webp"
+  },
+  
+  {
+    "title": "Moonlight 🌌",
+    "link": "https://github.com/eduardhojbota/moonlight-userChrome",
+    "description": "A dark userstyle for Firefox inspired by moonlight-vscode-theme and github-moonlight",
+    "image": "assets/img/themes/moonlight.webp"
   }
 
 ]
