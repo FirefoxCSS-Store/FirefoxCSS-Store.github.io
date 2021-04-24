@@ -1,5 +1,11 @@
 [
-
+  {
+      "title": "Moonlight 🌌",
+      "link": "https://github.com/eduardhojbota/moonlight-userChrome",
+      "description": "A dark userstyle for Firefox inspired by moonlight-vscode-theme and github-moonlight",
+      "image": "assets/img/themes/moonlight.webp"
+  },
+  
   {
     "title": "My Firefox theme - u/FffDtark",
     "link": "https://github.com/Ikrom27/Firefox",
