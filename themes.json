@@ -29,13 +29,6 @@
   },
  
   {
-    "title": "Firefox Halo",
-    "link": "https://github.com/seirin-blu/Firefox-Halo",
-    "description": "A mininmalist Firefox theme with a lot of about: pages edited to act as resources. Updates about every month.",
-    "image": "assets/img/themes/firefoxhalo.webp"
-  },
- 
-  {
     "title": "FirefoxCss",
     "link": "https://github.com/h4wwk3ye/firefoxCSS",
     "description": "Custom userChrome.css for firefox based on Material Fox and Flying Fox with few small changes.",
@@ -201,6 +194,13 @@
     "link": "https://github.com/eduardhojbota/moonlight-userChrome",
     "description": "A dark userstyle for Firefox inspired by moonlight-vscode-theme and github-moonlight",
     "image": "assets/img/themes/moonlight.webp"
+  },
+
+  {
+    "title": "Firefox Halo",
+    "link": "https://github.com/seirin-blu/Firefox-Halo",
+    "description": "A mininmalist Firefox theme with a lot of about: pages edited to act as resources. Updates about every month.",
+    "image": "assets/img/themes/firefoxhalo.webp"
   }
 
 ]
