@@ -37,7 +37,7 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
 + If you have a Github account:
   1. Fork this repository
   2. Look for a file called `themes.json`, open and edit it
-  3. Below the last `}` add `,` right after a copy the [following code](#code) and paste it in the file
+  3. Below the last `}` add `,` right after a copy the [code below](#code) and paste it in the file
   4. Add the properties of your theme: **title**, **link**, **description** and **image**
   5. **Avoid the use of escaped characters and the order matters**
   6. Please, do not use a very big image, preferably (650x500)
