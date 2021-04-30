@@ -162,13 +162,6 @@
   },
 
   {
-    "title": "Universal minimal style for Firefox and Sidebery",
-    "link": "https://github.com/ongots/firefox-sidebery-minimal-style",
-    "description": "Universal minimal style for Firefox and Sidebery",
-    "image": "assets/img/themes/UMS.webp"
-  },
-
-  {
     "title": "Edge-FrFox",
     "link": "https://github.com/bmFtZQ/Edge-FrFox",
     "description": "A theme that replicates the look of Microsoft Edge",
@@ -201,6 +194,13 @@
     "link": "https://github.com/seirin-blu/Firefox-Halo",
     "description": "A mininmalist Firefox theme with a lot of about: pages edited to act as resources. Updates about every month.",
     "image": "assets/img/themes/firefoxhalo.webp"
+  },
+
+  {
+    "title": "Always full-screen Firefox",
+    "link": "https://github.com/ongots/always-fullscreen-firefox",
+    "description": "Custom styles for Firefox, Sidebery and YouTube for full-featured full-screen browsing.",
+    "image": "assets/img/themes/always-fullscreen-firefox.webp"
   }
 
 ]
