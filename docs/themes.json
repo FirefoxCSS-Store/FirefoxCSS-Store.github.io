@@ -1,5 +1,5 @@
 [
- 
+
   {
     "title": "My Firefox theme - u/FffDtark",
     "link": "https://github.com/Ikrom27/Firefox",
@@ -27,7 +27,7 @@
     "description": "A compact & minimal Firefox theme built for macOS.",
     "image": "assets/img/themes/minimalfox.webp"
   },
- 
+
   {
     "title": "FirefoxCss",
     "link": "https://github.com/h4wwk3ye/firefoxCSS",
@@ -174,14 +174,14 @@
     "description": "A simple rounded theme",
     "image": "assets/img/themes/22381112138598-fe8cd400-8bd1-11eb-8eed-edcca2c689d8.webp"
   },
-  
+
   {
     "title": "Elegant Nord Theme",
     "link": "https://github.com/rafamadriz/Firefox-Elegant-NordTheme",
     "description": "Elegant Nord Theme with material design",
     "image": "assets/img/themes/Elegant-Nord-Theme.webp"
   },
-  
+
   {
     "title": "Moonlight 🌌",
     "link": "https://github.com/eduardhojbota/moonlight-userChrome",
@@ -201,6 +201,13 @@
     "link": "https://github.com/ongots/always-fullscreen-firefox",
     "description": "Custom styles for Firefox, Sidebery and YouTube for full-featured full-screen browsing.",
     "image": "assets/img/themes/always-fullscreen-firefox.webp"
+  },
+
+  {
+  "title": "WhiteSur Safari style for Firefox",
+  "link": "https://github.com/adamxweb/WhiteSurFirefoxThemeMacOS",
+  "description": "Make your Firefox look like Safari. MacOS Big Sur inspired theme for Firefox on MacOS & Windows.",
+  "image": "assets/img/themes/whitesur.webp"
   }
 
 ]
