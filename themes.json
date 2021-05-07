@@ -210,22 +210,22 @@
   "image": "assets/img/themes/whitesur.webp"
   },
   {
-		"title": "Alpen Blue to Firefox CSS",
-		"link": "https://github.com/Godiesc/AlpenBlue",
-		"description": "Theme to Blue and Alpenglow lovers",
-		"image": "assets/img/themes/alpenblue.webp"
-},
-{
+  "title": "Alpen Blue to Firefox CSS",
+  "link": "https://github.com/Godiesc/AlpenBlue",
+  "description": "Theme to Blue and Alpenglow lovers",
+  "image": "assets/img/themes/alpenblue.webp"
+  },
+  {
   "title": "Compact Mode to Firefox Css",
   "link": "https://github.com/Godiesc/compactmodefirefoxcss",
   "description": "Theme to Make Firefox Compact and keep it's Beauty",
   "image": "assets/img/themes/splashcompact.webp"
-},
-{
+  },
+  {
   "title": "DiamondFucsia Theme to Firefox Css",
   "link": "https://github.com/Godiesc/DiamondFucsia",
   "description": "Dark Theme to Firefox with Fuchsia Colors",
   "image": "assets/img/themes/diamondfucsia.webp"
-}
+  }
 	
 ]
