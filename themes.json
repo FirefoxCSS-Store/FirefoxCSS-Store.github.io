@@ -215,6 +215,13 @@
     "link": "https://github.com/Godiesc/AlpenBlue",
     "description": "Theme to Blue and Alpenglow lovers",
     "image": "assets/img/themes/alpenblue.webp"
+  },
+
+  {
+    "title": "duskFox",
+    "link": "https://github.com/aminomancer/uc.css.js",
+    "description": "A dark indigo theme integrated with extensive functional and visual scripts.",
+    "image": "assets/img/themes/duskfox.webp"
   }
 
 ]
