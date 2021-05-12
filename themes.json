@@ -222,6 +222,20 @@
     "link": "https://github.com/aminomancer/uc.css.js",
     "description": "A dark indigo theme integrated with extensive functional and visual scripts.",
     "image": "assets/img/themes/duskfox.webp"
+  },
+
+  {
+    "title": "Compact Mode to Firefox Css",
+    "link": "https://github.com/Godiesc/compactmodefirefoxcss",
+    "description": "Theme to Make Firefox Compact and keep it's Beauty",
+    "image": "assets/img/themes/splashcompact.webp"
+  },
+  
+  {
+    "title": "DiamondFucsia Theme to Firefox Css",
+    "link": "https://github.com/Godiesc/DiamondFucsia",
+    "description": "Dark Theme to Firefox with Fuchsia Colors",
+    "image": "assets/img/themes/diamondfucsia.webp"
   }
 
 ]
