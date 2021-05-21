@@ -197,9 +197,9 @@
   },
 
   {
-    "title": "Always full-screen Firefox",
-    "link": "https://github.com/ongots/always-fullscreen-firefox",
-    "description": "Custom styles for Firefox, Sidebery and YouTube for full-featured full-screen browsing.",
+    "title": "Pseudo-fullscreen Firefox, Sidebery and YouTube",
+    "link": "https://github.com/ongots/pseudo-fullscreen-firefox",
+    "description": "",
     "image": "assets/img/themes/always-fullscreen-firefox.webp"
   },
 
