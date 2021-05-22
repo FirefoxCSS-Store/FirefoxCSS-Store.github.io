@@ -236,6 +236,13 @@
     "link": "https://github.com/Godiesc/DiamondFucsia",
     "description": "Dark Theme to Firefox with Fuchsia Colors",
     "image": "assets/img/themes/diamondfucsia.webp"
+  },
+  
+  {
+    "title": "Australis like tabs in Proton UI",
+    "link": "https://github.com/sagars007/Australis-like-tabs-FF-ProtonUI-changes",
+    "description": "Changes to make the new proton UI redesign in Firefox better; including changes to tabs, more compact-compact mode, proton gradient accents in elements and much more",
+    "image": "assets/img/themes/custom_australistabs_protonUI.png"
   }
 
 ]
