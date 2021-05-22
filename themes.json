@@ -243,6 +243,13 @@
     "link": "https://github.com/sagars007/Australis-like-tabs-FF-ProtonUI-changes",
     "description": "Changes to make the new proton UI redesign in Firefox better; including changes to tabs, more compact-compact mode, proton gradient accents in elements and much more",
     "image": "assets/img/themes/custom_australistabs_protonUI.webp"
+  },
+  
+  {
+    "title": "Firefox vertical tabs (TST) custom UI",
+    "link": "https://github.com/sagars007/Firefox-vertical-tabs-customUI",
+    "description": "Vertical tabs in Firefox using tree style tabs. Vibrant tab selectors, full dark mode, titlebar text in nav-bar and much more.",
+    "image": "assets/img/themes/verticalTabs_normal_thintt_.jpg"
   }
 
 ]
