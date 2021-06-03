@@ -264,6 +264,13 @@
     "link": "https://github.com/black7375/Firefox-UI-Fix/tree/photon-style",
     "description": "🦊 I tried to preserve Proton’s feeling while preserving Photon’s strengths. Icons, Padding, Tab Design...",
     "image": "assets/img/themes/Lepton-PhotonStyle.webp"
+  },
+ 
+  {
+    "title": "[Firefox 90+] RainFox",
+    "link": "https://github.com/1280px/rainfox",
+    "description": "Restores Photon's look and feel but keeps Proton's clarity with some improvements and new features.",
+    "image": "assets/img/themes/rainfox.webp"
   }
 
 ]
