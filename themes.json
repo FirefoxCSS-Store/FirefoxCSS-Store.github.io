@@ -278,6 +278,13 @@
     "link": "https://github.com/sagars007/Proton-UI-connected-rounded-tabs-firefox-css",
     "description": "Firefox Proton UI minimal changes with nav-bar-connected rounded tabs, reduced compact mode, nightly color gradient accents etc.. ",
     "image": "assets/img/themes/proton-ui-gradient-rounded-tabs-display.webp"
-  }
+  },
 
+  {
+    "title": "WaveFox",
+    "link": "https://github.com/QNetITQ/WaveFox",
+    "description": "Tabs with a unique shape",
+    "image": "assets/img/themes/wavefox.webp"
+  }
+  
 ]
