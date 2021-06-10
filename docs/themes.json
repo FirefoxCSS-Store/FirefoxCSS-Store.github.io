@@ -38,14 +38,14 @@
   {
     "title": "Simplify Silver Peach for Firefox",
     "link": "https://github.com/CristianDragos/FirefoxThemes/tree/master/Simplify%20Silver%20Peach",
-    "description": "A minimal Firefox Theme for those who would like to properly enjoy my Simplify 10 Silver Peach - Windows 10 Themes",
+    "description": "A minimal Firefox Theme for those who would like to properly enjoy my Simplify 10 Silver Peach - Windows 10 Themes\n Compatibility: V89+",
     "image": "assets/img/themes/simplify_silver_peach_for_firefox_preview.webp"
   },
 
   {
     "title": "Simplify Darkish for Firefox",
     "link": "https://github.com/CristianDragos/FirefoxThemes/tree/master/Simplify%20Darkish",
-    "description": "A minimal Firefox Theme for those who would like to properly enjoy my Simplify 10 Darkish - Windows 10 Themes",
+    "description": "A minimal Firefox Theme for those who would like to properly enjoy my Simplify 10 Darkish - Windows 10 Themes\n Compatibility: V89+",
     "image": "assets/img/themes/simplify_darkish_for_firefox_preview.webp"
   },
 
@@ -80,7 +80,7 @@
   {
     "title": "My Firefox Theme - not-holar",
     "link": "https://github.com/not-holar/my_firefox_theme",
-    "description": "Welcome to the repo for my Firefox theme, a theme that aims to look nice and clean while not compromising functionality.",
+    "description": "Welcome to the repo for my Firefox theme, a theme that aims to look nice and clean while not compromising functionality.\n Compatibility: V89+",
     "image": "assets/img/themes/MyFirefoxThemenotholar.webp"
   },
 
@@ -94,7 +94,7 @@
   {
     "title": "quietfox",
     "link": "https://github.com/coekuss/quietfox",
-    "description": "This userChrome mod was created to make the Firefox UI cleaner and more modern without sacrificing any of its original features. You can still use themes, and you can still use Compact Mode and Touch Mode. You can pretty much forget that you have a mod installed, it works quietly in the background. Here are some of the notable features:",
+    "description": "This userChrome mod was created to make the Firefox UI cleaner and more modern without sacrificing any of its original features. You can still use themes, and you can still use Compact Mode and Touch Mode. You can pretty much forget that you have a mod installed, it works quietly in the background.",
     "image": "assets/img/themes/quietfox.webp"
   },
 
@@ -122,7 +122,7 @@
   {
     "title": "Almost Dark Proton",
     "link": "https://github.com/Neikon/Almost-Dark-Grey-Colorfull-Proton---FirefoxCSS-Themes",
-    "description": "Based on Simplify Darkish with few small changes based too in Mod Blur theme. It is intended to be used together with the new firefox elements with the new design called Proton, as the new tab page design. ",
+    "description": "Based on Simplify Darkish with few small changes based too in Mod Blur theme. It is intended to be used together with the new firefox elements with the new design called Proton, as the new tab page design. \n Compatibility: V89+",
     "image": "assets/img/themes/almostdarkproton.webp"
   },
 
@@ -199,84 +199,84 @@
   {
     "title": "Pseudo-fullscreen Firefox, Sidebery and YouTube",
     "link": "https://github.com/ongots/pseudo-fullscreen-firefox",
-    "description": "",
+    "description": "\n Compatibility: V89+",
     "image": "assets/img/themes/always-fullscreen-firefox.webp"
   },
 
   {
     "title": "WhiteSur Safari style for Firefox",
     "link": "https://github.com/adamxweb/WhiteSurFirefoxThemeMacOS",
-    "description": "Make your Firefox look like Safari. MacOS Big Sur inspired theme for Firefox on MacOS & Windows.",
+    "description": "Make your Firefox look like Safari. MacOS Big Sur inspired theme for Firefox on MacOS & Windows.\n Compatibility: V89+",
     "image": "assets/img/themes/whitesur.webp"
   },
 
   {
     "title": "Alpen Blue to Firefox CSS",
     "link": "https://github.com/Godiesc/AlpenBlue",
-    "description": "Theme to Blue and Alpenglow lovers",
+    "description": "Theme to Blue and Alpenglow lovers\n Compatibility: V89+",
     "image": "assets/img/themes/alpenblue.webp"
   },
 
   {
     "title": "duskFox",
     "link": "https://github.com/aminomancer/uc.css.js",
-    "description": "A dark indigo theme integrated with extensive functional and visual scripts.",
+    "description": "A dark indigo theme integrated with extensive functional and visual scripts.\n Compatibility: V89+",
     "image": "assets/img/themes/duskfox.webp"
   },
 
   {
     "title": "Compact Mode to Firefox Css",
     "link": "https://github.com/Godiesc/compactmodefirefoxcss",
-    "description": "Theme to Make Firefox Compact and keep it's Beauty",
+    "description": "Theme to Make Firefox Compact and keep it's Beauty\n Compatibility: V89+",
     "image": "assets/img/themes/splashcompact.webp"
   },
 
   {
     "title": "DiamondFucsia Theme to Firefox Css",
     "link": "https://github.com/Godiesc/DiamondFucsia",
-    "description": "Dark Theme to Firefox with Fuchsia Colors",
+    "description": "Dark Theme to Firefox with Fuchsia Colors\n Compatibility: V89+",
     "image": "assets/img/themes/diamondfucsia.webp"
   },
 
   {
     "title": "Australis like tabs in Proton UI",
     "link": "https://github.com/sagars007/Australis-like-tabs-FF-ProtonUI-changes",
-    "description": "Changes to make the new proton UI redesign in Firefox better; including changes to tabs, more compact-compact mode, proton gradient accents in elements and much more",
+    "description": "Changes to make the new proton UI redesign in Firefox better; including changes to tabs, more compact-compact mode, proton gradient accents in elements and much more\n Compatibility: V89+",
     "image": "assets/img/themes/custom_australistabs_protonUI.webp"
   },
 
   {
     "title": "Firefox vertical tabs (TST) custom UI",
     "link": "https://github.com/sagars007/Firefox-vertical-tabs-customUI",
-    "description": "Vertical tabs in Firefox using tree style tabs. Vibrant tab selectors, full dark mode, titlebar text in nav-bar and much more.",
+    "description": "Vertical tabs in Firefox using tree style tabs. Vibrant tab selectors, full dark mode, titlebar text in nav-bar and much more.\n Compatibility: V89+",
     "image": "assets/img/themes/verticalTabs_normal_thintt_.webp"
   },
 
   {
     "title": "Lepton(Proton Fix) in Proton UI",
     "link": "https://github.com/black7375/Firefox-UI-Fix",
-    "description": "🦊 I respect proton UI and aim to fix it. Icons, Padding, Tab Design...",
+    "description": "🦊 I respect proton UI and aim to fix it. Icons, Padding, Tab Design...\n Compatibility: V89+",
     "image": "assets/img/themes/Lepton.webp"
   },
 
   {
     "title": "Lepton's Photon-Styled in Proton UI",
     "link": "https://github.com/black7375/Firefox-UI-Fix/tree/photon-style",
-    "description": "🦊 I tried to preserve Proton’s feeling while preserving Photon’s strengths. Icons, Padding, Tab Design...",
+    "description": "🦊 I tried to preserve Proton’s feeling while preserving Photon’s strengths. Icons, Padding, Tab Design...\n Compatibility: V89+",
     "image": "assets/img/themes/Lepton-PhotonStyle.webp"
   },
  
   {
     "title": "[Firefox 90+] RainFox",
     "link": "https://github.com/1280px/rainfox",
-    "description": "Restores Photon's look and feel but keeps Proton's clarity with some improvements and new features.",
+    "description": "Restores Photon's look and feel but keeps Proton's clarity with some improvements and new features. \n Compatibility: V89+",
     "image": "assets/img/themes/rainfox.webp"
   },
   
   {
     "title": "Connected rounded tabs with gradient indicators [Proton UI]",
     "link": "https://github.com/sagars007/Proton-UI-connected-rounded-tabs-firefox-css",
-    "description": "Firefox Proton UI minimal changes with nav-bar-connected rounded tabs, reduced compact mode, nightly color gradient accents etc.. ",
+    "description": "Firefox Proton UI minimal changes with nav-bar-connected rounded tabs, reduced compact mode, nightly color gradient accents etc.. \n Compatibility: V89+",
     "image": "assets/img/themes/proton-ui-gradient-rounded-tabs-display.webp"
   },
 
