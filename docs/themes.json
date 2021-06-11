@@ -246,10 +246,10 @@
   },
 
   {
-    "title": "Firefox vertical tabs (TST) custom UI",
+    "title": "Firefox vertical tabs (TST) UI",
     "link": "https://github.com/sagars007/Firefox-vertical-tabs-customUI",
     "description": "Vertical tabs in Firefox using tree style tabs. Vibrant tab selectors, full dark mode, titlebar text in nav-bar and much more.\n Compatibility: V89+",
-    "image": "assets/img/themes/verticalTabs_normal_thintt_.webp"
+    "image": "assets/img/themes/compact_verticaltabs_view.webp"
   },
 
   {
@@ -274,7 +274,7 @@
   },
   
   {
-    "title": "Connected rounded tabs with gradient indicators [Proton UI]",
+    "title": "Gradient rounded tabs redesign and ultra compact mode [Proton UI]",
     "link": "https://github.com/sagars007/Proton-UI-connected-rounded-tabs-firefox-css",
     "description": "Firefox Proton UI minimal changes with nav-bar-connected rounded tabs, reduced compact mode, nightly color gradient accents etc.. \n Compatibility: V89+",
     "image": "assets/img/themes/proton-ui-gradient-rounded-tabs-display.webp"
