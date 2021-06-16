@@ -299,6 +299,14 @@
 		"link": "https://github.com/Godiesc/Chameleons-Beauty",
 		"description": "Adaptive Theme to Firefox Themes \n Compatibility: V89+",
 		"image": "assets/img/themes/Chameleons-Beauty.webp"
+  },
+ 
+  {
+		"title": "pro-fox: enhanced firefox proton",
+		"link": "https://github.com/xmansyx/Pro-Fox",
+		"description": "a proton based theme to make it even better",
+		"image": "assets/img/themes/pro-fox.webp"
   }
+
 
 ]
