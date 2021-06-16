@@ -292,5 +292,21 @@
     "link": "https://github.com/edo0/Technetium",
     "description": "A focused approach to taming the new Firefox Proton interface, restituting some of the beloved elements retired alongside the old Photon UI - menu icons and much more \n Compatibility: V89+",
     "image": "assets/img/themes/Technetium.webp"
+  },
+
+  {
+		"title": "Chameleons-Beauty to Firefox CSS",
+		"link": "https://github.com/Godiesc/Chameleons-Beauty",
+		"description": "Adaptive Theme to Firefox Themes \n Compatibility: V89+",
+		"image": "assets/img/themes/Chameleons-Beauty.webp"
+  },
+ 
+  {
+		"title": "pro-fox: enhanced firefox proton",
+		"link": "https://github.com/xmansyx/Pro-Fox",
+		"description": "a proton based theme to make it even better",
+		"image": "assets/img/themes/pro-fox.webp"
   }
+
+
 ]
