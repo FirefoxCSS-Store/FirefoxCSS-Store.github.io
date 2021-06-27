@@ -311,9 +311,9 @@
   {
 		"title": "Monterey-Fox",
 		"link": "https://firefoxcssthemers.github.io/Monterey-Fox",
-		"description": "A theme designed to replicate the Safari from the Monterey update.",
-		"image": "https://user-images.githubusercontent.com/78948152/123194110-8e893500-d4c3-11eb-89e4-e4395578c632.png"
-}
+		"description": "A theme designed to replicate the Safari from the Monterey update.  \n Compatibility: V89+",
+		"image": "assets/img/themes/Monterey-Fox.webp"
+  }
 
 
 ]
