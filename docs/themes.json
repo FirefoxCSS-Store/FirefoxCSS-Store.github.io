@@ -295,17 +295,24 @@
   },
 
   {
-		"title": "Chameleons-Beauty to Firefox CSS",
-		"link": "https://github.com/Godiesc/Chameleons-Beauty",
-		"description": "Adaptive Theme to Firefox Themes \n Compatibility: V89+",
-		"image": "assets/img/themes/Chameleons-Beauty.webp"
+    "title": "Chameleons-Beauty to Firefox CSS",
+    "link": "https://github.com/Godiesc/Chameleons-Beauty",
+    "description": "Adaptive Theme to Firefox Themes \n Compatibility: V89+",
+    "image": "assets/img/themes/Chameleons-Beauty.webp"
   },
  
   {
-		"title": "pro-fox: enhanced firefox proton",
-		"link": "https://github.com/xmansyx/Pro-Fox",
-		"description": "a proton based theme to make it even better",
-		"image": "assets/img/themes/pro-fox.webp"
+    "title": "pro-fox: enhanced firefox proton",
+    "link": "https://github.com/xmansyx/Pro-Fox",
+    "description": "a proton based theme to make it even better \n Compatibility: V89+",
+    "image": "assets/img/themes/pro-fox.webp"
+  },
+  
+  {
+		"title": "Monterey-Fox",
+		"link": "https://firefoxcssthemers.github.io/Monterey-Fox",
+		"description": "A theme designed to replicate the Safari from the Monterey update.  \n Compatibility: V89+",
+		"image": "assets/img/themes/Monterey-Fox.webp"
   }
 
 
