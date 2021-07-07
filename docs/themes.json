@@ -309,11 +309,15 @@
   },
   
   {
-		"title": "Monterey-Fox",
-		"link": "https://firefoxcssthemers.github.io/Monterey-Fox",
-		"description": "A theme designed to replicate the Safari from the Monterey update.  \n Compatibility: V89+",
-		"image": "assets/img/themes/Monterey-Fox.webp"
+    "title": "Monterey-Fox",
+    "link": "https://firefoxcssthemers.github.io/Monterey-Fox",
+    "description": "A theme designed to replicate the Safari from the Monterey update.  \n Compatibility: V89+",
+    "image": "assets/img/themes/Monterey-Fox.webp"
+  },
+  {
+    "title": "MartinFox",
+    "link": "https://github.com/arp242/MartinFox",
+    "description": "Really simple userChrome.css to make the active tab stand out more; 61 lines. \n Compatibility: V89+",
+    "image": "assets/img/themes/martinfox.webp"
   }
-
-
 ]
