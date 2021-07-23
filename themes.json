@@ -319,5 +319,11 @@
     "link": "https://github.com/arp242/MartinFox",
     "description": "Really simple userChrome.css to make the active tab stand out more; 61 lines. \n Compatibility: V89+",
     "image": "assets/img/themes/martinfox.webp"
+  },
+  {
+    "title": "ProtoVibrant",
+    "link": "https://github.com/bpwned/protovibrant",
+    "description": "Add macOS vibrancy to the Proton titlebar. Supports dark and light mode. \n Compatibility: V89+",
+    "image": "assets/img/themes/protovibrant.webp"
   }
 ]
