@@ -323,6 +323,13 @@
   },
 
   {
+    "title": "ProtoVibrant",
+    "link": "https://github.com/bpwned/protovibrant",
+    "description": "Add macOS vibrancy to the Proton titlebar. Supports dark and light mode. \n Compatibility: V89+",
+    "image": "assets/img/themes/protovibrant.webp"
+  },
+
+  {
 		"title": "OnelineProton",
 		"link": "https://github.com/lr-tech/OnelineProton",
 		"description": "An oneline userChrome.css theme for Firefox, which aims to keep the Proton experience  \n Compatibility: V89+",
