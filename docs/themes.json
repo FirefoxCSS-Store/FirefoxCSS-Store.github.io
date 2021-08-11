@@ -334,6 +334,12 @@
 		"link": "https://github.com/lr-tech/OnelineProton",
 		"description": "An oneline userChrome.css theme for Firefox, which aims to keep the Proton experience  \n Compatibility: V89+",
 		"image": "assets/img/themes/onelineproton.webp"
+  },
+  {
+    "title": "Firefox Compact Mode",
+    "link": "https://github.com/dannycolin/fx-compact-mode",
+    "description": "A compact mode that follows Firefox 89 (known as Proton) design system while using the same vertical space as the compact mode in Firefox 88 (known as Photon). \n Compatibility: V91+",
+    "image": "assets/img/themes/fx-compact-mode.webp"
   }
   
 ]
