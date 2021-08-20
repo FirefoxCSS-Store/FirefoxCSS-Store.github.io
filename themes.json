@@ -340,6 +340,12 @@
     "link": "https://github.com/dannycolin/fx-compact-mode",
     "description": "A compact mode that follows Firefox 89 (known as Proton) design system while using the same vertical space as the compact mode in Firefox 88 (known as Photon). \n Compatibility: V91+",
     "image": "assets/img/themes/fx-compact-mode.webp"
-  }
-  
+  },
+  {
+		"title": "GruvFox by Alfarex2019",
+		"link": "https://github.com/FirefoxCSSThemers/GruvFox",
+		"description": "GruvFox is a remix of dpcdpc11's theme, featuring the gruvbox color palette.",
+		"image": "https://user-images.githubusercontent.com/78948152/130265614-a7559ea7-70fd-44f9-a790-34c5c0e31493.png"
+}
+
 ]
