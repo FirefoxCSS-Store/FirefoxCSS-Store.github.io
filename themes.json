@@ -344,14 +344,14 @@
   {
 		"title": "GruvFox by Alfarex2019",
 		"link": "https://github.com/FirefoxCSSThemers/GruvFox",
-		"description": "GruvFox is a remix of dpcdpc11's theme, featuring the gruvbox color palette.",
+		"description": "GruvFox is a remix of dpcdpc11's theme, featuring the gruvbox color palette.\n Compatibility: V91+",
 		"image": "assets/img/themes//20930130265614-a7559ea7-70fd-44f9-a790-34c5c0e31493.webp"
 },
 {
 		"title": "Proton Square",
 		"link": "https://github.com/leadweedy/Firefox-Proton-Square",
-		"description": "Recreates the feel of Quantum with its squared tabs and menus. No rounded corners to be seen.",
-		"image": "https://raw.githubusercontent.com/leadweedy/Firefox-Proton-Square/main/images/ff_protonbutquantum.png"
+		"description": "Recreates the feel of Quantum with its squared tabs and menus. No rounded corners to be seen.\n Compatibility: V91+",
+		"image": "assets/img/themes/Proton Square.webp"
 }
 
 
