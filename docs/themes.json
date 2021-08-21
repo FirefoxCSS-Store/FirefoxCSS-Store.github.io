@@ -309,13 +309,6 @@
   },
   
   {
-    "title": "Monterey-Fox",
-    "link": "https://firefoxcssthemers.github.io/Monterey-Fox",
-    "description": "A theme designed to replicate the Safari from the Monterey update.  \n Compatibility: V89+",
-    "image": "assets/img/themes/Monterey-Fox.webp"
-  },
-
-  {
     "title": "MartinFox",
     "link": "https://github.com/arp242/MartinFox",
     "description": "Really simple userChrome.css to make the active tab stand out more; 61 lines. \n Compatibility: V89+",
@@ -335,17 +328,27 @@
 		"description": "An oneline userChrome.css theme for Firefox, which aims to keep the Proton experience  \n Compatibility: V89+",
 		"image": "assets/img/themes/onelineproton.webp"
   },
+
   {
     "title": "Firefox Compact Mode",
     "link": "https://github.com/dannycolin/fx-compact-mode",
     "description": "A compact mode that follows Firefox 89 (known as Proton) design system while using the same vertical space as the compact mode in Firefox 88 (known as Photon). \n Compatibility: V91+",
     "image": "assets/img/themes/fx-compact-mode.webp"
   },
+
   {
 		"title": "GruvFox by Alfarex2019",
 		"link": "https://github.com/FirefoxCSSThemers/GruvFox",
-		"description": "GruvFox is a remix of dpcdpc11's theme, featuring the gruvbox color palette.",
-		"image": "assets/img/themes//20930130265614-a7559ea7-70fd-44f9-a790-34c5c0e31493.webp"
-}
+		"description": "GruvFox is a remix of dpcdpc11's theme, featuring the gruvbox color palette.\n Compatibility: V91+",
+		"image": "assets/img/themes/20930130265614-a7559ea7-70fd-44f9-a790-34c5c0e31493.webp"
+  },
+
+  {
+		"title": "Proton Square",
+		"link": "https://github.com/leadweedy/Firefox-Proton-Square",
+		"description": "Recreates the feel of Quantum with its squared tabs and menus. No rounded corners to be seen.\n Compatibility: V91+",
+		"image": "assets/img/themes/Proton Square.webp"
+  }
+
 
 ]
