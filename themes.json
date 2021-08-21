@@ -348,6 +348,13 @@
 		"link": "https://github.com/leadweedy/Firefox-Proton-Square",
 		"description": "Recreates the feel of Quantum with its squared tabs and menus. No rounded corners to be seen.\n Compatibility: V91+",
 		"image": "assets/img/themes/Proton Square.webp"
+  },
+
+	{
+		"title": "Natura for Firefox",
+		"link": "https://github.com/firefoxcssthemers/natura-for-firefox",
+		"description": "Nature theme for Firefox",
+		"image": "https://media.discordapp.net/attachments/868351817304657920/878699988765511680/unknown.png?width=815&height=443"
   }
 
 
