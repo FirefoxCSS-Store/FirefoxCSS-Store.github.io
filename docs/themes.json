@@ -1,361 +1,314 @@
 [
-
   {
     "title": "My Firefox theme - u/FffDtark",
     "link": "https://github.com/Ikrom27/Firefox",
     "description": "Oneline theme",
     "image": "assets/img/themes/My_Firefox_theme_-_uFffDtark.webp"
   },
-
   {
     "title": "Sweet_Pop!",
     "link": "https://github.com/PROxZIMA/Sweet-Pop",
     "description": "Sweet_Pop! Minimalist oneliner theme for Firefox perfectly matching Sweet Dark.",
     "image": "assets/img/themes/sweetpop.webp"
   },
-
   {
     "title": "FirefoxCSS-Plus",
     "link": "https://github.com/ElseEmperor/FirefoxCSS-Plus",
     "description": "FirefoxCSS+ is based on h4wwk3ye release (https://github.com/h4wwk3ye/firefoxCSS), MaterialFox (https://github.com/muckSponge/MaterialFox) and FlyingFox (https://github.com/akshat46/FlyingFox).",
     "image": "assets/img/themes/firefoxcssplus.webp"
   },
-
   {
     "title": "minimalFOX",
     "link": "https://github.com/marmmaz/FirefoxCSS",
     "description": "A compact & minimal Firefox theme built for macOS.",
     "image": "assets/img/themes/minimalfox.webp"
   },
-
   {
     "title": "FirefoxCss",
     "link": "https://github.com/h4wwk3ye/firefoxCSS",
     "description": "Custom userChrome.css for firefox based on Material Fox and Flying Fox with few small changes.",
     "image": "assets/img/themes/firefoxcss.webp"
   },
-
   {
     "title": "Simplify Silver Peach for Firefox",
     "link": "https://github.com/CristianDragos/FirefoxThemes/tree/master/Simplify%20Silver%20Peach",
     "description": "A minimal Firefox Theme for those who would like to properly enjoy my Simplify 10 Silver Peach - Windows 10 Themes\n Compatibility: V89+",
     "image": "assets/img/themes/simplify_silver_peach_for_firefox_preview.webp"
   },
-
   {
     "title": "Simplify Darkish for Firefox",
     "link": "https://github.com/CristianDragos/FirefoxThemes/tree/master/Simplify%20Darkish",
     "description": "A minimal Firefox Theme for those who would like to properly enjoy my Simplify 10 Darkish - Windows 10 Themes\n Compatibility: V89+",
     "image": "assets/img/themes/simplify_darkish_for_firefox_preview.webp"
   },
-
   {
     "title": "SimplerentFox",
     "link": "https://github.com/MiguelRAvila/SimplerentFox",
     "description": "🦊 A Userstyle theme for Firefox minimalist, transparent and Keyboard centered",
     "image": "assets/img/themes/simplerentfox.webp"
   },
-
   {
     "title": "blurredfox",
     "link": "https://github.com/manilarome/blurredfox",
     "description": "A modern Firefox CSS Theme",
     "image": "assets/img/themes/blurred.webp"
   },
-
   {
     "title": "Firefox Review",
     "link": "https://github.com/fellowish/firefox-review",
     "description": "Firefox Review is a CSS redesign of the browser, changing the look of Firefox to match the color scheme and design language of Firefox Preview, the previous name of Mozilla's new mobile app.",
     "image": "assets/img/themes/firefoxreview.webp"
   },
-
   {
     "title": "nord-firefox",
     "link": "https://github.com/daaniiieel/nord-firefox",
     "description": "Firefox userChrome.css theme, based on https://github.com/AnubisZ9/Global-Dark-Nordic-theme/.",
     "image": "assets/img/themes/nord.webp"
   },
-
   {
     "title": "My Firefox Theme - not-holar",
     "link": "https://github.com/not-holar/my_firefox_theme",
     "description": "Welcome to the repo for my Firefox theme, a theme that aims to look nice and clean while not compromising functionality.\n Compatibility: V89+",
     "image": "assets/img/themes/MyFirefoxThemenotholar.webp"
   },
-
   {
     "title": "Firefox-Mod-Blur",
     "link": "https://github.com/datguypiko/Firefox-Mod-Blur",
     "description": "Tested 84.0.1 Windows 10 / Default Dark Theme ",
     "image": "assets/img/themes/firefoxmodblur.webp"
   },
-
   {
     "title": "quietfox",
     "link": "https://github.com/coekuss/quietfox",
     "description": "This userChrome mod was created to make the Firefox UI cleaner and more modern without sacrificing any of its original features. You can still use themes, and you can still use Compact Mode and Touch Mode. You can pretty much forget that you have a mod installed, it works quietly in the background.",
     "image": "assets/img/themes/quietfox.webp"
   },
-
   {
     "title": "minimal-functional-fox",
     "link": "https://github.com/mut-ex/minimal-functional-fox",
     "description": "A minimal, yet functional configuration for Firefox!",
     "image": "assets/img/themes/minimalfuntionalfox.webp"
   },
-
   {
     "title": "MaterialFox",
     "link": "https://github.com/muckSponge/MaterialFox",
     "description": "A Material Design-inspired userChrome.css theme for Firefox",
     "image": "assets/img/themes/materialfox.webp"
   },
-
   {
     "title": "Firefox UWP Style",
     "link": "https://github.com/Guerra24/Firefox-UWP-Style",
     "description": "A theme that follows MDL2 styling with the accent color and gray-on-black or gray-on-white elements",
     "image": "assets/img/themes/firefoxuwpstyle.webp"
   },
-
   {
     "title": "Almost Dark Proton",
     "link": "https://github.com/Neikon/Almost-Dark-Grey-Colorfull-Proton---FirefoxCSS-Themes",
     "description": "Based on Simplify Darkish with few small changes based too in Mod Blur theme. It is intended to be used together with the new firefox elements with the new design called Proton, as the new tab page design. \n Compatibility: V89+",
     "image": "assets/img/themes/almostdarkproton.webp"
   },
-
   {
     "title": "Monochrome Tree",
     "link": "https://github.com/MatejKafka/FirefoxTheme",
     "description": "A custom minimalist theme for Firefox with Tree Style Tab support",
     "image": "assets/img/themes/19.webp"
   },
-
   {
     "title": "Flying Fox",
     "link": "https://github.com/akshat46/FlyingFox",
     "description": "An opinionated set of configurations for firefox with Material Fox, github-moonlight userstyle",
     "image": "assets/img/themes/flying.webp"
   },
-
   {
     "title": "FirefoxW10ContextMenus",
     "link": "https://github.com/M1ch431/FirefoxW10ContextMenus",
     "description": "Emulates the Windows 10 context menus in Firefox.",
     "image": "assets/img/themes/20.webp"
   },
-
   {
     "title": "EdgeFox",
     "link": "https://github.com/23Bluemaster23/EdgeFox",
     "description": "Is a userchrome that imitates (or attempts to imitate) the style of Microsoft's Edge Chromiun browser.",
     "image": "assets/img/themes/edgefox.webp"
   },
-
   {
     "title": "Firefox i3wm theme",
     "link": "https://github.com/aadilayub/firefox-i3wm-theme",
     "description": "A theme for Firefox meant to emulate qutebrowser and integrate with the i3 window manager.",
     "image": "assets/img/themes/ff-i3wm.webp"
   },
-
   {
     "title": "Edge-FrFox",
     "link": "https://github.com/bmFtZQ/Edge-FrFox",
     "description": "A theme that replicates the look of Microsoft Edge",
     "image": "assets/img/themes/Edge-FrFox.webp"
   },
-
   {
     "title": "NicoFox",
     "link": "https://github.com/SlowNicoFish/NicoFox",
     "description": "A simple rounded theme",
     "image": "assets/img/themes/22381112138598-fe8cd400-8bd1-11eb-8eed-edcca2c689d8.webp"
   },
-
   {
     "title": "Elegant Nord Theme",
     "link": "https://github.com/rafamadriz/Firefox-Elegant-NordTheme",
     "description": "Elegant Nord Theme with material design",
     "image": "assets/img/themes/Elegant-Nord-Theme.webp"
   },
-
   {
     "title": "Moonlight 🌌",
     "link": "https://github.com/eduardhojbota/moonlight-userChrome",
     "description": "A dark userstyle for Firefox inspired by moonlight-vscode-theme and github-moonlight",
     "image": "assets/img/themes/moonlight.webp"
   },
-
   {
     "title": "Firefox Halo",
     "link": "https://github.com/seirin-blu/Firefox-Halo",
     "description": "A mininmalist Firefox theme with a lot of about: pages edited to act as resources. Updates about every month.",
     "image": "assets/img/themes/firefoxhalo.webp"
   },
-
   {
     "title": "Pseudo-fullscreen Firefox, Sidebery and YouTube",
     "link": "https://github.com/ongots/pseudo-fullscreen-firefox",
     "description": "\n Compatibility: V89+",
     "image": "assets/img/themes/always-fullscreen-firefox.webp"
   },
-
   {
     "title": "WhiteSur Safari style for Firefox",
     "link": "https://github.com/adamxweb/WhiteSurFirefoxThemeMacOS",
     "description": "Make your Firefox look like Safari. MacOS Big Sur inspired theme for Firefox on MacOS & Windows.\n Compatibility: V89+",
     "image": "assets/img/themes/whitesur.webp"
   },
-
   {
     "title": "Alpen Blue to Firefox CSS",
     "link": "https://github.com/Godiesc/AlpenBlue",
     "description": "Theme to Blue and Alpenglow lovers\n Compatibility: V89+",
     "image": "assets/img/themes/alpenblue.webp"
   },
-
   {
     "title": "duskFox",
     "link": "https://github.com/aminomancer/uc.css.js",
     "description": "A dark indigo theme integrated with extensive functional and visual scripts.\n Compatibility: V89+",
     "image": "assets/img/themes/duskfox.webp"
   },
-
   {
     "title": "Compact Mode to Firefox Css",
     "link": "https://github.com/Godiesc/compactmodefirefoxcss",
     "description": "Theme to Make Firefox Compact and keep it's Beauty\n Compatibility: V89+",
     "image": "assets/img/themes/splashcompact.webp"
   },
-
   {
     "title": "DiamondFucsia Theme to Firefox Css",
     "link": "https://github.com/Godiesc/DiamondFucsia",
     "description": "Dark Theme to Firefox with Fuchsia Colors\n Compatibility: V89+",
     "image": "assets/img/themes/diamondfucsia.webp"
   },
-
   {
     "title": "Australis like tabs in Proton UI",
     "link": "https://github.com/sagars007/Australis-like-tabs-FF-ProtonUI-changes",
     "description": "Changes to make the new proton UI redesign in Firefox better; including changes to tabs, more compact-compact mode, proton gradient accents in elements and much more\n Compatibility: V89+",
     "image": "assets/img/themes/custom_australistabs_protonUI.webp"
   },
-
   {
     "title": "Firefox vertical tabs (TST) UI",
     "link": "https://github.com/sagars007/Firefox-vertical-tabs-customUI",
     "description": "Vertical tabs in Firefox using tree style tabs. Vibrant tab selectors, full dark mode, titlebar text in nav-bar and much more.\n Compatibility: V89+",
     "image": "assets/img/themes/compact_verticaltabs_view.webp"
   },
-
   {
     "title": "Lepton(Proton Fix) in Proton UI",
     "link": "https://github.com/black7375/Firefox-UI-Fix",
     "description": "🦊 I respect proton UI and aim to fix it. Icons, Padding, Tab Design...\n Compatibility: V89+",
     "image": "assets/img/themes/Lepton.webp"
   },
-
   {
     "title": "Lepton's Photon-Styled in Proton UI",
     "link": "https://github.com/black7375/Firefox-UI-Fix/tree/photon-style",
     "description": "🦊 I tried to preserve Proton’s feeling while preserving Photon’s strengths. Icons, Padding, Tab Design...\n Compatibility: V89+",
     "image": "assets/img/themes/Lepton-PhotonStyle.webp"
   },
- 
   {
     "title": "[Firefox 90+] RainFox",
     "link": "https://github.com/1280px/rainfox",
     "description": "Restores Photon's look and feel but keeps Proton's clarity with some improvements and new features. \n Compatibility: V89+",
     "image": "assets/img/themes/rainfox.webp"
   },
-  
   {
     "title": "Gradient rounded tabs redesign and ultra compact mode [Proton UI]",
     "link": "https://github.com/sagars007/Proton-UI-connected-rounded-tabs-firefox-css",
     "description": "Firefox Proton UI minimal changes with nav-bar-connected rounded tabs, reduced compact mode, nightly color gradient accents etc.. \n Compatibility: V89+",
     "image": "assets/img/themes/proton-ui-gradient-rounded-tabs-display.webp"
   },
-
   {
     "title": "WaveFox",
     "link": "https://github.com/QNetITQ/WaveFox",
     "description": "Tabs with a unique shape \n Compatibility: V89+",
     "image": "assets/img/themes/wavefox.webp"
   },
-   
   {
     "title": "Technetium",
     "link": "https://github.com/edo0/Technetium",
     "description": "A focused approach to taming the new Firefox Proton interface, restituting some of the beloved elements retired alongside the old Photon UI - menu icons and much more \n Compatibility: V89+",
     "image": "assets/img/themes/Technetium.webp"
   },
-
   {
     "title": "Chameleons-Beauty to Firefox CSS",
     "link": "https://github.com/Godiesc/Chameleons-Beauty",
     "description": "Adaptive Theme to Firefox Themes \n Compatibility: V89+",
     "image": "assets/img/themes/Chameleons-Beauty.webp"
   },
- 
   {
     "title": "pro-fox: enhanced firefox proton",
     "link": "https://github.com/xmansyx/Pro-Fox",
     "description": "a proton based theme to make it even better \n Compatibility: V89+",
     "image": "assets/img/themes/pro-fox.webp"
   },
-  
   {
     "title": "MartinFox",
     "link": "https://github.com/arp242/MartinFox",
     "description": "Really simple userChrome.css to make the active tab stand out more; 61 lines. \n Compatibility: V89+",
     "image": "assets/img/themes/martinfox.webp"
   },
-
   {
     "title": "ProtoVibrant",
     "link": "https://github.com/bpwned/protovibrant",
     "description": "Add macOS vibrancy to the Proton titlebar. Supports dark and light mode. \n Compatibility: V89+",
     "image": "assets/img/themes/protovibrant.webp"
   },
-
   {
-		"title": "OnelineProton",
-		"link": "https://github.com/lr-tech/OnelineProton",
-		"description": "An oneline userChrome.css theme for Firefox, which aims to keep the Proton experience  \n Compatibility: V89+",
-		"image": "assets/img/themes/onelineproton.webp"
+    "title": "OnelineProton",
+    "link": "https://github.com/lr-tech/OnelineProton",
+    "description": "An oneline userChrome.css theme for Firefox, which aims to keep the Proton experience  \n Compatibility: V89+",
+    "image": "assets/img/themes/onelineproton.webp"
   },
-
   {
     "title": "Firefox Compact Mode",
     "link": "https://github.com/dannycolin/fx-compact-mode",
     "description": "A compact mode that follows Firefox 89 (known as Proton) design system while using the same vertical space as the compact mode in Firefox 88 (known as Photon). \n Compatibility: V91+",
     "image": "assets/img/themes/fx-compact-mode.webp"
   },
-
   {
-		"title": "GruvFox by Alfarex2019",
-		"link": "https://github.com/FirefoxCSSThemers/GruvFox",
-		"description": "GruvFox is a remix of dpcdpc11's theme, featuring the gruvbox color palette.\n Compatibility: V91+",
-		"image": "assets/img/themes/20930130265614-a7559ea7-70fd-44f9-a790-34c5c0e31493.webp"
+    "title": "GruvFox by Alfarex2019",
+    "link": "https://github.com/FirefoxCSSThemers/GruvFox",
+    "description": "GruvFox is a remix of dpcdpc11's theme, featuring the gruvbox color palette.\n Compatibility: V91+",
+    "image": "assets/img/themes/20930130265614-a7559ea7-70fd-44f9-a790-34c5c0e31493.webp"
   },
-
   {
-		"title": "Proton Square",
-		"link": "https://github.com/leadweedy/Firefox-Proton-Square",
-		"description": "Recreates the feel of Quantum with its squared tabs and menus. No rounded corners to be seen.\n Compatibility: V91+",
-		"image": "assets/img/themes/Proton Square.webp"
+    "title": "Proton Square",
+    "link": "https://github.com/leadweedy/Firefox-Proton-Square",
+    "description": "Recreates the feel of Quantum with its squared tabs and menus. No rounded corners to be seen.\n Compatibility: V91+",
+    "image": "assets/img/themes/Proton Square.webp"
   },
-
-	{
-		"title": "Natura for Firefox",
-		"link": "https://github.com/firefoxcssthemers/natura-for-firefox",
-		"description": "Nature theme for Firefox \n Compatibility: V91+",
-		"image": "assets/img/themes/natura.webp"
+  {
+    "title": "Natura for Firefox",
+    "link": "https://github.com/firefoxcssthemers/natura-for-firefox",
+    "description": "Nature theme for Firefox \n Compatibility: V91+",
+    "image": "assets/img/themes/natura.webp"
+  },
+  {
+    "title": "MacOSVibrant",
+    "link": "https://github.com/Tnings/MacosVibrant",
+    "description": "A theme that uses MacOS Vibrancy and is styled after other Apple Apps \n Compatibility: V91+",
+    "image": "assets/img/themes/MacOSVibrant.webp"
   }
-
-
 ]
