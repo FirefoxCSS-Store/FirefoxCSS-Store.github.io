@@ -355,7 +355,13 @@
 		"link": "https://github.com/firefoxcssthemers/natura-for-firefox",
 		"description": "Nature theme for Firefox \n Compatibility: V91+",
 		"image": "assets/img/themes/natura.webp"
-  }
+  },
 
+  {
+		"title": "MacOSVibrant",
+		"link": "https://github.com/Tnings/MacosVibrant",
+		"description": "A theme that uses MacOS Vibrancy and is styled after other Apple Apps \n Compatibility: V91+",
+		"image": "assets/img/themes/MacOSVibrant.webp"
+	}
 
 ]
