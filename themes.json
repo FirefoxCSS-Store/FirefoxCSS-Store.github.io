@@ -310,5 +310,11 @@
     "link": "https://github.com/Tnings/MacosVibrant",
     "description": "A theme that uses MacOS Vibrancy and is styled after other Apple Apps \n Compatibility: V91+",
     "image": "assets/img/themes/MacOSVibrant.webp"
+  },
+  {
+    "title": "Cascade",
+    "link": "https://github.com/andreasgrafen/cascade",
+    "description": "A responsive \"One-Line\" theme based on SimpleFox for the new ProtonUI.",
+    "image": "assets/img/themes/cascade.webp"
   }
 ]
