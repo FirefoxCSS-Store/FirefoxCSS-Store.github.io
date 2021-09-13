@@ -1,0 +1,23 @@
+#lightbox {
+
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+
+  position: fixed;
+  top: 0; left: 0;
+
+  width: 100vw; height: 100vh;
+
+  background: var(--body-background);
+
+
+  img {
+
+    max-width: 90vw; max-height: 80vh;
+
+    border-radius: $border-radius;
+    border: 1px solid var(--body-background-darker);
+    background: var(--body-background-darker);
+
+  }
+}

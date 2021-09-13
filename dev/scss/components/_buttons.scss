@@ -1,0 +1,20 @@
+.btn {
+
+  padding: $space-m $space-l;
+
+  border-radius: $border-radius;
+  border: none;
+  background: var(--body-background);
+  box-shadow: 0 .5rem 2rem 0 $shadow;
+
+  color: var(--font-colour);
+
+
+  &:hover,
+  &:focus {
+
+    background: var(--body-background-darker);
+
+  }
+
+}

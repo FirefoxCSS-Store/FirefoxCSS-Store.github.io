@@ -28,13 +28,21 @@ var Card = /*#__PURE__*/function () {
   }, {
     key: "render",
     value: function render(outputContainer) {
-      var template = "\n    <div id=\"theme-".concat(this._id, "\" class=\"card\">\n      <header>\n        <h3 class=\"theme-title\"><a hef=\"").concat(this._link, "\">").concat(this._title, "</a></h3>\n        <i class=\"fas fa-chevron-circle-down\"></i>\n      </header>\n      <a class=\"meta\" href=\"").concat(this._link, "\">\n        <img src=\"").concat(this._image, "\">\n        <p class=\"description\">").concat(this._description, "</p>\n      </a>\n    </div>\n    ");
+      var template = "\n    <div id=\"theme-".concat(this._id, "\" class=\"card\">\n      <header>\n        <h3 class=\"theme-title\">").concat(this._title, "</h3>\n        <a href=\"").concat(this._link, "\">\n          <i class=\"fas fa-chevron-circle-down\"></i>\n        </a>\n      </header>\n      <div class=\"meta\">\n        <a href=\"").concat(this._link, "\">\n          <img src=\"").concat(this._image, "\">\n          <p class=\"description\">").concat(this._description, "</p>\n        </a>\n      </div>\n      <div class=\"button-wrapper\">\n        <button class=\"btn btn-lightbox\" type=\"button\" onClick=\"lightbox(").concat(this._id, ")\"><i class=\"fas fa-search-plus\"></i> Enlarge</button>\n        <a href=\"").concat(this._link, "\"><button class=\"btn btn-download\" type=\"button\"><i class=\"fas fa-file-download\"></i> Download</button></a>\n      </div>\n    </div>\n    ");
       outputContainer.insertAdjacentHTML('beforeend', template);
     }
   }]);
 
   return Card;
 }();
+
+function lightbox(id) {
+  var card = document.getElementById("theme-".concat(id));
+  var themeTitle = card.querySelector('h3');
+  var img = card.querySelector('img');
+  var template = "\n  <div id=\"lightbox\" onclick=\"this.remove()\">\n    <h2>".concat(themeTitle.innerText, "</h2>\n    <img src=\"").concat(img.src, "\">\n  </div>\n  ");
+  document.body.insertAdjacentHTML('beforeend', template);
+}
 
 (function () {
   // IIFE to avoid globals

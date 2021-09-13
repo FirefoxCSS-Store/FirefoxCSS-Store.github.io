@@ -3,6 +3,8 @@
   --linkc: var(--font-colour);
   --linkc-hover: var(--font-colour);
 
+  position: relative;
+
   display: flex; flex-direction: column;
 
   border-radius: $border-radius;
@@ -21,17 +23,6 @@
 
 
     h3 { margin: $space-m 0; padding: 0; }
-
-  }
-
-
-  .btn-download {
-
-    display: inline-block;
-
-    padding: $space-s $space-m;
-
-    text-align: center;
 
   }
 
@@ -86,5 +77,21 @@
   }
 
   &:hover .meta .description { transform: translateY(0); }
+
+
+  .button-wrapper {
+
+    position: absolute;
+    right: 0; bottom: 0;
+
+    padding: $space-m;
+
+    opacity: 0;
+
+    transition: opacity 300ms ease-in-out;
+
+  }
+
+  &:hover .button-wrapper { opacity: 1; }
 
 }
