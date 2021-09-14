@@ -33,14 +33,14 @@ class Card {
         </a>
       </header>
       <div class="meta">
-        <a href="${this._link}">
+        <a href="${this._link}" tabindex="-1">
           <img src="${this._image}">
           <p class="description">${this._description}</p>
         </a>
       </div>
       <div class="button-wrapper">
-        <button class="btn btn-lightbox" type="button" onClick="lightbox(${this._id})"><i class="fas fa-search-plus"></i> Enlarge</button>
-        <a href="${this._link}"><button class="btn btn-download" type="button"><i class="fas fa-file-download"></i> Download</button></a>
+        <button class="btn btn-lightbox" type="button" onClick="createLightbox(${this._id})"><i class="fas fa-search-plus"></i> Enlarge</button>
+        <a href="${this._link}" class="btn btn-download"><i class="fas fa-file-download"></i> Download</a>
       </div>
     </div>
     `
@@ -53,8 +53,9 @@ class Card {
 
 
 
+const removeLightbox = () => document.body.getElementsById('lightbox').remove()
 
-function lightbox (id) {
+function createLightbox (id) {
 
   const card = document.getElementById(`theme-${id}`)
   const themeTitle = card.querySelector('h3')
@@ -64,10 +65,11 @@ function lightbox (id) {
   <div id="lightbox" onclick="this.remove()">
     <h2>${themeTitle.innerText}</h2>
     <img src="${img.src}">
+    <button type="button" class="btn btn-close-lightbox" onClick="removeLightbox"><i class="fas fa-times-circle"></i>close</button>
   </div>
   `
 
-  document.body.insertAdjacentHTML('beforeend', template)
+  card.insertAdjacentHTML('afterend', template)
 
 }
 

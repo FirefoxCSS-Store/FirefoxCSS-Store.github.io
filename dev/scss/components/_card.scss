@@ -56,6 +56,7 @@
 
   }
 
+  &:focus-within .meta img,
   &:hover .meta img { transform: translate(-50%, -45%); }
 
 
@@ -76,6 +77,7 @@
 
   }
 
+  &:focus-within .meta .description,
   &:hover .meta .description { transform: translateY(0); }
 
 
@@ -92,6 +94,7 @@
 
   }
 
+  &:focus-within .button-wrapper,
   &:hover .button-wrapper { opacity: 1; }
 
 }

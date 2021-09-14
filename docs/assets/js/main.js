@@ -28,7 +28,7 @@ var Card = /*#__PURE__*/function () {
   }, {
     key: "render",
     value: function render(outputContainer) {
-      var template = "\n    <div id=\"theme-".concat(this._id, "\" class=\"card\">\n      <header>\n        <h3 class=\"theme-title\">").concat(this._title, "</h3>\n        <a href=\"").concat(this._link, "\">\n          <i class=\"fas fa-chevron-circle-down\"></i>\n        </a>\n      </header>\n      <div class=\"meta\">\n        <a href=\"").concat(this._link, "\">\n          <img src=\"").concat(this._image, "\">\n          <p class=\"description\">").concat(this._description, "</p>\n        </a>\n      </div>\n      <div class=\"button-wrapper\">\n        <button class=\"btn btn-lightbox\" type=\"button\" onClick=\"lightbox(").concat(this._id, ")\"><i class=\"fas fa-search-plus\"></i> Enlarge</button>\n        <a href=\"").concat(this._link, "\"><button class=\"btn btn-download\" type=\"button\"><i class=\"fas fa-file-download\"></i> Download</button></a>\n      </div>\n    </div>\n    ");
+      var template = "\n    <div id=\"theme-".concat(this._id, "\" class=\"card\">\n      <header>\n        <h3 class=\"theme-title\">").concat(this._title, "</h3>\n        <a href=\"").concat(this._link, "\">\n          <i class=\"fas fa-chevron-circle-down\"></i>\n        </a>\n      </header>\n      <div class=\"meta\">\n        <a href=\"").concat(this._link, "\" tabindex=\"-1\">\n          <img src=\"").concat(this._image, "\">\n          <p class=\"description\">").concat(this._description, "</p>\n        </a>\n      </div>\n      <div class=\"button-wrapper\">\n        <button class=\"btn btn-lightbox\" type=\"button\" onClick=\"createLightbox(").concat(this._id, ")\"><i class=\"fas fa-search-plus\"></i> Enlarge</button>\n        <a href=\"").concat(this._link, "\" class=\"btn btn-download\"><i class=\"fas fa-file-download\"></i> Download</a>\n      </div>\n    </div>\n    ");
       outputContainer.insertAdjacentHTML('beforeend', template);
     }
   }]);
@@ -36,12 +36,16 @@ var Card = /*#__PURE__*/function () {
   return Card;
 }();
 
-function lightbox(id) {
+var removeLightbox = function removeLightbox() {
+  return document.body.getElementsById('lightbox').remove();
+};
+
+function createLightbox(id) {
   var card = document.getElementById("theme-".concat(id));
   var themeTitle = card.querySelector('h3');
   var img = card.querySelector('img');
-  var template = "\n  <div id=\"lightbox\" onclick=\"this.remove()\">\n    <h2>".concat(themeTitle.innerText, "</h2>\n    <img src=\"").concat(img.src, "\">\n  </div>\n  ");
-  document.body.insertAdjacentHTML('beforeend', template);
+  var template = "\n  <div id=\"lightbox\" onclick=\"this.remove()\">\n    <h2>".concat(themeTitle.innerText, "</h2>\n    <img src=\"").concat(img.src, "\">\n    <button type=\"button\" class=\"btn btn-close-lightbox\" onClick=\"removeLightbox\"><i class=\"fas fa-times-circle\"></i>close</button>\n  </div>\n  ");
+  card.insertAdjacentHTML('afterend', template);
 }
 
 (function () {

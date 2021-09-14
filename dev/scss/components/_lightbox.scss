@@ -5,6 +5,7 @@
 
   position: fixed;
   top: 0; left: 0;
+  z-index: 1;
 
   width: 100vw; height: 100vh;
 
@@ -20,4 +21,15 @@
     background: var(--body-background-darker);
 
   }
+
+
+  .btn-close-lightbox {
+
+    position: absolute;
+    top: $space-l; right: $space-l;
+
+    display: block;
+
+  }
+
 }
