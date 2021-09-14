@@ -65,7 +65,7 @@ function createLightbox (id) {
   <div id="lightbox" onclick="this.remove()">
     <h2>${themeTitle.innerText}</h2>
     <img src="${img.src}">
-    <button type="button" class="btn btn-close-lightbox" onClick="removeLightbox"><i class="fas fa-times-circle"></i>close</button>
+    <button type="button" class="btn btn-close-lightbox" onClick="removeLightbox"><i class="fas fa-times-circle"></i> Close</button>
   </div>
   `
 
