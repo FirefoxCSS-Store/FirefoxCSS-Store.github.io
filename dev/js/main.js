@@ -27,13 +27,21 @@ class Card {
     const template = `
     <div id="theme-${this._id}" class="card">
       <header>
-        <h3 class="theme-title"><a hef="${this._link}">${this._title}</a></h3>
-        <i class="fas fa-chevron-circle-down"></i>
+        <h3 class="theme-title">${this._title}</h3>
+        <a href="${this._link}">
+          <i class="fas fa-chevron-circle-down"></i>
+        </a>
       </header>
-      <a class="meta" href="${this._link}">
-        <img src="${this._image}">
-        <p class="description">${this._description}</p>
-      </a>
+      <div class="meta">
+        <a href="${this._link}" tabindex="-1">
+          <img src="${this._image}">
+          <p class="description">${this._description}</p>
+        </a>
+      </div>
+      <div class="button-wrapper">
+        <button class="btn btn-lightbox" type="button" onClick="createLightbox(${this._id})"><i class="fas fa-search-plus"></i> Enlarge</button>
+        <a href="${this._link}" class="btn btn-download"><i class="fas fa-file-download"></i> Download</a>
+      </div>
     </div>
     `
 
@@ -41,6 +49,31 @@ class Card {
 
   }
 }
+
+
+
+
+const removeLightbox = () => document.body.getElementsById('lightbox').remove()
+
+function createLightbox (id) {
+
+  const card = document.getElementById(`theme-${id}`)
+  const themeTitle = card.querySelector('h3')
+  const img = card.querySelector('img')
+
+  const template = `
+  <div id="lightbox" onclick="this.remove()">
+    <h2>${themeTitle.innerText}</h2>
+    <img src="${img.src}">
+    <button type="button" class="btn btn-close-lightbox" onClick="removeLightbox"><i class="fas fa-times-circle"></i> Close</button>
+  </div>
+  `
+
+  card.insertAdjacentHTML('afterend', template)
+
+}
+
+
 
 
 
@@ -71,6 +104,7 @@ class Card {
       })
     })
   }
+
 
 
   /*  Theme Handling
