@@ -314,13 +314,19 @@
   {
     "title": "Cascade",
     "link": "https://github.com/andreasgrafen/cascade",
-    "description": "A responsive \"One-Line\" theme based on SimpleFox for the new ProtonUI.",
+    "description": "A responsive \"One-Line\" theme based on SimpleFox for the new ProtonUI.  \n Compatibility: V91+",
     "image": "assets/img/themes/cascade.webp"
   },
   {
     "title": "Firefox GNOME theme",
     "link": "https://github.com/rafaelmardojai/firefox-gnome-theme",
-    "description": "A bunch of CSS code to make Firefox look closer to GNOME's native apps.",
+    "description": "A bunch of CSS code to make Firefox look closer to GNOME's native apps.  \n Compatibility: V91+",
+    "image": "assets/img/themes/firefox-gnome-theme.webp"
+  },
+  {
+    "title": "PretoFox",
+    "link": "https://github.com/alfarexguy2019/pretofox",
+    "description": "A Black n White AMOLED theme for Firefox, inspired by the Preto color scheme. \n Compatibility: V91+",
     "image": "assets/img/themes/firefox-gnome-theme.webp"
   }
 ]
