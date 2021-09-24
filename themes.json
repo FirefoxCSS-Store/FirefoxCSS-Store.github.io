@@ -332,7 +332,7 @@
   {
     "title": "Elementary OS Odin Firefox theme",
     "link": "https://github.com/Zonnev/elementaryos-firefox-theme",
-    "description": "This theme supports all the window buttons layouts from Tweaks and it blends into the elementary OS Odin user interface.",
+    "description": "This theme supports all the window buttons layouts from Tweaks and it blends into the elementary OS Odin user interface. \n Compatibility: V91+",
     "image": "assets/img/themes/firefox-eos6-theme.webp"
   }
 ]
