@@ -328,5 +328,11 @@
     "link": "https://github.com/alfarexguy2019/pretofox",
     "description": "A Black n White AMOLED theme for Firefox, inspired by the Preto color scheme. \n Compatibility: V91+",
     "image": "assets/img/themes/PretoFox.webp"
+  },
+  {
+    "title": "Elementary OS Odin Firefox theme",
+    "link": "https://github.com/Zonnev/elementaryos-firefox-theme",
+    "description": "This theme supports all the window buttons layouts from Tweaks and it blends into the elementary OS Odin user interface. \n Compatibility: V91+",
+    "image": "assets/img/themes/firefox-eos6-theme.webp"
   }
 ]
