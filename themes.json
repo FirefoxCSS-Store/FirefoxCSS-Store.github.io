@@ -340,5 +340,11 @@
 		"link": "https://github.com/Doosty/Oneliner-Deluxe",
 		"description": "Minimal, customizable and theme compatible",
 		"image": "assets/img/themes/Oneliner_Deluxe.webp"
+  },
+  {
+    "title": "Simple Oneliner",
+    "link": "https://github.com/hakan-demirli/Firefox_Custom_CSS",
+    "description": "A simple theme to maximize the vertical space of your monitor",
+    "image": "assets/img/themes/Simple_Oneliner.webp"
   }
 ]
