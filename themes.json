@@ -346,5 +346,11 @@
     "link": "https://github.com/hakan-demirli/Firefox_Custom_CSS",
     "description": "A simple theme to maximize the vertical space of your monitor",
     "image": "assets/img/themes/Simple_Oneliner.webp"
-  }
+  },
+  {
+    "title": "GentleFox",
+    "link": "https://github.com/alfarexguy2019/gentlefox",
+    "description": "A Firefox theme, which features gentle curves, transparency and a minimal interface. \n Compatibility: V91+",
+    "image": "https://user-images.githubusercontent.com/78948152/134816998-2b84d968-278c-4168-8499-5085ded4eb19.png"
+  }	
 ]
