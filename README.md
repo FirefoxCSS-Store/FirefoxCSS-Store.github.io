@@ -55,12 +55,12 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
 ### Code
 
 ```
-{
-		"title": "..........",
-		"link": "..........",
-		"description": "..........",
-		"image": ".........."
-}
+  {
+    "title": "..........",
+    "link": "..........",
+    "description": "..........",
+    "image": ".........."
+  }
 ```
 
 <h1 align="center">What do you think =?</h1>
