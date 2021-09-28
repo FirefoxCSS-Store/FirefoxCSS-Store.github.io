@@ -6,10 +6,10 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
 ## Generic Installation
 
 + Go to the wanted theme and click the download button.
-+ You should now be on the github page for that topic.
++ You should now be on the Github page for that topic.
 + Below you should see a guide on how to install that particular theme and a few preview pictures. Anyway, here are some common steps for all themes.
 
-1. Download theme with the big green button "Code" >> Download.zip
+1. Download the theme with the big green button: "Code" >> Download.zip
 2. Open `about:config` page.
 3. A dialog will warn you, but ignore it, ~~just do it~~ press the `I accept the risk!` button.
 4. Search for these:
@@ -21,7 +21,7 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
 	+ **`layout.css.backdrop-filter.enabled`**
 	+ **`svg.context-properties.content.enabled`**
 
-	Then make sure to **enable them all!**.
+	Then make sure to **enable them all!**
 
 5. Go to your Firefox profile.
 
@@ -39,28 +39,28 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
   2. Look for a file called `themes.json`, open and edit it
   3. Below the last `}` add `,` right after a copy the [code below](#code) and paste it in the file
   4. Add the properties of your theme: **title**, **link**, **description** and **image**
-  5. **Avoid the use of escaped characters and the order matters**
+  5. **Avoid the use of escaped characters, and the order matters**
   6. Please, do not use a very big image, preferably (650x500)
   7. Image property:
-    - You can put an image url
-    - Or an image file in `/images/themes/` (it doesn't matter the file extension). And then reference it in your code with the following `assets/img/themes/YOUR_FILE_NAME_WITHOUT_EXTENSION.webp`
-  8. Then send it as a pull request in the repository.
+    - You can put an image URL
+    - Or an image file in `/images/themes/` (The file extension doesn't matter). And then reference it in your code with the following `assets/img/themes/YOUR_FILE_NAME_WITHOUT_EXTENSION.webp`
+  8. Then send it as a pull request to this repository.
 
-+ Or create a Issue:
-  1. when creating an issue you will find a template for submitting theme, use that one. it's easy.
++ Or create an Issue:
+  1. When creating an issue, you will find a template for submitting a theme. Use that one. It's easy.
 
 + If you have a Twitter account:
-  1. Send **at least** the following properties: **title**, **link**, **description** and **picture** to [@Neikon66](https://twitter.com/Neikon66). 
+  1. Send **at least** the following properties: **title**, **link**, **description**, and **picture** to [@Neikon66](https://twitter.com/Neikon66). 
 
 ### Code
 
 ```
-{
-		"title": "..........",
-		"link": "..........",
-		"description": "..........",
-		"image": ".........."
-}
+  {
+    "title": "..........",
+    "link": "..........",
+    "description": "..........",
+    "image": ".........."
+  }
 ```
 
 <h1 align="center">What do you think =?</h1>
