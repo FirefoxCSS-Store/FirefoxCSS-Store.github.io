@@ -131,7 +131,7 @@ function createLightbox (id) {
 
       } else {
 
-        const shuffledData = parsedData.sort(() => 0.5 - Math.random())
+        const shuffledData = [...parsedData].sort(() => 0.5 - Math.random())
         const selectedData = shuffledData.slice(0, 20)
 
         selectedData.forEach((entry, index)  => {
