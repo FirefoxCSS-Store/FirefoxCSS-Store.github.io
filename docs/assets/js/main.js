@@ -62,9 +62,22 @@ function createLightbox(id) {
 (function () {
   // IIFE to avoid globals
 
+  /*  URL Parameter Handling
+   *  ======================
+   */
+  var getParameterString = window.location.search.substr(1);
+  var getParameters = getParameterString.split('&');
+  var search;
+  getParameters.forEach(function (parameter) {
+    var splitParameters = parameter.split('=');
+    var key = splitParameters[0];
+    var value = splitParameters[1];
+    if (key == 'search') search = sanatise(value);
+  });
   /*  Load Content
    *  ============
    */
+
   var outputContainer = document.getElementById('themes_container');
 
   if (outputContainer) {
@@ -75,17 +88,6 @@ function createLightbox(id) {
       // temporary since we're going to add a button to sort
       // in different ways
       parsedData.reverse();
-      /* get GET parameters from URL */
-
-      var getParameterString = window.location.search.substr(1);
-      var getParameters = getParameterString.split('&');
-      var search;
-      getParameters.forEach(function (parameter) {
-        var splitParameters = parameter.split('=');
-        var key = splitParameters[0];
-        var value = splitParameters[1];
-        if (key == 'search') search = sanatise(value);
-      });
 
       if (search) {
         var matches = function matches(text, partial) {

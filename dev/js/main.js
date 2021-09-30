@@ -81,6 +81,28 @@ function createLightbox (id) {
 
 (() => { // IIFE to avoid globals
 
+  /*  URL Parameter Handling
+   *  ======================
+   */
+
+  const getParameterString = window.location.search.substr(1)
+  const getParameters      = getParameterString.split('&')
+  let   search
+
+  getParameters.forEach(parameter => {
+
+    const splitParameters = (parameter.split('='))
+    const key             = splitParameters[0]
+    const value           = splitParameters[1]
+
+    if (key == 'search') search = sanatise(value)
+
+  })
+
+
+
+
+
   /*  Load Content
    *  ============
    */
@@ -96,22 +118,6 @@ function createLightbox (id) {
       // temporary since we're going to add a button to sort
       // in different ways
       parsedData.reverse()
-
-
-      /* get GET parameters from URL */
-      const getParameterString = window.location.search.substr(1)
-      const getParameters      = getParameterString.split('&')
-      let   search
-
-      getParameters.forEach(parameter => {
-
-        const splitParameters = (parameter.split('='))
-        const key             = splitParameters[0]
-        const value           = splitParameters[1]
-
-        if (key == 'search') search = sanatise(value)
-
-      })
 
 
       if (search) {
