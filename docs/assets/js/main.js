@@ -89,7 +89,11 @@ function createLightbox(id) {
           card.render(outputContainer);
         });
       } else {
-        parsedData.forEach(function (entry, index) {
+        var shuffledData = parsedData.sort(function () {
+          return 0.5 - Math.random();
+        });
+        var selectedData = shuffledData.slice(0, 20);
+        selectedData.forEach(function (entry, index) {
           var card = new Card(entry, index);
           card.render(outputContainer);
         });

@@ -131,10 +131,12 @@ function createLightbox (id) {
 
       } else {
 
-        parsedData.forEach((entry, index)  => {
+        const shuffledData = parsedData.sort(() => 0.5 - Math.random())
+        const selectedData = shuffledData.slice(0, 20)
+
+        selectedData.forEach((entry, index)  => {
 
           const card = new Card (entry, index)
-
           card.render(outputContainer)
 
         })
