@@ -63,10 +63,37 @@ function createLightbox(id) {
       // temporary since we're going to add a button to sort
       // in different ways
       parsedData.reverse();
-      parsedData.forEach(function (entry, index) {
-        var card = new Card(entry, index);
-        card.render(outputContainer);
+      /* get GET parameters from URL */
+
+      var getParameterString = window.location.search.substr(1);
+      var getParameters = getParameterString.split('&');
+      var search;
+      getParameters.forEach(function (parameter) {
+        var splitParameters = parameter.split('=');
+        var key = splitParameters[0];
+        var value = splitParameters[1];
+        if (key == 'search') search = sanatise(value).toLowerCase();
       });
+
+      if (search) {
+        var matches = function matches(text, partial) {
+          return text.toLowerCase().indexOf(partial.toLowerCase()) > -1;
+        };
+
+        var parsedAsArray = Object.entries(parsedData);
+        var searchResults = parsedAsArray.filter(function (element) {
+          return matches(element[1].title, search);
+        });
+        searchResults.forEach(function (result) {
+          var card = new Card(result[1], +result[0]);
+          card.render(outputContainer);
+        });
+      } else {
+        parsedData.forEach(function (entry, index) {
+          var card = new Card(entry, index);
+          card.render(outputContainer);
+        });
+      }
     });
   }
   /*  Theme Handling

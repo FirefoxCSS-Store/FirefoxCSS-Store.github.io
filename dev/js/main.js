@@ -97,13 +97,49 @@ function createLightbox (id) {
       // in different ways
       parsedData.reverse()
 
-      parsedData.forEach((entry, index)  => {
 
-        const card = new Card (entry, index)
+      /* get GET parameters from URL */
+      const getParameterString = window.location.search.substr(1)
+      const getParameters      = getParameterString.split('&')
+      let   search
 
-        card.render(outputContainer)
+      getParameters.forEach(parameter => {
+
+        const splitParameters = (parameter.split('='))
+        const key             = splitParameters[0]
+        const value           = splitParameters[1]
+
+        if (key == 'search') search = sanatise(value).toLowerCase()
 
       })
+
+
+      if (search) {
+
+        function matches (text, partial) { return text.toLowerCase().indexOf(partial.toLowerCase()) > -1 }
+
+        const parsedAsArray = Object.entries(parsedData)
+        let   searchResults = parsedAsArray.filter(element => matches(element[1].title, search))
+
+
+        searchResults.forEach(result => {
+
+          const card = new Card(result[1], +result[0])
+          card.render(outputContainer)
+
+        })
+
+      } else {
+
+        parsedData.forEach((entry, index)  => {
+
+          const card = new Card (entry, index)
+
+          card.render(outputContainer)
+
+        })
+
+      }
     })
   }
 
