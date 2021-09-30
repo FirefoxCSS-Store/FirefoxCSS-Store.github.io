@@ -119,6 +119,10 @@ function createLightbox (id) {
       // in different ways
       parsedData.reverse()
 
+      //! for now make this the same amount as all themes available
+      //! maybe change this once every theme is tagged properly
+      const themesDisplayMaxAmount = parsedData.length
+
 
       if (search) {
 
@@ -138,7 +142,7 @@ function createLightbox (id) {
       } else {
 
         const shuffledData = [...parsedData].sort(() => 0.5 - Math.random())
-        const selectedData = shuffledData.slice(0, 20)
+        const selectedData = shuffledData.slice(0, themesDisplayMaxAmount)
 
         selectedData.forEach((entry, index)  => {
 

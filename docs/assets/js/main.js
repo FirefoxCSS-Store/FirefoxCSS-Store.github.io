@@ -87,7 +87,10 @@ function createLightbox(id) {
       // sort from the most recent theme added
       // temporary since we're going to add a button to sort
       // in different ways
-      parsedData.reverse();
+      parsedData.reverse(); //! for now make this the same amount as all themes available
+      //! maybe change this once every theme is tagged properly
+
+      var themesDisplayMaxAmount = parsedData.length;
 
       if (search) {
         var matches = function matches(text, partial) {
@@ -107,7 +110,7 @@ function createLightbox(id) {
           return 0.5 - Math.random();
         });
 
-        var selectedData = shuffledData.slice(0, 20);
+        var selectedData = shuffledData.slice(0, themesDisplayMaxAmount);
         selectedData.forEach(function (entry, index) {
           var card = new Card(entry, index);
           card.render(outputContainer);
