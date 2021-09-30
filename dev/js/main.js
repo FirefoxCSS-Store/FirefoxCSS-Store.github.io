@@ -1,25 +1,27 @@
+function sanatise (unsanatisedInput) {
+
+  const tempEl = document.createElement('div')
+        tempEl.innerText = unsanatisedInput
+
+  const sanatisedOutput = tempEl.innerHTML
+  return sanatisedOutput
+
+}
+
+
+
 class Card {
 
   constructor (data, id) {
 
     this._id           = id + 1
-    this._title        = this.sanatise(data.title)
-    this._description  = this.sanatise(data.description)
-    this._link         = this.sanatise(data.link)
-    this._image        = this.sanatise(data.image)
+    this._title        = sanatise(data.title)
+    this._description  = sanatise(data.description)
+    this._link         = sanatise(data.link)
+    this._image        = sanatise(data.image)
 
   }
 
-
-  sanatise (unsanatisedInput) {
-
-    const tempEl = document.createElement('div')
-          tempEl.innerText = unsanatisedInput
-
-    const sanatisedOutput = tempEl.innerHTML
-    return sanatisedOutput
-
-  }
 
 
   render (outputContainer) {
