@@ -1,7 +1,8 @@
 #main_nav {
 
-  --linkc: var(--font-colour);
+  display: flex; gap: $space-l;
+  align-items: center;
 
-  > a + a { margin-left: $space-l; }
+  --linkc: var(--font-colour);
 
 }
