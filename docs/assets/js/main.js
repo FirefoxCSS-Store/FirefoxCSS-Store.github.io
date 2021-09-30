@@ -84,7 +84,7 @@ function createLightbox(id) {
         var splitParameters = parameter.split('=');
         var key = splitParameters[0];
         var value = splitParameters[1];
-        if (key == 'search') search = sanatise(value).toLowerCase();
+        if (key == 'search') search = sanatise(value);
       });
 
       if (search) {
@@ -94,7 +94,7 @@ function createLightbox(id) {
 
         var parsedAsArray = Object.entries(parsedData);
         var searchResults = parsedAsArray.filter(function (element) {
-          return matches(element[1].title, search);
+          return matches("".concat(element[1].title, ", ").concat(element[1].tags), search);
         });
         searchResults.forEach(function (result) {
           var card = new Card(result[1], +result[0]);

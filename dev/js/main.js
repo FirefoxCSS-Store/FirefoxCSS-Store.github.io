@@ -109,7 +109,7 @@ function createLightbox (id) {
         const key             = splitParameters[0]
         const value           = splitParameters[1]
 
-        if (key == 'search') search = sanatise(value).toLowerCase()
+        if (key == 'search') search = sanatise(value)
 
       })
 
@@ -119,7 +119,7 @@ function createLightbox (id) {
         function matches (text, partial) { return text.toLowerCase().indexOf(partial.toLowerCase()) > -1 }
 
         const parsedAsArray = Object.entries(parsedData)
-        let   searchResults = parsedAsArray.filter(element => matches(element[1].title, search))
+        let   searchResults = parsedAsArray.filter(element => matches(`${element[1].title}, ${element[1].tags}`, search))
 
 
         searchResults.forEach(result => {
