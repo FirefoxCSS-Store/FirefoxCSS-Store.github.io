@@ -358,5 +358,11 @@
     "link": "https://github.com/Filip-Sutkowy/blurclean-firefox-theme",
     "description": "Clean theme with as much transparency as Firefox lets you do \n Compatibility: V91+",
     "image": "assets/img/themes/Clean_and_Transparent.webp"
+  },
+  {
+    "title": "Waterfall",
+    "link": "https://github.com/crambaud/waterfall",
+    "description": "A minimalist one line theme",
+    "image": "assets/img/themes/waterfall.webp"
   }
 ]
