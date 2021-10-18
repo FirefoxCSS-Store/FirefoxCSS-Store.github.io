@@ -364,5 +364,11 @@
     "link": "https://github.com/crambaud/waterfall",
     "description": "A minimalist one line theme",
     "image": "assets/img/themes/waterfall.webp"
+  },
+  {
+    "title": "Brave-Fox: The Reimagined Browser, Reimagined",
+    "link": "https://github.com/Soft-Bred/Brave-Fox",
+    "description": "Brave-Fox is a Firefox Theme that brings Brave's design elements into Firefox.",
+    "image": "https://preview.redd.it/7ilia7199au71.png?width=2736&format=png&auto=webp&s=2bb02f857421d02dc86246baece4b20b41caf698"
   }
 ]
