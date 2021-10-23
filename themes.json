@@ -376,5 +376,11 @@
     "link": "https://github.com/alfarexguy2019/KeyFox",
     "description": "KeyFox is A simple, minimal OneLiner Keyboard-centered CSS for Firefox.",
     "image": "assets/img/themes//13268136501706-accca691-b9c3-4841-acd7-6bb843d2f422.webp"
+  },
+  {
+    "title": "CompactFox",
+    "link": "https://github.com/Tnings/CompactFox",
+    "description": "A simple theme that compacts a lot of the UI elements",
+    "image": "assets/img/themes/CompactFoxPreview.webp"
   }
 ]
