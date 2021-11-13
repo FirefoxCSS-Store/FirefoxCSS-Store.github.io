@@ -127,7 +127,7 @@ function createLightbox (id) {
 
         // sort from the most recent theme added
         default:
-          if (change) repeatToggle('latest');
+          if (change) return repeatToggle('latest');
 
       }
 
