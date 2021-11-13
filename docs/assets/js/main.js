@@ -54,26 +54,66 @@ function createLightbox(id) {
   /*  Load Content
    *  ============
    */
-  var outputContainer = document.getElementById('themes_container');
+  // add our sorting button
+  var sortTrigger = document.getElementById('js-sortSwitcher');
+  sortTrigger.addEventListener('click', function () {
+    return toggleSortType(true);
+  }); // When localstorage is not set, use "latest" order type
 
-  if (outputContainer) {
+  if (!localStorage['sort']) localStorage['sort'] = 'latest';
+
+  function repeatToggle(nextType) {
+    localStorage['sort'] = nextType;
+    return toggleSortType(false);
+  }
+
+  function toggleSortType(change) {
+    if (document.querySelectorAll('.card')) document.querySelectorAll('.card').forEach(function (e) {
+      return e.remove();
+    });
     fetch('themes.json').then(function (data) {
       return data.json();
     }).then(function (parsedData) {
-      // sort from the most recent theme added
-      // temporary since we're going to add a button to sort
-      // in different ways
-      parsedData.reverse();
+      switch (localStorage['sort']) {
+        // sort from the oldest theme added
+        case 'latest':
+          if (change) return repeatToggle('random');
+          parsedData.reverse();
+          break;
+        // sort randomly
+
+        case 'random':
+          if (change) return repeatToggle('oldest');
+
+          for (var i = parsedData.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var _ref = [parsedData[j], parsedData[i]];
+            parsedData[i] = _ref[0];
+            parsedData[j] = _ref[1];
+          }
+
+          break;
+        // sort from the most recent theme added
+
+        default:
+          if (change) repeatToggle('latest');
+      } // TODO: make a better way to preview the current sorting
+
+
+      sortTrigger.title = localStorage['sort'];
       parsedData.forEach(function (entry, index) {
         var card = new Card(entry, index);
         card.render(outputContainer);
       });
     });
-  }
+  } // add themes
+
+
+  var outputContainer = document.getElementById('themes_container');
+  if (outputContainer) toggleSortType(false);
   /*  Theme Handling
    *  ==============
    */
-
 
   var systemPref = window.matchMedia("(prefers-color-scheme: dark)").matches ? 'night' : 'day',
       themeTrigger = document.getElementById('js-themeSwitcher'),
@@ -98,7 +138,7 @@ function createLightbox(id) {
     if (localStorage['theme'] === 'night') localStorage['theme'] = 'day';else localStorage['theme'] = 'night';
   }
 
-  themeTrigger.addEventListener('click', function (event) {
+  themeTrigger.addEventListener('click', function () {
     return toggleTheme();
   });
 })();
