@@ -83,17 +83,56 @@ function createLightbox (id) {
    *  ============
    */
 
-  const outputContainer = document.getElementById('themes_container')
+  // add our sorting button
+  const sortTrigger = document.getElementById('js-sortSwitcher')
+  sortTrigger.addEventListener('click', () => toggleSortType(true))
+  
+  // When localstorage is not set, use "latest" order type
+  if (!localStorage['sort']) localStorage['sort'] = 'latest'
 
-  if (outputContainer) {
+  function repeatToggle (nextType) {
+
+    localStorage['sort'] = nextType
+    return toggleSortType(false)
+
+  }
+
+  function toggleSortType (change) {
+
+    if (document.querySelectorAll('.card'))
+      document.querySelectorAll('.card').forEach(e => e.remove());
+
     fetch('themes.json')
     .then(data => data.json())
-    .then(parsedData => {
+    .then(parsedData => {   
 
-      // sort from the most recent theme added
-      // temporary since we're going to add a button to sort
-      // in different ways
-      parsedData.reverse()
+      switch (localStorage['sort']) {
+
+        // sort from the oldest theme added
+        case 'latest':
+          if (change) return repeatToggle('random')
+          parsedData.reverse()
+          break;
+
+        // sort randomly
+        case 'random':
+          if (change) return repeatToggle('oldest')
+          for (let i = parsedData.length - 1; i > 0; i--) {
+
+            const j = Math.floor(Math.random() * (i + 1));
+            [parsedData[i], parsedData[j]] = [parsedData[j], parsedData[i]]
+
+          }
+          break;
+
+        // sort from the most recent theme added
+        default:
+          if (change) repeatToggle('latest');
+
+      }
+
+      // TODO: make a better way to preview the current sorting
+      sortTrigger.title = localStorage['sort']
 
       parsedData.forEach((entry, index)  => {
 
@@ -102,9 +141,14 @@ function createLightbox (id) {
         card.render(outputContainer)
 
       })
-    })
-  }
 
+    });
+
+  }
+  
+  // add themes
+  const outputContainer = document.getElementById('themes_container')
+  if (outputContainer) toggleSortType(false)
 
 
   /*  Theme Handling
@@ -143,6 +187,6 @@ function createLightbox (id) {
 
   }
 
-  themeTrigger.addEventListener('click', event => toggleTheme())
+  themeTrigger.addEventListener('click', () => toggleTheme())
 
 })()
