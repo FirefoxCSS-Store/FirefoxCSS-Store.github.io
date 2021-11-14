@@ -12,13 +12,13 @@
   <body>
     <header id="main_header">
       <h3 class="header-branding">FirefoxCSS Store</h3>
-      <nav id="main_nav"><a href="index.html">Theme List</a><a id="js-themeSwitcher" href="#"><i class="fas fa-moon"></i></a>
-        <form class="searchform" method="get">
+      <nav id="main_nav"><a href="index.html">Theme List</a><a id="js-themeSwitcher" href="#"><i class="fas fa-moon"></i></a><a id="js-sortSwitcher" href="#"><i class="fas fa-sort"></i></a>
+        <div class="searchform" method="get">
           <div class="inputgroup">
-            <input class="searchinput" type="text" name="search" placeholder="Search">
-            <button class="btn-submit searchsubmit" type="submit"><i class="fas fa-search"></i></button>
+            <input class="searchinput" id="searchInput" type="text" placeholder="Search">
+            <button class="btn-submit searchsubmit" id="searchButton" type="submit"><i class="fas fa-search"></i></button>
           </div>
-        </form>
+        </div>
       </nav>
     </header>
     <main id="main_content">

@@ -1,17 +1,5 @@
 "use strict";
 
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -62,35 +50,40 @@ function createLightbox(id) {
 (function () {
   // IIFE to avoid globals
 
-  /*  URL Parameter Handling
+  /*  SEARCH Parameter Handling
    *  ======================
    */
-  var getParameterString = window.location.search.substr(1);
-  var getParameters = getParameterString.split('&');
-  var search;
-  getParameters.forEach(function (parameter) {
-    var splitParameters = parameter.split('=');
-    var key = splitParameters[0];
-    var value = splitParameters[1];
-    if (key == 'search') search = sanatise(value);
+  document.getElementById('searchInput').addEventListener('keydown', function (e) {
+    if (e.key === "Enter") toggleSortType(false);
+  });
+  document.getElementById('searchButton').addEventListener('click', function () {
+    return toggleSortType(false);
   });
   /*  Load Content
    *  ============
    */
+  // add our sorting button
 
-  var outputContainer = document.getElementById('themes_container');
+  var sortTrigger = document.getElementById('js-sortSwitcher');
+  sortTrigger.addEventListener('click', function () {
+    return toggleSortType(true);
+  }); // When localstorage is not set, use "latest" order type
 
-  if (outputContainer) {
+  if (!localStorage['sort']) localStorage['sort'] = 'latest';
+
+  function repeatToggle(nextType) {
+    localStorage['sort'] = nextType;
+    return toggleSortType(false);
+  }
+
+  function toggleSortType(change) {
+    if (document.querySelectorAll('.card')) document.querySelectorAll('.card').forEach(function (e) {
+      return e.remove();
+    });
     fetch('themes.json').then(function (data) {
       return data.json();
     }).then(function (parsedData) {
-      // sort from the most recent theme added
-      // temporary since we're going to add a button to sort
-      // in different ways
-      parsedData.reverse(); //! for now make this the same amount as all themes available
-      //! maybe change this once every theme is tagged properly
-
-      var themesDisplayMaxAmount = parsedData.length;
+      var search = document.getElementById('searchInput').value;
 
       if (search) {
         var matches = function matches(text, partial) {
@@ -105,23 +98,50 @@ function createLightbox(id) {
           var card = new Card(result[1], +result[0]);
           card.render(outputContainer);
         });
-      } else {
-        var shuffledData = _toConsumableArray(parsedData).sort(function () {
-          return 0.5 - Math.random();
-        });
-
-        var selectedData = shuffledData.slice(0, themesDisplayMaxAmount);
-        selectedData.forEach(function (entry, index) {
-          var card = new Card(entry, index);
-          card.render(outputContainer);
-        });
+        sortTrigger.title = "\"".concat(search, "\"");
+        return;
       }
+
+      switch (localStorage['sort']) {
+        // sort from the oldest theme added
+        case 'latest':
+          if (change) return repeatToggle('random');
+          parsedData.reverse();
+          break;
+        // sort randomly
+
+        case 'random':
+          if (change) return repeatToggle('oldest');
+
+          for (var i = parsedData.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var _ref = [parsedData[j], parsedData[i]];
+            parsedData[i] = _ref[0];
+            parsedData[j] = _ref[1];
+          }
+
+          break;
+        // sort from the most recent theme added
+
+        default:
+          if (change) return repeatToggle('latest');
+      } // TODO: make a better way to preview the current sorting
+
+
+      sortTrigger.title = localStorage['sort'];
+      parsedData.forEach(function (entry, index) {
+        var card = new Card(entry, index);
+        card.render(outputContainer);
+      });
     });
-  }
+  } // add themes
+
+
+  var outputContainer = document.getElementById('themes_container');
+  if (outputContainer) toggleSortType(false);
   /*  Theme Handling
    *  ==============
    */
-
 
   var systemPref = window.matchMedia("(prefers-color-scheme: dark)").matches ? 'night' : 'day',
       themeTrigger = document.getElementById('js-themeSwitcher'),
@@ -146,7 +166,7 @@ function createLightbox(id) {
     if (localStorage['theme'] === 'night') localStorage['theme'] = 'day';else localStorage['theme'] = 'night';
   }
 
-  themeTrigger.addEventListener('click', function (event) {
+  themeTrigger.addEventListener('click', function () {
     return toggleTheme();
   });
 })();
