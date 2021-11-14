@@ -14,5 +14,6 @@
 
   &:hover,
   &:focus { background: var(--body-background-darker); }
+  &:focus { outline: var(--focus-thickness) solid var(--focus-colour); }
 
 }

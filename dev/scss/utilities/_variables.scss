@@ -22,7 +22,8 @@ $space-l:   $base-size * 3;
 $space-xl:  $base-size * 5;
 $space-xxl: $base-size * 8;
 
-$border-radius: 12px;
+$border-radius:       12px;
+$border-radius-small: 3px;
 
 
 
@@ -64,6 +65,9 @@ $background-s1: $light-s1;
   --font-colour: #{$dark};
   --linkc: #{$accents};
   --linkc-hover: #{$accents-s1};
+
+  --focus-colour: #{$accents};
+  --focus-thickness: 1px;
 
 
   @media (prefers-color-scheme: dark) {
