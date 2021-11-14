@@ -3,6 +3,8 @@
 <img src="images/icon.png"><br>
 A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<br><a href="https://firefoxcss-store.github.io/">Preview here.</a></p>
 
+---
+
 ## Generic Installation
 
 + Go to the wanted theme and click the download button.
@@ -32,6 +34,8 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
 6. Create a folder and name it **`chrome`**, then assuming that you already have cloned this repo, just copy the theme to `chrome` folder.
 7. Restart Firefox.
 
+---
+
 ## Add your theme <3
 
 + If you have a Github account:
@@ -50,18 +54,19 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
   1. When creating an issue, you will find a template for submitting a theme. Use that one. It's easy.
 
 + If you have a Twitter account:
-  1. Send **at least** the following properties: **title**, **link**, **description**, and **picture** to [@Neikon66](https://twitter.com/Neikon66). 
-
-### Code
+  1. Send **at least** the following properties: **tags**, **title**, **link**, **description**, and **picture** to [@Neikon66](https://twitter.com/Neikon66). 
 
 ```
   {
     "title": "..........",
     "link": "..........",
     "description": "..........",
-    "image": ".........."
+    "image": "..........",
+    "tags": [ "your username/name", "theme type: dark", "theme type: light", "............." ]
   }
 ```
+
+---
 
 <h1 align="center">What do you think =?</h1>
 
