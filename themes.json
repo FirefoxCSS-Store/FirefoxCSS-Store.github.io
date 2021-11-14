@@ -382,5 +382,12 @@
     "link": "https://github.com/Tnings/CompactFox",
     "description": "A simple theme that compacts a lot of the UI elements",
     "image": "assets/img/themes/CompactFoxPreview.webp"
+  },
+  {
+    "title": "AuroraFox- Auroral Firefox",
+    "link": "https://github.com/alfarexguy2019/aurora-fox",
+    "description": "AuroraFox is a clean rounded Firefox theme, made using CSS, to match with the trendy 'Aurora' Colour Palette.",
+    "image": "https://user-images.githubusercontent.com/78948152/141609919-befbc7f3-5199-4672-9ba1-8551d2a4e5a1.png"
   }
+
 ]
