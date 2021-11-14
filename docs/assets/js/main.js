@@ -6,26 +6,25 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+function sanatise(unsanatisedInput) {
+  var tempEl = document.createElement('div');
+  tempEl.innerText = unsanatisedInput;
+  var sanatisedOutput = tempEl.innerHTML;
+  return sanatisedOutput;
+}
+
 var Card = /*#__PURE__*/function () {
   function Card(data, id) {
     _classCallCheck(this, Card);
 
     this._id = id + 1;
-    this._title = this.sanatise(data.title);
-    this._description = this.sanatise(data.description);
-    this._link = this.sanatise(data.link);
-    this._image = this.sanatise(data.image);
+    this._title = sanatise(data.title);
+    this._description = sanatise(data.description);
+    this._link = sanatise(data.link);
+    this._image = sanatise(data.image);
   }
 
   _createClass(Card, [{
-    key: "sanatise",
-    value: function sanatise(unsanatisedInput) {
-      var tempEl = document.createElement('div');
-      tempEl.innerText = unsanatisedInput;
-      var sanatisedOutput = tempEl.innerHTML;
-      return sanatisedOutput;
-    }
-  }, {
     key: "render",
     value: function render(outputContainer) {
       var template = "\n    <div id=\"theme-".concat(this._id, "\" class=\"card\">\n      <header>\n        <h3 class=\"theme-title\">").concat(this._title, "</h3>\n        <a href=\"").concat(this._link, "\">\n          <i class=\"fas fa-chevron-circle-down\"></i>\n        </a>\n      </header>\n      <div class=\"meta\">\n        <a href=\"").concat(this._link, "\" tabindex=\"-1\">\n          <img src=\"").concat(this._image, "\">\n          <p class=\"description\">").concat(this._description, "</p>\n        </a>\n      </div>\n      <div class=\"button-wrapper\">\n        <button class=\"btn btn-lightbox\" type=\"button\" onClick=\"createLightbox(").concat(this._id, ")\"><i class=\"fas fa-search-plus\"></i> Enlarge</button>\n        <a href=\"").concat(this._link, "\" class=\"btn btn-download\"><i class=\"fas fa-file-download\"></i> Download</a>\n      </div>\n    </div>\n    ");
@@ -51,10 +50,20 @@ function createLightbox(id) {
 (function () {
   // IIFE to avoid globals
 
+  /*  SEARCH Parameter Handling
+   *  ======================
+   */
+  document.getElementById('searchInput').addEventListener('keydown', function (e) {
+    if (e.key === "Enter") toggleSortType(false);
+  });
+  document.getElementById('searchButton').addEventListener('click', function () {
+    return toggleSortType(false);
+  });
   /*  Load Content
    *  ============
    */
   // add our sorting button
+
   var sortTrigger = document.getElementById('js-sortSwitcher');
   sortTrigger.addEventListener('click', function () {
     return toggleSortType(true);
@@ -74,6 +83,25 @@ function createLightbox(id) {
     fetch('themes.json').then(function (data) {
       return data.json();
     }).then(function (parsedData) {
+      var search = document.getElementById('searchInput').value;
+
+      if (search) {
+        var matches = function matches(text, partial) {
+          return text.toLowerCase().indexOf(partial.toLowerCase()) > -1;
+        };
+
+        var parsedAsArray = Object.entries(parsedData);
+        var searchResults = parsedAsArray.filter(function (element) {
+          return matches("".concat(element[1].title, ", ").concat(element[1].tags), search);
+        });
+        searchResults.forEach(function (result) {
+          var card = new Card(result[1], +result[0]);
+          card.render(outputContainer);
+        });
+        sortTrigger.title = "\"".concat(search, "\"");
+        return;
+      }
+
       switch (localStorage['sort']) {
         // sort from the oldest theme added
         case 'latest':

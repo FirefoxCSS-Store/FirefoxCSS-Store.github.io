@@ -1,25 +1,27 @@
+function sanatise (unsanatisedInput) {
+
+  const tempEl = document.createElement('div')
+        tempEl.innerText = unsanatisedInput
+
+  const sanatisedOutput = tempEl.innerHTML
+  return sanatisedOutput
+
+}
+
+
+
 class Card {
 
   constructor (data, id) {
 
     this._id           = id + 1
-    this._title        = this.sanatise(data.title)
-    this._description  = this.sanatise(data.description)
-    this._link         = this.sanatise(data.link)
-    this._image        = this.sanatise(data.image)
+    this._title        = sanatise(data.title)
+    this._description  = sanatise(data.description)
+    this._link         = sanatise(data.link)
+    this._image        = sanatise(data.image)
 
   }
 
-
-  sanatise (unsanatisedInput) {
-
-    const tempEl = document.createElement('div')
-          tempEl.innerText = unsanatisedInput
-
-    const sanatisedOutput = tempEl.innerHTML
-    return sanatisedOutput
-
-  }
 
 
   render (outputContainer) {
@@ -51,8 +53,6 @@ class Card {
 }
 
 
-
-
 const removeLightbox = () => document.body.getElementsById('lightbox').remove()
 
 function createLightbox (id) {
@@ -75,9 +75,19 @@ function createLightbox (id) {
 
 
 
-
-
 (() => { // IIFE to avoid globals
+
+  /*  SEARCH Parameter Handling
+   *  ======================
+   */
+
+  document.getElementById('searchInput').addEventListener('keydown', e => {
+
+    if (e.key === "Enter") toggleSortType(false)
+
+  })
+  
+  document.getElementById('searchButton').addEventListener('click', () => toggleSortType(false))
 
   /*  Load Content
    *  ============
@@ -86,7 +96,7 @@ function createLightbox (id) {
   // add our sorting button
   const sortTrigger = document.getElementById('js-sortSwitcher')
   sortTrigger.addEventListener('click', () => toggleSortType(true))
-  
+
   // When localstorage is not set, use "latest" order type
   if (!localStorage['sort']) localStorage['sort'] = 'latest'
 
@@ -104,7 +114,29 @@ function createLightbox (id) {
 
     fetch('themes.json')
     .then(data => data.json())
-    .then(parsedData => {   
+    .then(parsedData => {
+
+      const search = document.getElementById('searchInput').value
+
+      if (search) {
+
+        function matches (text, partial) { return text.toLowerCase().indexOf(partial.toLowerCase()) > -1 }
+
+        const parsedAsArray = Object.entries(parsedData)
+        let   searchResults = parsedAsArray.filter(element => matches(`${element[1].title}, ${element[1].tags}`, search))
+
+        searchResults.forEach(result => {
+
+          const card = new Card(result[1], +result[0])
+          card.render(outputContainer)
+
+        })
+
+        sortTrigger.title = `"${search}"`
+
+        return 
+
+      }
 
       switch (localStorage['sort']) {
 
@@ -137,18 +169,19 @@ function createLightbox (id) {
       parsedData.forEach((entry, index)  => {
 
         const card = new Card (entry, index)
-
         card.render(outputContainer)
 
       })
-
-    });
-
+      
+    })
   }
   
   // add themes
   const outputContainer = document.getElementById('themes_container')
-  if (outputContainer) toggleSortType(false)
+
+  if (outputContainer) toggleSortType(false);
+
+
 
 
   /*  Theme Handling
