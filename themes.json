@@ -346,7 +346,7 @@
     "title": "Proton Square",
     "link": "https://github.com/leadweedy/Firefox-Proton-Square",
     "description": "Recreates the feel of Quantum with its squared tabs and menus. No rounded corners to be seen.\n Compatibility: V91+",
-    "image": "assets/img/themes/Proton Square.webp",
+    "image": "https://raw.githubusercontent.com/leadweedy/Firefox-Proton-Square/main/images/ff_protonbutquantum.png",
     "tags": [ "" ]
   },
   {
