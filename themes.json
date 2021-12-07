@@ -453,6 +453,13 @@
     "description": "AuroraFox is a clean rounded Firefox theme, made using CSS, to match with the trendy 'Aurora' Colour Palette.",
     "image": "assets/img/themes//18328141609919-befbc7f3-5199-4672-9ba1-8551d2a4e5a1.webp",
     "tags": [ "" ]
+  },
+  {
+    "title": "starry-fox",
+    "link": "https://github.com/sagars007/starry-fox",
+    "description": "Firefox CSS stylesheets for the Dark Space Theme. Matching more UI elements with the theme.",
+    "image": "assets/img/themes/starry-fox-resize.png",
+    "tags": [ "sagars007", "dark", "compact", "darkspace", "stars", "nightsky", "gradient", "windows11" ]
   }
 
 ]
