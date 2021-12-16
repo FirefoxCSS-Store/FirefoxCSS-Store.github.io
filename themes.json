@@ -291,168 +291,168 @@
     "link": "https://github.com/edo0/Technetium",
     "description": "A focused approach to taming the new Firefox Proton interface, restituting some of the beloved elements retired alongside the old Photon UI - menu icons and much more \n Compatibility: V89+",
     "image": "assets/img/themes/Technetium.webp",
-    "tags": [ "" ]
+    "tags": [ "edo0", "light", "dark", "rounded", "squared", "compact", "v89" ]
   },
   {
     "title": "Chameleons-Beauty to Firefox CSS",
     "link": "https://github.com/Godiesc/Chameleons-Beauty",
     "description": "Adaptive Theme to Firefox Themes \n Compatibility: V89+",
     "image": "assets/img/themes/Chameleons-Beauty.webp",
-    "tags": [ "" ]
+    "tags": [ "dark", "Godiesc", "colourful", "dark", "light", "v89" ]
   },
   {
     "title": "pro-fox: enhanced firefox proton",
     "link": "https://github.com/xmansyx/Pro-Fox",
     "description": "a proton based theme to make it even better \n Compatibility: V89+",
     "image": "assets/img/themes/pro-fox.webp",
-    "tags": [ "" ]
+    "tags": [ "xmansyx", "centered", "rounded", "dark", "light", "bigger", "v89" ]
   },
   {
     "title": "MartinFox",
     "link": "https://github.com/arp242/MartinFox",
     "description": "Really simple userChrome.css to make the active tab stand out more; 61 lines. \n Compatibility: V89+",
     "image": "assets/img/themes/martinfox.webp",
-    "tags": [ "" ]
+    "tags": [ "arp242", "pure", "compact", "v91" ]
   },
   {
     "title": "ProtoVibrant",
     "link": "https://github.com/bpwned/protovibrant",
     "description": "Add macOS vibrancy to the Proton titlebar. Supports dark and light mode. \n Compatibility: V89+",
     "image": "assets/img/themes/protovibrant.webp",
-    "tags": [ "" ]
+    "tags": [ "vibrancy", "macos", "pure", "transparency", "bpwned", "v89" ]
   },
   {
     "title": "OnelineProton",
     "link": "https://github.com/lr-tech/OnelineProton",
     "description": "An oneline userChrome.css theme for Firefox, which aims to keep the Proton experience  \n Compatibility: V89+",
     "image": "assets/img/themes/onelineproton.webp",
-    "tags": [ "" ]
+    "tags": [ "one-line", "proton", "v89", "minimal", "dark", "light", "lr-tech", "v89" ]
   },
   {
     "title": "Firefox Compact Mode",
     "link": "https://github.com/dannycolin/fx-compact-mode",
     "description": "A compact mode that follows Firefox 89 (known as Proton) design system while using the same vertical space as the compact mode in Firefox 88 (known as Photon). \n Compatibility: V91+",
     "image": "assets/img/themes/fx-compact-mode.webp",
-    "tags": [ "" ]
+    "tags": [ "dannycolin", "compact", "proton", "photon", "v91", "pure" ]
   },
   {
     "title": "GruvFox by Alfarex2019",
     "link": "https://github.com/FirefoxCSSThemers/GruvFox",
     "description": "GruvFox is a remix of dpcdpc11's theme, featuring the gruvbox color palette.\n Compatibility: V91+",
     "image": "assets/img/themes/20930130265614-a7559ea7-70fd-44f9-a790-34c5c0e31493.webp",
-    "tags": [ "" ]
+    "tags": [ "alfarexguy2019", "gruv", "dark", "pure", "v91" ]
   },
   {
     "title": "Proton Square",
     "link": "https://github.com/leadweedy/Firefox-Proton-Square",
     "description": "Recreates the feel of Quantum with its squared tabs and menus. No rounded corners to be seen.\n Compatibility: V91+",
     "image": "https://raw.githubusercontent.com/leadweedy/Firefox-Proton-Square/main/images/ff_protonbutquantum.png",
-    "tags": [ "" ]
+    "tags": [ "squared", "v91", "pure", "quantum", "leadweedy" ]
   },
   {
     "title": "Natura for Firefox",
     "link": "https://github.com/firefoxcssthemers/natura-for-firefox",
     "description": "Nature theme for Firefox \n Compatibility: V91+",
     "image": "assets/img/themes/natura.webp",
-    "tags": [ "" ]
+    "tags": [ "green", "yellow", "firefoxcssthemers", "alfarexguy2019", "v91", "pure" ]
   },
   {
     "title": "MacOSVibrant",
     "link": "https://github.com/Tnings/MacosVibrant",
     "description": "A theme that uses MacOS Vibrancy and is styled after other Apple Apps \n Compatibility: V91+",
     "image": "assets/img/themes/MacOSVibrant.webp",
-    "tags": [ "" ]
+    "tags": [ "Tnings", "transparency", "dark", "rounded", "v91" ]
   },
   {
     "title": "Cascade",
     "link": "https://github.com/andreasgrafen/cascade",
     "description": "A responsive \"One-Line\" theme based on SimpleFox for the new ProtonUI.  \n Compatibility: V91+",
     "image": "assets/img/themes/cascade.webp",
-    "tags": [ "" ]
+    "tags": [ "andreasgrafen", "one-line", "proton", "light", "dark", "v91" ]
   },
   {
     "title": "Firefox GNOME theme",
     "link": "https://github.com/rafaelmardojai/firefox-gnome-theme",
     "description": "A bunch of CSS code to make Firefox look closer to GNOME's native apps.  \n Compatibility: V91+",
     "image": "assets/img/themes/firefox-gnome-theme.webp",
-    "tags": [ "" ]
+    "tags": [ "rafaelmardojai", "gnome", "v91", "rounded", "light", "dark", "v91" ]
   },
   {
     "title": "PretoFox",
     "link": "https://github.com/alfarexguy2019/pretofox",
     "description": "A Black n White AMOLED theme for Firefox, inspired by the Preto color scheme. \n Compatibility: V91+",
     "image": "assets/img/themes/PretoFox.webp",
-    "tags": [ "" ]
+    "tags": [ "alfarexguy2019", "black", "white", "dark", "light", "v91" ]
   },
   {
     "title": "Elementary OS Odin Firefox theme",
     "link": "https://github.com/Zonnev/elementaryos-firefox-theme",
     "description": "This theme supports all the window buttons layouts from Tweaks and it blends into the elementary OS Odin user interface. \n Compatibility: V91+",
     "image": "assets/img/themes/firefox-eos6-theme.webp",
-    "tags": [ "" ]
+    "tags": [ "Zonnev", "elementary-OS", "OS", "dark", "light" ]
   },
   {
     "title": "Oneliner Deluxe",
     "link": "https://github.com/Doosty/Oneliner-Deluxe",
     "description": "Minimal, customizable and theme compatible \n Compatibility: V91+",
     "image": "assets/img/themes/Oneliner_Deluxe.webp",
-    "tags": [ "" ]
+    "tags": [ "one-line", "Doosty", "v91" ]
   },
   {
     "title": "Simple Oneliner",
     "link": "https://github.com/hakan-demirli/Firefox_Custom_CSS",
     "description": "A simple theme to maximize the vertical space of your monitor \n Compatibility: V91+",
     "image": "assets/img/themes/Simple_Oneliner.webp",
-    "tags": [ "" ]
+    "tags": [ "Sidebery", "dark", "light", "pdf", "one-line", "hakan-demirli", "v91" ]
   },
   {
     "title": "GentleFox",
     "link": "https://github.com/alfarexguy2019/gentlefox",
     "description": "A Firefox theme, which features gentle curves, transparency and a minimal interface. \n Compatibility: V91+",
     "image": "assets/img/themes/GentleFox.webp",
-    "tags": [ "" ]
+    "tags": [ "alfarexguy2019", "blur", "transparency", "rounded", "dark", "light" ]
   },
   {
     "title": "Clean and Transparent",
     "link": "https://github.com/Filip-Sutkowy/blurclean-firefox-theme",
     "description": "Clean theme with as much transparency as Firefox lets you do \n Compatibility: V91+",
     "image": "assets/img/themes/Clean_and_Transparent.webp",
-    "tags": [ "" ]
+    "tags": [ "Filip-Sutkowy", "blur", "pure", "dark", "light", "transparency", "v91" ]
   },
   {
     "title": "Waterfall",
     "link": "https://github.com/crambaud/waterfall",
     "description": "A minimalist one line theme",
     "image": "assets/img/themes/waterfall.webp",
-    "tags": [ "" ]
+    "tags": [ "crambaud", "minimal", "one-line", "mouse" ]
   },
   {
     "title": "Brave-Fox: The Reimagined Browser, Reimagined",
     "link": "https://github.com/Soft-Bred/Brave-Fox",
     "description": "Brave-Fox is a Firefox Theme that brings Brave's design elements into Firefox.",
     "image": "assets/img/themes//184007ilia7199au71.webp",
-    "tags": [ "" ]
+    "tags": [ "brave", "pure", "js", "javascript", "Soft-Bred" ]
   },
   {
     "title": "KeyFox- A minimal, keyboard centered OneLiner CSS.",
     "link": "https://github.com/alfarexguy2019/KeyFox",
     "description": "KeyFox is A simple, minimal OneLiner Keyboard-centered CSS for Firefox.",
     "image": "assets/img/themes//13268136501706-accca691-b9c3-4841-acd7-6bb843d2f422.webp",
-    "tags": [ "" ]
+    "tags": [ "black", "dark", "white", "one-line", "alfarexguy2019" ]
   },
   {
     "title": "CompactFox",
     "link": "https://github.com/Tnings/CompactFox",
     "description": "A simple theme that compacts a lot of the UI elements",
     "image": "assets/img/themes/CompactFoxPreview.webp",
-    "tags": [ "" ]
+    "tags": [ "compact", "dark", "light", "Tnings", "pure" ]
   },
   {
     "title": "AuroraFox- Auroral Firefox",
     "link": "https://github.com/alfarexguy2019/aurora-fox",
     "description": "AuroraFox is a clean rounded Firefox theme, made using CSS, to match with the trendy 'Aurora' Colour Palette.",
     "image": "assets/img/themes//18328141609919-befbc7f3-5199-4672-9ba1-8551d2a4e5a1.webp",
-    "tags": [ "" ]
+    "tags": [ "dark", "minimal", "purple", "alfarexguy2019" ]
   },
   {
     "title": "starry-fox",
