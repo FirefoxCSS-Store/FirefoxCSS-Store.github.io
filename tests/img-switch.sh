@@ -33,7 +33,7 @@ pathoutbuild="assets/img/themes/"
 #--------------------------------Scripts--------------------------------------
 
 # parse all the links of the new themes to a file called links
-grep '\"image\":' $O/$path | grep -o '"http.*' | sed -r 's/"//gm' > $O/links
+grep '\"image\":' $O/$path | grep -o '"http.*' | sed -r 's/"|,$//gm' > $O/links
 
 # limit of new themes urls to loop
 limit="$(wc -l $O/links | awk '{ print $1 }')"
