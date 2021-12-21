@@ -49,11 +49,11 @@
     "tags": [ "dark", "CristianDragos", "windows 10" ]
   },
   {
-    "title": "SimplerentFox",
-    "link": "https://github.com/MiguelRAvila/SimplerentFox",
-    "description": "🦊 A Userstyle theme for Firefox minimalist, transparent and Keyboard centered",
-    "image": "assets/img/themes/simplerentfox.webp",
-    "tags": [ "MiguelRAvila", "dark", "minimal" ]
+    "title": "SimpleFox",
+    "link": "https://github.com/migueravila/Simplefox",
+    "description": "🦊 A Userstyle theme for Firefox minimalist and Keyboard centered.",
+    "image": "assets/img/themes/simplefox.png",
+    "tags": [ "migueravila", "dark", "minimal", "keyboard", "compact", "linux"]
   },
   {
     "title": "blurredfox",
