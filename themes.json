@@ -467,6 +467,13 @@
     "description": "Firefox Theme CSS to Opera-GX Lovers.",
     "image": "assets/img/themes//18217146305253-e257fbc0-993b-4e79-a0b4-0c0e6c95228b.webp",
     "tags": [ "Godiesc", "dark", "opera", "gx", "theme", "adapted", "fuchsia", "blue" ]
+  },
+  {
+    "title": "Elegant Fox",
+    "link": "https://github.com/ayushhroyy/elegantfox",
+    "description": "A firefox context menu theme and background wallpaper support with linux desktops being the main focus",
+    "image": "assets/img/themes/elegantfox.webp ",
+    "tags": [ "ayushhroyy", "nord", "dark", "light", "adaptive" ]
   }
 
 ]
