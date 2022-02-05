@@ -4,6 +4,7 @@
   "description": "Firefox CSS Store",
   "scripts": {
     "build": "gulp",
+    "watch": "gulp watch",
     "test": "node tests/themes.check.js"
   },
   "repository": {
