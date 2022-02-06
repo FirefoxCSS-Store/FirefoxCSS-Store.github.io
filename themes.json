@@ -368,7 +368,10 @@
     "link": "https://github.com/andreasgrafen/cascade",
     "description": "A responsive \"One-Line\" theme based on SimpleFox for the new ProtonUI.  \n Compatibility: V91+",
     "image": "assets/img/themes/cascade.webp",
-    "tags": [ "andreasgrafen", "minial", "oneline", "responsive", "one-line", "proton", "light", "dark", "v91" ]
+    "tags": [ "andreasgrafen", "minial", "oneline", "responsive", "one-line", "proton", "light", "dark", "v91" ],
+    "experiment_xpi": {
+      "Dark": "https://github.com/pulse-browser/cascade-theme-experiments/releases/download/v1.0.0/cascade.xpi"
+    }
   },
   {
     "title": "Firefox GNOME theme",
