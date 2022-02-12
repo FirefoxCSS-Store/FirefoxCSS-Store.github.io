@@ -1,0 +1,27 @@
+.install-option {
+    max-width: 90vw; max-height: 80vh;
+
+    .btn {
+        width: 100%;
+    }
+}
+
+#browser-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.browser-card {
+    display: flex;
+    flex-direction: column;
+
+    background: var(--body-background-darker) !important;
+    cursor: pointer;
+
+    padding: 8px;
+
+    img {
+        width: 100%;
+    }
+}

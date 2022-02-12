@@ -1,0 +1,76 @@
+<div id="select-browser" style="display: none">
+    <h1>Select a browser</h1>
+
+    <div id="browser-grid" class="install-option">
+        <div class="browser-card" id="select-stable">
+            <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg" alt="Firefox stable icon" />
+            <h2>Firefox Stable or Beta</h2>
+        </div>
+        <div class="browser-card" id="select-dev">
+            <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/developer/logo.41d42822c8fb.svg" alt="Firefox developer edition icon" />
+            <h2>Firefox Developer Edition and Nightly</h2>
+        </div>
+        <div class="browser-card" id="select-waterfox">
+            <img src="https://www.waterfox.net/img/logo.svg" alt="Waterfox icon" />
+            <h2>Waterfox or Pulse browser</h2>
+        </div>
+    </div>
+</div>
+
+<div id="stable-browser" style="display: none;" class="install-option">
+    <h1>Installing on Firefox Stable and Beta</h1>
+
+    <ol>
+        <li>Download the theme <a href="${this._link}">from the git repository</a>. If it is a Github repo, you can download it by clicking the big green "Code" button and click "Download.zip"</li>
+        <li>Open <code>about:config</code></li>
+        <li>A dialog will warn you, but ignore t, just doit. Press the "I accept the risk!" button.</li>
+        <li>Search for these and enable each of them:
+        <ul>
+            ${stableEnableOptions.map(option => `<li><code>${option}</code></li>`).join('')}
+        </ul>
+        </li>
+        <li>Go to your Firefox profile:
+        <ul>
+            <li>Linux - <code>$HOME/.mozilla/firefox/XXXXXXX.default-XXXXXX/</code>.</li>
+            <li>Windows 10 - <code>C:\Users\&lt;USERNAME&gt;\AppData\Roaming\Mozilla\Firefox\Profiles\XXXXXXX.default-XXXXXX</code>.</li>
+            <li>macOS - <code>Users/&lt;USERNAME&gt;/Library/Application Support/Firefox/Profiles/XXXXXXX.default-XXXXXXX</code>.</li>
+        </ul>
+        </li>
+        <li>
+        Create a folder and name it <code>chrome</code>, then assuming that 
+        you already have cloned this repo, just copy the theme to 
+        <code>chrome</code> folder.
+        </li>
+        <li>Restart Firefox</li>
+    </ol>
+</div>
+
+<div id="nightly-browser" style="display: none;" class="install-option">
+    <h1>Installing on Firefox Developer Edition and Nightly</h1>
+
+    <ol>
+        <li>Open <code>about:config</code></li>
+        <li>A dialog will warn you, but ignore t, just doit. Press the "I accept the risk!" button.</li>
+        <li>Search for <code>xpinstall.signatures.required</code> and disable it.</li>
+        <li>Search for these and enable each of them:
+        <ul>
+            ${nightlyEnableOptions.map(option => `<li><code>${option}</code></li>`).join('')}
+        </ul>
+        </li>
+        <li>
+        You are now ready to install the theme. Simply clock the button below.
+        </li>
+    </ol>
+
+    <div class="addon-install-options"></div>
+</div>
+
+<div id="forked-browser" style="display: none;" class="install-option">
+    <h1>Installing on Waterfox and Pulse Browser</h1>
+
+    <p>You are now ready to install the theme. Simply clock the button below.</p>
+
+    <div class="addon-install-options"></div>
+</div>
+
+<button type="button" class="btn btn-close-lightbox" onClick="removeLightbox()"><i class="fas fa-times-circle"></i> Close</button>
