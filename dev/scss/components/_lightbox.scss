@@ -32,4 +32,17 @@
 
   }
 
+  &.lightbox-card {
+    background: #0008 !important;
+    backdrop-filter: blur(4px);
+
+    div {
+      padding: 16px;
+      border-radius: 4px;
+      background: var(--body-background);
+
+      ul { list-style-type: disc; }
+      ol { list-style-type: decimal; }
+    }
+  }
 }

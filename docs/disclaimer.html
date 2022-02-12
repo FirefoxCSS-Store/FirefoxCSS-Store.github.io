@@ -12,7 +12,17 @@
   <body>
     <header id="main_header">
       <h3 class="header-branding">FirefoxCSS Store</h3>
-      <nav id="main_nav"><a href="index.html">Theme List</a><a id="js-themeSwitcher" href="#"><i class="fas fa-moon"></i></a><a id="js-sortSwitcher" href="#"><i class="fas fa-sort"></i></a>
+      <nav id="main_nav"><a href="index.html">Theme List</a>
+        <select id="browser">
+          <option value="select">Select a browser</option>
+          <option value="firefox">Firefox</option>
+          <option value="firefox-esr">Firefox ESR</option>
+          <option value="firefox-beta">Firefox Beta</option>
+          <option value="firefox-dev">Firefox Dev </option>
+          <option value="firefox-nightly">Firefox Nightly</option>
+          <option value="waterfox">Waterfox</option>
+          <option value="pulse">Pulse browser</option>
+        </select><a id="js-themeSwitcher" href="#"><i class="fas fa-moon"></i></a><a id="js-sortSwitcher" href="#"><i class="fas fa-sort"></i></a>
         <div class="searchform" method="get">
           <div class="inputgroup">
             <input class="searchinput" id="searchInput" type="text" placeholder="Search">

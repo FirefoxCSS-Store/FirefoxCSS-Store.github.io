@@ -18,3 +18,22 @@
   font-weight: $font-weight-bold;
 
 }
+
+select {
+
+  background: var(--body-background);
+  color: var(--font-color);
+  border: none;
+  appearance: button;
+  padding: 0;
+  margin: 0;
+
+}
+
+select option {
+  
+    background: var(--body-background);
+    color: var(--font-color);
+    margin: 0;
+    
+}

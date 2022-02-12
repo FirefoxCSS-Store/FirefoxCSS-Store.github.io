@@ -3,6 +3,15 @@ header#main_header
 
   nav#main_nav
       a(href='index.html') Theme List
+      select(id="browser")
+        option(value="select") Select a browser
+        option(value="firefox") Firefox
+        option(value="firefox-esr") Firefox ESR
+        option(value="firefox-beta") Firefox Beta
+        option(value="firefox-dev") Firefox Dev 
+        option(value="firefox-nightly") Firefox Nightly
+        option(value="waterfox") Waterfox
+        option(value="pulse") Pulse browser
       a#js-themeSwitcher(href='#')
         i.fas.fa-moon
       a#js-sortSwitcher(href='#')
