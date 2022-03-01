@@ -6,37 +6,37 @@
 const /** @type {HTMLSelectElement} */ choice = document.getElementById('browser')
 
 function getCurrentBrowser() {
-    return localStorage.getItem('browser') || 'select'
+  return localStorage.getItem('browser') || 'select'
 }
 
 function setCurrentBrowser(browser, choiceTrigger = false) {
-    localStorage.setItem('browser', browser)
+  localStorage.setItem('browser', browser)
 
-    if (!choiceTrigger) {
-        updateChoicePrompt()
-    }
+  if (!choiceTrigger) {
+    updateChoicePrompt()
+  }
 }
 
 function setup() {
-    choice.onchange = () => {
-        setCurrentBrowser(choice.value, true)
-    }
+  choice.onchange = () => {
+    setCurrentBrowser(choice.value, true)
+  }
 }
 
 function updateChoicePrompt() {
-    choice.value = getCurrentBrowser()
-    
-    // @ts-ignore
-    const /** @type {HTMLSelectElement} */ prompt = document.getElementById('popup-browser')
-    if (prompt) {
-      prompt.value = getCurrentBrowser()
-    }
+  choice.value = getCurrentBrowser()
+  
+  // @ts-ignore
+  const /** @type {HTMLSelectElement} */ prompt = document.getElementById('popup-browser')
+  if (prompt) {
+    prompt.value = getCurrentBrowser()
+  }
 
-    // @ts-ignore
-    const /** @type {HTMLButtonElement} */ prompt_next = document.getElementById('popup-browser-next')
-    if (prompt_next) {
-      prompt_next.disabled = choice.value === 'select'
-    }
+  // @ts-ignore
+  const /** @type {HTMLButtonElement} */ prompt_next = document.getElementById('popup-browser-next')
+  if (prompt_next) {
+    prompt_next.disabled = choice.value === 'select'
+  }
 }
 
 
