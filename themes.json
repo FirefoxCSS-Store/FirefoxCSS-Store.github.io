@@ -475,5 +475,12 @@
     "image": "assets/img/themes/elegantfox.webp ",
     "tags": [ "ayushhroyy", "nord", "dark", "light", "adaptive" ]
   }
+    {
+    "title": "TYH Fox",
+    "link": "https://github.com/tyuhao/TYHfox",
+    "description": "TYHFox",
+    "image": "assets/img/themes/TYHFox.webp ",
+    "tags": [ "dark", "light", "adaptive" ]
+  }
 
 ]
