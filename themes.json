@@ -474,13 +474,13 @@
     "description": "A firefox context menu theme and background wallpaper support with linux desktops being the main focus",
     "image": "assets/img/themes/elegantfox.webp ",
     "tags": [ "ayushhroyy", "nord", "dark", "light", "adaptive" ]
-  }
+  },
     {
     "title": "TYH Fox",
     "link": "https://github.com/tyuhao/TYHfox",
-    "description": "TYHFox",
+    "description": "A firefox Theme CSS",
     "image": "assets/img/themes/TYHFox.webp ",
-    "tags": [ "dark", "light", "adaptive" ]
+    "tags": ["TYHFox", "dark", "light", "adaptive" ]
   }
 
 ]
