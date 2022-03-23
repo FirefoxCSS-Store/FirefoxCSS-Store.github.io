@@ -483,11 +483,11 @@
     "tags": ["TYHFox", "dark", "light", "adaptive" ]
   },
   {
-		"title": "silentfox",
-		"link": "https://github.com/themoonmeetsthesun/silentfox",
-		"description": "A silent theme which lets you focus on your work",
-		"image": "assets/img/themes/silentfox.webp",
-		"tags": [ "themoonmeetsthesun", "silent", "focused"]
+    "title": "silentfox",
+    "link": "https://github.com/themoonmeetsthesun/silentfox",
+    "description": "A silent theme which lets you focus on your work",
+    "image": "assets/img/themes/silentfox.webp",
+    "tags": [ "themoonmeetsthesun", "silent", "focused"]
   }
 
 ]
