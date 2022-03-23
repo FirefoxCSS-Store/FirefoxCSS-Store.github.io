@@ -475,12 +475,19 @@
     "image": "assets/img/themes/elegantfox.webp ",
     "tags": [ "ayushhroyy", "nord", "dark", "light", "adaptive" ]
   },
-    {
+  {
     "title": "TYH Fox",
     "link": "https://github.com/tyuhao/TYHfox",
     "description": "A firefox Theme CSS",
     "image": "assets/img/themes/TYHFox.webp ",
     "tags": ["TYHFox", "dark", "light", "adaptive" ]
+  },
+  {
+		"title": "silentfox",
+		"link": "https://github.com/themoonmeetsthesun/silentfox",
+		"description": "A silent theme which lets you focus on your work",
+		"image": "assets/img/themes/silentfox.webp",
+		"tags": [ "themoonmeetsthesun", "silent", "focused"]
   }
 
 ]
