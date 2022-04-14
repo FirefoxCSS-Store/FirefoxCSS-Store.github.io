@@ -488,6 +488,13 @@
     "description": "A silent theme which lets you focus on your work",
     "image": "assets/img/themes/silentfox.webp",
     "tags": [ "themoonmeetsthesun", "silent", "focused"]
+  },
+  {
+    "title": "AutoColor-Minimal-Proton",
+    "link": "https://github.com/Neikon/AutoColor-Minimal-Proton",
+    "description": "Some settings that together with the vivaldifox add-on create a minimalist theme whose color is the color of the website you are visiting.",
+    "image": "assets/img/themes/AutoColor-Minimal-Proton.webp",
+    "tags": [ "vivaldi", "proton", "minimal", "autocolor", "dark", "light", "borderless", "adaptive", "compact", "one-line"]
   }
 
 ]
