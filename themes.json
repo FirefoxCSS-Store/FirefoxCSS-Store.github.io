@@ -502,6 +502,13 @@
     "description": "A fork of SimpleFox that uses feather icons!",
     "image": "assets/img/themes/simplefox-feather.webp",
     "tags": ["Simplefox", "Fork", "Icons", "BlueFalconHD"]
+  },
+  {
+    "title": "gale for Firefox",
+    "link": "https://github.com/mgastonportillo/gale-for-ff",
+    "description": "My CSS files to use with Firefox and Sidebery",
+    "image": "https://i.imgur.com/rjy7uTd.png",
+    "tags": [ "gale", "dark", "minimalistic", "adaptive", "compact", "autohide", "sidebar"]
   }
 
 ]
