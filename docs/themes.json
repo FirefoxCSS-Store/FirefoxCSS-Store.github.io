@@ -502,6 +502,20 @@
     "description": "A fork of SimpleFox that uses feather icons!",
     "image": "assets/img/themes/simplefox-feather.webp",
     "tags": ["Simplefox", "Fork", "Icons", "BlueFalconHD"]
+  },
+  {
+    "title": "gale for Firefox",
+    "link": "https://github.com/mgastonportillo/gale-for-ff",
+    "description": "My CSS files to use with Firefox and Sidebery",
+    "image": "assets/img/themes//8988rjy7uTd.webp",
+    "tags": [ "gale", "dark", "minimalistic", "adaptive", "compact", "autohide", "sidebar"]
+  },
+  {
+    "title": "Firefox-UWP-Style-Theme-Omars-Edit",
+    "link": "https://github.com/omarb737/Firefox-UWP-Style-Theme-Omars-Edit",
+    "description": "A minimalistic-retro theme based off the UWP interface",
+    "image": "assets/img/themes//321608U0N6E.webp",
+    "tags": [ "omarb737", "dark", "retro", "minimalist", "UWP" ]
   }
 
 ]

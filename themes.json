@@ -507,14 +507,14 @@
     "title": "gale for Firefox",
     "link": "https://github.com/mgastonportillo/gale-for-ff",
     "description": "My CSS files to use with Firefox and Sidebery",
-    "image": "https://i.imgur.com/rjy7uTd.png",
+    "image": "assets/img/themes//8988rjy7uTd.webp",
     "tags": [ "gale", "dark", "minimalistic", "adaptive", "compact", "autohide", "sidebar"]
   },
   {
     "title": "Firefox-UWP-Style-Theme-Omars-Edit",
     "link": "https://github.com/omarb737/Firefox-UWP-Style-Theme-Omars-Edit",
     "description": "A minimalistic-retro theme based off the UWP interface",
-    "image": "https://i.imgur.com/08U0N6E.png",
+    "image": "assets/img/themes//321608U0N6E.webp",
     "tags": [ "omarb737", "dark", "retro", "minimalist", "UWP" ]
   }
 
