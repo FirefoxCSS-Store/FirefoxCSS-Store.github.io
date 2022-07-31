@@ -509,6 +509,13 @@
     "description": "My CSS files to use with Firefox and Sidebery",
     "image": "https://i.imgur.com/rjy7uTd.png",
     "tags": [ "gale", "dark", "minimalistic", "adaptive", "compact", "autohide", "sidebar"]
+  },
+  {
+    "title": "Firefox-UWP-Style-Theme-Omars-Edit",
+    "link": "https://github.com/omarb737/Firefox-UWP-Style-Theme-Omars-Edit",
+    "description": "A minimalistic-retro theme based off the UWP interface",
+    "image": "https://i.imgur.com/08U0N6E.png",
+    "tags": [ "omarb737", "dark", "retro", "minimalist", "UWP" ]
   }
 
 ]
