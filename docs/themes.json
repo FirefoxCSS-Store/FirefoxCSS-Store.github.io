@@ -516,6 +516,13 @@
     "description": "A minimalistic-retro theme based off the UWP interface",
     "image": "assets/img/themes//321608U0N6E.webp",
     "tags": [ "omarb737", "dark", "retro", "minimalist", "UWP" ]
+  },
+  {
+    "title": "Modoki Firefox",
+    "link": "https://github.com/soup-bowl/Modoki-Firefox",
+    "description": "Bringing the classic Modern Modoki Netscape theme back",
+    "image": "assets/img/themes/soupbowlmodoki.webp",
+    "tags": [ "soup-bowl", "classic", "netscape", "skeuomorphic", "light", "retro" ]
   }
 
 ]
