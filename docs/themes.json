@@ -523,6 +523,13 @@
     "description": "Bringing the classic Modern Modoki Netscape theme back",
     "image": "assets/img/themes/soupbowlmodoki.webp",
     "tags": [ "soup-bowl", "classic", "netscape", "skeuomorphic", "light", "retro" ]
+  },
+  {
+    "title": "TileFox",
+    "link": "https://github.com/davquar/tilefox",
+    "description": "A minimalistic Firefox userChrome.css that integrates well with tiling window managers like i3",
+    "image": "assets/img/themes/tilefox.webp",
+    "tags": [ "davquar", "light", "dark", "tile", "tilefox", "minimal", "minimalistic", "brutalist", "compact", "tiling", "dwm", "sway", "i3", "keyboard", "linux"]
   }
 
 ]
