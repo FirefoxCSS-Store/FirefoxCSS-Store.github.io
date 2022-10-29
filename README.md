@@ -28,7 +28,7 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
 5. Go to your Firefox profile.
 
 	+ Linux - `$HOME/.mozilla/firefox/XXXXXXX.default-XXXXXX/`.
-	+ Windows 10 - `C:\Users\<USERNAME>\AppData\Roaming\Mozilla\Firefox\Profiles\XXXXXXX.default-XXXXXX`.
+	+ Windows - `C:\Users\<USERNAME>\AppData\Roaming\Mozilla\Firefox\Profiles\XXXXXXX.default-XXXXXX`.
 	+ macOS - `Users/<USERNAME>/Library/Application Support/Firefox/Profiles/XXXXXXX.default-XXXXXXX`.
 
 6. Create a folder and name it **`chrome`**, then assuming that you already have cloned this repo, just copy the theme to `chrome` folder.
