@@ -17,6 +17,8 @@ html {
 
     --font-colour: #{$light};
 
+    --card-shadow: #{$inverted-shadow};
+
   }
 
   &.daymode {
@@ -26,6 +28,8 @@ html {
     --body-background-darker: #{$light-s1};
 
     --font-colour: #{$dark};
+
+    --card-shadow: #{$shadow};
 
   }
 

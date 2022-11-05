@@ -5,7 +5,7 @@
   border-radius: $border-radius;
   border: none;
   background: var(--body-background);
-  box-shadow: 0 .5rem 2rem 0 $shadow;
+  box-shadow: $shadow;
 
   font-size: $font-size;
   line-height: $line-height;
