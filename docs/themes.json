@@ -530,6 +530,20 @@
     "description": "A minimalistic Firefox userChrome.css that integrates well with tiling window managers like i3",
     "image": "assets/img/themes/tilefox.webp",
     "tags": [ "davquar", "light", "dark", "tile", "tilefox", "minimal", "minimalistic", "brutalist", "compact", "tiling", "dwm", "sway", "i3", "keyboard", "linux"]
-  }
+  },
+  {
+    "title": "AestheticFox",
+    "link": "https://github.com/AidanMercer/AestheticFox",
+    "description": "A minamist and aesthetic userstyle theme for Firefox",
+    "image": "assets/img/themes/AestheticFox.webp",
+    "tags": [ "clean", "compact", "aestheticfox", "minimal", "minimalistic", "aesthetic"]
+  },
+  {
+		"title": "Firefox 'Safari 15' Theme",
+		"link": "https://github.com/denizjcan/Firefox-Safari-15-Theme",
+		"description": "A Firefox theme that emulates the Safari 15 interface and new tab page",
+		"image": "assets/img/themes//25940safari2.webp",
+    "tags": [ "clean", "compact", "oneline", "safari", "ventura", "aesthetic", "mac", "modern", "compact", "dark", "denizjcan", "safari" ]
+	}
 
 ]
