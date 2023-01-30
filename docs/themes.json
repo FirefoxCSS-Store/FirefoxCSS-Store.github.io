@@ -544,6 +544,14 @@
 		"description": "A Firefox theme that emulates the Safari 15 interface and new tab page",
 		"image": "assets/img/themes//25940safari2.webp",
     "tags": [ "clean", "compact", "oneline", "safari", "ventura", "aesthetic", "mac", "modern", "compact", "dark", "denizjcan", "safari" ]
-	}
+	},
+	
+  {
+    "title": "Firefox Onebar",
+    "link": "https://codeberg.org/Freeplay/Firefox-Onebar",
+    "description": "A single bar for Firefox's UI.",
+    "image": "assets/img/themes/onebar.webp",
+    "tags": [ "Freeplay", "oneline", "onebar", "compact", "minimal"]
+  }
 
 ]
