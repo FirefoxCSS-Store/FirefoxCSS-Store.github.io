@@ -552,6 +552,13 @@
     "description": "A single bar for Firefox's UI.",
     "image": "assets/img/themes/onebar.webp",
     "tags": [ "Freeplay", "oneline", "onebar", "compact", "minimal"]
+  },
+  {
+    "title": "Dracula",
+    "link": "https://github.com/jannikbuscha/firefox-dracula",
+    "description": "A Firefox CSS Theme that aims to recreate the look and feel of the Chromium version of Microsoft Edge in the style of Dracula.",
+    "image": "assets/img/themes/dracula.webp",
+    "tags": [ "edge", "dark", "microsoft", "dracula" ]
   }
 
 ]
