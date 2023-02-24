@@ -483,13 +483,6 @@
     "tags": ["TYHFox", "dark", "light", "adaptive" ]
   },
   {
-    "title": "silentfox",
-    "link": "https://github.com/themoonmeetsthesun/silentfox",
-    "description": "A silent theme which lets you focus on your work",
-    "image": "assets/img/themes/silentfox.webp",
-    "tags": [ "themoonmeetsthesun", "silent", "focused"]
-  },
-  {
     "title": "AutoColor-Minimal-Proton",
     "link": "https://github.com/Neikon/AutoColor-Minimal-Proton",
     "description": "Some settings that together with the vivaldifox add-on create a minimalist theme whose color is the color of the website you are visiting.",
@@ -541,7 +534,7 @@
   {
 		"title": "Firefox 'Safari 15' Theme",
 		"link": "https://github.com/denizjcan/Firefox-Safari-15-Theme",
-		"description": "A Firefox theme that emulates the Safari 15 interface and new tab page",
+		"description": "A Firefox theme that emulates the Safari 15 interface and new tab page.",
 		"image": "assets/img/themes//25940safari2.webp",
     "tags": [ "clean", "compact", "oneline", "safari", "ventura", "aesthetic", "mac", "modern", "compact", "dark", "denizjcan", "safari" ]
 	},
@@ -559,6 +552,13 @@
     "description": "A Firefox CSS Theme that aims to recreate the look and feel of the Chromium version of Microsoft Edge in the style of Dracula.",
     "image": "assets/img/themes/dracula.webp",
     "tags": [ "edge", "dark", "microsoft", "dracula" ]
+  },
+  {
+		"title": "rounded-fox",
+		"link": "https://github.com/Etesam913/rounded-fox",
+		"description": "A minimalist theme that uses animation to hide visual clutter.",
+		"image": "assets/img/themes//2507221055856-8690c288-d236-4905-a58e-78e11b8238e3.webp",
+    "tags": ["clean", "compact", "minimalist", "dark", "light", "animation"]
   }
 
 ]
