@@ -534,7 +534,7 @@
   {
 		"title": "Firefox 'Safari 15' Theme",
 		"link": "https://github.com/denizjcan/Firefox-Safari-15-Theme",
-		"description": "A Firefox theme that emulates the Safari 15 interface and new tab page",
+		"description": "A Firefox theme that emulates the Safari 15 interface and new tab page.",
 		"image": "assets/img/themes//25940safari2.webp",
     "tags": [ "clean", "compact", "oneline", "safari", "ventura", "aesthetic", "mac", "modern", "compact", "dark", "denizjcan", "safari" ]
 	},
