@@ -557,8 +557,15 @@
 		"title": "rounded-fox",
 		"link": "https://github.com/Etesam913/rounded-fox",
 		"description": "A minimalist theme that uses animation to hide visual clutter.",
-		"image": "assets/img/themes//2507221055856-8690c288-d236-4905-a58e-78e11b8238e3.webp",
+		"image": "assets/img/themes/rounded_fox.webp",
     "tags": ["clean", "compact", "minimalist", "dark", "light", "animation"]
+  },
+  {
+		"title": "Three Rows Simple Compact Clean CSS",
+		"link": "https://github.com/hornster02/Firefox-Three-Rows-Simple-Compact-Clean-CSS",
+		"description": "A compact theme based on use multiple rows",
+		"image": "assets/img/themes/Three_Rows.webp",
+    "tags": ["simple", "compact", "minimalist","rows"]
   }
 
 ]
