@@ -462,11 +462,11 @@
     "tags": [ "sagars007", "dark", "compact", "darkspace", "stars", "nightsky", "gradient", "windows11" ]
   },
   {
-    "title": "Opera-GX to Firefox CSS",
-    "link": "https://github.com/Godiesc/opera-gx",
-    "description": "Firefox Theme CSS to Opera-GX Lovers.",
-    "image": "assets/img/themes/opera-gx.webp",
-    "tags": [ "Godiesc", "dark", "opera", "gx", "theme", "adapted", "fuchsia", "blue" ]
+    "title": "Firefox-GX",
+    "link": "https://github.com/Godiesc/firefox-gx",
+    "description": "Firefox Theme to Opera-GX skin Lovers.",
+    "image": "assets/img/themes/firefox-gx.webp",
+    "tags": [ "Godiesc", "dark", "opera", "gx", "theme", "adapted", "light", "fuchsia" ]
   },
   {
     "title": "Elegant Fox",
