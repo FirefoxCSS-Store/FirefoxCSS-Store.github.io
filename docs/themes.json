@@ -462,11 +462,11 @@
     "tags": [ "sagars007", "dark", "compact", "darkspace", "stars", "nightsky", "gradient", "windows11" ]
   },
   {
-    "title": "Opera-GX to Firefox CSS",
-    "link": "https://github.com/Godiesc/opera-gx",
-    "description": "Firefox Theme CSS to Opera-GX Lovers.",
-    "image": "assets/img/themes/opera-gx.webp",
-    "tags": [ "Godiesc", "dark", "opera", "gx", "theme", "adapted", "fuchsia", "blue" ]
+    "title": "Firefox-GX",
+    "link": "https://github.com/Godiesc/firefox-gx",
+    "description": "Firefox Theme to Opera-GX skin Lovers.",
+    "image": "assets/img/themes/firefox-gx.webp",
+    "tags": [ "Godiesc", "dark", "opera", "gx", "theme", "adapted", "light", "fuchsia" ]
   },
   {
     "title": "Elegant Fox",
@@ -532,13 +532,12 @@
     "tags": [ "clean", "compact", "aestheticfox", "minimal", "minimalistic", "aesthetic"]
   },
   {
-		"title": "Firefox 'Safari 15' Theme",
-		"link": "https://github.com/denizjcan/Firefox-Safari-15-Theme",
-		"description": "A Firefox theme that emulates the Safari 15 interface and new tab page.",
-		"image": "assets/img/themes//25940safari2.webp",
+    "title": "Firefox 'Safari 15' Theme",
+    "link": "https://github.com/denizjcan/Firefox-Safari-15-Theme",
+    "description": "A Firefox theme that emulates the Safari 15 interface and new tab page.",
+    "image": "assets/img/themes//25940safari2.webp",
     "tags": [ "clean", "compact", "oneline", "safari", "ventura", "aesthetic", "mac", "modern", "compact", "dark", "denizjcan", "safari" ]
-	},
-	
+  },
   {
     "title": "Firefox Onebar",
     "link": "https://codeberg.org/Freeplay/Firefox-Onebar",
@@ -554,18 +553,24 @@
     "tags": [ "edge", "dark", "microsoft", "dracula" ]
   },
   {
-		"title": "rounded-fox",
-		"link": "https://github.com/Etesam913/rounded-fox",
-		"description": "A minimalist theme that uses animation to hide visual clutter.",
-		"image": "assets/img/themes/rounded_fox.webp",
+    "title": "rounded-fox",
+    "link": "https://github.com/Etesam913/rounded-fox",
+    "description": "A minimalist theme that uses animation to hide visual clutter.",
+    "image": "assets/img/themes/rounded_fox.webp",
     "tags": ["clean", "compact", "minimalist", "dark", "light", "animation"]
   },
   {
-		"title": "Three Rows Simple Compact Clean CSS",
-		"link": "https://github.com/hornster02/Firefox-Three-Rows-Simple-Compact-Clean-CSS",
-		"description": "A compact theme based on use multiple rows",
-		"image": "assets/img/themes/Three_Rows.webp",
+    "title": "Three Rows Simple Compact Clean CSS",
+    "link": "https://github.com/hornster02/Firefox-Three-Rows-Simple-Compact-Clean-CSS",
+    "description": "A compact theme based on use multiple rows",
+    "image": "assets/img/themes/Three_Rows.webp",
     "tags": ["simple", "compact", "minimalist","rows"]
+  },
+  {
+    "title": "Bali10050's theme",
+    "link": "https://github.com/Bali10050/FirefoxCSS",
+    "description": "A minimal looking oneliner, with modular code for easy editing",
+    "image": "assets/img/themes/Bali10050sPreview.webp",
+    "tags": [ "Bali10050", "oneline", "light", "dark", "linux", "windows", "rounded", "proton", "responsive", "minimalistic" ]
   }
-
 ]
