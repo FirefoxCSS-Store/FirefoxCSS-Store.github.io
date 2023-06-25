@@ -572,5 +572,12 @@
     "description": "A minimal looking oneliner, with modular code for easy editing",
     "image": "assets/img/themes/Bali10050sPreview.webp",
     "tags": [ "Bali10050", "oneline", "light", "dark", "linux", "windows", "rounded", "proton", "responsive", "minimalistic" ]
+  },
+  {
+    "title": "DarkMatter",
+    "link": "https://github.com/BloodyHell619/Firefox-Theme-DarkMatter",
+    "description": "An intensively worked on, and highly customized dark theme made for Firefox Proton, stretching darkness into every corner of the browser and perfecting even the tiniest details ",
+    "image": "assets/img/themes/darkmatter.webp",
+    "tags": [ "dark", "Vertical", "squared", "proton"]
   }
 ]
