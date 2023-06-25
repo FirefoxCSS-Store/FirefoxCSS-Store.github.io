@@ -572,5 +572,11 @@
     "description": "A minimal looking oneliner, with modular code for easy editing",
     "image": "assets/img/themes/Bali10050sPreview.webp",
     "tags": [ "Bali10050", "oneline", "light", "dark", "linux", "windows", "rounded", "proton", "responsive", "minimalistic" ]
+  },
+  {
+		"title": "ViceFox",
+		"link": "https://vicefox.vercel.app",
+		"description": "Don't ask why it's called 'ViceFox'",
+		"image": "assets/img/themes/ViceFox.webp"
   }
 ]
