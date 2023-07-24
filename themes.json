@@ -579,5 +579,19 @@
 		"description": "Don't ask why it's called 'ViceFox'",
 		"image": "assets/img/themes/ViceFox.webp",
     "tags": [ "clean", "compact", "safari", "minimal", "macos"]
+  },
+  {
+    "title": "DarkMatter",
+    "link": "https://github.com/BloodyHell619/Firefox-Theme-DarkMatter",
+    "description": "An intensively worked on, and highly customized dark theme made for Firefox Proton, stretching darkness into every corner of the browser and perfecting even the tiniest details ",
+    "image": "assets/img/themes/darkmatter.webp",
+    "tags": [ "dark", "Vertical", "squared", "proton"]
+  },
+  {
+    "title": "Fox11",
+    "link": "https://github.com/Neikon/Fox11",
+    "description": "A Firefox CSS themes with auto-color, Mica, auto-hide nav-bar support. Inspired in firefox-one , Edge/Chrome restyle 2023.",
+    "image": "assets/img/themes/fox11.webp",
+    "tags": [ "vivaldi", "proton", "minimal", "autocolor", "dark", "light", "mica", "adaptive", "transparency", "transparent", "one-line"]
   }
 ]
