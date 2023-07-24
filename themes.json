@@ -577,6 +577,7 @@
 		"title": "ViceFox",
 		"link": "https://vicefox.vercel.app",
 		"description": "Don't ask why it's called 'ViceFox'",
-		"image": "assets/img/themes/ViceFox.webp"
+		"image": "assets/img/themes/ViceFox.webp",
+    "tags": [ "clean", "compact", "safari", "minimal", "macos"]
   }
 ]
