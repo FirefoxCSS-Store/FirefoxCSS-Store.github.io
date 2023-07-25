@@ -574,6 +574,13 @@
     "tags": [ "Bali10050", "oneline", "light", "dark", "linux", "windows", "rounded", "proton", "responsive", "minimalistic" ]
   },
   {
+		"title": "ViceFox",
+		"link": "https://vicefox.vercel.app",
+		"description": "Don't ask why it's called 'ViceFox'",
+		"image": "assets/img/themes/ViceFox.webp",
+    "tags": [ "clean", "compact", "safari", "minimal", "macos"]
+  },
+  {
     "title": "DarkMatter",
     "link": "https://github.com/BloodyHell619/Firefox-Theme-DarkMatter",
     "description": "An intensively worked on, and highly customized dark theme made for Firefox Proton, stretching darkness into every corner of the browser and perfecting even the tiniest details ",
