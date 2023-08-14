@@ -600,5 +600,12 @@
     "description": "Party like it's Firefox 57-88!",
     "image": "assets/img/themes/zaps-photon.webp",
     "tags": [ "photon", "compact", "squared", "quantum" ]
+  },
+  {
+		"title": "Firefox-ONE",
+		"link": "https://github.com/Godiesc/firefox-one",
+		"description": "Dress Firefox with the Opera One skin",
+		"image": "assets/img/themes/firefox-one.webp",
+    "tags": ["Godiesc", "opera", "one", "opera-one", "firefox", "firefox-one", "theme", "adaptive", "tree", "tabs"]
   }
 ]
