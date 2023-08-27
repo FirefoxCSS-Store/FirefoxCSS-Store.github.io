@@ -607,5 +607,12 @@
 		"description": "Dress Firefox with the Opera One skin",
 		"image": "assets/img/themes/firefox-one.webp",
     "tags": ["Godiesc", "opera", "one", "opera-one", "firefox", "firefox-one", "theme", "adaptive", "tree", "tabs"]
+  },
+  {
+		"title": "Essence",
+		"link": "https://github.com/JarnotMaciej/Essence",
+		"description": "Compact, beautiful and minimalistic theme for the Firefox web browser.",
+		"image": "assets/img/themes/essence.webp",
+    "tags": [ "compact", "minimal", "light", "modern", "oneline", "rounded", "clean" ]
   }
 ]
