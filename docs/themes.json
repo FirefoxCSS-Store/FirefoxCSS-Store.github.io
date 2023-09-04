@@ -614,5 +614,12 @@
 		"description": "Compact, beautiful and minimalistic theme for the Firefox web browser.",
 		"image": "assets/img/themes/essence.webp",
     "tags": [ "compact", "minimal", "light", "modern", "oneline", "rounded", "clean" ]
+  },
+  {
+    "title": "minimal-one-line-firefox",
+    "link": "https://github.com/ttntm/minimal-one-line-firefox",
+    "description": "A minimal oneliner, to minimizing the space used for url and tab bar",
+    "image": "assets/img/themes/molff.webp",
+    "tags": ["oneline", "light", "dark", "squared", "compact", "minimalistic"]
   }
 ]
