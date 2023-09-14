@@ -621,5 +621,12 @@
     "description": "A minimal oneliner, to minimizing the space used for url and tab bar",
     "image": "assets/img/themes/molff.webp",
     "tags": ["oneline", "light", "dark", "squared", "compact", "minimalistic"]
+  },
+  {
+    "title": "RealFire",
+    "link": "https://github.com/Hakanbaban53/RealFire",
+    "description": "A minimalist animated oneliner theme for Firefox perfectly matching Real Dark",
+    "image": "assets/img/themes/context.png",
+    "tags": ["oneline", "responsive", "light", "dark", "animation", "rounded", "compact", "minimalistic", "black"]
   }
 ]
