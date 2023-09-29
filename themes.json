@@ -574,10 +574,10 @@
     "tags": [ "Bali10050", "oneline", "light", "dark", "linux", "windows", "rounded", "proton", "responsive", "minimalistic" ]
   },
   {
-		"title": "ViceFox",
-		"link": "https://vicefox.vercel.app",
-		"description": "Don't ask why it's called 'ViceFox'",
-		"image": "assets/img/themes/ViceFox.webp",
+    "title": "ViceFox",
+    "link": "https://vicefox.vercel.app",
+    "description": "Don't ask why it's called 'ViceFox'",
+    "image": "assets/img/themes/ViceFox.webp",
     "tags": [ "clean", "compact", "safari", "minimal", "macos"]
   },
   {
@@ -602,17 +602,17 @@
     "tags": [ "photon", "compact", "squared", "quantum" ]
   },
   {
-		"title": "Firefox-ONE",
-		"link": "https://github.com/Godiesc/firefox-one",
-		"description": "Dress Firefox with the Opera One skin",
-		"image": "assets/img/themes/firefox-one.webp",
+    "title": "Firefox-ONE",
+    "link": "https://github.com/Godiesc/firefox-one",
+    "description": "Dress Firefox with the Opera One skin",
+    "image": "assets/img/themes/firefox-one.webp",
     "tags": ["Godiesc", "opera", "one", "opera-one", "firefox", "firefox-one", "theme", "adaptive", "tree", "tabs"]
   },
   {
-		"title": "Essence",
-		"link": "https://github.com/JarnotMaciej/Essence",
-		"description": "Compact, beautiful and minimalistic theme for the Firefox web browser.",
-		"image": "assets/img/themes/essence.webp",
+    "title": "Essence",
+    "link": "https://github.com/JarnotMaciej/Essence",
+    "description": "Compact, beautiful and minimalistic theme for the Firefox web browser.",
+    "image": "assets/img/themes/essence.webp",
     "tags": [ "compact", "minimal", "light", "modern", "oneline", "rounded", "clean" ]
   },
   {
@@ -628,5 +628,12 @@
     "description": "A minimalist animated oneliner theme for Firefox perfectly matching Real Dark",
     "image": "assets/img/themes/RealFire-main.webp",
     "tags": ["oneline", "responsive", "light", "dark", "animation", "rounded", "compact", "minimalistic", "black"]
+  },
+  {
+    "title": "Titlebar-Button-Fix",
+    "link": "https://github.com/birbkeks/Firefox-Titlebar-Button-Fix",
+    "description": "This theme fixes titlebar min max close buttons for Firefox in linux. ",
+    "image": "..........",
+    "tags": [ "birbkeks", "fix", "titlebar"]
   }
 ]
