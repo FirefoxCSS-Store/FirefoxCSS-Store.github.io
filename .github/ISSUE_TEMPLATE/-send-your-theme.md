@@ -15,6 +15,7 @@ Replace the .......... with the corresponding information. Example:
 		"link": "https://github.com/myTheme",
 		"description": "a dark theme",
 		"image": "https://raw.githubusercontent.com/previewthemepicture.png"
+                "tags": [ "John", "dark", "minimal","oneline", "............." ]
 	}
 ```
 ################# DELETE UNTIL HERE #################
@@ -25,5 +26,6 @@ Replace the .......... with the corresponding information. Example:
 		"link": "..........",
 		"description": "..........",
 		"image": ".........."
+                "tags": [ "your username/name", "theme type: dark", "theme type: light", "............." ]
 }
 ```
