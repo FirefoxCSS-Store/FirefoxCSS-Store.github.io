@@ -640,7 +640,7 @@
 		"title": "Firefox-Alpha",
 		"link": "https://github.com/Tagggar/Firefox-Alpha",
 		"description": "Super clear desktop browser with zero buttons and gesture controls",
-		"image": "https://raw.githubusercontent.com/Tagggar/Firefox-Alpha/main/assets/preview.gif",
+		"image": "assets/img/themes//23823preview.webp",
 		"tags": ["Tagggar", "alpha", "responsive", "light", "dark", "animation", "rounded", "compact", "clear", "clean", "minimalistic", "minimal", "simple", "gestures"]
   }
 ]
