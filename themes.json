@@ -280,13 +280,6 @@
     "tags": [ "" ]
   },
   {
-    "title": "WaveFox",
-    "link": "https://github.com/QNetITQ/WaveFox",
-    "description": "Tabs with a unique shape \n Compatibility: V89+",
-    "image": "assets/img/themes/wavefox.webp",
-    "tags": [ "" ]
-  },
-  {
     "title": "Technetium",
     "link": "https://github.com/edo0/Technetium",
     "description": "A focused approach to taming the new Firefox Proton interface, restituting some of the beloved elements retired alongside the old Photon UI - menu icons and much more \n Compatibility: V89+",
