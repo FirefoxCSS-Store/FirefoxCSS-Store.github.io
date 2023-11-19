@@ -640,14 +640,14 @@
 		"title": "Dark Star",
 		"link": "https://gitlab.com/ivelieu/dark-star-firefox-skin",
 		"description": "A color-customizable, zero navbar padding skin, modified from Starry Fox",
-		"image": "https://gitlab.com/ivelieu/dark-star-firefox-skin/-/raw/main/showcase/darkstar_3.png",
+		"image": "assets/img/themes//11608darkstar_3.webp",
     "tags": [ "Ivelieu", "dark", "minimal", "zeropadding", "customizable"]
   },
   {
 		"title": "ImpossibleFox",
 		"link": "https://github.com/Naezr/ImpossibleFox",
 		"description": "A simple and fast one-line theme for Firefox inspired by Safari's compact layout. ",
-		"image": "https://github.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/assets/95460152/86fe75ca-6b4d-4d48-8fd6-bcc593309237",
+		"image": "assets/img/themes//2995986fe75ca-6b4d-4d48-8fd6-bcc593309237.webp",
     "tags": [ "Naezr", "dark", "light", "oneline" ]
   }
 ]
