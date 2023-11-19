@@ -648,6 +648,6 @@
 		"link": "https://github.com/Naezr/ImpossibleFox",
 		"description": "A simple and fast one-line theme for Firefox inspired by Safari's compact layout. ",
 		"image": "https://github.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/assets/95460152/86fe75ca-6b4d-4d48-8fd6-bcc593309237",
-    "tags": [ "Naezr", "theme type: dark", "theme type: light", "oneline" ]
+    "tags": [ "Naezr", "dark", "light", "oneline" ]
   }
 ]
