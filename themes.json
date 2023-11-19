@@ -635,5 +635,12 @@
 		"description": "Super clear desktop browser with zero buttons and gesture controls",
 		"image": "assets/img/themes/Firefox-Alpha.webp",
 		"tags": ["Tagggar", "alpha", "responsive", "light", "dark", "animation", "rounded", "compact", "clear", "clean", "minimalistic", "minimal", "simple", "gestures"]
+  },
+  {
+		"title": "Dark Star",
+		"link": "https://gitlab.com/ivelieu/dark-star-firefox-skin",
+		"description": "A color-customizable, zero navbar padding skin, modified from Starry Fox",
+		"image": "https://gitlab.com/ivelieu/dark-star-firefox-skin/-/raw/main/showcase/darkstar_3.png",
+    "tags": [ "Ivelieu", "dark", "minimal", "zeropadding", "customizable"]
   }
 ]
