@@ -649,5 +649,12 @@
 		"description": "A simple and fast one-line theme for Firefox inspired by Safari's compact layout. ",
 		"image": "assets/img/themes/ImpossibleFox.webp",
     "tags": [ "Naezr", "dark", "light", "oneline" ]
+  },
+  {
+    "title": "SideFox",
+    "link": "https://github.com/rainbowflesh/Me-Personal-Firefox-Settup",
+    "description": "MS Edge style, sidebar, blur, and more.",
+    "image": "assets/img/themes/sidefox.webp",
+    "tags": [ "sidebar", "animated", "simple", "responsive", "linux", "windows", "macos"]  
   }
 ]
