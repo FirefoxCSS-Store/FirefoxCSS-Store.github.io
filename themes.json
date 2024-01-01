@@ -163,9 +163,9 @@
   {
     "title": "Edge-Frfox",
     "link": "https://github.com/bmFtZQ/Edge-FrFox",
-    "description": "A Firefox userChrome.css theme that aims to recreate the look and feel of the Chromium version of Microsoft Edge.",
-    "image": "assets/img/themes/Edge-FrFox.webp",
-    "tags": [ "light", "dark", "fluent", "microsoft", "bmFtZQ" ]
+    "description": "A Firefox userChrome.css theme that aims to recreate the look and feel of Microsoft Edge.",
+    "image": "assets/img/themes/Edge-Frfox.webp",
+    "tags": [ "light", "dark", "fluent", "microsoft", "bmFtZQ", "windows", "mac", "linux" ]
   },
   {
     "title": "NicoFox",
