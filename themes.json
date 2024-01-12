@@ -657,4 +657,11 @@
     "image": "assets/img/themes/sidefox.webp",
     "tags": [ "sidebar", "animated", "simple", "responsive", "linux", "windows", "macos"]  
   }
+  {
+    "title": "arcadia",
+    "link": "https://github.com/tyrohellion/arcadia",
+    "description": "Minimal Firefox theme and user.js focused on speed and design",
+    "image": "assets/img/themes/arcadia.webp",
+    "tags": [ "tyro", "dark", "minimal", "clean", "hover cards", "simple", "compact" ]
+  }
 ]
