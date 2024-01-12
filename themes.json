@@ -662,6 +662,6 @@
     "link": "https://github.com/tyrohellion/arcadia",
     "description": "Minimal Firefox theme and user.js focused on speed and design",
     "image": "assets/img/themes/arcadia.webp",
-    "tags": [ "tyro", "dark", "minimal", "clean", "hover cards", "simple", "compact" ]
+    "tags": [ "tyro", "dark", "minimal", "clean", "hovercards", "simple", "compact", "minimalistic" ]
   }
 ]
