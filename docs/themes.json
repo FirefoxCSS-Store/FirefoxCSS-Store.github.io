@@ -656,5 +656,12 @@
     "description": "MS Edge style, sidebar, blur, and more.",
     "image": "assets/img/themes/sidefox.webp",
     "tags": [ "sidebar", "animated", "simple", "responsive", "linux", "windows", "macos"]  
+  },
+  {
+    "title": "Firefox Plus",
+    "link": "https://github.com/amnweb/firefox-plus",
+    "description": "Firefox Plus, CSS tweaks for Firefox ",
+    "image": "assets/img/themes//6299firefox-26-11-2023.webp",
+    "tags": ["firefox","firefox-customization","minimal","firefox-theme","dark"]
   }
 ]
