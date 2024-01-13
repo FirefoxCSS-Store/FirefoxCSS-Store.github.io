@@ -656,7 +656,7 @@
     "description": "MS Edge style, sidebar, blur, and more.",
     "image": "assets/img/themes/sidefox.webp",
     "tags": [ "sidebar", "animated", "simple", "responsive", "linux", "windows", "macos"]  
-  }
+  },
   {
     "title": "arcadia",
     "link": "https://github.com/tyrohellion/arcadia",
