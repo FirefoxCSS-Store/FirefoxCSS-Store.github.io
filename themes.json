@@ -658,6 +658,13 @@
     "tags": [ "sidebar", "animated", "simple", "responsive", "linux", "windows", "macos"]  
   },
   {
+    "title": "arcadia",
+    "link": "https://github.com/tyrohellion/arcadia",
+    "description": "Minimal Firefox theme and user.js focused on speed and design",
+    "image": "assets/img/themes/arcadia.webp",
+    "tags": [ "tyro", "dark", "minimal", "clean", "hovercards", "simple", "compact", "minimalistic" ]
+  },
+  {
     "title": "Firefox Plus",
     "link": "https://github.com/amnweb/firefox-plus",
     "description": "Firefox Plus, CSS tweaks for Firefox ",
