@@ -664,6 +664,7 @@
     "image": "assets/img/themes/arcadia.webp",
     "tags": [ "tyro", "dark", "minimal", "clean", "hovercards", "simple", "compact", "minimalistic" ]
   },
+  {
     "title": "Firefox Plus",
     "link": "https://github.com/amnweb/firefox-plus",
     "description": "Firefox Plus, CSS tweaks for Firefox ",
