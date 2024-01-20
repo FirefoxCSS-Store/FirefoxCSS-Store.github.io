@@ -670,5 +670,12 @@
     "description": "Firefox Plus, CSS tweaks for Firefox ",
     "image": "assets/img/themes//6299firefox-26-11-2023.webp",
     "tags": ["firefox","firefox-customization","minimal","firefox-theme","dark"]
+  },
+  {
+    "title": "Shina Fox",
+    "link": "https://github.com/Shina-SG/Shina-Fox",
+    "description": "A Minimal, Cozy, Vertical Optimized Firefox Theme",
+    "image": "assets/img/themes/Shina.png",
+    "tags": [ "Shina", "Vertical", "Sidebery", "Minimal", "Dark", "Light", "Adaptive" ]
   }
 ]
