@@ -677,12 +677,5 @@
     "description": "A Minimal, Cozy, Vertical Optimized Firefox Theme",
     "image": "assets/img/themes/Shina.webp",
     "tags": [ "Shina", "Vertical", "Sidebery", "Minimal", "Dark", "Light", "Adaptive" ]
-  },
-    {
-      "title": "ArnimFox",
-      "link": "https://github.com/SecondMikasa/ArnimFox",
-      "description": "A Minimalist Dark Themed Firefox enabling vertical tabs support and modern URL Bar",
-      "image": "assets/img/themes/ArnimFox.jpg",
-      "tags": ["Minimalistic", "Vertical", "Sidebery", "Dark", "Sidebar"]
-    }
+  }
 ]
