@@ -684,5 +684,12 @@
     "description": "A Minimalist Dark Themed Firefox enabling vertical tabs support and modern URL Bar",
     "image": "assets/img/themes/ArnimFox.webp",
     "tags": ["Minimalistic", "Vertical", "Sidebery", "Dark", "Sidebar"]
+  },
+  {
+    "title": "Firefox Rounded Theme",
+    "link": "https://github.com/Khalylexe/Firefox-Rounded-Theme",
+    "description": "Just a Firefox CSS to make it more rounded ;) ",
+    "image": "assets/img/themes/Khalyl.png",
+    "tags": [ "Khalylexe", "Dark", "Rounded", "firefox" ]
   }
 ]
