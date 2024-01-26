@@ -691,5 +691,12 @@
     "description": "Just a Firefox CSS to make it more rounded ;) ",
     "image": "assets/img/themes/Khalyl.png",
     "tags": [ "Khalylexe", "Dark", "Rounded", "firefox" ]
+  },
+  {
+		"title": "ShyFox",
+		"link": "https://github.com/Naezr/ShyFox",
+		"description": "A very shy little theme that hides the entire browser interface in the window border",
+		"image": "assets/img/themes/shyfox.webp",
+    "tags": [ "Naezr", "minimal" ]
   }
 ]
