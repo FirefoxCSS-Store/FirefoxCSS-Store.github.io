@@ -1,4 +1,4 @@
-const themes = require('../themes.json')
+const themes = require('../src/themes.json')
 
 let allBugs = []
 

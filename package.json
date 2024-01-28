@@ -1,5 +1,5 @@
 {
-  "name": "nebulous-venus",
+  "name": "firefoxcss-store-frontend",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "node tests/themes.check.js"
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
