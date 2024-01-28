@@ -47,6 +47,12 @@ const { title } = Astro.props;
 <style is:global lang="scss">
 
 
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+
   *, *::before, *::after {
 
     box-sizing: border-box;
