@@ -1,0 +1,107 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CardGrid from '../components/CardGrid.astro'
+---
+
+
+
+
+
+<Layout title="Themes">
+  <main>
+
+    <CardGrid title="Our latest Themes" limit={3} starting={0} />
+
+    <div class="callout-grid">
+
+      <div class="callout">
+        <div class="icon rose">&#x2661;</div>
+        <h4>Community-driven</h4>
+        <p>A collection of Firefox userchrome themes from <a href="https://github.com/search?q=firefoxcss&type=repositories">GitHub</a> and the <a href="https://reddit.com/r/firefoxcss">FirefoxCSS Subreddit</a> made by the community.</p>
+        <a href="https://github.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/blob/main/README.md#add-your-theme-3">Submit your own Theme <span class="arrow">&rarr;</span></a>
+      </div>
+
+      <div class="callout">
+        <div class="icon pine">&#x275E;</div>
+        <h4>Discord</h4>
+        <p>Looking for quick help, feedback or just a nice place to hang out?</p>
+        <a href="">Join the FirefoxCSS-Discord <span class="arrow">&rarr;</span></a>
+      </div>
+
+    </div>
+
+    <a id="all-themes"></a>
+    <CardGrid title="All Themes"limit={9999} starting={3} />
+
+  </main>
+</Layout>
+
+
+
+
+
+<style lang="scss">
+
+  .callout-grid {
+
+    display: grid; gap: var(--spacing-large);
+    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+
+    margin-block: calc(var(--spacing-giant) * 2);
+
+  }
+
+
+  .callout {
+
+    padding: var(--spacing-large);
+
+    border-radius: var(--border-radius-large);
+    background-color: var(--surface);
+
+
+    *:not(.icon) { margin-block-start: var(--spacing-normal); }
+
+
+    .icon {
+
+      display: grid;
+      place-items: center;
+
+      margin-block-end: var(--spacing-large);
+      width: var(--spacing-giant); aspect-ratio: 1/1;
+
+      border-radius: var(--border-radius-normal);
+      background-color: var(--love);
+      background-image: linear-gradient(
+        -45deg,
+        var(--muted),
+        var(--subtle)
+      );
+
+      font-size: 200%; font-weight: bold;
+      color: var(--base);
+
+
+      &.rose {
+        background-image: linear-gradient(
+          -45deg,
+          var(--love),
+          var(--rose)
+        );
+      }
+
+
+      &.pine {
+        background-image: linear-gradient(
+          -45deg,
+          var(--pine),
+          var(--foam)
+        );
+      }
+
+    }
+
+  }
+
+</style>

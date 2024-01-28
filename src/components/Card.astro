@@ -1,0 +1,140 @@
+---
+import Taglist from './Taglist.astro'
+
+interface Props {
+  title: string
+  body:  string
+  href:  string
+  image: string
+  tags: string[]
+}
+
+const { href, title, body, image, tags } = Astro.props
+---
+
+
+
+
+
+<li class="theme-card">
+
+  <a href={href}>
+    <h3>
+      {title}
+    </h3>
+  </a>
+
+  <div class="preview">
+    <p>{body}</p>
+    <img src={image} alt="">
+  </div>
+
+  <Taglist tags={tags} />
+
+  <a class="btn-link" href={href}>Download <span class="arrow">&rarr;</span></a>
+
+</li>
+
+
+
+
+
+<style lang="scss">
+
+  .theme-card {
+
+    --card-padding: var(--spacing-large);
+    --card-gap: var(--spacing-normal);
+
+
+    position: relative;
+
+    display: flex; flex-direction: column; gap: var(--card-gap);
+    align-content: flex-start;
+    overflow: clip;
+
+    padding-block: var(--card-gap) var(--card-padding); padding-inline: var(--card-padding);
+
+    border-radius: var(--border-radius-large);
+    background-color: var(--surface);
+
+
+
+    a { text-decoration: none; }
+    h3, a { color: var(--text); }
+
+
+
+    .preview {
+
+      position: relative;
+
+      overflow: clip;
+
+      margin-inline-start: calc(var(--card-padding) * -1);
+
+      width: calc(100% + 2 * var(--card-padding));
+      aspect-ratio: 16/9;
+
+      background-color: var(--overlay);
+
+
+      &::after {
+
+        content: '\260C';
+
+        position: absolute; right: var(--spacing-small); bottom: var(--spacing-small);
+        transform: rotate(180deg);
+        z-index: 3;
+
+        display: grid;
+        place-items: center;
+
+        width: var(--spacing-large); aspect-ratio: 1/1;
+
+        border-radius: var(--border-radius-small);
+        background-color: var(--surface);
+
+        color: var(--text);
+
+      }
+
+
+
+      img {
+
+        position: absolute; inset: 0;
+
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover; object-position: top left;
+
+      }
+
+
+
+      p {
+
+        position: absolute; inset: 0;
+        z-index: 2;
+
+        padding: var(--card-gap) var(--card-padding);
+        overflow: scroll;
+
+        background: var(--overlay);
+        opacity: 0;
+
+
+      }
+
+    }
+
+    &:hover .preview p { opacity: 1; }
+
+
+
+    .btn-link { margin-block-start: auto; }
+
+  }
+
+</style>
