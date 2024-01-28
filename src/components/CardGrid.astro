@@ -46,6 +46,7 @@ const { title, limit, starting } = Astro.props
 
   h2 { margin-block-start: var(--spacing-giant); }
 
+
   .card-grid {
 
     display: grid; gap: var(--spacing-large);
@@ -54,97 +55,6 @@ const { title, limit, starting } = Astro.props
     margin-block: var(--spacing-large);
 
     list-style: none;
-
-  }
-
-</style>
-
-
-
-
-
-<script>
-
-  class Lightbox {
-
-    _anchor : Node
-    _image : Node
-    _template : string
-
-
-    constructor (anchor : Node) {
-      this._anchor   = anchor
-      this._image    = anchor.childNodes[3]
-      // @ts-ignore – src exists on this node
-      this._template = `<div class="lightbox" onclick="this.remove()"><img src="${this._image.src}"></div>`
-    }
-
-    spawnLightbox () {
-      // @ts-ignore – insertAdjacentHTML exsist on this node
-      this._anchor.insertAdjacentHTML('afterend', this._template)
-    }
-
-  }
-
-
-
-  const previewElements = document.querySelectorAll('.preview')
-
-  previewElements.forEach(element => {
-
-    const lightbox = new Lightbox(element)
-
-    element.addEventListener(
-      'click',
-      () => lightbox.spawnLightbox()
-    )
-
-  })
-
-
-</script>
-
-
-
-
-<style lang="scss" is:global>
-
-  .lightbox {
-
-    position: fixed; inset: 0;
-    z-index: 8;
-
-    display: flex;
-    align-items: center; justify-content: center;
-
-    padding: var(--spacing-large);
-
-    background-color: color-mix(
-      in srgb,
-      var(--base),
-      transparent 5%
-    );
-
-
-    &::after {
-
-      content: '\2716';
-
-      position: absolute; top: var(--spacing-large); right: var(--spacing-large);
-      z-index: 9;
-
-      color: var(--text);
-
-    }
-
-
-    img {
-
-      max-height: 80vh;
-
-      border-radius: var(--border-radius-large);
-
-    }
 
   }
 
