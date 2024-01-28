@@ -146,6 +146,9 @@ const { href, title, body, image, tags } = Astro.props
 
 <script>
 
+  // @ts-nocheck – this sucks, but there are a lot of false positives here
+
+
   class Lightbox {
 
     _anchor : Node
@@ -154,14 +157,15 @@ const { href, title, body, image, tags } = Astro.props
 
 
     constructor (anchor : Node) {
-      this._anchor   = anchor
-      this._image    = anchor.childNodes[3]
-      // @ts-ignore – src exists on this node
-      this._template = `<div class="lightbox" onclick="this.remove()"><img src="${this._image.src}"></div>`
+      this._anchor      = anchor
+      this._image       = anchor.children[1].src
+      this._template    = `
+        <div class="lightbox" onclick="this.remove()">
+          <img src="${this._image}">
+        </div>`
     }
 
     spawnLightbox () {
-      // @ts-ignore – insertAdjacentHTML exsist on this node
       this._anchor.insertAdjacentHTML('afterend', this._template)
     }
 
