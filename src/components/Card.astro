@@ -1,4 +1,7 @@
 ---
+import type { ImageMetadata } from 'astro'
+import { Image } from 'astro:assets'
+
 import Taglist from './Taglist.astro'
 
 interface Props {
@@ -10,6 +13,8 @@ interface Props {
 }
 
 const { href, title, body, image, tags } = Astro.props
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{webp,jpeg,jpg,png,gif}')
+if (!images[image]) throw new Error(`"${image}" does not exist in glob: "./src/assets/*.{webp,jpeg,jpg,png,gif}"`)
 ---
 
 
@@ -26,7 +31,7 @@ const { href, title, body, image, tags } = Astro.props
 
   <div class="preview">
     <p>{body}</p>
-    <img src={image} alt="">
+    <Image src={images[image]()} alt={title} />
   </div>
 
   <Taglist tags={tags} />
@@ -103,11 +108,8 @@ const { href, title, body, image, tags } = Astro.props
 
       img {
 
-        position: absolute; inset: 0;
-
         width: 100%;
-        aspect-ratio: 16/9;
-        object-fit: cover; object-position: top left;
+        object-fit: contain; object-position: top center;
 
       }
 
