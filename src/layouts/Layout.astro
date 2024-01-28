@@ -1,0 +1,172 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <title>{title} - FirefoxCSS Store</title>
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="FirefoxCSS-Store is a community maintained list of awesome Firefox userChrome projects." />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  </head>
+  <body>
+
+    <Header title="Firefox CSS Store" />
+
+    <slot />
+
+    <Footer />
+
+  </body>
+</html>
+
+
+
+
+
+<style is:global lang="scss">
+
+
+  *, *::before, *::after {
+
+    box-sizing: border-box;
+
+    margin: 0; padding: 0;
+
+    transition: all 400ms ease-in-out;
+
+  }
+
+
+
+  html { font-size: 62.5%; }
+
+  :root {
+
+    --base-size: 4;
+
+    --spacing-normal: calc(var(--base-size) * 4px);
+    --spacing-small: calc(var(--base-size) * 2px);
+    --spacing-large: calc(var(--base-size) * 8px);
+    --spacing-giant: calc(var(--base-size) * 16px);
+
+    --border-radius-normal: 6px;
+    --border-radius-small: 3px;
+    --border-radius-large: 12px;
+
+  }
+
+
+
+  body {
+
+    --base-hsl: 32deg, 57%, 95%;
+    --surface-hsl: 35deg, 100%, 98%;
+    --overlay-hsl: 33deg, 43%, 91%;
+    --muted-hsl: 257deg, 9%, 61%;
+    --subtle-hsl: 248deg, 12%, 52%;
+    --text-hsl: 248deg, 19%, 40%;
+    --love-hsl: 343deg, 35%, 55%;
+    --gold-hsl: 35deg, 81%, 56%;
+    --rose-hsl: 3deg, 53%, 67%;
+    --pine-hsl: 197deg, 53%, 34%;
+    --foam-hsl: 189deg, 30%, 48%;
+    --iris-hsl: 268deg, 21%, 57%;
+    --highlight-low-hsl: 25deg, 35%, 93%;
+    --highlight-med-hsl: 10deg, 9%, 86%;
+    --highlight-high-hsl: 315deg, 4%, 80%;
+
+
+    @media (prefers-color-scheme: dark) {
+
+      --base-hsl: 249deg, 22%, 12%;
+      --surface-hsl: 247deg, 23%, 15%;
+      --overlay-hsl: 248deg, 25%, 18%;
+      --muted-hsl: 249deg, 12%, 47%;
+      --subtle-hsl: 248deg, 15%, 61%;
+      --text-hsl: 245deg, 50%, 91%;
+      --love-hsl: 343deg, 76%, 68%;
+      --gold-hsl: 35deg, 88%, 72%;
+      --rose-hsl: 2deg, 55%, 83%;
+      --pine-hsl: 197deg, 49%, 38%;
+      --foam-hsl: 189deg, 43%, 73%;
+      --iris-hsl: 267deg, 57%, 78%;
+      --highlight-low-hsl: 244deg, 18%, 15%;
+      --highlight-med-hsl: 249deg, 15%, 28%;
+      --highlight-high-hsl: 248deg, 13%, 36%;
+
+    }
+
+
+    --base: hsl(var(--base-hsl));
+    --surface: hsl(var(--surface-hsl));
+    --overlay: hsl(var(--overlay-hsl));
+    --muted: hsl(var(--muted-hsl));
+    --subtle: hsl(var(--subtle-hsl));
+    --text: hsl(var(--text-hsl));
+    --love: hsl(var(--love-hsl));
+    --gold: hsl(var(--gold-hsl));
+    --rose: hsl(var(--rose-hsl));
+    --pine: hsl(var(--pine-hsl));
+    --foam: hsl(var(--foam-hsl));
+    --iris: hsl(var(--iris-hsl));
+    --highlight-low: hsl(var(--highlight-low-hsl));
+    --highlight-med: hsl(var(--highlight-med-hsl));
+    --highlight-high: hsl(var(--highlight-high-hsl));
+
+  }
+
+
+
+  body {
+
+    scroll-behavior: smooth;
+
+    margin-inline: auto; padding-inline: var(--spacing-large);
+    width: 100%; max-width: calc(1200px + (2 * var(--spacing-large))); min-height: 100vh;
+
+    background-color: var(--base);
+
+    font-family: system-ui, sans-serif;
+    font-size: 2rem;
+    line-height: 1.3;
+    color: var(--text);
+
+  }
+
+
+
+  p, ul, ol { color: var(--subtle); }
+
+  a { color: var(--love); }
+
+  a:has(.arrow) { text-decoration: none; }
+  a > .arrow { display: inline-block; }
+  a:hover > .arrow,
+  a:focus > .arrow { transform: translateX(var(--spacing-small)); }
+
+
+
+  img { max-width: 100%; }
+
+</style>

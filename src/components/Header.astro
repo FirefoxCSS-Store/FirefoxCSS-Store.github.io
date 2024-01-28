@@ -1,0 +1,49 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+
+
+
+
+<header>
+
+  <h1 class="page-title">{title}</h1>
+
+  <ul>
+    <li><a href="/">Start</a></li>
+    <li><a href="/#all-themes">All Themes</a></li>
+  </ul>
+
+</header>
+
+
+
+
+
+<style>
+
+  header {
+
+    display: flex;
+    align-items: center; justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-block: var(--spacing-large);
+
+
+    ul {
+
+      display: flex; gap: var(--spacing-large);
+
+      list-style: none;
+
+    }
+
+  }
+
+</style>
