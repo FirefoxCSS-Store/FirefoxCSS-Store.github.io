@@ -5,21 +5,6 @@
 
 const data_path = "../src/themes.json"
 
-def call_github [
-  owner,
-  repository
-] {
-  try {
-    http get --headers [
-      -H "Accept: application/vnd.github+json"
-      -H "X-GitHub-Api-Version: 2022-11-28"
-    ] $'https://api.github.com/repos/($owner)/($repository)'
-  } catch {|e|
-    # TODO: parse error.
-    null
-  }
-}
-
 def error [owner: string, repository: string, link: string] {
     print --stderr $'[error] Theme named "($repository)" of the author "($owner)" does not exist or is private. Delete it.'
     print --stderr $'        Link is: ($link)'
