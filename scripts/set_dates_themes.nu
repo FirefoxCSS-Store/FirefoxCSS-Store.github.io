@@ -6,7 +6,7 @@
 const data_path = "../src/themes.json"
 
 def error [owner: string, repository: string, link: string] {
-    print --stderr $'[error] Theme named "($repository)" of the author "($owner)" does not exist or is private. Delete it.'
+    print --stderr $'[error] Theme named "($repository)" of the author "($owner)" does not exist or is private. Deleting it.'
     print --stderr $'        Link is: ($link)'
 }
 
