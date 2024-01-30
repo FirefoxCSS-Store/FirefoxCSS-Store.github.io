@@ -51,6 +51,12 @@ def main [] {
 
     $theme
   })
-  $themes | save --force ./themes.json
+
+  print "Replace the themes in the source directory? If no, will output the themes as JSON instead. To confirm, type either the word 'yes' or character 'y'."
+  let ask = input "Answer: " | str downcase
+  if $ask == 'y' or $ask == 'yes' {
+    mv --force ./themes.json ../src/themes.json
+  } else {
+    print ($themes | to json)
   }
 }
