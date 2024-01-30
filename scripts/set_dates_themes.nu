@@ -17,15 +17,25 @@ def parse_link [link: string] {
   [$owner $repository]
 }
 
-def dates [] {
+def main [] {
   # Set timezone to 0 for the date format of external git command.
   $env.TZ = 'UTC0'
 
-  open $data_path | each {|theme|
-    let link = $theme.link
-    let info = (parse_link $link)
-    let owner = $info.0
-    let repository = $info.1
+  let themes = (open $data_path | each {|data|
+    mut theme = $data
+    mut link = $theme.link
+    let is_github = ($link | str contains 'github')
+
+    mut owner = ''
+    mut repository = ''
+
+    # If github, force authentication using SSH link.
+    if $is_github {
+      let info = (parse_link $link)
+      $owner = $info.0
+      $repository = $info.1
+      $link = ('git@github.com:' + $owner + '/' + $repository + '.git')
+    }
 
     # Clone the repository to temporary disk and delete it.
     const temp = '/tmp/git_repo_temp'
@@ -40,9 +50,7 @@ def dates [] {
     ^rm -rf $temp
 
     $theme
+  })
+  $themes | save --force ./themes.json
   }
-}
-
-def main [] {
-  dates
 }
