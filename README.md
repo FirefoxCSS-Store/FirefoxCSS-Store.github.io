@@ -36,25 +36,21 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
 
 ---
 
-## Add your theme <3
+## Contributing: adding your theme <3
 
-+ If you have a Github account:
-  1. Fork this repository
-  2. Look for a file called `themes.json`, open and edit it
++ [Forking](https://github.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/fork) and adding the theme yourself into the database:
+  1. Fork this repository.
+  2. Look for a file called `themes.json`, open and edit it.
   3. Below the last `}` add `,` right after a copy the [code below](#code) and paste it in the file
-  4. Add the properties of your theme: **title**, **link**, **description**, **image** and **tag** (Cannot be left empty)
-  5. **Avoid the use of escaped characters, and the order matters**
-  6. Please, do not use a very big image, preferably (650x500)
-  7. Image property:
-    - You can put an image URL
-    - Or an image file in `/images/themes/` (The file extension doesn't matter). And then reference it in your code with the following `assets/img/themes/YOUR_FILE_NAME_WITHOUT_EXTENSION.webp`
-  8. Then send it as a pull request to this repository.
+  4. Add the properties of your theme: **title**, **link**, **description**, **image** and **tag** (Cannot be left empty).
+  5. You do not have to add the date property, unless you wish to, it will be automatically added later on running the script `./scripts/set_dates_themes.nu`.
+  6. Image property:
+    - You can put an image URL.
+    - Or an image file in [./src/assets/](./src/assets/) (The file extension doesn't matter). And then reference it in your theme.
+  7. Then send it as a pull request to this repository.
 
-+ Or create an Issue:
-  1. When creating an issue, you will find a template for submitting a theme. Use that one. It's easy.
-
-+ If you have a Twitter account:
-  1. Send **at least** the following properties: **tags**, **title**, **link**, **description**, and **picture** to [@Neikon66](https://twitter.com/Neikon66). 
++ Or [create an Issue](https://github.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/issues/new?assignees=Neikon&labels=new+theme&projects=&template=-send-your-theme.md&title=%5BNEWTHEME%5D+Name+of+your+theme):
+  1. When creating an issue, you will see a template for submitting a theme. Use that one. It's easy.
 
 ```
   {
@@ -71,4 +67,3 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
 <h1 align="center">What do you think =?</h1>
 
 <p align="center">Feel free to send me any feedback via issue or my twitter <a href="https://twitter.com/Neikon66">@Neikon66</a>.</p>
-
