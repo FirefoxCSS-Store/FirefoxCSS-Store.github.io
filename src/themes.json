@@ -568,7 +568,7 @@
   },
   {
     "title": "ViceFox",
-    "link": "https://vicefox.vercel.app",
+    "link": "https://github.com/jtlw99/vicefox.git",
     "description": "Don't ask why it's called 'ViceFox'",
     "image": "/src/assets/ViceFox.png",
     "tags": [ "clean", "compact", "safari", "minimal", "macos"]
