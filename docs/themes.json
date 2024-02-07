@@ -693,10 +693,24 @@
     "tags": [ "Khalylexe", "Dark", "Rounded", "firefox" ]
   },
   {
-		"title": "ShyFox",
-		"link": "https://github.com/Naezr/ShyFox",
-		"description": "A very shy little theme that hides the entire browser interface in the window border",
-		"image": "assets/img/themes/shyfox.webp",
+    "title": "ShyFox",
+    "link": "https://github.com/Naezr/ShyFox",
+    "description": "A very shy little theme that hides the entire browser interface in the window border",
+    "image": "assets/img/themes/shyfox.webp",
     "tags": [ "Naezr", "minimal" ]
+  },
+  {
+    "title": "greenyfox",
+    "link": "https://github.com/alan-ar1/greenyfox",
+    "description": "A modern dark theme with macos title bar buttons and Iosevka font",
+    "image": "assets/img/themes//9037DGTAHYA.webp",
+    "tags": [ "alan-ar1", "Dark", "title-bar", "minimal", "Iosevka"]
+  },
+  {
+    "title": "98/95fox",
+    "link": "https://github.com/osem598/Firefox-98",
+    "description": "Chicago 95 & Windows95/98-like theme for firefox",
+    "image": "assets/img/themes/ff95.webp",
+    "tags": [ "osem598", "Light", "Retro", "Chicago", "98","95"]
   }
 ]
