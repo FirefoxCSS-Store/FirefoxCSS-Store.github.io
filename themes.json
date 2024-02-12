@@ -712,5 +712,12 @@
     "description": "Chicago 95 & Windows95/98-like theme for firefox",
     "image": "assets/img/themes/ff95.webp",
     "tags": [ "osem598", "Light", "Retro", "Chicago", "98","95"]
+  },
+  {
+		"title": "ArcWTF",
+		"link": "https://github.com/KiKaraage/ArcWTF/",
+		"description": "UserChrome.css theme to bring Arc Browser look from Windows to Firefox! ",
+		"image": "assets/img/themes/arcwtf.webp",
+    "tags": [ "KiKaraage", "dark", "light", "Arc Browser", "Sidebery", "vertical tabs", "autohide", "minimal" ]
   }
 ]
