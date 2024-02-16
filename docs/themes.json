@@ -719,5 +719,12 @@
 		"description": "UserChrome.css theme to bring Arc Browser look from Windows to Firefox! ",
 		"image": "assets/img/themes/arcwtf.webp",
     "tags": [ "KiKaraage", "dark", "light", "Arc Browser", "Sidebery", "vertical tabs", "autohide", "minimal" ]
+  },
+  {
+    "title": "FrameUI for Firefox",
+    "link": "https://github.com/FineFuturity/FrameUIForFirefox/",
+    "description": "A new way to view your web content. Like looking at photos printed from an old Polaroid camera.",
+    "image": "assets/img/themes/FrameUIScreenshot.webp",
+    "tags": [ "FineFuturity", "one line", "vertical tabs", "Sidebery", "Tab Center Reborn", "toolbars on bottom", "immersive", "minimal" ]
   }
 ]
