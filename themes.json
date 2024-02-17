@@ -655,7 +655,7 @@
     "link": "https://github.com/rainbowflesh/Me-Personal-Firefox-Settup",
     "description": "MS Edge style, sidebar, blur, and more.",
     "image": "assets/img/themes/sidefox.webp",
-    "tags": [ "sidebar", "animated", "simple", "responsive", "linux", "windows", "macos"]  
+    "tags": [ "sidebar", "animated", "simple", "responsive", "linux", "windows", "macos"]
   },
   {
     "title": "arcadia",
@@ -726,5 +726,12 @@
     "description": "A new way to view your web content. Like looking at photos printed from an old Polaroid camera.",
     "image": "assets/img/themes/FrameUIScreenshot.webp",
     "tags": [ "FineFuturity", "one line", "vertical tabs", "Sidebery", "Tab Center Reborn", "toolbars on bottom", "immersive", "minimal" ]
+  },
+{
+    "title": "arcfox",
+    "link": "https://github.com/betterbrowser/arcfox",
+    "description": "make firefox flow like arc",
+    "image": "assets/img/themes/arcfox.webp",
+    "tags": [ "nikollesan", "dark", "light", "luanderfarias", "bettterbrowser" ]
   }
 ]
