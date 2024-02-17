@@ -731,7 +731,7 @@
     "title": "arcfox",
     "link": "https://github.com/betterbrowser/arcfox",
     "description": "make firefox flow like arc",
-    "image": "assets/img/themes/arcfox.webp",
+    "image": "assets/img/themes/arcfox.png",
     "tags": [ "nikollesan", "dark", "light", "luanderfarias", "bettterbrowser" ]
   }
 ]
