@@ -655,7 +655,7 @@
     "link": "https://github.com/rainbowflesh/Me-Personal-Firefox-Settup",
     "description": "MS Edge style, sidebar, blur, and more.",
     "image": "assets/img/themes/sidefox.webp",
-    "tags": [ "sidebar", "animated", "simple", "responsive", "linux", "windows", "macos"]  
+    "tags": [ "sidebar", "animated", "simple", "responsive", "linux", "windows", "macos"]
   },
   {
     "title": "arcadia",
@@ -731,7 +731,7 @@
     "title": "arcfox",
     "link": "https://github.com/betterbrowser/arcfox",
     "description": "make firefox flow like arc",
-    "image": "assets/img/themes/arcfox.png",
+    "image": "assets/img/themes/arcfox.webp",
     "tags": [ "nikollesan", "dark", "light", "luanderfarias", "bettterbrowser" ]
   }
 ]
