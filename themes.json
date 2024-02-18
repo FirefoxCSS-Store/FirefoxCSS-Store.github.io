@@ -740,5 +740,12 @@
     "description": "A MacOSX Safari theme for Firefox 80+",
     "image": "assets/img/themes/whitesur.webp",
     "tags": [ "vinceliuice", "dark", "light", "MacOSX ", "Monterey", "safari", "mac", "oneline" ]
+  },
+  {
+    "title": "Another oneline",
+    "link": "https://github.com/mimipile/firefoxCSS",
+    "description": "Simple oneline, minimal, keyboard-centered Firefox CSS theme.",
+    "image": "assets/img/themes/screenshot-anotheroneline.webp",
+    "tags": [ "mimipile", "dark", "light", "adaptative", "onebar", "oneline", "minimal", "keyboard", "keyboard centered" ]
   }
 ]
