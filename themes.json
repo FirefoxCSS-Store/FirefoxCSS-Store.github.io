@@ -727,11 +727,18 @@
     "image": "assets/img/themes/FrameUIScreenshot.webp",
     "tags": [ "FineFuturity", "one line", "vertical tabs", "Sidebery", "Tab Center Reborn", "toolbars on bottom", "immersive", "minimal" ]
   },
-{
+  {
     "title": "arcfox",
     "link": "https://github.com/betterbrowser/arcfox",
     "description": "make firefox flow like arc",
     "image": "assets/img/themes/arcfox.webp",
     "tags": [ "nikollesan", "dark", "light", "luanderfarias", "bettterbrowser" ]
+  },
+  {
+    "title": "WhiteSur",
+    "link": "https://github.com/vinceliuice/WhiteSur-firefox-theme",
+    "description": "A MacOSX Safari theme for Firefox 80+",
+    "image": "assets/img/themes/whitesur.webp",
+    "tags": [ "vinceliuice", "dark", "light", "MacOSX ", "Monterey", "safari", "mac", "oneline" ]
   }
 ]
