@@ -745,7 +745,7 @@
     "title": "Another oneline",
     "link": "https://github.com/mimipile/firefoxCSS",
     "description": "Simple oneline, minimal, keyboard-centered Firefox CSS theme.",
-    "image": "assets/img/themes/screenshot-anotheroneline.webp",
+    "image": "assets/img/themes/anotheroneline.webp",
     "tags": [ "mimipile", "dark", "light", "adaptative", "onebar", "oneline", "minimal", "keyboard", "keyboard centered" ]
   }
 ]
