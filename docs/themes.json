@@ -747,5 +747,12 @@
     "description": "Simple oneline, minimal, keyboard-centered Firefox CSS theme.",
     "image": "assets/img/themes/anotheroneline.webp",
     "tags": [ "mimipile", "dark", "light", "adaptative", "onebar", "oneline", "minimal", "keyboard", "keyboard centered" ]
+  },
+  {
+    "title": "MacFox-Theme",
+    "link": "https://github.com/d0sse/macFox-theme",
+    "description": "Safari-like minimalistic theme with system accent color",
+    "image": "assets/img/themes/d0sse_mac_fox_screen.webp",
+    "tags": [ "dark", "light", "accent", "minimal", "macos", "safari", "mac", "autocolor"]
   }
 ]
