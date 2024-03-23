@@ -1,5 +1,12 @@
 [
   {
+    "title": "Titlebar-Button-Fix",
+    "link": "https://github.com/birbkeks/Firefox-Titlebar-Button-Fix",
+    "description": "This theme fixes titlebar min max close buttons for Firefox in linux. ",
+    "image": "assets/img/themes/titlebarfix.webp",
+    "tags": [ "birbkeks", "fix", "titlebar"]
+  },
+  {
     "title": "u/FffDtark's Theme",
     "link": "https://github.com/Ikrom27/Firefox",
     "description": "Oneline theme",
@@ -623,13 +630,6 @@
     "tags": ["oneline", "responsive", "light", "dark", "animation", "rounded", "compact", "minimalistic", "black"]
   },
   {
-    "title": "Titlebar-Button-Fix",
-    "link": "https://github.com/birbkeks/Firefox-Titlebar-Button-Fix",
-    "description": "This theme fixes titlebar min max close buttons for Firefox in linux. ",
-    "image": "assets/img/themes/ftbf.webp",
-    "tags": [ "birbkeks", "fix", "titlebar"]
-  },
-  {
 		"title": "Firefox-Alpha",
 		"link": "https://github.com/Tagggar/Firefox-Alpha",
 		"description": "Super clear desktop browser with zero buttons and gesture controls",
@@ -754,5 +754,21 @@
     "description": "Safari-like minimalistic theme with system accent color",
     "image": "assets/img/themes/d0sse_mac_fox_screen.webp",
     "tags": [ "dark", "light", "accent", "minimal", "macos", "safari", "mac", "autocolor"]
+  },
+  {
+    "title": "EdgyArc Fr",
+    "link": "https://github.com/artsyfriedchicken/EdgyArc-fr/",
+    "description": "Combining the sleekness of Microsoft Edge and the aesthetics of the Arc browser",
+    "image": "assets/img/themes/edgyarc-fr.webp",
+    "tags": [ "artsyFriedChicken", "dark", "light", "macOS", "mac", "arc", "edge", "translucent", "blur", "sidebery", "Vertical Tabs" ]
+  },
+  {
+		"title": "Blurfox",
+		"link": "https://github.com/safak45xx/Blurfox",
+		"description": "A Firefox theme",
+		"image":  "assets/img/themes/blurfox.webp",
+    "tags": ["blur", "minimal","oneline"]
+
   }
+
 ]
