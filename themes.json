@@ -754,5 +754,13 @@
     "description": "Safari-like minimalistic theme with system accent color",
     "image": "assets/img/themes/d0sse_mac_fox_screen.webp",
     "tags": [ "dark", "light", "accent", "minimal", "macos", "safari", "mac", "autocolor"]
+  },
+{
+    "title": "EdgyArc Fr",
+    "link": "https://github.com/artsyfriedchicken/EdgyArc-fr/",
+    "description": "Combining the sleekness of Microsoft Edge and the aesthetics of the Arc browser",
+    "image": "assets/img/themes/edgyarc-fr.webp",
+    "tags": [ "artsyFriedChicken", "dark", "light", "macOS", "mac", "arc", "edge", "translucent", "blur", "sidebery", "Vertical Tabs" ]
   }
+
 ]
