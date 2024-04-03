@@ -763,20 +763,17 @@
     "tags": [ "artsyFriedChicken", "dark", "light", "macOS", "mac", "arc", "edge", "translucent", "blur", "sidebery", "Vertical Tabs" ]
   },
   {
-		"title": "Blurfox",
-		"link": "https://github.com/safak45xx/Blurfox",
-		"description": "A Firefox theme",
-		"image":  "assets/img/themes/blurfox.webp",
+    "title": "Blurfox",
+    "link": "https://github.com/safak45xx/Blurfox",
+    "description": "A Firefox theme",
+    "image":  "assets/img/themes/blurfox.webp",
     "tags": ["blur", "minimal","oneline"]
-
   },
   {
-		"title": "FF Ultima",
-		"link": "https://github.com/soulhotel/FF-ULTIMA",
-		"description": "Native Vertical Tabs, keep your sidebar, no extensions. No overthinking. FF Ultima",
-		"image": "assets/img/themes/FF_Ultima.webp",
+    "title": "FF Ultima",
+    "link": "https://github.com/soulhotel/FF-ULTIMA",
+    "description": "Native Vertical Tabs, keep your sidebar, no extensions. No overthinking. FF Ultima",
+    "image": "assets/img/themes/FF_Ultima.webp",
     "tags": ["vertical tabs", "minimal","lightweight","customizable","dark","light"]
-
   }
-
 ]
