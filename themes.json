@@ -487,7 +487,7 @@
     "link": "https://github.com/Neikon/AutoColor-Minimal-Proton",
     "description": "Some settings that together with the vivaldifox add-on create a minimalist theme whose color is the color of the website you are visiting.",
     "image": "assets/img/themes/AutoColor-Minimal-Proton.webp",
-    "tags": [ "vivaldi", "proton", "minimal", "autocolor", "dark", "light", "borderless", "adaptive", "compact", "one-line"]
+    "tags": [ "vivaldi", "proton", "minimal", "autocolor", "dark", "light", "borderless", "adaptive", "compact", "one-line", "neikon"]
   },
   {
     "title": "SimpleFox Feather Edition",
@@ -592,7 +592,7 @@
     "link": "https://github.com/Neikon/Fox11",
     "description": "A Firefox CSS themes with auto-color, Mica, auto-hide nav-bar support. Inspired in firefox-one , Edge/Chrome restyle 2023.",
     "image": "assets/img/themes/fox11.webp",
-    "tags": [ "vivaldi", "proton", "minimal", "autocolor", "dark", "light", "mica", "adaptive", "transparency", "transparent", "one-line"]
+    "tags": [ "vivaldi", "proton", "minimal", "autocolor", "dark", "light", "mica", "adaptive", "transparency", "neikon", "one-line"]
   },
   {
     "title": "zap's cool photon theme",
@@ -775,5 +775,12 @@
     "description": "Native Vertical Tabs, keep your sidebar, no extensions. No overthinking. FF Ultima",
     "image": "assets/img/themes/FF_Ultima.webp",
     "tags": ["vertical tabs", "minimal","lightweight","customizable","dark","light"]
+  },
+  {
+		"title": "Firefox Xtra Compact",
+		"link": "https://github.com/CarterSnich/firefox-xtra-compact",
+		"description": "Aims to make Firefox more compact and give a tiny bit more web view area for low-screen devices.",
+		"image": "assets/img/themes/xtracompact.webp",
+    "tags": [ "CarterSnich", "compact", "themeless"]
   }
 ]
