@@ -787,7 +787,7 @@
     "title": "Aero Firefox",
     "link": "https://github.com/SandTechStuff/AeroFirefox",
     "description": "Brings the Windows 7 titlebar buttons to modern versions of Firefox",
-    "image": "",
+    "image": "assets/img/themes/AeroFirefox.webp",
     "tags": ["aero","dark","light","lightweight","windows7","minimal"]
   }
 ]
