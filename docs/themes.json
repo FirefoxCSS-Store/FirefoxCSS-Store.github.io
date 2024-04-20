@@ -777,10 +777,17 @@
     "tags": ["vertical tabs", "minimal","lightweight","customizable","dark","light"]
   },
   {
-		"title": "Firefox Xtra Compact",
-		"link": "https://github.com/CarterSnich/firefox-xtra-compact",
-		"description": "Aims to make Firefox more compact and give a tiny bit more web view area for low-screen devices.",
-		"image": "assets/img/themes/xtracompact.webp",
+    "title": "Firefox Xtra Compact",
+    "link": "https://github.com/CarterSnich/firefox-xtra-compact",
+    "description": "Aims to make Firefox more compact and give a tiny bit more web view area for low-screen devices.",
+    "image": "assets/img/themes/xtracompact.webp",
     "tags": [ "CarterSnich", "compact", "themeless"]
+  },
+  {
+    "title": "Aero Firefox",
+    "link": "https://github.com/SandTechStuff/AeroFirefox",
+    "description": "Brings the Windows 7 titlebar buttons to modern versions of Firefox",
+    "image": "assets/img/themes/aeroFirefox.webp",
+    "tags": ["aero","dark","light","lightweight","windows7","minimal"]
   }
 ]
