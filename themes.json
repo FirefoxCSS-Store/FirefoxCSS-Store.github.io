@@ -789,7 +789,7 @@
     "description": "Brings the Windows 7 titlebar buttons to modern versions of Firefox",
     "image": "assets/img/themes/aeroFirefox.webp",
     "tags": ["aero","dark","light","lightweight","windows7","minimal"]
-  }
+  },
   {
     "title": "PotatoFox",
     "link": "https://gitlab.com/awwsomepotato/FirefoxCSS",
