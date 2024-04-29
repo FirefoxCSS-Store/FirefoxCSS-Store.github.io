@@ -790,4 +790,11 @@
     "image": "assets/img/themes/aeroFirefox.webp",
     "tags": ["aero","dark","light","lightweight","windows7","minimal"]
   }
+  {
+    "title": "PotatoFox",
+    "link": "https://gitlab.com/awwsomepotato/FirefoxCSS",
+    "description": "A compact and minimal firefox theme using Sidebery",
+    "image": "assets/img/themes/PotatoFox.webp",
+    "tags": ["minimal","compact","vertical tabs","Sidebery","arc"]
+  }
 ]
