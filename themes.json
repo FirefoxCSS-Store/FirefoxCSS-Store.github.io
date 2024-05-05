@@ -742,10 +742,10 @@
     "tags": [ "vinceliuice", "dark", "light", "MacOSX ", "Monterey", "safari", "mac", "oneline" ]
   },
   {
-    "title": "Another oneline",
+    "title": "Another Oneline",
     "link": "https://github.com/mimipile/firefoxCSS",
-    "description": "Simple oneline, minimal, keyboard-centered Firefox CSS theme.",
-    "image": "assets/img/themes/anotheroneline.webp",
+    "description": "Another simple, oneline, minimal, keyboard-centered Firefox CSS theme.",
+    "image": "assets/img/themes/screenshot-site.webp",
     "tags": [ "mimipile", "dark", "light", "adaptative", "onebar", "oneline", "minimal", "keyboard", "keyboard centered" ]
   },
   {
