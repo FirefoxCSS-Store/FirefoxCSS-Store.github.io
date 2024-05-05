@@ -102,6 +102,8 @@ const { title } = Astro.props;
     --highlight-med-hsl: 10deg, 9%, 86%;
     --highlight-high-hsl: 315deg, 4%, 80%;
 
+    --custom-blue: #0984e3;
+
 
     @media (prefers-color-scheme: dark) {
 
@@ -120,6 +122,8 @@ const { title } = Astro.props;
       --highlight-low-hsl: 244deg, 18%, 15%;
       --highlight-med-hsl: 249deg, 15%, 28%;
       --highlight-high-hsl: 248deg, 13%, 36%;
+
+      --custom-blue: #74b9ff;
 
     }
 
@@ -164,7 +168,7 @@ const { title } = Astro.props;
 
   p, ul, ol { color: var(--subtle); }
 
-  a { color: var(--love); }
+  a { color: var(--custom-blue); }
 
   a:has(.arrow) { text-decoration: none; }
   a > .arrow { display: inline-block; }
