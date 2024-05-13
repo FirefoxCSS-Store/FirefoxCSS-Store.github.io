@@ -540,7 +540,7 @@
   },
   {
     "title": "Firefox Onebar",
-    "link": "https://codeberg.org/Freeplay/Firefox-Onebar",
+    "link": "https://git.gay/freeplay/Firefox-Onebar",
     "description": "A single bar for Firefox's UI.",
     "image": "assets/img/themes/onebar.webp",
     "tags": [ "Freeplay", "oneline", "onebar", "compact", "minimal"]
