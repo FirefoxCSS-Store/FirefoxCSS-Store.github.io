@@ -796,5 +796,12 @@
     "description": "A compact and minimal firefox theme using Sidebery",
     "image": "assets/img/themes/PotatoFox.webp",
     "tags": ["minimal","compact","vertical tabs","Sidebery","arc"]
+  },
+  {
+    "title": "MiniFox",
+    "link": "https://codeberg.org/awwpotato/MiniFox",
+    "description": "A keyboard driven Firefox theme focused on minimalism and good looks",
+    "image": "assets/img/themes/minifox.webp",
+    "tags": ["minimal", "compact", "translucent", "blur", "rounded"],
   }
 ]
