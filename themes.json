@@ -803,5 +803,12 @@
     "description": "A keyboard driven Firefox theme focused on minimalism and good looks",
     "image": "assets/img/themes/minifox.webp",
     "tags": ["minimal", "compact", "translucent", "blur", "rounded"]
+  },
+  {
+    "title": "Minimal-Arc",
+    "link": "https://github.com/zayihu/Minimal-Arc",
+    "description": "Minimal light Firefox theme with Arc like design with vertical tabs",
+    "image": "https://github.com/zayihu/Minimal-Arc/blob/main/preview.webp",
+    "tags": ["minimal", "compact", "vertical-tabs", "Sidebery", "light", "Arc Browser"]
   }
 ]
