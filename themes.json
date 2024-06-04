@@ -792,7 +792,7 @@
   },
   {
     "title": "PotatoFox",
-    "link": "https://codeberg.org/awwpotato/FirefoxCSS/",
+    "link": "https://codeberg.org/awwpotato/PotatoFox",
     "description": "A compact and minimal firefox theme using Sidebery",
     "image": "assets/img/themes/PotatoFox.webp",
     "tags": ["minimal","compact","vertical tabs","Sidebery","arc"]
