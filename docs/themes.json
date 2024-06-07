@@ -540,7 +540,7 @@
   },
   {
     "title": "Firefox Onebar",
-    "link": "https://codeberg.org/Freeplay/Firefox-Onebar",
+    "link": "https://git.gay/freeplay/Firefox-Onebar",
     "description": "A single bar for Firefox's UI.",
     "image": "assets/img/themes/onebar.webp",
     "tags": [ "Freeplay", "oneline", "onebar", "compact", "minimal"]
@@ -792,9 +792,23 @@
   },
   {
     "title": "PotatoFox",
-    "link": "https://gitlab.com/awwsomepotato/FirefoxCSS",
+    "link": "https://codeberg.org/awwpotato/PotatoFox",
     "description": "A compact and minimal firefox theme using Sidebery",
     "image": "assets/img/themes/PotatoFox.webp",
     "tags": ["minimal","compact","vertical tabs","Sidebery","arc"]
+  },
+  {
+    "title": "MiniFox",
+    "link": "https://codeberg.org/awwpotato/MiniFox",
+    "description": "A keyboard driven Firefox theme focused on minimalism and good looks",
+    "image": "assets/img/themes/minifox.webp",
+    "tags": ["minimal", "compact", "translucent", "blur", "rounded"]
+  },
+  {
+    "title": "Minimal-Arc",
+    "link": "https://github.com/zayihu/Minimal-Arc",
+    "description": "Minimal light Firefox theme with Arc like design with vertical tabs",
+    "image": "assets/img/themes//30433preview.webp",
+    "tags": ["minimal", "compact", "vertical-tabs", "Sidebery", "light", "Arc Browser"]
   }
 ]
