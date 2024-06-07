@@ -808,7 +808,7 @@
     "title": "Minimal-Arc",
     "link": "https://github.com/zayihu/Minimal-Arc",
     "description": "Minimal light Firefox theme with Arc like design with vertical tabs",
-    "image": "assets/img/themes/minimal_arc.webp",
+    "image": "https://github.com/zayihu/Minimal-Arc/blob/main/preview.gif",
     "tags": ["minimal", "compact", "vertical-tabs", "Sidebery", "light", "Arc Browser"]
   }
 ]
