@@ -814,8 +814,8 @@
  {
     "title": "SnowFox",
     "link": "https://github.com/naveensagar765/SnowFox",
-    "description": "Modern blue glass theme with side bar",
-    "image": "assets/img/themes/titlebarfix.webp",
-    "tags": [ "birbkeks", "fix", "titlebar"]
+    "description": "Modern blue glass theme with side bookmark bar",
+    "image": "assets/img/themes/snowfox.webp",
+    "tags": [ "moder", "blue", "side-bookmark-bar","home page"]
   },
 ]
