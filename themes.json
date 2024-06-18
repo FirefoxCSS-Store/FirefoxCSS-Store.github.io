@@ -811,7 +811,7 @@
     "image": "assets/img/themes/minimal_arc.webp",
     "tags": ["minimal", "compact", "vertical-tabs", "Sidebery", "light", "Arc Browser"]
   },
- {
+  {
     "title": "SnowFox",
     "link": "https://github.com/naveensagar765/SnowFox",
     "description": "Modern blue glass theme with side bookmark bar",
