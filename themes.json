@@ -817,5 +817,12 @@
     "description": "Modern blue glass theme with side bookmark bar",
     "image": "assets/img/themes/snowfox.webp",
     "tags": [ "moder", "blue", "side-bookmark-bar","home page"]
+  },
+  {
+    "title": "RoundFox",
+    "link": "https://github.com/GazirovanayaVoda/RoundFox",
+    "description": "Small theme to make Firefox more rounded and compact",
+    "image": "assets/img/themes/roundfox_theme_img.webp",
+    "tags": ["home page", "compact", "minimal", "blur"]
   }
 ]
