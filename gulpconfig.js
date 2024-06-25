@@ -64,7 +64,7 @@ module.exports = {
   images: {
     favicon:     favicon,
     faviconDest: `${pathBuild}/`,
-    toConvert:   [`./images/**/*.{jpg,JPG,jpeg,JPEG,png,PNG}`, `!${favicon}`],
+    toConvert:   [`./images/**/*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,GIF}`, `!${favicon}`],
     toCopy:      `./images/**/*.{gif,GIF,svg,SVG,webp,WEBP}`,
     dest:        `${pathAssets}/img/`,
   },
