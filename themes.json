@@ -824,5 +824,12 @@
     "description": "Small theme to make Firefox more rounded and compact",
     "image": "assets/img/themes/roundfox_theme_img.webp",
     "tags": ["home page", "compact", "minimal", "blur"]
+  },
+  {
+    "title": "Minimal Gruvbox Material Firefox",
+    "link": "https://github.com/RemyIsCool/userChrome.css",
+    "description": "A minimal Firefox/LibreWolf theme with satisfying animations and Gruvbox Material colors.",
+    "image": "https://raw.githubusercontent.com/RemyIsCool/userChrome.css/main/preview.gif",
+    "tags": ["RemyIsCool", "dark", "minimal", "gruvbox material", "animations"]
   }
 ]
