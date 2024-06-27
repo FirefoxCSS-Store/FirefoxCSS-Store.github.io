@@ -829,7 +829,7 @@
     "title": "AnimatedFox",
     "link": "https://github.com/RemyIsCool/AnimatedFox",
     "description": "A minimal Firefox/LibreWolf theme with satisfying animations and a hidden URL bar.",
-    "image": "assets/img/themes/animatedfox.png",
+    "image": "assets/img/themes/animatedfox.webp",
     "tags": ["RemyIsCool", "dark", "minimal", "hidden url bar", "animations"]
   }
 ]
