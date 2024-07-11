@@ -831,5 +831,12 @@
     "description": "A minimal Firefox/LibreWolf theme with satisfying animations and a hidden URL bar.",
     "image": "assets/img/themes/animatedfox.webp",
     "tags": ["RemyIsCool", "dark", "minimal", "hidden url bar", "animations"]
+  },
+  {
+    "title": "Quietfox Reborn",
+    "link": "https://github.com/TheGITofTeo997/quietfoxReborn",
+    "description": "Resurrecting a very Clean Firefox userChrome Mod ",
+    "image": "https://raw.githubusercontent.com/TheGITofTeo997/quietfoxReborn/master/images/home.jpg",
+    "tags": [ "Teo", "sleek", "minimal", "quiet" ]
   }
 ]

@@ -826,10 +826,17 @@
     "tags": ["home page", "compact", "minimal", "blur"]
   },
   {
-    "title": "Minimal Gruvbox Material Firefox",
-    "link": "https://github.com/RemyIsCool/userChrome.css",
-    "description": "A minimal Firefox/LibreWolf theme with satisfying animations and Gruvbox Material colors.",
-    "image": "assets/img/themes//12950preview.webp",
-    "tags": ["RemyIsCool", "dark", "minimal", "gruvbox material", "animations"]
+    "title": "AnimatedFox",
+    "link": "https://github.com/RemyIsCool/AnimatedFox",
+    "description": "A minimal Firefox/LibreWolf theme with satisfying animations and a hidden URL bar.",
+    "image": "assets/img/themes/animatedfox.webp",
+    "tags": ["RemyIsCool", "dark", "minimal", "hidden url bar", "animations"]
+  },
+  {
+    "title": "Quietfox Reborn",
+    "link": "https://github.com/TheGITofTeo997/quietfoxReborn",
+    "description": "Resurrecting a very Clean Firefox userChrome Mod ",
+    "image": "https://raw.githubusercontent.com/TheGITofTeo997/quietfoxReborn/master/images/home.jpg",
+    "tags": [ "Teo", "sleek", "minimal", "quiet" ]
   }
 ]
