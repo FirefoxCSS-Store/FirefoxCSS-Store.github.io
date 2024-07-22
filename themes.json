@@ -798,13 +798,6 @@
     "tags": ["minimal","compact","vertical tabs","Sidebery","arc"]
   },
   {
-    "title": "MiniFox",
-    "link": "https://codeberg.org/awwpotato/MiniFox",
-    "description": "A keyboard driven Firefox theme focused on minimalism and good looks",
-    "image": "assets/img/themes/minifox.webp",
-    "tags": ["minimal", "compact", "translucent", "blur", "rounded"]
-  },
-  {
     "title": "Minimal-Arc",
     "link": "https://github.com/zayihu/Minimal-Arc",
     "description": "Minimal light Firefox theme with Arc like design with vertical tabs",
