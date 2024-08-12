@@ -711,7 +711,7 @@
     "link": "https://github.com/osem598/Firefox-98",
     "description": "Chicago 95 & Windows95/98-like theme for firefox",
     "image": "assets/img/themes/ff95.webp",
-    "tags": [ "osem598", "Light", "Retro", "Chicago", "98","95"]
+    "tags": [ "osem598", "Light", "Retro", "Chicago", "98", "95"]
   },
   {
 		"title": "ArcWTF",
@@ -798,13 +798,6 @@
     "tags": ["minimal","compact","vertical tabs","Sidebery","arc"]
   },
   {
-    "title": "MiniFox",
-    "link": "https://codeberg.org/awwpotato/MiniFox",
-    "description": "A keyboard driven Firefox theme focused on minimalism and good looks",
-    "image": "assets/img/themes/minifox.webp",
-    "tags": ["minimal", "compact", "translucent", "blur", "rounded"]
-  },
-  {
     "title": "Minimal-Arc",
     "link": "https://github.com/zayihu/Minimal-Arc",
     "description": "Minimal light Firefox theme with Arc like design with vertical tabs",
@@ -836,7 +829,7 @@
     "title": "Quietfox Reborn",
     "link": "https://github.com/TheGITofTeo997/quietfoxReborn",
     "description": "Resurrecting a very Clean Firefox userChrome Mod ",
-    "image": "assets/img/themes//20053home.webp",
+    "image": "assets/img/themes/20053home.webp",
     "tags": [ "Teo", "sleek", "minimal", "quiet" ]
   },
   {
@@ -845,5 +838,12 @@
     "description": "Keeps the original new tab page layout while making it look as glassy as possible.",
     "image": "assets/img/themes/glassyfox.webp",
     "tags": [ "blur", "AnhNguyenlost13" ]
+  },
+  {
+    "title": "98/95fox Xtra Compact",
+    "link": "https://github.com/programneer/Firefox-98-Xtra-Compact",
+    "description": "The mix of nostalgia and compact.",
+    "image": "assets/img/themes/ff95xtracompact.webp",
+    "tags": [ "Programneer", "Light", "Retro", "Chicago", "98", "95", "compact" ]
   }
 ]
