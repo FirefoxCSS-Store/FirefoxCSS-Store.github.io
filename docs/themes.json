@@ -845,5 +845,12 @@
     "description": "The mix of nostalgia and compact.",
     "image": "assets/img/themes/ff95xtracompact.webp",
     "tags": [ "Programneer", "Light", "Retro", "Chicago", "98", "95", "compact" ]
+  },
+  {
+    "title": "FireFox OneLine Navbar",
+    "link": "FawazBinSaleem/FireFoxOneLinerCSS",
+    "description": "A compact oneliner navbar css theme.",
+    "image": "assets/img/themes/firefoxoneline.png",
+    "tags": ["oneline", "black color", "amoled", "oneliner", "navbar", "One Line", "compact" ]
   }
 ]
