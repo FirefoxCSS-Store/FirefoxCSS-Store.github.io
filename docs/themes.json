@@ -848,9 +848,9 @@
   },
   {
     "title": "FireFox OneLine Navbar",
-    "link": "FawazBinSaleem/FireFoxOneLinerCSS",
+    "link": "https://github.com/FawazBinSaleem/FireFoxOneLinerCSS",
     "description": "A compact oneliner navbar css theme.",
-    "image": "assets/img/themes/firefoxoneline.png",
+    "image": "assets/img/themes/fireFoxOneLinerCSS.webp",
     "tags": ["oneline", "black color", "amoled", "oneliner", "navbar", "One Line", "compact" ]
   }
 ]
