@@ -852,5 +852,12 @@
     "description": "A compact oneliner navbar css theme.",
     "image": "assets/img/themes/fireFoxOneLinerCSS.webp",
     "tags": ["oneline", "black color", "amoled", "oneliner", "navbar", "One Line", "compact" ]
+  },
+  {
+    "title": "Monochrome neubrutalism firefox simple",
+    "link": "https://github.com/Kaskapa/Monochrome-Neubrutalism-Firefox-Theme",
+    "description": "A simple light theme I made to explore the world of Firefox theming",
+    "image": "assets/img/themes/monochromeNeubrutalism",
+    "tags": [ "light", "neubrutalislm", "monochrome", "simple"]
   }
 ]
