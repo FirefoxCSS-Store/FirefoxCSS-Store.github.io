@@ -859,5 +859,12 @@
     "description": "A simple light theme I made to explore the world of Firefox theming.",
     "image": "assets/img/themes/monochromeNeubrutalism.webp",
     "tags": [ "light", "neubrutalislm", "monochrome", "simple", "Kaskapa" ]
+  },
+  {
+    "title": "minimalistest oneliner",
+	"link": "https://github.com/yari-dog/minimalistest-oneliner-librewolf",
+	"description": "buttons are for nerds.",
+	"image": "assets/img/themes/minimalist-oneliner.png",
+	"tags": [ "simple", "oneliner", "oneline", "compact" ]
   }
 ]
