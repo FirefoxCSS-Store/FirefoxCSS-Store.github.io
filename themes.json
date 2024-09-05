@@ -866,5 +866,12 @@
 	"description": "buttons are for nerds.",
 	"image": "assets/img/themes/minimalist-oneliner.png",
 	"tags": [ "simple", "oneliner", "oneline", "compact" ]
+  },
+  {
+	  "title": "Arc UI",
+	  "link": "https://github.com/dxdotdev/arc-ui",
+	  "description": "Make your Firefox like the Arc Browser.",
+	  "image": "assets/img/themes/29957ui.webp",
+	  "tags": [ "dxdotdev", "arc browser", "compact", "modern" ]
   }
 ]
