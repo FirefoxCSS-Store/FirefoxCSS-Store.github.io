@@ -873,5 +873,12 @@
 	  "description": "Make your Firefox like the Arc Browser.",
 	  "image": "assets/img/themes/29957ui.webp",
 	  "tags": [ "dxdotdev", "arc browser", "compact", "modern" ]
+  },
+  {
+	  "title": "Material Fox Updated",
+	  "link": "https://github.com/edelvarden/material-fox-updated",
+	  "description": "🦊 Firefox user CSS theme looks similar to Chrome.",
+	  "image": "assets/img/themes/material-fox-updated-preview.webp",
+	  "tags": [ "dark", "light", "rtl", "customizable", "material", "material-design", "refresh", "modern", "updated" ]
   }
 ]
