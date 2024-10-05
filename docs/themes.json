@@ -812,13 +812,6 @@
     "tags": [ "moder", "blue", "side-bookmark-bar","home page"]
   },
   {
-    "title": "RoundFox",
-    "link": "https://github.com/GazirovanayaVoda/RoundFox",
-    "description": "Small theme to make Firefox more rounded and compact",
-    "image": "assets/img/themes/roundfox_theme_img.webp",
-    "tags": ["home page", "compact", "minimal", "blur"]
-  },
-  {
     "title": "AnimatedFox",
     "link": "https://github.com/RemyIsCool/AnimatedFox",
     "description": "A minimal Firefox/LibreWolf theme with satisfying animations and a hidden URL bar.",
