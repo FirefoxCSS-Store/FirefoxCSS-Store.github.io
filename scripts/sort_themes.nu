@@ -6,13 +6,19 @@
 
 # Github API.
 export def github [
-	token: string # API Token.
+	token?: string # API Token.
 ]: record<owner: string, name: string> -> record<pushed_at: string, stargazers_count: int, avatar: string> {
 	let repo = $in
 
-	let item = http get $"https://api.github.com/repos/($repo.owner)/($repo.name)" --headers {
-		Authorization: $"Bearer ($token)"
+	let headers = if ($token | is-empty) {
+		[]
+	} else {
+		{
+			Authorization: $"Bearer ($token)"
+		}
 	}
+
+	let item = http get $"https://api.github.com/repos/($repo.owner)/($repo.name)" --headers $headers
 
 	{
 		pushed_at: $item.pushed_at
