@@ -147,17 +147,19 @@ export def main [
 	let data = open $source
 		| each {|item|
 
-			let info = if ($item.link | str contains 'github') {
+			let link = $item.repository
+
+			let info = if ($link | str contains 'github') {
 				sleep $delay
-				$item.link | parse_link | github $token
-			} else if ($item.link | str contains 'gitlab') {
+				$link | parse_link | github $token
+			} else if ($link | str contains 'gitlab') {
 				sleep $delay
-				$item.link | parse_link | gitlab $token
-			} else if ($item.link | str contains 'codeberg') {
+				$link | parse_link | gitlab $token
+			} else if ($link | str contains 'codeberg') {
 				sleep $delay
-				$item.link | parse_link | codeberg $token
+				$link | parse_link | codeberg $token
 			} else {
-				$item.link | parse_link | clone
+				$link | parse_link | clone
 			}
 
 			{
