@@ -27,6 +27,29 @@ export def github [
 	}
 }
 
+# Gitlab API.
+export def gitlab [
+	token?: string # API Token.
+]: record<owner: string, name: string> -> record<pushed_at: string, stargazers_count: int, avatar: string> {
+	let repo = $in
+
+	let headers = if ($token | is-empty) {
+		[]
+	} else {
+		{
+			Authorization: $"Bearer ($token)"
+		}
+	}
+
+	let item = http get $"https://gitlab.com/api/v4/projects/($repo.owner)%2F($repo.name)" --headers $headers
+
+	{
+		pushed_at: $item.last_activity_at
+		stargazers_count: ($item.star_count | into int)
+		avatar: $item.namespace.avatar_url
+	}
+}
+
 # In case of not having API, clone and get information yourself.
 export def clone [
 	--temp: string = '/tmp/firefoxcss-store/' # Temporary folder to save themes.
@@ -104,6 +127,9 @@ export def main [
 			let info = if ($item.link | str contains 'github') {
 				sleep $delay
 				$item.link | parse_link | github $token
+			} else if ($item.link | str contains 'gitlab') {
+				sleep $delay
+				$item.link | parse_link | gitlab $token
 			} else {
 				$item.link | parse_link | clone
 			}
