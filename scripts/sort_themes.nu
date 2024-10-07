@@ -50,6 +50,29 @@ export def gitlab [
 	}
 }
 
+# Codeberg API.
+export def codeberg [
+	token?: string # API Token.
+]: record<owner: string, name: string> -> record<pushed_at: string, stargazers_count: int, avatar: string> {
+	let repo = $in
+
+	let headers = if ($token | is-empty) {
+		[]
+	} else {
+		{
+			Authorization: $"token ($token)"
+		}
+	}
+
+	let item = http get $"https://codeberg.org/api/v1/repos/($repo.owner)/($repo.name)" --headers $headers
+
+	{
+		pushed_at: $item.updated_at
+		stargazers_count: ($item.stars_count | into int)
+		avatar: $item.owner.avatar_url
+	}
+}
+
 # In case of not having API, clone and get information yourself.
 export def clone [
 	--temp: string = '/tmp/firefoxcss-store/' # Temporary folder to save themes.
@@ -130,6 +153,9 @@ export def main [
 			} else if ($item.link | str contains 'gitlab') {
 				sleep $delay
 				$item.link | parse_link | gitlab $token
+			} else if ($item.link | str contains 'codeberg') {
+				sleep $delay
+				$item.link | parse_link | codeberg $token
 			} else {
 				$item.link | parse_link | clone
 			}
