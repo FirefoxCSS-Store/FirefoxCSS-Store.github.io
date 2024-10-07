@@ -5,14 +5,13 @@
 # Maintainer: BeyondMagic - João Farias 2024 <beyondmagic@mail.ru>
 
 # Github API.
-export def github []: record<owner: string, name: string> -> record<pushed_at: string, stargazers_count: int, avatar: string> {
-	let item = {
-		#...
-		pushed_at: '2023-03-06T16:47:46Z'
-		stargazers_count: '2'
-		owner: {
-			avatar_url: 'https://avatars.githubusercontent.com/u/9977591?v=4'
-		}
+export def github [
+	token: string # API Token.
+]: record<owner: string, name: string> -> record<pushed_at: string, stargazers_count: int, avatar: string> {
+	let repo = $in
+
+	let item = http get $"https://api.github.com/repos/($repo.owner)/($repo.name)" --headers {
+		Authorization: $"Bearer ($token)"
 	}
 
 	{
@@ -98,7 +97,7 @@ export def main [
 
 			let info = if ($item.link | str contains 'github') {
 				sleep $delay
-				$item.link | parse_link | github
+				$item.link | parse_link | github $token
 			} else {
 				$item.link | parse_link | clone
 			}
