@@ -12,19 +12,6 @@
 	"repository": "https://github.com/birbkeks/Firefox-Titlebar-Button-Fix"
 	},
 	{
-		"title": "u/FffDtark's Theme",
-		"link": "https://github.com/Ikrom27/Firefox",
-		"description": "Oneline theme",
-		"image": "assets/img/themes/My_Firefox_theme_-_uFffDtark.webp",
-		"tags": [
-			"dark",
-			"Ikrom27",
-			"centre",
-			"one-line"
-		],
-		"repository": "https://github.com/Ikrom27/Firefox"
-	},
-	{
 		"title": "Sweet_Pop!",
 		"link": "https://github.com/PROxZIMA/Sweet-Pop",
 		"description": "Sweet_Pop! Minimalist oneliner theme for Firefox perfectly matching Sweet Dark.",
