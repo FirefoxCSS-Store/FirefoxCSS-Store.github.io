@@ -18,8 +18,12 @@ export def github [
 		}
 	}
 
-	let item = http get $"https://api.github.com/repos/($repo.owner)/($repo.name)" --headers $headers
-
+	let item = try {
+		http get $"https://api.github.com/repos/($repo.owner)/($repo.name)" --headers $headers
+	} catch {
+		return null
+	}
+		
 	{
 		pushed_at: $item.pushed_at
 		stargazers_count: ($item.stargazers_count | into int)
@@ -41,7 +45,11 @@ export def gitlab [
 		}
 	}
 
-	let item = http get $"https://gitlab.com/api/v4/projects/($repo.owner)%2F($repo.name)" --headers $headers
+	let item = try {
+		http get $"https://gitlab.com/api/v4/projects/($repo.owner)%2F($repo.name)" --headers $headers
+	} catch {
+		return null
+	}
 
 	{
 		pushed_at: $item.last_activity_at
@@ -64,7 +72,11 @@ export def codeberg [
 		}
 	}
 
-	let item = http get $"https://codeberg.org/api/v1/repos/($repo.owner)/($repo.name)" --headers $headers
+	let item = try {
+		http get $"https://codeberg.org/api/v1/repos/($repo.owner)/($repo.name)" --headers $headers
+	} catch {
+		return null
+	}
 
 	{
 		pushed_at: $item.updated_at
@@ -75,6 +87,7 @@ export def codeberg [
 
 # In case of not having API, clone and get information yourself.
 export def clone [
+	link: string # Git link of the repository.
 	--temp: string = '/tmp/firefoxcss-store/' # Temporary folder to save themes.
 ]: record<owner: string, name: string> -> record<pushed_at: string, stargazers_count: int, avatar: string> {
 
@@ -83,15 +96,11 @@ export def clone [
 	let repo = $in
 	let folder = $temp | path join $repo.name
 
-	let success = if ($folder | path exists) {
+	if ($folder | path exists) {
 		cd $folder
 
 		^git pull
-
-		true
 	} else {
-
-		let link = 'git@github.com:' + $repo.owner + '/' + $repo.name + '.git'
 
 		let clone_status = ^git clone $link $folder
 			| complete
@@ -99,20 +108,13 @@ export def clone [
 
 		# Could not clone the repository for unknown reasons.
 		if $clone_status != 0 {
-			print --stderr $"Could not clone '($link)'."
-			false
+			return null
 		}
-		
+
 		cd $folder
-
-		true
 	}
 
-	let pushed_at = if $success {
-		^git show --quiet --date='format-local:%Y-%m-%dT%H:%M:%SZ' --format="%cd"
-	} else {
-		""
-	}
+	let pushed_at = ^git show --quiet --date='format-local:%Y-%m-%dT%H:%M:%SZ' --format="%cd"
 
 	{
 		pushed_at: $pushed_at
@@ -125,18 +127,19 @@ export def clone [
 def parse_link []: string -> record<owner: string, name: string> {
 	let data = $in
 		| split row '/'
-		| last 2
 
 	{
-		owner: $data.0
-		name: $data.1
+		owner: $data.3
+		name: $data.4
 	}
 }
 
 # Get extra information from  themes and save it.
 export def main [
-	token: string # API Token.
-	--delay: duration = 1sec # Delay between API calls.
+	--github: string # API Token for Github.
+	--gitlab: string # API Token for Gitlab.
+	--codeberg: string # API Token for Codeberg.
+	--delay: duration = 2sec # Delay between API calls.
 	--source: string = "../themes.json" # Themes data.
 	--output: string = "./themes.json" # New data with themes.
 	--timezone: string = "UTC0" # Timezone for git calls.
@@ -149,22 +152,40 @@ export def main [
 
 			let link = $item.repository
 
+			print $"Cloning ($link)."
+
 			let info = if ($link | str contains 'github') {
 				sleep $delay
-				$link | parse_link | github $token
+				$link | parse_link | github $github
 			} else if ($link | str contains 'gitlab') {
 				sleep $delay
-				$link | parse_link | gitlab $token
+				$link | parse_link | gitlab $gitlab
 			} else if ($link | str contains 'codeberg') {
 				sleep $delay
-				$link | parse_link | codeberg $token
+				$link | parse_link | codeberg $codeberg
 			} else {
-				$link | parse_link | clone
+				print "Using git cloning."
+				$link | parse_link | clone $link
 			}
 
-			{
-				...$item
-				...$info
+			if ($info | is-empty) {
+				print $"Could not clone this repository."
+				print ""
+			} else {
+				print ""
+				{
+					...$item
+					...$info
+				}
 			}
 		}
+
+	$data | save --force $output
+
+	print "Replace the themes in the source directory? If no, will output the themes as JSON instead. To confirm, type either the word 'yes' or character 'y'."
+	let ask = input "Answer: " | str downcase
+
+	if $ask == 'y' or $ask == 'yes' {
+		mv --force $output $source
+	}
 }
