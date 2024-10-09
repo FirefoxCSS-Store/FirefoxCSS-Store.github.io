@@ -89,7 +89,7 @@ export def codeberg [
 export def clone [
 	link: string # Git link of the repository.
 	--temp: string = '/tmp/firefoxcss-store/' # Temporary folder to save themes.
-]: record<owner: string, name: string> -> record<pushed_at: string, stargazers_count: int, avatar: string> {
+]: record<owner: string, name: string> -> string {
 
 	mkdir $temp
 
@@ -114,13 +114,7 @@ export def clone [
 		cd $folder
 	}
 
-	let pushed_at = ^git show --quiet --date='format-local:%Y-%m-%dT%H:%M:%SZ' --format="%cd"
-
-	{
-		pushed_at: $pushed_at
-		stargazers_count: -1
-		avatar: ""
-	}
+	^git show --quiet --date='format-local:%Y-%m-%dT%H:%M:%SZ' --format="%cd"
 }
 
 # Parse link of repository.
@@ -150,9 +144,11 @@ export def main [
 	let data = open $source
 		| each {|item|
 
+			mut item = $item
+
 			let link = $item.repository
 
-			print $"Cloning ($link)."
+			print $"Retrieving information from '($link)'."
 
 			let info = if ($link | str contains 'github') {
 				sleep $delay
@@ -165,18 +161,45 @@ export def main [
 				$link | parse_link | codeberg $codeberg
 			} else {
 				print "Using git cloning."
-				$link | parse_link | clone $link
+
+				let pushed_at = $link | parse_link | clone $link
+
+				# If this theme hasn't been manually updated yet,
+				# which means, added the values for stars and avatar url,
+				# then, assign default value.
+				if not ('avatar' in $item) {
+					print "Need to update 'avatar' and 'stargazers_count'."
+					{
+						pushed_at: $pushed_at
+						stargazers_count: -1
+						avatar: ''
+					}
+				# Default values for manually updated theme, but 
+				# the field 'pushed_at'.
+				} else {
+					{
+						pushed_at: $pushed_at
+						stargazers_count: $item.stargazers_count
+						avatar: $item.avatar
+					}
+				}
 			}
 
+			# Failed all attempts at retrieving information for this repository,
+			# Probably needs removal or it's deleted already,
+			# so it will remove automatically.
 			if ($info | is-empty) {
-				print $"Could not clone this repository."
+				print $"Could not clone this repository!"
 				print ""
 			} else {
 				print ""
-				{
-					...$item
-					...$info
-				}
+
+				# Update sorting columns.
+				$item | update 'pushed_at' $info.pushed_at
+				$item | update 'stargazers_count' $info.stargazers_count
+				$item | update 'avatar' $info.avatar
+
+				$item
 			}
 		}
 
