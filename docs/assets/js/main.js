@@ -55,10 +55,11 @@ function createLightbox(id) {
 
   var search = /** @type {HTMLInputElement} */document.getElementById('searchInput');
   search.addEventListener('keydown', function (e) {
-    if (e.key === "Enter") sort(search.value);
+    if (e.key === "Enter") sort(localStorage.sort, search.value);
   });
-  document.getElementById('searchButton').addEventListener('click', function () {
-    return false;
+  var search_button = /** @type {HTMLInputElement} */document.getElementById('searchButton');
+  search_button.addEventListener('click', function () {
+    return sort(localStorage.sort, search.value);
   });
 
   /*  Load Content
@@ -72,44 +73,25 @@ function createLightbox(id) {
   if (!localStorage.sort) localStorage.sort = 'latest';
 
   /*
-   * Make the sort icon a button.
+   * Add event to sort when an option is chosen..
    */
-  var sort_trigger = /** @type {HTMLElement} */document.getElementById('js-sortSwitcher');
-  sort_trigger.addEventListener('click', function () {
-    return toggle_sorting();
+  var sort_menu = /** @type {HTMLSelectElement} */document.getElementById('js-sort-menu');
+  sort_menu.addEventListener('change', function () {
+    var name = /** @type {string} */sort_menu.selectedOptions[0].getAttribute('name');
+    sort(name);
   });
-  sort();
-
-  /**
-   * Toggle the sorting type of the themes.
-   **/
-  function toggle_sorting() {
-    switch (localStorage.sort) {
-      case 'latest':
-        localStorage.sort = 'updated';
-        break;
-      case 'updated':
-        localStorage.sort = 'stars';
-        break;
-      case 'stars':
-        localStorage.sort = 'random';
-        break;
-      case 'random':
-        localStorage.sort = 'oldest';
-        break;
-      default:
-        localStorage.sort = 'latest';
-    }
-    return sort();
-  }
+  sort(localStorage.sort);
+  var current_option = sort_menu.options.namedItem(localStorage.sort);
+  if (current_option) current_option.selected = true;
 
   /**
    * Toggle the sorting type of the themes.
    *
+   * @param {string} kind How to sort the themes.
    * @param {string=} filter Term to filter the themes.
    **/
-  function sort(filter) {
-    sort_trigger.title = "\"".concat(localStorage.sort, "\"");
+  function sort(kind, filter) {
+    localStorage.sort = kind;
 
     // Remove all themes cards from the page.
     var cards_container = document.getElementById('themes_container');

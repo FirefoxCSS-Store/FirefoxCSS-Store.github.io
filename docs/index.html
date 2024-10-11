@@ -12,7 +12,14 @@
   <body>
     <header id="main_header">
       <h3 class="header-branding">FirefoxCSS Store</h3>
-      <nav id="main_nav"><a href="index.html">Theme List</a><a id="js-themeSwitcher" href="#"><i class="fas fa-moon"></i></a><a id="js-sortSwitcher" href="#"><i class="fas fa-sort"></i></a>
+      <nav id="main_nav"><a href="index.html">Theme List</a><a id="js-themeSwitcher" href="#"><i class="fas fa-moon"></i></a>
+        <select id="js-sort-menu">
+          <option name="updated">Updated</option>
+          <option name="stars">Stars</option>
+          <option name="latest">Latest</option>
+          <option name="oldest">Oldest</option>
+          <option name="random">Random</option>
+        </select>
         <div class="searchform" method="get">
           <div class="inputgroup">
             <input class="searchinput" id="searchInput" type="text" placeholder="Search">
