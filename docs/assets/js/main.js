@@ -1,5 +1,12 @@
 "use strict";
 
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
@@ -46,87 +53,149 @@ function createLightbox(id) {
    *  ======================
    */
 
-  document.getElementById('searchInput').addEventListener('keydown', function (e) {
-    if (e.key === "Enter") toggleSortType(false);
+  var search = /** @type {HTMLInputElement} */document.getElementById('searchInput');
+  search.addEventListener('keydown', function (e) {
+    if (e.key === "Enter") sort(search.value);
   });
   document.getElementById('searchButton').addEventListener('click', function () {
-    return toggleSortType(false);
+    return false;
   });
 
   /*  Load Content
    *  ============
    */
 
-  // add our sorting button
-  var sortTrigger = document.getElementById('js-sortSwitcher');
-  sortTrigger.addEventListener('click', function () {
-    return toggleSortType(true);
-  });
+  /*
+   * If sorting is not set yet in `localStorage`,
+   * then use as default `latest` kind.
+   */
+  if (!localStorage.sort) localStorage.sort = 'latest';
 
-  // When localstorage is not set, use "latest" order type
-  if (!localStorage['sort']) localStorage['sort'] = 'latest';
-  function repeatToggle(nextType) {
-    localStorage['sort'] = nextType;
-    return toggleSortType(false);
+  /*
+   * Make the sort icon a button.
+   */
+  var sort_trigger = /** @type {HTMLElement} */document.getElementById('js-sortSwitcher');
+  sort_trigger.addEventListener('click', function () {
+    return toggle_sorting();
+  });
+  sort();
+
+  /**
+   * Toggle the sorting type of the themes.
+   **/
+  function toggle_sorting() {
+    switch (localStorage.sort) {
+      case 'latest':
+        localStorage.sort = 'updated';
+        break;
+      case 'updated':
+        localStorage.sort = 'stars';
+        break;
+      case 'stars':
+        localStorage.sort = 'random';
+        break;
+      case 'random':
+        localStorage.sort = 'oldest';
+        break;
+      default:
+        localStorage.sort = 'latest';
+    }
+    return sort();
   }
-  function toggleSortType(change) {
-    if (document.querySelectorAll('.card')) document.querySelectorAll('.card').forEach(function (e) {
-      return e.remove();
-    });
+
+  /**
+   * Toggle the sorting type of the themes.
+   *
+   * @param {string=} filter Term to filter the themes.
+   **/
+  function sort(filter) {
+    sort_trigger.title = "\"".concat(localStorage.sort, "\"");
+
+    // Remove all themes cards from the page.
+    var cards_container = document.getElementById('themes_container');
+    if (cards_container) cards_container.innerHTML = '';
     fetch('themes.json').then(function (data) {
       return data.json();
-    }).then(function (parsedData) {
-      var search = document.getElementById('searchInput').value;
-      if (search) {
+    }).then(function (data) {
+      data = Object.entries(data);
+      if (filter) {
+        /**
+         * Match any substring (partial) from a string (text).
+         * @param {string} text
+         * @param {string} partial
+         */
         var matches = function matches(text, partial) {
           return text.toLowerCase().indexOf(partial.toLowerCase()) > -1;
         };
-        var parsedAsArray = Object.entries(parsedData);
-        var searchResults = parsedAsArray.filter(function (element) {
-          return matches("".concat(element[1].title, ", ").concat(element[1].tags), search);
+        data = data.filter(function (element) {
+          return matches("".concat(element[1].title, ", ").concat(element[1].tags), search.value);
         });
-        searchResults.forEach(function (result) {
-          var card = new Card(result[1], +result[0]);
-          card.render(outputContainer);
-        });
-        sortTrigger.title = "\"".concat(search, "\"");
-        return;
       }
-      switch (localStorage['sort']) {
-        // sort from the oldest theme added
+      switch (localStorage.sort) {
+        /*
+         * Sort from the most recent theme added.
+         */
         case 'latest':
-          if (change) return repeatToggle('random');
-          parsedData.reverse();
+          data.reverse();
           break;
 
-        // sort randomly
+        /*
+         * Ascending sorting of stars from repositories.
+         */
+        case 'updated':
+          // item1.attr.localeCompare(item2.attr);
+          data.sort(function (a, b) {
+            return b[1].pushed_at.localeCompare(a[1].pushed_at);
+          });
+          break;
+
+        /*
+         * Ascending sorting of stars from repositories.
+         */
+        case 'stars':
+          data.sort(function (a, b) {
+            return b[1].stargazers_count - a[1].stargazers_count;
+          });
+          break;
+
+        /*
+         * Randomly sorting of themes.
+         */
         case 'random':
-          if (change) return repeatToggle('oldest');
-          for (var i = parsedData.length - 1; i > 0; i--) {
+          for (var i = data.length - 1; i > 0; i--) {
             var j = Math.floor(Math.random() * (i + 1));
-            var _ref = [parsedData[j], parsedData[i]];
-            parsedData[i] = _ref[0];
-            parsedData[j] = _ref[1];
+            var _ref = [data[j], data[i]];
+            data[i] = _ref[0];
+            data[j] = _ref[1];
           }
           break;
 
-        // sort from the most recent theme added
+        /*
+         * Sort from the least recent theme added (oldest).
+         * Since it's sorted like this by default from the file, do nothing.
+         */
         default:
-          if (change) return repeatToggle('latest');
       }
-
-      // TODO: make a better way to preview the current sorting
-      sortTrigger.title = localStorage['sort'];
-      parsedData.forEach(function (entry, index) {
-        var card = new Card(entry, index);
-        card.render(outputContainer);
-      });
+      var _iterator = _createForOfIteratorHelper(data),
+        _step;
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var _step$value = _slicedToArray(_step.value, 2),
+            index = _step$value[0],
+            entry = _step$value[1];
+          var card = new Card(entry, index);
+          card.render(outputContainer);
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
     });
   }
 
   // add themes
   var outputContainer = document.getElementById('themes_container');
-  if (outputContainer) toggleSortType(false);
 
   /*  Theme Handling
    *  ==============
