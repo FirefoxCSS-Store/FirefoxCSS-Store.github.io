@@ -36,13 +36,15 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
 
 ---
 
-## Add your theme <3
+## Contribution
+
+### Add your theme <3
 
 + If you have a Github account:
   1. Fork this repository
   2. Look for a file called `themes.json`, open and edit it
   3. Below the last `}` add `,` right after a copy the [code below](#code) and paste it in the file
-  4. Add the properties of your theme: **title**, **link**, **description**, **image** and **tag** (Cannot be left empty)
+  4. Add the properties of your theme: **title**, **link**, **description**, **image**, **tag** (cannot be left empty), and **repository**.
   5. **Avoid the use of escaped characters, and the order matters**
   6. Please, do not use a very big image, preferably (650x500)
   7. Image property:
@@ -54,7 +56,7 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
   1. When creating an issue, you will find a template for submitting a theme. Use that one. It's easy.
 
 + If you have a Twitter account:
-  1. Send **at least** the following properties: **tags**, **title**, **link**, **description**, and **picture** to [@Neikon66](https://twitter.com/Neikon66). 
+  1. Send **at least** the following properties: **title**, **link**, **description**, **image**, **tags**, and **repository** to [@Neikon66](https://twitter.com/Neikon66). 
 
 ```
   {
@@ -62,7 +64,8 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
     "link": "..........",
     "description": "..........",
     "image": "..........",
-    "tags": [ "your username/name", "theme type: dark", "theme type: light", "............." ]
+    "tags": [ "your username/name", "theme type: dark", "theme type: light", "............." ],
+    "repository": ".........."
   }
 ```
 
