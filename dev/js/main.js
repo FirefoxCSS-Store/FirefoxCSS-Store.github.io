@@ -86,11 +86,12 @@ function createLightbox (id) {
 	search.addEventListener('keydown', e => {
 
 	if (e.key === "Enter")
-		sort(search.value)
+		sort(localStorage.sort, search.value)
 
   })
   
-  document.getElementById('searchButton').addEventListener('click', () => (false))
+	const search_button = /** @type {HTMLInputElement} */ (document.getElementById('searchButton'))
+	search_button.addEventListener('click', () => sort(localStorage.sort, search.value))
 
   /*  Load Content
    *  ============
@@ -104,47 +105,28 @@ function createLightbox (id) {
 		localStorage.sort = 'latest'
 
 	/*
-	 * Make the sort icon a button.
+	 * Add event to sort when an option is chosen..
 	 */
-	const sort_trigger = /** @type {HTMLElement} */ (document.getElementById('js-sortSwitcher'))
-	sort_trigger.addEventListener('click', () => toggle_sorting())
-	sort()
+	const sort_menu = /** @type {HTMLSelectElement} */ (document.getElementById('js-sort-menu'))
+	sort_menu.addEventListener('change', () => {
+		const name = /** @type {string} */ (sort_menu.selectedOptions[0].getAttribute('name'))
+		sort(name)
+	})
 
-	/**
-	 * Toggle the sorting type of the themes.
-	 **/
-	function toggle_sorting () {
-
-		switch (localStorage.sort)
-		{
-			case 'latest':
-				localStorage.sort = 'updated'
-				break
-			case 'updated':
-				localStorage.sort = 'stars'
-				break
-			case 'stars':
-				localStorage.sort = 'random'
-				break;
-			case 'random':
-				localStorage.sort = 'oldest'
-				break
-			default:
-				localStorage.sort = 'latest'
-		}
-
-		return sort()
-
-	}
+	sort(localStorage.sort)
+	const current_option = sort_menu.options.namedItem(localStorage.sort)
+	if (current_option)
+		current_option.selected = true
 
 	/**
 	 * Toggle the sorting type of the themes.
 	 *
+	 * @param {string} kind How to sort the themes.
 	 * @param {string=} filter Term to filter the themes.
 	 **/
-	function sort (filter) {
+	function sort (kind, filter) {
 
-		sort_trigger.title = `"${localStorage.sort}"`
+		localStorage.sort = kind
 
 		// Remove all themes cards from the page.
 		const cards_container = document.getElementById('themes_container')
