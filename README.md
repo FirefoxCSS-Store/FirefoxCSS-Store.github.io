@@ -68,6 +68,27 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
 
 ---
 
+### Contribution: themes information
+
+1. Install [nushell](https://www.nushell.sh/) in your machine.
+2. Generate a [Github token API](https://github.com/settings/tokens) for your account and save it;
+2. Clone the repository;
+3. In your terminal, change directory into the `/scripts/` folder.
+4. Run `nu`.
+5. Run `use sort_themes.nu`;
+6. Run `sort_themes --help` and read and understand the flags;
+7. Run `sort_themes --github YOUR_GITHUB_TOKEN`;
+8. Check if everything ran fine, if yes, replace the new generated `themes.json` file.
+9. Commit your changes.
+10. Open a pull request and send your contribution for us to review.
+11. Thank you :)
+
+**Why generate a token API for only Github?**
+
+Most themes' repositories are in Gitub, so it's pretty easy to hit the anonymous rate limit for API calls. With a token, that limit is higher, making it easier to contribute.
+
+---
+
 <h1 align="center">What do you think =?</h1>
 
 <p align="center">Feel free to send me any feedback via issue or my twitter <a href="https://twitter.com/Neikon66">@Neikon66</a>.</p>
