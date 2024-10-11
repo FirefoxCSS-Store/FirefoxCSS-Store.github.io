@@ -81,108 +81,152 @@ function createLightbox (id) {
    *  ======================
    */
 
-  document.getElementById('searchInput').addEventListener('keydown', e => {
+	const search = /** @type {HTMLInputElement} */ (document.getElementById('searchInput'))
 
-    if (e.key === "Enter") toggleSortType(false)
+	search.addEventListener('keydown', e => {
+
+	if (e.key === "Enter")
+		sort(search.value)
 
   })
   
-  document.getElementById('searchButton').addEventListener('click', () => toggleSortType(false))
+  document.getElementById('searchButton').addEventListener('click', () => (false))
 
   /*  Load Content
    *  ============
    */
 
-  // add our sorting button
-  const sortTrigger = document.getElementById('js-sortSwitcher')
-  sortTrigger.addEventListener('click', () => toggleSortType(true))
+	/*
+	 * If sorting is not set yet in `localStorage`,
+	 * then use as default `latest` kind.
+	 */
+	if (!localStorage.sort)
+		localStorage.sort = 'latest'
 
-  // When localstorage is not set, use "latest" order type
-  if (!localStorage['sort']) localStorage['sort'] = 'latest'
+	/*
+	 * Make the sort icon a button.
+	 */
+	const sort_trigger = /** @type {HTMLElement} */ (document.getElementById('js-sortSwitcher'))
+	sort_trigger.addEventListener('click', () => toggle_sorting())
+	sort()
 
-  function repeatToggle (nextType) {
+	/**
+	 * Toggle the sorting type of the themes.
+	 **/
+	function toggle_sorting () {
 
-    localStorage['sort'] = nextType
-    return toggleSortType(false)
+		switch (localStorage.sort)
+		{
+			case 'latest':
+				localStorage.sort = 'updated'
+				break
+			case 'updated':
+				localStorage.sort = 'stars'
+				break
+			case 'stars':
+				localStorage.sort = 'random'
+				break;
+			case 'random':
+				localStorage.sort = 'oldest'
+				break
+			default:
+				localStorage.sort = 'latest'
+		}
 
-  }
+		return sort()
 
-  function toggleSortType (change) {
+	}
 
-    if (document.querySelectorAll('.card'))
-      document.querySelectorAll('.card').forEach(e => e.remove());
+	/**
+	 * Toggle the sorting type of the themes.
+	 *
+	 * @param {string=} filter Term to filter the themes.
+	 **/
+	function sort (filter) {
 
-    fetch('themes.json')
-    .then(data => data.json())
-    .then(parsedData => {
+		sort_trigger.title = `"${localStorage.sort}"`
 
-      const search = document.getElementById('searchInput').value
+		// Remove all themes cards from the page.
+		const cards_container = document.getElementById('themes_container')
+		if (cards_container)
+			cards_container.innerHTML = ''
 
-      if (search) {
+		fetch('themes.json')
+			.then(data => data.json())
+			.then(data => {
 
-        function matches (text, partial) { return text.toLowerCase().indexOf(partial.toLowerCase()) > -1 }
+				data = Object.entries(data)
 
-        const parsedAsArray = Object.entries(parsedData)
-        let   searchResults = parsedAsArray.filter(element => matches(`${element[1].title}, ${element[1].tags}`, search))
+				if (filter) {
 
-        searchResults.forEach(result => {
+					/**
+					 * Match any substring (partial) from a string (text).
+					 * @param {string} text
+					 * @param {string} partial
+					 */
+					function matches (text, partial) {
+						return text.toLowerCase().indexOf(partial.toLowerCase()) > -1
+					}
 
-          const card = new Card(result[1], +result[0])
-          card.render(outputContainer)
+					data = data.filter(element => matches(`${element[1].title}, ${element[1].tags}`, search.value))
 
-        })
+				}
 
-        sortTrigger.title = `"${search}"`
+				switch (localStorage.sort) {
 
-        return 
+					/*
+					 * Sort from the most recent theme added.
+					 */
+					case 'latest':
+						data.reverse()
+					break
 
-      }
+					/*
+					 * Ascending sorting of stars from repositories.
+					 */
+					case 'updated':
+						// item1.attr.localeCompare(item2.attr);
+						data.sort((a, b) => b[1].pushed_at.localeCompare(a[1].pushed_at))
+					break
 
-      switch (localStorage['sort']) {
+					/*
+					 * Ascending sorting of stars from repositories.
+					 */
+					case 'stars':
+						data.sort((a, b) => b[1].stargazers_count - a[1].stargazers_count)
+					break
 
-        // sort from the oldest theme added
-        case 'latest':
-          if (change) return repeatToggle('random')
-          parsedData.reverse()
-          break;
+					/*
+					 * Randomly sorting of themes.
+					 */
+					case 'random':
+						for (let i = data.length - 1; i > 0; i--) {
 
-        // sort randomly
-        case 'random':
-          if (change) return repeatToggle('oldest')
-          for (let i = parsedData.length - 1; i > 0; i--) {
+							const j = Math.floor(Math.random() * (i + 1));
+							[data[i], data[j]] = [data[j], data[i]]
 
-            const j = Math.floor(Math.random() * (i + 1));
-            [parsedData[i], parsedData[j]] = [parsedData[j], parsedData[i]]
+						}
+					break
 
-          }
-          break;
+					/*
+					 * Sort from the least recent theme added (oldest).
+					 * Since it's sorted like this by default from the file, do nothing.
+					 */
+					default:
 
-        // sort from the most recent theme added
-        default:
-          if (change) return repeatToggle('latest');
+				}
 
-      }
+				for (const [index, entry] of data)
+				{
+					const card = new Card(entry, index)
+					card.render(outputContainer)
+				}
 
-      // TODO: make a better way to preview the current sorting
-      sortTrigger.title = localStorage['sort']
+			})
+}
 
-      parsedData.forEach((entry, index)  => {
-
-        const card = new Card (entry, index)
-        card.render(outputContainer)
-
-      })
-      
-    })
-  }
-  
   // add themes
   const outputContainer = document.getElementById('themes_container')
-
-  if (outputContainer) toggleSortType(false);
-
-
-
 
   /*  Theme Handling
    *  ==============
