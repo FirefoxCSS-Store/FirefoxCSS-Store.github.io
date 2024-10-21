@@ -135,7 +135,7 @@ function createLightbox (id) {
 
 		fetch('themes.json')
 			.then(data => data.json())
-			.then(data => {
+			.then(async data => {
 
 				data = Object.entries(data)
 
@@ -183,10 +183,8 @@ function createLightbox (id) {
 					 */
 					case 'random':
 						for (let i = data.length - 1; i > 0; i--) {
-
 							const j = Math.floor(Math.random() * (i + 1));
 							[data[i], data[j]] = [data[j], data[i]]
-
 						}
 					break
 
@@ -202,6 +200,7 @@ function createLightbox (id) {
 				{
 					const card = new Card(entry, index)
 					card.render(outputContainer)
+					await new Promise(r => setTimeout(r, 666));
 				}
 
 			})
