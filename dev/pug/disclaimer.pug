@@ -1,5 +1,13 @@
 extends layout/default
 
+block header
+  header#main_header
+    h3.header-branding FirefoxCSS Store
+  
+    nav#main_nav
+      a(href='index.html') Theme List
+      a#js-themeSwitcher(href='#')
+        i.fas.fa-moon
 
 block content
 
