@@ -13,6 +13,7 @@ body {
 }
 
 
+
 a {
 
   text-decoration: none;
@@ -23,7 +24,6 @@ a {
 
   &:hover { color: var(--linkc-hover) }
   &:focus { outline: var(--focus-thickness) solid var(--focus-colour); }
-
 
 }
 
