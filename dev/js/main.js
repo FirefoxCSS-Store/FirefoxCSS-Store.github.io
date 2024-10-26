@@ -81,15 +81,17 @@ function createLightbox (id) {
    *  ======================
    */
 
+	let running_sort = 0;
+
 	const search = /** @type {HTMLInputElement} */ (document.getElementById('searchInput'))
 
 	search.addEventListener('keydown', e => {
 
-	if (e.key === "Enter")
-		sort(localStorage.sort, search.value)
+		if (e.key === "Enter")
+			sort(localStorage.sort, search.value)
 
-  })
-  
+	})
+
 	const search_button = /** @type {HTMLInputElement} */ (document.getElementById('searchButton'))
 	search_button.addEventListener('click', () => sort(localStorage.sort, search.value))
 
@@ -125,6 +127,8 @@ function createLightbox (id) {
 	 * @param {string=} filter Term to filter the themes.
 	 **/
 	function sort (kind, filter) {
+		
+		const my_run = ++running_sort
 
 		localStorage.sort = kind
 
@@ -198,13 +202,17 @@ function createLightbox (id) {
 
 				for (const [index, entry] of data)
 				{
+					if (running_sort !== my_run)
+						return
+
 					const card = new Card(entry, index)
 					card.render(outputContainer)
-					await new Promise(r => setTimeout(r, 666));
+					await new Promise(r => setTimeout(r, 444))
 				}
 
-			})
-}
+			}
+		)
+	}
 
   // add themes
   const outputContainer = document.getElementById('themes_container')
