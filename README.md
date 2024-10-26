@@ -36,15 +36,13 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
 
 ---
 
-## Contribution
-
-### Add your theme <3
+## Add your theme <3
 
 + If you have a Github account:
   1. Fork this repository
   2. Look for a file called `themes.json`, open and edit it
   3. Below the last `}` add `,` right after a copy the [code below](#code) and paste it in the file
-  4. Add the properties of your theme: **title**, **link**, **description**, **image**, **tag** (cannot be left empty), and **repository**.
+  4. Add the properties of your theme: **title**, **link**, **description**, **image** and **tag** (Cannot be left empty)
   5. **Avoid the use of escaped characters, and the order matters**
   6. Please, do not use a very big image, preferably (650x500)
   7. Image property:
@@ -56,7 +54,7 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
   1. When creating an issue, you will find a template for submitting a theme. Use that one. It's easy.
 
 + If you have a Twitter account:
-  1. Send **at least** the following properties: **title**, **link**, **description**, **image**, **tags**, and **repository** to [@Neikon66](https://twitter.com/Neikon66). 
+  1. Send **at least** the following properties: **tags**, **title**, **link**, **description**, and **picture** to [@Neikon66](https://twitter.com/Neikon66). 
 
 ```
   {
@@ -64,31 +62,9 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
     "link": "..........",
     "description": "..........",
     "image": "..........",
-    "tags": [ "your username/name", "theme type: dark", "theme type: light", "............." ],
-    "repository": ".........."
+    "tags": [ "your username/name", "theme type: dark", "theme type: light", "............." ]
   }
 ```
-
----
-
-### Contribution: themes information
-
-1. Install [nushell](https://www.nushell.sh/) in your machine.
-2. Generate a [Github token API](https://github.com/settings/tokens) for your account and save it;
-2. Clone the repository;
-3. In your terminal, change directory into the `/scripts/` folder.
-4. Run `nu`.
-5. Run `use sort_themes.nu`;
-6. Run `sort_themes --help` and read and understand the flags;
-7. Run `sort_themes --github YOUR_GITHUB_TOKEN`;
-8. Check if everything ran fine, if yes, replace the new generated `themes.json` file.
-9. Commit your changes.
-10. Open a pull request and send your contribution for us to review.
-11. Thank you :)
-
-**Why generate a token API for only Github?**
-
-Most themes' repositories are in Gitub, so it's pretty easy to hit the anonymous rate limit for API calls. With a token, that limit is higher, making it easier to contribute.
 
 ---
 
