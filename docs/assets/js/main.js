@@ -56,6 +56,7 @@ function createLightbox(id) {
    *  ======================
    */
 
+  var running_sort = 0;
   var search = /** @type {HTMLInputElement} */document.getElementById('searchInput');
   search.addEventListener('keydown', function (e) {
     if (e.key === "Enter") sort(localStorage.sort, search.value);
@@ -94,6 +95,7 @@ function createLightbox(id) {
    * @param {string=} filter Term to filter the themes.
    **/
   function sort(kind, filter) {
+    var my_run = ++running_sort;
     localStorage.sort = kind;
 
     // Remove all themes cards from the page.
@@ -152,35 +154,41 @@ function createLightbox(id) {
               _iterator.s();
             case 16:
               if ((_step = _iterator.n()).done) {
-                _context.next = 24;
+                _context.next = 26;
                 break;
               }
               _step$value = _slicedToArray(_step.value, 2), index = _step$value[0], entry = _step$value[1];
+              if (!(running_sort !== my_run)) {
+                _context.next = 20;
+                break;
+              }
+              return _context.abrupt("return");
+            case 20:
               card = new Card(entry, index);
               card.render(outputContainer);
-              _context.next = 22;
+              _context.next = 24;
               return new Promise(function (r) {
-                return setTimeout(r, 666);
+                return setTimeout(r, 444);
               });
-            case 22:
+            case 24:
               _context.next = 16;
               break;
-            case 24:
-              _context.next = 29;
-              break;
             case 26:
-              _context.prev = 26;
+              _context.next = 31;
+              break;
+            case 28:
+              _context.prev = 28;
               _context.t1 = _context["catch"](14);
               _iterator.e(_context.t1);
-            case 29:
-              _context.prev = 29;
+            case 31:
+              _context.prev = 31;
               _iterator.f();
-              return _context.finish(29);
-            case 32:
+              return _context.finish(31);
+            case 34:
             case "end":
               return _context.stop();
           }
-        }, _callee, null, [[14, 26, 29, 32]]);
+        }, _callee, null, [[14, 28, 31, 34]]);
       }));
       return function (_x) {
         return _ref.apply(this, arguments);
