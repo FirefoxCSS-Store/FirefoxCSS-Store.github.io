@@ -2101,5 +2101,13 @@
     "pushed_at": "2024-10-03T14:14:57Z",
     "stargazers_count": 302,
     "avatar": "https://avatars.githubusercontent.com/u/42596339?v=4"
+  },
+  {
+    "title": "MiniSthetic_Firefox",
+    "link": "https://github.com/ashish-kus/MiniSthetic_Firefox",
+    "description": "Minimal Aesthetic Firefox CSS",
+    "image": "https://github.com/ashish-kus/MiniSthetic_Firefox/blob/main/ASSETS/Preview/GIF.gif?raw=true",
+    "tags": [ "Minimal Aesthetic Firefox CSS", "theme type: dark", "Minimal", "Aesthetic" ],
+    "repository": "https://github.com/ashish-kus/MiniSthetic_Firefox"
   }
 ]
