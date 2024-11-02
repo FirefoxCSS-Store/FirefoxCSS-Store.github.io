@@ -195,11 +195,18 @@ export def main [
 				print ""
 
 				# Update sorting columns.
-				$item | update 'pushed_at' $info.pushed_at
-				$item | update 'stargazers_count' $info.stargazers_count
-				$item | update 'avatar' $info.avatar
+				if ('pushed_at' in $item) {
+					$item
+						| update 'pushed_at' $info.pushed_at
+						| update 'stargazers_count' $info.stargazers_count
+						| update 'avatar' $info.avatar
+				} else {
+					$item
+						| default $info.pushed_at 'pushed_at'
+						| default $info.stargazers_count 'stargazers_count'
+						| default $info.avatar 'avatar'
+				}
 
-				$item
 			}
 		}
 
