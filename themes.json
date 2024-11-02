@@ -1995,7 +1995,7 @@
   },
   {
     "title": "98/95fox Xtra Compact",
-    "link": "https://github.com/programneer/Firefox-98-Xtra-Compact",
+    "link": "https://github.com/vintnarni/Firefox-98-Xtra-Compact",
     "description": "The mix of nostalgia and compact.",
     "image": "assets/img/themes/ff95xtracompact.webp",
     "tags": [
@@ -2005,9 +2005,10 @@
       "Chicago",
       "98",
       "95",
-      "compact"
+      "compact",
+      "xtra"
     ],
-    "repository": "https://github.com/programneer/Firefox-98-Xtra-Compact",
+    "repository": "https://github.com/vintnarni/Firefox-98-Xtra-Compact",
     "pushed_at": "2024-04-19T10:50:06Z",
     "stargazers_count": 3,
     "avatar": "https://avatars.githubusercontent.com/u/132811907?v=4"
