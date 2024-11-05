@@ -1,10 +1,10 @@
 const themes = require('../themes.json')
 
-let allBugs = []
+const allBugs = []
 
 themes.forEach((entry, index) => {
 
-  let currentBugs = []
+  const currentBugs = []
 
   const keys       =  Object.keys(entry)
   const objectKeys =  keys[0] !== 'title'       ||
@@ -17,7 +17,7 @@ themes.forEach((entry, index) => {
                       typeof entry[keys[1]] !== 'string' ||
                       typeof entry[keys[2]] !== 'string' ||
                       typeof entry[keys[3]] !== 'string' ||
-                      typeof entry[keys[4]] !== 'object' !!
+                      typeof entry[keys[4]] !== 'object' ||
                       typeof entry[keys[5]] !== 'string'
 
   if (typeof entry !== 'object') currentBugs.push('This theme is not an object.')
