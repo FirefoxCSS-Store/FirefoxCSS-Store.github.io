@@ -261,22 +261,6 @@
     "avatar": "https://avatars.githubusercontent.com/u/9023392?v=4"
   },
   {
-    "title": "Almost Dark Proton",
-    "link": "https://github.com/Neikon/Almost-Dark-Grey-Colorfull-Proton---FirefoxCSS-Themes",
-    "description": "Based on Simplify Darkish with few small changes based too in Mod Blur theme. It is intended to be used together with the new firefox elements with the new design called Proton, as the new tab page design. \n Compatibility: V89+",
-    "image": "assets/img/themes/almostdarkproton.webp",
-    "tags": [
-      "centre",
-      "dark",
-      "Neikon",
-      "icon tab bar"
-    ],
-    "repository": "https://github.com/Neikon/Almost-Dark-Grey-Colorfull-Proton---FirefoxCSS-Themes",
-    "pushed_at": "2022-04-05T07:18:45Z",
-    "stargazers_count": 55,
-    "avatar": "https://avatars.githubusercontent.com/u/1765319?v=4"
-  },
-  {
     "title": "Monochrome Tree",
     "link": "https://github.com/MatejKafka/FirefoxTheme",
     "description": "A custom minimalist theme for Firefox with Tree Style Tab support",
@@ -1094,29 +1078,6 @@
     "avatar": "https://avatars.githubusercontent.com/u/47909858?v=4"
   },
   {
-    "title": "AutoColor-Minimal-Proton",
-    "link": "https://github.com/Neikon/AutoColor-Minimal-Proton",
-    "description": "Some settings that together with the vivaldifox add-on create a minimalist theme whose color is the color of the website you are visiting.",
-    "image": "assets/img/themes/AutoColor-Minimal-Proton.webp",
-    "tags": [
-      "vivaldi",
-      "proton",
-      "minimal",
-      "autocolor",
-      "dark",
-      "light",
-      "borderless",
-      "adaptive",
-      "compact",
-      "one-line",
-      "neikon"
-    ],
-    "repository": "https://github.com/Neikon/AutoColor-Minimal-Proton",
-    "pushed_at": "2023-09-03T09:17:06Z",
-    "stargazers_count": 57,
-    "avatar": "https://avatars.githubusercontent.com/u/1765319?v=4"
-  },
-  {
     "title": "SimpleFox Feather Edition",
     "link": "https://github.com/BlueFalconHD/SimpleFox-Feather/",
     "description": "A fork of SimpleFox that uses feather icons!",
@@ -1352,29 +1313,6 @@
     "pushed_at": "2024-10-13T06:44:57Z",
     "stargazers_count": 68,
     "avatar": "https://avatars.githubusercontent.com/u/65298540?v=4"
-  },
-  {
-    "title": "Fox11",
-    "link": "https://github.com/Neikon/Fox11",
-    "description": "A Firefox CSS themes with auto-color, Mica, auto-hide nav-bar support. Inspired in firefox-one , Edge/Chrome restyle 2023.",
-    "image": "assets/img/themes/fox11.webp",
-    "tags": [
-      "vivaldi",
-      "proton",
-      "minimal",
-      "autocolor",
-      "dark",
-      "light",
-      "mica",
-      "adaptive",
-      "transparency",
-      "neikon",
-      "one-line"
-    ],
-    "repository": "https://github.com/Neikon/Fox11",
-    "pushed_at": "2023-09-03T09:40:57Z",
-    "stargazers_count": 148,
-    "avatar": "https://avatars.githubusercontent.com/u/1765319?v=4"
   },
   {
     "title": "zap's cool photon theme",
