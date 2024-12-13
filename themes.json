@@ -2040,5 +2040,16 @@
     "pushed_at": "2024-11-04T14:44:32Z",
     "stargazers_count": 8,
     "avatar": "https://avatars.githubusercontent.com/u/78788195?v=4"
+  },
+  {
+    "title": "VP-NightSky",
+    "link": "https://github.com/VertexProximity/VP_NightSky",
+    "description": "Firefox reimagined",
+    "image": "assets/img/themes/NightSky",
+    "tags": [ 
+       "VertexProximity",
+       "theme type: dark", 
+       "theme type: Purple",
+        ],
+    "repository": "https://github.com/VertexProximity/VP_NightSky"
   }
-]
