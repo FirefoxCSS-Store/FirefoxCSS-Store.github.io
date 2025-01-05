@@ -2055,5 +2055,13 @@
     "pushed_at": "2024-12-13T14:02:21Z",
     "stargazers_count": 1,
     "avatar": "https://avatars.githubusercontent.com/u/121351756?v=4"
+  },
+  {
+    "title": "cyanmatrx",
+    "link": "https://github.com/Barnacl437/cyanmatrx",
+    "description": "a simple, cool-esque, cyan monospace theme.",
+    "image": "assets/prtscn/preview.png",
+    "tags": [ "cyanmatrx", "theme type: dark", "theme type: cyan", "minimal" ],
+    "repository": "https://github.com/Barnacl437/cyanmatrx"
   }
 ]
