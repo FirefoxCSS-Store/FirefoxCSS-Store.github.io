@@ -2071,5 +2071,17 @@
     "pushed_at": "2025-01-05T14:28:13Z",
     "stargazers_count": 0,
     "avatar": "https://avatars.githubusercontent.com/u/87983017?v=4"
+  },
+  {
+    "title": "DownToneUI",
+    "link": "https://github.com/oviung/DownToneUI-Firefox",
+    "description": "A modular UI customization for Firefox, using Sidebery for vertical tabs.",
+    "image": "https://raw.githubusercontent.com/oviung/DownToneUI-Firefox/refs/heads/main/assets/preview.gif",
+    "tags": [
+      "theme type: dark",
+      "vertical",
+      "sidebery"
+    ],
+    "repository": "https://github.com/oviung/DownToneUI-Firefox"
   }
 ]
