@@ -1,14 +1,16 @@
+@use '../utilities/variables' as v;
+
 .btn {
 
-  padding: $space-m $space-l;
+  padding: v.$space-m v.$space-l;
 
-  border-radius: $border-radius;
+  border-radius: v.$border-radius;
   border: none;
   background: var(--body-background);
-  box-shadow: $shadow;
+  box-shadow: v.$shadow;
 
-  font-size: $font-size;
-  line-height: $line-height;
+  font-size: v.$font-size;
+  line-height: v.$line-height;
   color: var(--font-colour);
 
 

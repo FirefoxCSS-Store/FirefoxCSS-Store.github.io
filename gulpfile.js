@@ -9,7 +9,7 @@ const rename = require('gulp-rename')
 const pug    = require('gulp-pug')
 
 // css
-const sass   = require('gulp-sass')(require('node-sass'))
+const sass   = require('gulp-sass')(require('sass'))
 const prefix = require('gulp-autoprefixer')
 
 // js

@@ -1,12 +1,14 @@
+@use '../utilities/variables' as v;
+
 #main_footer {
 
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
 
-  margin: $space-xxl 0; padding: 0 $space-xl;
+  margin: v.$space-xxl 0; padding: 0 v.$space-xl;
 
 
-  .linklist a + a { margin-left: $space-l; }
+  .linklist a + a { margin-left: v.$space-l; }
 
 }
 
@@ -18,6 +20,6 @@
 
   margin-right: 5px;
 
-  font-size: $font-size-l;
+  font-size: v.$font-size-l;
 
 }

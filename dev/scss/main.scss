@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@use 'fonts';
 
-@import 'utilities/variables';
+@use 'utilities/variables';
 
-@import 'base/reset';
-@import 'base/scaffholding';
-@import 'base/typography';
+@use 'base/reset';
+@use 'base/scaffholding';
+@use 'base/typography';
 
-@import 'layout/header';
-@import 'layout/main';
-@import 'layout/footer';
+@use 'layout/header';
+@use 'layout/main';
+@use 'layout/footer';
 
-@import 'components/buttons';
-@import 'components/forms';
-@import 'components/main-nav';
-@import 'components/search';
-@import 'components/card';
-@import 'components/lightbox';
-@import 'components/disclaimer';
+@use 'components/buttons';
+@use 'components/forms';
+@use 'components/main-nav';
+@use 'components/search';
+@use 'components/card';
+@use 'components/lightbox';
+@use 'components/disclaimer';

@@ -1,9 +1,11 @@
+@use '../utilities/variables' as v;
+
 input,
 .btn-submit {
 
-  padding: $space-s $space-m;
+  padding: v.$space-s v.$space-m;
 
-  border-radius: $border-radius-small;
+  border-radius: v.$border-radius-small;
   border: 1px solid var(--body-background-darker);
   background: var(--body-background-lighter);
 

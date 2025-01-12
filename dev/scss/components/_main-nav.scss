@@ -1,6 +1,8 @@
+@use '../utilities/variables' as v;
+
 #main_nav {
 
-  display: flex; gap: $space-l;
+  display: flex; gap: v.$space-l;
   align-items: center;
 
   --linkc: var(--font-colour);

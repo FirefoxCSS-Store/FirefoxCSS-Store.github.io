@@ -1,3 +1,5 @@
+@use '../utilities/variables' as v;
+
 .card {
 
   --linkc: var(--font-colour);
@@ -7,7 +9,7 @@
 
   display: flex; flex-direction: column;
 
-  border-radius: $border-radius;
+  border-radius: v.$border-radius;
   background: var(--body-background-lighter);
   box-shadow: var(--card-shadow);
 
@@ -16,13 +18,13 @@
 
   header {
 
-    padding: 0 $space-m;
+    padding: 0 v.$space-m;
 
     display: flex;
     align-items: center; justify-content: space-between;
 
 
-    h3 { margin: $space-m 0; padding: 0; }
+    h3 { margin: v.$space-m 0; padding: 0; }
 
   }
 
@@ -34,7 +36,7 @@
     width: 100%;
     padding-top: 75%;
 
-    border-radius: $border-radius;
+    border-radius: v.$border-radius;
     background: var(--body-background-darker);
 
     overflow: hidden;
@@ -65,10 +67,10 @@
     position: absolute;
     top: 0; left: 0;
 
-    margin: 0; padding: 0 $space-m $space-m $space-m;
-    width: calc(100% - #{$space-m * 2});
+    margin: 0; padding: 0 v.$space-m v.$space-m v.$space-m;
+    width: calc(100% - #{v.$space-m * 2});
 
-    border-radius: $border-radius;
+    border-radius: v.$border-radius;
     background: var(--body-background-lighter);
 
     transform: translateY(-100%);
@@ -86,7 +88,7 @@
     position: absolute;
     right: 0; bottom: 0;
 
-    padding: $space-m;
+    padding: v.$space-m;
 
     opacity: 0;
 

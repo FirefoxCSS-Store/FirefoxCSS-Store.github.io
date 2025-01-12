@@ -1,13 +1,15 @@
+@use '../utilities/variables' as v;
+
 :root { font-size: 62.5%; }
 
 
 
 body {
 
-  font-family: $font-family, $font-stack;
-  font-size: $font-size;
-  font-weight: $font-weight-regular;
-  line-height: $line-height;
+  font-family: v.$font-family, v.$font-stack;
+  font-size: v.$font-size;
+  font-weight: v.$font-weight-regular;
+  line-height: v.$line-height;
   color: var(--font-colour);
 
 }
@@ -30,29 +32,29 @@ a {
 
 
 h1, h2, h3, h4,
-strong { font-weight: $font-weight-bold; }
+strong { font-weight: v.$font-weight-bold; }
 
 h1 {
 
-  margin: 0 0 $space-l 0;
+  margin: 0 0 v.$space-l 0;
 
-  font-size: $font-size-xl;
+  font-size: v.$font-size-xl;
 
 }
 
 h2 {
 
-  margin: $space-xl 0 $space-l 0;
+  margin: v.$space-xl 0 v.$space-l 0;
 
-  font-size: $font-size-l;
+  font-size: v.$font-size-l;
 
 }
 
 h3 {
 
-  margin: $space-l 0 $space-m 0;
+  margin: v.$space-l 0 v.$space-m 0;
 
-  font-size: $font-size;
+  font-size: v.$font-size;
 
 }
 
@@ -61,6 +63,6 @@ h3 {
 em { font-style: italic; }
 
 
-ul, ol { margin-left: $space-xl; }
+ul, ol { margin-left: v.$space-xl; }
 ul { list-style-type: '— '; }
 ol { list-style-type: upper-roman; }

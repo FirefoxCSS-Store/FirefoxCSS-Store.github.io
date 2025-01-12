@@ -1,3 +1,5 @@
+@use '../utilities/variables' as v;
+
 #lightbox {
 
   display: flex; flex-direction: column;
@@ -16,7 +18,7 @@
 
     max-width: 90vw; max-height: 80vh;
 
-    border-radius: $border-radius;
+    border-radius: v.$border-radius;
     border: 1px solid var(--body-background-darker);
     background: var(--body-background-darker);
 
@@ -26,7 +28,7 @@
   .btn-close-lightbox {
 
     position: absolute;
-    top: $space-l; right: $space-l;
+    top: v.$space-l; right: v.$space-l;
 
     display: block;
 
