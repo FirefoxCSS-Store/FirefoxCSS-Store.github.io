@@ -2086,5 +2086,13 @@
     "pushed_at": "2025-01-11T13:19:25Z",
     "stargazers_count": 0,
     "avatar": "https://avatars.githubusercontent.com/u/8101674?v=4"
+  },
+  {
+		"title": "Firefox Moonlight Theme",
+		"link": "https://github.com/sinazadeh/Firefox-Moonlight-Theme",
+		"description": "A sleek and modern dark blue Firefox theme with smooth, rounded elements for a refined browsing experience.",
+		"image": "https://raw.githubusercontent.com/sinazadeh/Firefox-Moonlight-Theme/main/assets/preview.jpg",
+		"tags": [ "Sina", "dark", "blue" ,"round", "cerulean"],
+		"repository": "https://github.com/sinazadeh/Firefox-Moonlight-Theme"
   }
 ]

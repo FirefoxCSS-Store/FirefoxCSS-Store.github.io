@@ -212,8 +212,8 @@ function createLightbox(id) {
 
   // set nightmode when according to local storage
   if (localStorage['theme'] === 'night') {
-    themeTriggerIcon.classList.toggle('fa-sun');
-    themeTriggerIcon.classList.toggle('fa-moon');
+    themeTriggerIcon.classList.remove('fa-sun');
+    themeTriggerIcon.classList.add('fa-moon');
     document.documentElement.classList.add('nightmode');
   } else {
     document.documentElement.classList.add('daymode');
@@ -221,13 +221,17 @@ function createLightbox(id) {
   function toggleTheme() {
     document.documentElement.classList.toggle('nightmode');
     document.documentElement.classList.toggle('daymode');
-    themeTriggerIcon.classList.toggle('fa-sun');
-    themeTriggerIcon.classList.toggle('fa-moon');
 
     // update local storage
-    if (localStorage['theme'] === 'night') localStorage['theme'] = 'day';else localStorage['theme'] = 'night';
+    if (localStorage['theme'] === 'night') {
+      localStorage['theme'] = 'day';
+      themeTriggerIcon.classList.add('fa-sun');
+      themeTriggerIcon.classList.remove('fa-moon');
+    } else {
+      localStorage['theme'] = 'night';
+      themeTriggerIcon.classList.remove('fa-sun');
+      themeTriggerIcon.classList.add('fa-moon');
+    }
   }
-  themeTrigger.addEventListener('click', function () {
-    return toggleTheme();
-  });
+  themeTrigger.addEventListener('click', toggleTheme);
 })();
