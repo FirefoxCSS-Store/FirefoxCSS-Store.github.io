@@ -1,4 +1,4 @@
-@use "../utilities/variables" as v;
+@use '../utilities/variables' as *;
 
 body {
 
@@ -6,34 +6,20 @@ body {
   max-width: 1920px;
 
   background: var(--body-background);
-
 }
 
-html {
+html.nightmode {
+  --body-background: #{$dark};
+  --body-background-lighter: #{$dark-l1};
+  --body-background-darker: #{$dark-s1};
+  --font-colour: #{$light};
+  --card-shadow: #{$inverted-shadow};
+}
 
-  &.nightmode {
-
-    --body-background: v.$dark;
-    --body-background-lighter: v.$dark-l1;
-    --body-background-darker: v.$dark-s1;
-
-    --font-colour: v.$light;
-
-    --card-shadow: v.$inverted-shadow;
-
-  }
-
-  &.daymode {
-
-    --body-background: v.$light;
-    --body-background-lighter: v.$light-l1;
-    --body-background-darker: v.$light-s1;
-
-    --font-colour: v.$dark;
-
-    --card-shadow: v.$shadow;
-
-  }
-
-
+html.daymode {
+  --body-background: #{$light};
+  --body-background-lighter: #{$light-l1};
+  --body-background-darker: #{$light-s1};
+  --font-colour: #{$dark};
+  --card-shadow: #{$shadow};
 }
