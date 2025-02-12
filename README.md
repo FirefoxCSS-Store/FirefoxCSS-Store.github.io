@@ -33,7 +33,19 @@ A collection site of Firefox userchrome themes, mostly from FirefoxCSS Reddit.<b
 
 6. Create a folder and name it **`chrome`**, then assuming that you already have cloned this repo, just copy the theme to `chrome` folder.
 7. Restart Firefox.
+---
 
+## Installation with Firefox Theme Installer (Independent App from this repo)
+
+If you prefer a more automated way to install themes, you can use the Firefox Theme Installer app. Follow these steps:
+
+1. Download and install the [Firefox Theme Installer](https://github.com/Hakanbaban53/firefox-theme-installer) app from releases.
+2. Open the app and select the theme you want to install.
+3. Click the "Install Theme" button.
+4. The app will automatically configure the necessary settings in `about:config` and copy the theme files to your Firefox profile.
+5. Restart Firefox to apply the new theme.
+
+This method simplifies the installation process and ensures that all required settings are correctly configured.
 ---
 
 ## Contribution
