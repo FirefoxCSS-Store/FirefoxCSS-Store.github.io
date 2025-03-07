@@ -2103,5 +2103,13 @@
     "pushed_at": "2025-02-13T22:08:42Z",
     "stargazers_count": 0,
     "avatar": "https://avatars.githubusercontent.com/u/63080674?v=4"
-  }
+  },
+  {
+		"title": "Elegant Floorp",
+		"link": "https://github.com/Mingo-coder/Elegant-Floorp/releases/download/v1.0/Elegant_Floorp.zip",
+		"description": "Default Floorp Fluential UI modded",
+		"image": "https://private-user-images.githubusercontent.com/177513443/420219487-e466734a-81af-4ae5-aaae-1cd44c0828b1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDEzMjk5NDcsIm5iZiI6MTc0MTMyOTY0NywicGF0aCI6Ii8xNzc1MTM0NDMvNDIwMjE5NDg3LWU0NjY3MzRhLTgxYWYtNGFlNS1hYWFlLTFjZDQ0YzA4MjhiMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwN1QwNjQwNDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05YjRmOGU3ZDU0N2E5MWZjMDEzYmIxOTE0NjY0YjQ2ODRlZWM4YmMyYTFkYTdhMzBlN2Q4NjdiZWVkYzg4MWQ5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.DOEXDFCIsreCe-NGZ_gqt6y1aswzHVbgSFO-6NaOu1g",
+		"tags": [ "Mingo-coder", "theme type: dark", "theme type: light", "Floorp" ],
+		"repository": "https://github.com/Mingo-coder/Elegant-Floorp"
+}
 ]
