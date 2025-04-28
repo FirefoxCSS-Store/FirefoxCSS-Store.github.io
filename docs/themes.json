@@ -1,5 +1,25 @@
 [
   {
+    "title": "arcadia",
+    "link": "https://github.com/tyrohellion/arcadia",
+    "description": "Minimal Firefox theme and user.js focused on speed and design",
+    "image": "assets/img/themes/arcadiapreview.gif",
+    "tags": [
+      "tyro",
+      "dark",
+      "minimal",
+      "clean",
+      "hovercards",
+      "simple",
+      "compact",
+      "minimalistic"
+    ],
+    "repository": "https://github.com/tyrohellion/arcadia",
+    "pushed_at": "2025-03-07T04:42:36Z",
+    "stargazers_count": 16,
+    "avatar": "https://avatars.githubusercontent.com/u/51808054?v=4"
+  },
+  {
     "title": "Titlebar-Button-Fix",
     "link": "https://github.com/birbkeks/Firefox-Titlebar-Button-Fix",
     "description": "This theme fixes titlebar min max close buttons for Firefox in linux. ",
@@ -1487,26 +1507,6 @@
     "pushed_at": "2025-03-05T13:50:52Z",
     "stargazers_count": 22,
     "avatar": "https://avatars.githubusercontent.com/u/20819692?v=4"
-  },
-  {
-    "title": "arcadia",
-    "link": "https://github.com/tyrohellion/arcadia",
-    "description": "Minimal Firefox theme and user.js focused on speed and design",
-    "image": "assets/img/themes/arcadia.webp",
-    "tags": [
-      "tyro",
-      "dark",
-      "minimal",
-      "clean",
-      "hovercards",
-      "simple",
-      "compact",
-      "minimalistic"
-    ],
-    "repository": "https://github.com/tyrohellion/arcadia",
-    "pushed_at": "2025-03-07T04:42:36Z",
-    "stargazers_count": 14,
-    "avatar": "https://avatars.githubusercontent.com/u/51808054?v=4"
   },
   {
     "title": "Firefox Plus",
