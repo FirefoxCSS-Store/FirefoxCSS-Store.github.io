@@ -2119,5 +2119,22 @@
     "pushed_at": "2025-04-06T03:53:06Z",
     "stargazers_count": 0,
     "avatar": "https://avatars.githubusercontent.com/u/177513443?v=4"
+  },
+    {
+    "title": "Sakuras Simple Sidebar",
+    "link": "https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar",
+    "description": "A simple Firefox theme using Sidebery sidebar.",
+    "image": "https://camo.githubusercontent.com/c4bcbd77078ad964f88351097b39a5689071ee1115b155e9ab2a6fe215193907/68747470733a2f2f692e696d6775722e636f6d2f686f4f696e596b2e706e67",
+    "tags": [ 
+      "SakuraMeadows",
+      "theme type: dark",
+      "theme type: light",
+      "vertical",
+      "sidebery",
+      "catppuccin",
+      "simple",
+      "sidebar"
+    ],
+    "repository": "https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar"
   }
 ]
