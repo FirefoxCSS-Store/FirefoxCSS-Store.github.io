@@ -2139,5 +2139,13 @@
     "pushed_at": "2025-05-28T15:10:00Z",
     "stargazers_count": 3,
     "avatar": "https://avatars.githubusercontent.com/u/93335748?v=4"
+  },
+  {
+      "title": "LittleFox",
+      "link": "https://github.com/biglavis/LittleFox",
+      "description": "A minimalistic, mouse centered CSS theme for FireFox.",
+      "image": "https://raw.githubusercontent.com/biglavis/LittleFox/main/assets/preview_small.webp",
+      "tags": [ "simple", "compact", "minimal", "oneline" ],
+      "repository": "https://github.com/biglavis/LittleFox"
   }
 ]
