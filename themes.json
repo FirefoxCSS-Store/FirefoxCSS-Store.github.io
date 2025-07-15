@@ -434,9 +434,9 @@
     "avatar": "https://avatars.githubusercontent.com/u/61664123?v=4"
   },
   {
-    "title": "Pseudo-fullscreen Firefox, Sidebery and YouTube",
+    "title": "Pseudo-fullscreen Firefox",
     "link": "https://github.com/ongots/pseudo-fullscreen-firefox",
-    "description": "\n Compatibility: V89+",
+    "description": "Hides and improves interface Firefox and YouTube, giving maximum space for content and aiding concentration",
     "image": "assets/img/themes/always-fullscreen-firefox.webp",
     "tags": [
       "toolkit",
