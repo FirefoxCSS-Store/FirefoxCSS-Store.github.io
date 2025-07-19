@@ -103,8 +103,8 @@ function createLightbox(id) {
     if (cards_container) cards_container.innerHTML = '';
     fetch('themes.json').then(function (data) {
       return data.json();
-    }).then(/*#__PURE__*/function () {
-      var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(data) {
+    }).then( /*#__PURE__*/function () {
+      var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(data) {
         var matches, i, j, _ref2, _iterator, _step, _step$value, index, entry, card;
         return _regeneratorRuntime().wrap(function _callee$(_context) {
           while (1) switch (_context.prev = _context.next) {
