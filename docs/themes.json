@@ -2000,9 +2000,25 @@
       "modern"
     ],
     "repository": "https://github.com/dxdotdev/arc-ui",
-    "pushed_at": "2025-01-05T13:34:56Z",
-    "stargazers_count": 68,
-    "avatar": "https://avatars.githubusercontent.com/u/157044645?v=4"
+    "pushed_at": "2025-07-15T19:32:53Z",
+    "stargazers_count": 3706,
+    "avatar": "https://avatars.githubusercontent.com/u/6210397?v=4"
+  },
+  {
+    "title": "Minimalist-DarkGreen",
+    "link": "https://github.com/andev0x/Minimalist-DarkGreen",
+    "description": "A theme for firefox with dark green colors.",
+    "image": "assets/img/themes/Minimalist-DarkGreen.gif",
+    "tags": [
+      "andev0x",
+      "dark",
+      "green",
+      "minimalist"
+    ],
+    "repository": "https://github.com/andev0x/Minimalist-DarkGreen",
+    "pushed_at": "2025-07-18T09:12:44Z",
+    "stargazers_count": 1,
+    "avatar": "https://avatars.githubusercontent.com/u/6210397?v=4"
   },
   {
     "title": "Material Fox Updated",
