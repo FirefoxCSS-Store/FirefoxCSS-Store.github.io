@@ -3,7 +3,7 @@
     "title": "arcadia",
     "link": "https://github.com/tyrohellion/arcadia",
     "description": "Minimal Firefox theme and user.js focused on speed and design",
-    "image": "assets/img/themes/arcadiapreview.gif",
+    "image": "assets/img/themes/arcadia.webp",
     "tags": [
       "tyro",
       "dark",
@@ -2061,7 +2061,7 @@
     "title": "VP-NightSky",
     "link": "https://github.com/VertexProximity/VP_NightSky",
     "description": "Firefox reimagined",
-    "image": "assets/img/themes/NightSky",
+    "image": "assets/img/themes/NightSky.webp",
     "tags": [
       "VertexProximity",
       "theme type: dark",
@@ -2076,7 +2076,7 @@
     "title": "cyanmatrx",
     "link": "https://github.com/Barnacl437/cyanmatrx",
     "description": "a simple, cool-esque, cyan monospace theme.",
-    "image": "assets/images/themes/cyanmatrx.png",
+    "image": "assets/img/themes/cyanmatrx.webp",
     "tags": [
       "cyanmatrx",
       "theme type: dark",
@@ -2124,7 +2124,7 @@
     "title": "Elegant Floorp",
     "link": "https://github.com/Mingo-coder/Elegant-Floorp/releases/download/v1.0/Elegant_Floorp.zip",
     "description": "Default Floorp Fluential UI modded",
-    "image": "https://private-user-images.githubusercontent.com/177513443/420219487-e466734a-81af-4ae5-aaae-1cd44c0828b1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDEzMjk5NDcsIm5iZiI6MTc0MTMyOTY0NywicGF0aCI6Ii8xNzc1MTM0NDMvNDIwMjE5NDg3LWU0NjY3MzRhLTgxYWYtNGFlNS1hYWFlLTFjZDQ0YzA4MjhiMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwN1QwNjQwNDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05YjRmOGU3ZDU0N2E5MWZjMDEzYmIxOTE0NjY0YjQ2ODRlZWM4YmMyYTFkYTdhMzBlN2Q4NjdiZWVkYzg4MWQ5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.DOEXDFCIsreCe-NGZ_gqt6y1aswzHVbgSFO-6NaOu1g",
+    "image": "assets/img/themes/elegant_floorp.webp",
     "tags": [
       "Mingo-coder",
       "theme type: dark",
@@ -2140,7 +2140,7 @@
     "title": "Sakuras Simple Sidebar",
     "link": "https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar",
     "description": "A simple Firefox theme using Sidebery sidebar.",
-    "image": "https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar/blob/39908072a7fe102f91658d5df73ce24ad24d6290/page%20assets/SakurasSimpleSidebarExample.gif",
+    "image": "https://raw.githubusercontent.com/SakuraMeadows/Sakuras-Simple-Sidebar/39908072a7fe102f91658d5df73ce24ad24d6290/page%20assets/SakurasSimpleSidebarExample.gif",
     "tags": [
       "SakuraMeadows",
       "theme type: dark",
