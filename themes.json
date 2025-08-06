@@ -2171,5 +2171,13 @@
     "pushed_at": "2025-07-30T00:56:31Z",
     "stargazers_count": 7,
     "avatar": "https://avatars.githubusercontent.com/u/105270868?v=4"
+  },
+  {
+    "title": "FlexFox",
+    "link": "https://github.com/yuuqilin/FlexFox",
+    "description": "A lightweight Firefox theme focused on usability, flexibility, and smooth performance.",
+    "image": "https://raw.githubusercontent.com/yuuqilin/media-assets/refs/heads/FlexFox/assets/FlexFox-overview-firefoxcss-store.webp",
+    "tags": [ "lightweight", "minimal", "Sidebery", "Mica", "flexible" ],
+    "repository": "https://github.com/yuuqilin/FlexFox"
   }
 ]
