@@ -1770,15 +1770,13 @@
   {
     "title": "FF Ultima",
     "link": "https://github.com/soulhotel/FF-ULTIMA",
-    "description": "Native Vertical Tabs, keep your sidebar, no extensions. No overthinking. FF Ultima",
-    "image": "assets/img/themes/FF_Ultima.webp",
+    "description": "The Firefox theme with too many options",
+    "image": "https://raw.githubusercontent.com/soulhotel/FF-ULTIMA/refs/heads/fu-extras/assets/ffu-previews/fcss.gif",
     "tags": [
-      "vertical tabs",
-      "minimal",
-      "lightweight",
+      "modern",
+      "adaptive",
       "customizable",
-      "dark",
-      "light"
+      "multiple layouts"
     ],
     "repository": "https://github.com/soulhotel/FF-ULTIMA",
     "pushed_at": "2025-08-30T18:29:28Z",
@@ -2188,6 +2186,20 @@
     "pushed_at": "2025-08-28T16:04:14Z",
     "stargazers_count": 121,
     "avatar": "https://avatars.githubusercontent.com/u/154042945?v=4"
+  },
+  {
+    "title": "git userChrome",
+    "link": "https://github.com/soulhotel/git-userChrome",
+    "description": "An automation tool for installing userChrome Themes",
+    "image": "https://raw.githubusercontent.com/soulhotel/FF-ULTIMA/refs/heads/fu-extras/assets/gituserchrome/preview-compressed.gif",
+    "tags": [
+      "git",
+      "tool",
+      "firefox",
+      "userChrome",
+      "automation"
+    ],
+    "repository": "https://github.com/soulhotel/git-userChrome"
   },
   {
     "title": "Gruvbox GNOMEish",
