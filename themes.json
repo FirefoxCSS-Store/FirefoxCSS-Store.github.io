@@ -2219,5 +2219,20 @@
     "pushed_at": "2025-08-26T13:52:46Z",
     "stargazers_count": 2,
     "avatar": "https://avatars.githubusercontent.com/u/158527507?v=4"
+  },
+  {
+    "title": "Parfait",
+    "link": "https://github.com/reizumii/parfait",
+    "description": "A tasty theme modification for Firefox 🦊",
+    "image": "assets/img/themes/parfait.webp",
+    "tags": [
+      "reizumii",
+      "sidebar",
+      "vertical tabs",
+      "minimal",
+      "lightweight",
+      "compact"
+    ],
+    "repository": "https://github.com/reizumii/parfait"
   }
 ]
