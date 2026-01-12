@@ -2222,20 +2222,12 @@
     "stargazers_count": 44,
     "avatar": "https://avatars.githubusercontent.com/u/204603744?v=4"
   },
-  {
+    {
     "title": "NewFox",
     "link": "https://github.com/Mr-the-beginner/NewFox",
-    "description": "A minimal Firefox theme with userContent and userChrome.",
-    "image": "https://raw.githubusercontent.com/Mr-the-beginner/NewFox/main/Screenshot.png",
-    "tags": [
-      "Mr-the-beginner",
-      "theme type: Auto",
-      "minimal",
-      "lightweight"
-    ],
-    "repository": "https://github.com/Mr-the-beginner/NewFox",
-    "pushed_at": "2026-01-11T10:16:52Z",
-    "stargazers_count": 11,
-    "avatar": "https://avatars.githubusercontent.com/u/134204793?v=4"
+    "description": "A minimal medieval animated theme for Firefox",
+    "image": "https://raw.githubusercontent.com/Mr-the-beginner/NewFox/refs/heads/main/README-Resources/ShowCase1.png",
+    "tags": ["Mr-the-beginner","theme type: Auto","minimal","medieval","animated","lightweight",],
+    "repository": "https://github.com/Mr-the-beginner/NewFox"
   }
 ]
