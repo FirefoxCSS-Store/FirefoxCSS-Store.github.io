@@ -2239,5 +2239,19 @@
     "pushed_at": "2026-01-12T20:01:25Z",
     "stargazers_count": 29,
     "avatar": "https://avatars.githubusercontent.com/u/134204793?v=4"
+  },
+  {
+    "title": "TransparentFox",
+    "link": "https://github.com/ScanuNicco/TransperentFox",
+    "description": "Simple transparent title bar theme for Firefox and Thunderbird",
+    "image": "https://raw.githubusercontent.com/ScanuNicco/TransperentFox/refs/heads/master/Screenshots/JustFirefox.png",
+    "tags": [ 
+      "ScanuRag", 
+      "theme type: dark", 
+      "transparent",
+      "firefox",
+      "thunderbird"],
+    "repository": "https://github.com/ScanuNicco/TransperentFox",
+    "avatar": "https://avatars.githubusercontent.com/u/30136040?v=4"
   }
 ]
