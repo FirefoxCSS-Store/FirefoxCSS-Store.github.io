@@ -2256,5 +2256,13 @@
     "avatar": "https://avatars.githubusercontent.com/u/30136040?v=4",
     "pushed_at": "2026-01-22T04:35:52Z",
     "stargazers_count": 0
+  },
+  {
+    "title": "vmfox",
+    "link": "github.com/cankurttekin/wmfox",
+    "description": "VM and VIM style theme with tab numbering.",
+    "image": "https://raw.githubusercontent.com/cankurttekin/wmfox/refs/heads/master/screenshots/screenshot.png",
+    "tags": [ "cankurttekin/vmfox", "theme type: dark", "theme type: light", "i3", "sway", "vim", "tab numbers", "keyboard" ],
+    "repository": "https://github.com/cankurttekin/wmfox"
   }
 ]
