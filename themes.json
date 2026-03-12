@@ -2258,18 +2258,18 @@
     "stargazers_count": 3
   },
   {
-    "title": "vmfox",
-    "link": "github.com/cankurttekin/wmfox",
-    "description": "VM and VIM style theme with tab numbering.",
+    "title": "wmfox",
+    "link": "https://github.com/cankurttekin/wmfox",
+    "description": "Minimalist keyboard oriented theme with tab numbering for easier navigation.",
     "image": "https://raw.githubusercontent.com/cankurttekin/wmfox/refs/heads/master/screenshots/screenshot.png",
     "tags": [
-      "cankurttekin/vmfox",
+      "cankurttekin/wmfox",
       "theme type: dark",
       "theme type: light",
-      "i3",
       "sway",
-      "vim",
+      "i3",
       "tab numbers",
+      "wm",
       "keyboard"
     ],
     "repository": "https://github.com/cankurttekin/wmfox",
