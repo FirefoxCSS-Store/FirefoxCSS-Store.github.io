@@ -2276,5 +2276,24 @@
     "pushed_at": "2026-02-22T13:54:40Z",
     "stargazers_count": 0,
     "avatar": "https://avatars.githubusercontent.com/u/29798399?v=4"
+  },
+  {
+    "title": "Fennec",
+    "link": "https://github.com/tompassarelli/fennec",
+    "description": "Minimal, customizable Firefox/LibreWolf setup with Zen-style sidebar workflow — no fork, no build.",
+    "image": "https://github.com/user-attachments/assets/9fc9691d-8e5e-4864-bdd8-0aa696955d86",
+    "tags": [
+      "tompassarelli",
+      "dark",
+      "light",
+      "minimal",
+      "sidebar",
+      "Sidebery",
+      "vertical tabs",
+      "keyboard",
+      "LibreWolf",
+      "lightweight"
+    ],
+    "repository": "https://github.com/tompassarelli/fennec"
   }
 ]
