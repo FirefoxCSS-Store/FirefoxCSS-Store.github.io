@@ -2298,5 +2298,22 @@
     "pushed_at": "2026-03-20T21:58:37Z",
     "stargazers_count": 35,
     "avatar": "https://avatars.githubusercontent.com/u/6378995?v=4"
+  },
+    {
+    "title": "Dynamic Color",
+    "link": "https://github.com/zachvlat/Dynamic-Color-Firefox-Theme",
+    "description": "Dark, dynamic (based on the system's accent color), theme for Firefox ",
+    "image": "https://private-user-images.githubusercontent.com/28532979/576430087-7bb875ea-4b77-41b7-b1ae-9dfe097f5706.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU4MDg4MjAsIm5iZiI6MTc3NTgwODUyMCwicGF0aCI6Ii8yODUzMjk3OS81NzY0MzAwODctN2JiODc1ZWEtNGI3Ny00MWI3LWIxYWUtOWRmZTA5N2Y1NzA2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA0MTAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNDEwVDA4MDg0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRkMGE2ZmJiYzU0ZTRmN2FkZmUyYjFhYTQ5OGViYjY0NjAzNDBlYTMzNjY3NDQ3NmY5ODc2YjdlYTBkNzE1MDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.h40T5AlVsoVxaMQhiNtjeBT4BDJmhYbnFNHSGBprh4U",
+    "tags": [
+      "zachvlat",
+      "dark",
+      "lightweight",
+      "dynamic",
+      "accent"
+    ],
+    "repository": "https://github.com/zachvlat/Dynamic-Color-Firefox-Theme",
+    "pushed_at": "2026-04-10T11:11:37Z",
+    "stargazers_count": 7,
+    "avatar": "https://avatars.githubusercontent.com/u/28532979?v=4"
   }
 ]
