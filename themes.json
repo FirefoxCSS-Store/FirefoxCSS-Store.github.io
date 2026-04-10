@@ -2298,5 +2298,22 @@
     "pushed_at": "2026-03-20T21:58:37Z",
     "stargazers_count": 35,
     "avatar": "https://avatars.githubusercontent.com/u/6378995?v=4"
+  },
+    {
+    "title": "Dynamic Color",
+    "link": "https://github.com/zachvlat/Dynamic-Color-Firefox-Theme",
+    "description": "Dark, dynamic (based on the system's accent color), theme for Firefox ",
+    "image": "https://raw.githubusercontent.com/zachvlat/Dynamic-Color-Firefox-Theme/refs/heads/main/thumbnail.png",
+    "tags": [
+      "zachvlat",
+      "dark",
+      "lightweight",
+      "dynamic",
+      "accent"
+    ],
+    "repository": "https://github.com/zachvlat/Dynamic-Color-Firefox-Theme",
+    "pushed_at": "2026-04-10T11:11:37Z",
+    "stargazers_count": 7,
+    "avatar": "https://avatars.githubusercontent.com/u/28532979?v=4"
   }
 ]
