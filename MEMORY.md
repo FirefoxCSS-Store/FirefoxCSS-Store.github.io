@@ -63,7 +63,6 @@ This file stores durable project context so future conversations can resume work
 - Theme rendering is intentionally throttled with `444ms` per card, which scales poorly for a catalog of 100+ entries
 - Search/filter logic depends on client-side fetch and has no visible loading or error handling
 - Test coverage is narrow: `tests/themes.check.js` validates only basic key order/types and not richer schema or link/image integrity
-- `dev/config/robots.txt` currently disallows all crawlers, which matters if discoverability or SEO becomes a goal
 
 ## Working Agreement For Future Sessions
 
