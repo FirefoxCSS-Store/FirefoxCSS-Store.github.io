@@ -21,6 +21,8 @@ This file stores durable project context so future conversations can resume work
 - Dev container config: `.devcontainer/devcontainer.json`
 - Devcontainer bootstrap script: `.devcontainer/post-create.sh`
 - Devcontainer automation now runs `.devcontainer/post-create.sh` from `postCreateCommand` to ensure `jq`, `nu`, and project dependencies are installed after container creation/rebuild
+- The build toolchain now runs cleanly on Node 24 with `gulp@5`, `gulp-sass@6`, `gulp-terser`, and a custom `sharp`-based WebP conversion step
+- `npm audit` is currently clean after adding targeted `overrides` for `markdown-it` and `@parcel/watcher` transitive dependencies
 
 ## Automation Context
 
@@ -43,18 +45,19 @@ This file stores durable project context so future conversations can resume work
 - Published site assets live in committed `docs/`
 - Local containerized development is configured to install Node, npm, `jq`, and Nushell
 - The devcontainer also runs `npm ci` automatically, so rebuilds recreate `node_modules` without manual setup
+- `gulpfile.js` now lazy-loads ESM-only Gulp plugins and skips optional directories like `dev/fonts/` when they are absent
+- Hidden config generation now filters non-`.txt` files explicitly so builds do not create stray files like `docs/.robots`
 
 ## Architecture Snapshot
 
 - `themes.json` is the single catalog source used by the client and copied to `docs/themes.json` during build
 - The frontend is a mostly static site with a small client-side app that fetches `themes.json`, sorts, filters, and renders cards in the browser
-- Gulp handles Pug compilation, SCSS compilation, Babel transpilation, JS minification, image conversion/copy, and config file copying
+- Gulp handles Pug compilation, SCSS compilation, Babel transpilation, JS minification with Terser, image conversion/copy with Sharp, and config file copying
 - Images from `images/` are emitted to `docs/assets/img/`; many local screenshots are converted to WebP
 - `scripts/sort_themes.nu` enriches theme entries with `pushed_at`, `stargazers_count`, and `avatar` using GitHub/GitLab/Codeberg APIs or git cloning fallback
 
 ## Known Technical Risks
 
-- `dev/js/main.js` has a broken explicit lightbox close path: `removeLightbox` uses `getElementsById`, and the close button does not call the function correctly
 - Theme rendering is intentionally throttled with `444ms` per card, which scales poorly for a catalog of 100+ entries
 - Search/filter logic depends on client-side fetch and has no visible loading or error handling
 - Test coverage is narrow: `tests/themes.check.js` validates only basic key order/types and not richer schema or link/image integrity

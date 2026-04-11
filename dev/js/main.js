@@ -53,9 +53,18 @@ class Card {
 }
 
 
-const removeLightbox = () => document.body.getElementsById('lightbox').remove()
+function removeLightbox () {
+
+  const lightbox = document.getElementById('lightbox')
+
+  if (lightbox)
+    lightbox.remove()
+
+}
 
 function createLightbox (id) {
+
+  removeLightbox()
 
   const card = document.getElementById(`theme-${id}`)
   const themeTitle = card.querySelector('h3')
@@ -65,7 +74,7 @@ function createLightbox (id) {
   <div id="lightbox" onclick="this.remove()">
     <h2>${themeTitle.innerText}</h2>
     <img src="${img.src}">
-    <button type="button" class="btn btn-close-lightbox" onClick="removeLightbox"><i class="fas fa-times-circle"></i> Close</button>
+    <button type="button" class="btn btn-close-lightbox" onClick="removeLightbox()"><i class="fas fa-times-circle"></i> Close</button>
   </div>
   `
 

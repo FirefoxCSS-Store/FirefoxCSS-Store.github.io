@@ -1,23 +1,96 @@
+const fs = require('fs')
+const path = require('path')
+const sharp = require('sharp')
+const { Transform } = require('stream')
+const { finished } = require('stream/promises')
 const {task, src, dest, parallel, series, watch} = require('gulp')
 
 
 // general
 const config = require('./gulpconfig.js')
-const rename = require('gulp-rename')
 
 // html
 const pug    = require('gulp-pug')
 
 // css
 const sass   = require('gulp-sass')(require('sass'))
-const prefix = require('gulp-autoprefixer')
 
 // js
 const babel  = require('gulp-babel')
-const minify = require('gulp-minify')
+const terser = require('gulp-terser')
 
-// images
-const cwebp  = require('gulp-cwebp')
+let autoprefixerPromise
+
+function loadAutoprefixer () {
+  if (!autoprefixerPromise) {
+    autoprefixerPromise = import('gulp-autoprefixer').then(module => module.default)
+  }
+
+  return autoprefixerPromise
+}
+
+function renameFiles (transformPath) {
+  return new Transform({
+    objectMode: true,
+    transform (file, enc, callback) {
+      file.path = transformPath(file.path)
+      callback(null, file)
+    }
+  })
+}
+
+function filterFiles (predicate) {
+  return new Transform({
+    objectMode: true,
+    transform (file, enc, callback) {
+      if (predicate(file)) {
+        callback(null, file)
+        return
+      }
+
+      callback()
+    }
+  })
+}
+
+function setExtension (filePath, extension) {
+  const parsed = path.parse(filePath)
+  return path.join(parsed.dir, `${parsed.name}${extension}`)
+}
+
+function toHiddenConfig (filePath) {
+  const parsed = path.parse(filePath)
+  return path.join(parsed.dir, `.${parsed.name}`)
+}
+
+function convertToWebp () {
+  return new Transform({
+    objectMode: true,
+    transform (file, enc, callback) {
+      if (file.isNull()) {
+        callback(null, file)
+        return
+      }
+
+      if (file.isStream()) {
+        callback(new Error('Streaming image conversion is not supported'))
+        return
+      }
+
+      sharp(file.path)
+      .webp()
+      .toBuffer()
+      .then(buffer => {
+        file.contents = buffer
+        file.path = setExtension(file.path, '.webp')
+        callback(null, file)
+      })
+      .catch(error => {
+        callback(new Error(`${file.path}: ${error.message}`))
+      })
+    }
+  })
+}
 
 
 
@@ -29,11 +102,9 @@ task('configText', () => {
 })
 
 task('configHidden', () => {
-  return src(config.config.hidden.src)
-  .pipe(rename({
-    prefix: '.',
-    extname: ''
-  }))
+  return src(config.config.hidden.src, { allowEmpty: true })
+  .pipe(filterFiles(file => path.extname(file.path) !== '.txt'))
+  .pipe(renameFiles(toHiddenConfig))
   .pipe(dest(config.config.hidden.dest))
 })
 
@@ -55,12 +126,16 @@ task('pug', () => {
 
 
 
-task('sass', () => {
-  return src(config.sass.src)
+task('sass', async () => {
+  const autoprefixer = await loadAutoprefixer()
+
+  const stream = src(config.sass.src)
   .pipe(sass(config.sass.opts.sass).on('error', sass.logError))
-  .pipe(prefix(config.sass.opts.autoprefixer))
-  .pipe(rename({extname: config.sass.ext}))
+  .pipe(autoprefixer(config.sass.opts.autoprefixer))
+  .pipe(renameFiles(filePath => setExtension(filePath, config.sass.ext)))
   .pipe(dest(config.sass.dest))
+
+  await finished(stream)
 })
 
 
@@ -68,7 +143,9 @@ task('sass', () => {
 task('js', () => {
   return src(config.js.src)
   .pipe(babel(config.js.opts.babel))
-  .pipe(minify({ext: {min: config.js.ext}}))
+  .pipe(dest(config.js.dest))
+  .pipe(terser())
+  .pipe(renameFiles(filePath => setExtension(filePath, config.js.ext)))
   .pipe(dest(config.js.dest))
 })
 
@@ -76,7 +153,7 @@ task('js', () => {
 
 task('convertImages', () => {
   return src(config.images.toConvert)
-  .pipe(cwebp())
+  .pipe(convertToWebp())
   .pipe(dest(config.images.dest))
 })
 
@@ -95,6 +172,12 @@ task('images', parallel('convertImages', 'copyImages', 'copyFavicon'))
 
 
 task('fonts', () => {
+  const fontsPath = path.join(config.watchSource, 'fonts')
+
+  if (!fs.existsSync(fontsPath)) {
+    return Promise.resolve()
+  }
+
   return src(config.fonts.src)
   .pipe(dest(config.fonts.dest))
 })

@@ -40,14 +40,16 @@ var Card = /*#__PURE__*/function () {
     }
   }]);
 }();
-var removeLightbox = function removeLightbox() {
-  return document.body.getElementsById('lightbox').remove();
-};
+function removeLightbox() {
+  var lightbox = document.getElementById('lightbox');
+  if (lightbox) lightbox.remove();
+}
 function createLightbox(id) {
+  removeLightbox();
   var card = document.getElementById("theme-".concat(id));
   var themeTitle = card.querySelector('h3');
   var img = card.querySelector('img');
-  var template = "\n  <div id=\"lightbox\" onclick=\"this.remove()\">\n    <h2>".concat(themeTitle.innerText, "</h2>\n    <img src=\"").concat(img.src, "\">\n    <button type=\"button\" class=\"btn btn-close-lightbox\" onClick=\"removeLightbox\"><i class=\"fas fa-times-circle\"></i> Close</button>\n  </div>\n  ");
+  var template = "\n  <div id=\"lightbox\" onclick=\"this.remove()\">\n    <h2>".concat(themeTitle.innerText, "</h2>\n    <img src=\"").concat(img.src, "\">\n    <button type=\"button\" class=\"btn btn-close-lightbox\" onClick=\"removeLightbox()\"><i class=\"fas fa-times-circle\"></i> Close</button>\n  </div>\n  ");
   card.insertAdjacentHTML('afterend', template);
 }
 (function () {

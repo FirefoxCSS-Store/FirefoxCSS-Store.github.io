@@ -16,7 +16,7 @@ module.exports = {
       dest: `${pathBuild}/`
     },
     hidden: {
-      src:  `${pathSource}/config/*[!.txt]`,
+      src:  `${pathSource}/config/*`,
       dest: `${pathBuild}/`
     }
   },
@@ -64,7 +64,7 @@ module.exports = {
   images: {
     favicon:     favicon,
     faviconDest: `${pathBuild}/`,
-    toConvert:   [`./images/**/*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,GIF}`, `!${favicon}`],
+    toConvert:   [`./images/**/*.{jpg,JPG,jpeg,JPEG,png,PNG}`, `!${favicon}`],
     toCopy:      `./images/**/*.{gif,GIF,svg,SVG,webp,WEBP}`,
     dest:        `${pathAssets}/img/`,
   },
