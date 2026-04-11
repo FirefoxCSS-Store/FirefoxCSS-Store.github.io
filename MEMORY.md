@@ -1,0 +1,70 @@
+# Persistent Memory
+
+This file stores durable project context so future conversations can resume work with less re-discovery.
+
+## Project Summary
+
+- Repository: `FirefoxCSS-Store.github.io`
+- Purpose: static site that catalogs Firefox `userChrome.css` themes
+- Main data source: `themes.json`
+- Site source: `dev/`
+- Generated site output: `docs/`
+
+## Tooling And Validation
+
+- Package manager: `npm`
+- Build command: `npm run build`
+- Test command: `npm test`
+- Build system: `gulp`
+- Theme validation script: `tests/themes.check.js`
+- Theme metadata refresh script: `scripts/sort_themes.nu`
+- Dev container config: `.devcontainer/devcontainer.json`
+- Devcontainer bootstrap script: `.devcontainer/post-create.sh`
+- Devcontainer automation now runs `.devcontainer/post-create.sh` from `postCreateCommand` to ensure `jq`, `nu`, and project dependencies are installed after container creation/rebuild
+
+## Automation Context
+
+- Active working branch created for automation improvements: `improve-automation`
+- Existing GitHub Actions:
+- `.github/workflows/build.yml`
+- `.github/workflows/check-themes.yml`
+- Current workflows use older action versions and Node 14, which is a likely area for automation modernization
+- Build workflow is manual (`workflow_dispatch`) and commits generated `docs/` output back to the branch
+- PR validation currently runs only when `themes.json` changes
+
+## Repo Notes
+
+- Local `.codex` file is ignored in `.gitignore`
+- Build workflow currently commits generated files back to the branch after `npm run build`
+- Pull requests touching `themes.json` trigger validation via `npm test`
+- Site pages are generated from Pug in `dev/pug/`
+- Client behavior is implemented in `dev/js/main.js`
+- Styles are authored in SCSS under `dev/scss/`
+- Published site assets live in committed `docs/`
+- Local containerized development is configured to install Node, npm, `jq`, and Nushell
+- The devcontainer also runs `npm ci` automatically, so rebuilds recreate `node_modules` without manual setup
+
+## Architecture Snapshot
+
+- `themes.json` is the single catalog source used by the client and copied to `docs/themes.json` during build
+- The frontend is a mostly static site with a small client-side app that fetches `themes.json`, sorts, filters, and renders cards in the browser
+- Gulp handles Pug compilation, SCSS compilation, Babel transpilation, JS minification, image conversion/copy, and config file copying
+- Images from `images/` are emitted to `docs/assets/img/`; many local screenshots are converted to WebP
+- `scripts/sort_themes.nu` enriches theme entries with `pushed_at`, `stargazers_count`, and `avatar` using GitHub/GitLab/Codeberg APIs or git cloning fallback
+
+## Known Technical Risks
+
+- `dev/js/main.js` has a broken explicit lightbox close path: `removeLightbox` uses `getElementsById`, and the close button does not call the function correctly
+- Theme rendering is intentionally throttled with `444ms` per card, which scales poorly for a catalog of 100+ entries
+- Search/filter logic depends on client-side fetch and has no visible loading or error handling
+- Test coverage is narrow: `tests/themes.check.js` validates only basic key order/types and not richer schema or link/image integrity
+- `dev/config/robots.txt` currently disallows all crawlers, which matters if discoverability or SEO becomes a goal
+
+## Working Agreement For Future Sessions
+
+- Read this file before making assumptions about project state
+- Update this file manually when there are relevant decisions, branch changes, automation updates, or persistent blockers
+- Keep entries concise and durable; avoid transient noise
+- Future agents should create a commit and push after implementing relevant changes or new functionality so work stays traceable and reversible
+- Future agents must not merge without explicit user authorization
+- Future agents must not take actions that could affect the production main branch without explicit user authorization

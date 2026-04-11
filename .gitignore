@@ -42,6 +42,9 @@ Icon?
 # JetBrains IDEs
 .idea/
 
+# Codex local workspace data
+.codex
+
 # Build output
 /dist/
 /build/
@@ -60,4 +63,3 @@ coverage/
 # Misc
 *.sublime-workspace
 *.sublime-project
-
