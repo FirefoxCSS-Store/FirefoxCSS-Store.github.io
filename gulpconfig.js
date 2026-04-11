@@ -2,6 +2,7 @@ const pathSource = './dev'
 const pathBuild  = './docs'
 const pathAssets = `${pathBuild}/assets`
 
+const pathImages = './images'
 const favicon = './images/icon.png'
 
 
@@ -62,10 +63,11 @@ module.exports = {
   },
 
   images: {
+    source:      pathImages,
     favicon:     favicon,
     faviconDest: `${pathBuild}/`,
     toConvert:   [`./images/**/*.{jpg,JPG,jpeg,JPEG,png,PNG}`, `!${favicon}`],
-    toCopy:      `./images/**/*.{gif,GIF,svg,SVG,webp,WEBP}`,
+    copyExtensions: ['.gif', '.svg', '.webp'],
     dest:        `${pathAssets}/img/`,
   },
 

@@ -92,6 +92,31 @@ function convertToWebp () {
   })
 }
 
+async function walkFiles (directory) {
+  const entries = await fs.promises.readdir(directory, { withFileTypes: true })
+  const files = await Promise.all(entries.map(async entry => {
+    const entryPath = path.join(directory, entry.name)
+
+    if (entry.isDirectory()) {
+      return walkFiles(entryPath)
+    }
+
+    return entryPath
+  }))
+
+  return files.flat()
+}
+
+async function copyFiles (files, sourceRoot, destinationRoot) {
+  await Promise.all(files.map(async file => {
+    const relativePath = path.relative(sourceRoot, file)
+    const destinationPath = path.join(destinationRoot, relativePath)
+
+    await fs.promises.mkdir(path.dirname(destinationPath), { recursive: true })
+    await fs.promises.copyFile(file, destinationPath)
+  }))
+}
+
 
 
 
@@ -158,13 +183,19 @@ task('convertImages', () => {
 })
 
 task('copyImages', () => {
-  return src(config.images.toCopy)
-  .pipe(dest(config.images.dest))
+  return walkFiles(config.images.source)
+  .then(files => files.filter(file => {
+    const extension = path.extname(file).toLowerCase()
+    return config.images.copyExtensions.includes(extension)
+  }))
+  .then(files => copyFiles(files, config.images.source, config.images.dest))
 })
 
 task('copyFavicon', () => {
-  return src(config.images.favicon)
-  .pipe(dest(config.images.faviconDest))
+  const destinationPath = path.join(config.images.faviconDest, path.basename(config.images.favicon))
+
+  return fs.promises.mkdir(path.dirname(destinationPath), { recursive: true })
+  .then(() => fs.promises.copyFile(config.images.favicon, destinationPath))
 })
 
 task('images', parallel('convertImages', 'copyImages', 'copyFavicon'))
