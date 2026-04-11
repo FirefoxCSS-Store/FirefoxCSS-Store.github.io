@@ -1755,7 +1755,7 @@
     "title": "FF Ultima",
     "link": "https://github.com/soulhotel/FF-ULTIMA",
     "description": "The Firefox theme with too many options",
-    "image": "https://raw.githubusercontent.com/soulhotel/FF-ULTIMA/refs/heads/fu-extras/assets/ffu-previews/fcss.gif",
+    "image": "assets/img/themes/remote-102-ff-ultima.gif",
     "tags": [
       "modern",
       "adaptive",
@@ -2027,7 +2027,7 @@
     "title": "MiniSthetic_Firefox",
     "link": "https://github.com/ashish-kus/MiniSthetic_Firefox",
     "description": "Minimal Aesthetic Firefox CSS",
-    "image": "https://github.com/ashish-kus/MiniSthetic_Firefox/blob/main/ASSETS/Preview/GIF.gif?raw=true",
+    "image": "assets/img/themes/remote-118-ministhetic-firefox.gif",
     "tags": [
       "Minimal Aesthetic Firefox CSS",
       "theme type: dark",
@@ -2074,7 +2074,7 @@
     "title": "DownToneUI",
     "link": "https://github.com/oviung/DownToneUI-Firefox",
     "description": "A modular UI customization for Firefox, using Sidebery for vertical tabs.",
-    "image": "https://raw.githubusercontent.com/oviung/DownToneUI-Firefox/refs/heads/main/assets/preview.gif",
+    "image": "assets/img/themes/remote-121-downtoneui.gif",
     "tags": [
       "theme type: dark",
       "vertical",
@@ -2089,7 +2089,7 @@
     "title": "Firefox Moonlight Theme",
     "link": "https://github.com/sinazadeh/Firefox-Moonlight-Theme",
     "description": "A sleek and modern dark blue Firefox theme with smooth, rounded elements for a refined browsing experience.",
-    "image": "https://raw.githubusercontent.com/sinazadeh/Firefox-Moonlight-Theme/main/assets/preview.jpg",
+    "image": "assets/img/themes/remote-122-firefox-moonlight-theme.webp",
     "tags": [
       "Sina",
       "dark",
@@ -2122,7 +2122,7 @@
     "title": "Sakuras Simple Sidebar",
     "link": "https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar",
     "description": "A simple Firefox theme using Sidebery sidebar.",
-    "image": "https://raw.githubusercontent.com/SakuraMeadows/Sakuras-Simple-Sidebar/39908072a7fe102f91658d5df73ce24ad24d6290/page%20assets/SakurasSimpleSidebarExample.gif",
+    "image": "assets/img/themes/remote-124-sakuras-simple-sidebar.gif",
     "tags": [
       "SakuraMeadows",
       "theme type: dark",
@@ -2142,7 +2142,7 @@
     "title": "LittleFox",
     "link": "https://github.com/biglavis/LittleFox",
     "description": "A minimalistic, mouse centered CSS theme for FireFox.",
-    "image": "https://raw.githubusercontent.com/biglavis/LittleFox/main/assets/preview_small.webp",
+    "image": "assets/img/themes/remote-125-littlefox.webp",
     "tags": [
       "simple",
       "compact",
@@ -2158,7 +2158,7 @@
     "title": "FlexFox",
     "link": "https://github.com/yuuqilin/FlexFox",
     "description": "A lightweight Firefox theme focused on usability, flexibility, and smooth performance.",
-    "image": "https://raw.githubusercontent.com/yuuqilin/media-assets/refs/heads/FlexFox/assets/FlexFox-overview-firefoxcss-store.webp",
+    "image": "assets/img/themes/remote-126-flexfox.webp",
     "tags": [
       "lightweight",
       "minimal",
@@ -2175,7 +2175,7 @@
     "title": "git userChrome",
     "link": "https://github.com/soulhotel/git-userChrome",
     "description": "An automation tool for installing userChrome Themes",
-    "image": "https://raw.githubusercontent.com/soulhotel/FF-ULTIMA/refs/heads/fu-extras/assets/gituserchrome/preview-compressed.gif",
+    "image": "assets/img/themes/remote-127-git-userchrome.gif",
     "tags": [
       "git",
       "tool",
@@ -2192,7 +2192,7 @@
     "title": "Gruvbox GNOMEish",
     "link": "https://github.com/xslhub/gruvbox-gnomeish-firefox-theme",
     "description": "A minimal Firefox theme inspired by the aesthetics of Gruvbox and GNOME. ",
-    "image": "https://github.com/xslhub/gruvbox-gnomeish-firefox-theme/raw/main/screenshot.png",
+    "image": "assets/img/themes/remote-128-gruvbox-gnomeish.webp",
     "tags": [
       "xslhub",
       "theme type: dark",
@@ -2226,7 +2226,7 @@
     "title": "NewFox",
     "link": "https://github.com/Mr-the-beginner/NewFox",
     "description": "A minimal medieval animated theme for Firefox",
-    "image": "https://raw.githubusercontent.com/Mr-the-beginner/NewFox/refs/heads/main/README-Resources/ShowCase1.png",
+    "image": "assets/img/themes/remote-130-newfox.webp",
     "tags": [
       "Mr-the-beginner",
       "theme type: Auto",
@@ -2244,7 +2244,7 @@
     "title": "TransparentFox",
     "link": "https://github.com/ScanuNicco/TransperentFox",
     "description": "Simple transparent title bar theme for Firefox and Thunderbird",
-    "image": "https://raw.githubusercontent.com/ScanuNicco/TransperentFox/refs/heads/master/Screenshots/JustFirefox.png",
+    "image": "assets/img/themes/remote-131-transparentfox.webp",
     "tags": [
       "ScanuRag",
       "theme type: dark",
@@ -2261,7 +2261,7 @@
     "title": "wmfox",
     "link": "https://github.com/cankurttekin/wmfox",
     "description": "Minimalist keyboard oriented theme with tab numbering for easier navigation.",
-    "image": "https://raw.githubusercontent.com/cankurttekin/wmfox/refs/heads/master/screenshots/screenshot.png",
+    "image": "assets/img/themes/remote-132-wmfox.webp",
     "tags": [
       "cankurttekin/wmfox",
       "theme type: dark",
@@ -2281,7 +2281,7 @@
     "title": "Fennec",
     "link": "https://github.com/tompassarelli/fennec",
     "description": "Minimal, customizable Firefox/LibreWolf setup with Zen-style sidebar workflow — no fork, no build.",
-    "image": "https://github.com/user-attachments/assets/9fc9691d-8e5e-4864-bdd8-0aa696955d86",
+    "image": "assets/img/themes/remote-133-fennec.webp",
     "tags": [
       "tompassarelli",
       "dark",
@@ -2303,7 +2303,7 @@
     "title": "Dynamic Color",
     "link": "https://github.com/zachvlat/Dynamic-Color-Firefox-Theme",
     "description": "Dark, dynamic (based on the system's accent color), theme for Firefox ",
-    "image": "https://raw.githubusercontent.com/zachvlat/Dynamic-Color-Firefox-Theme/refs/heads/main/thumbnail.png",
+    "image": "assets/img/themes/remote-134-dynamic-color.webp",
     "tags": [
       "zachvlat",
       "dark",

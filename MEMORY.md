@@ -47,6 +47,7 @@ This file stores durable project context so future conversations can resume work
 - The devcontainer also runs `npm ci` automatically, so rebuilds recreate `node_modules` without manual setup
 - `gulpfile.js` now lazy-loads ESM-only Gulp plugins and skips optional directories like `dev/fonts/` when they are absent
 - Hidden config generation now filters non-`.txt` files explicitly so builds do not create stray files like `docs/.robots`
+- Theme entries that depended on fragile remote screenshots have been localized into `images/themes/remote-*` and now build into committed assets under `docs/assets/img/themes/`
 
 ## Architecture Snapshot
 
