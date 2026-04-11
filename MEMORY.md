@@ -30,9 +30,9 @@ This file stores durable project context so future conversations can resume work
 - Existing GitHub Actions:
 - `.github/workflows/build.yml`
 - `.github/workflows/check-themes.yml`
-- Current workflows use older action versions and Node 14, which is a likely area for automation modernization
-- Build workflow is manual (`workflow_dispatch`) and commits generated `docs/` output back to the branch
-- PR validation currently runs only when `themes.json` changes
+- CI now uses current `actions/checkout@v4` and `actions/setup-node@v4` on Node 24
+- Build workflow now runs automatically on pushes to `main` that affect site/build inputs and commits regenerated `docs/` output back to the branch
+- PR validation now runs `npm test` and `npm run build` for site-related changes instead of only checking `themes.json`
 
 ## Repo Notes
 

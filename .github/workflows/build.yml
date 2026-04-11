@@ -1,29 +1,54 @@
-name: Build
+name: Build And Publish Docs
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'dev/**'
+      - 'images/**'
+      - 'themes.json'
+      - 'gulpfile.js'
+      - 'gulpconfig.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'dev/config/**'
   workflow_dispatch
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-and-publish-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
-          persist-credentials: false
           fetch-depth: 0
-      - uses: actions/setup-node@v1
+
+      - uses: actions/setup-node@v4
         with:
-          node-version: 14
-      - run: npm i
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+      - run: npm test
       - run: npm run build
-      - name: Commit files
+
+      - name: Commit generated docs
+        shell: bash
         run: |
+          if git diff --quiet -- docs; then
+            echo "No generated docs changes to commit."
+            exit 0
+          fi
+
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add .
-          git commit -m "ci(build): compile and deploy" -a
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          git add docs
+          git commit -m "ci(build): compile and deploy"
+          git push
