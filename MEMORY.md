@@ -49,6 +49,7 @@ This file stores durable project context so future conversations can resume work
 - Hidden config generation now filters non-`.txt` files explicitly so builds do not create stray files like `docs/.robots`
 - Theme entries that depended on fragile remote screenshots have been localized into `images/themes/remote-*` and now build into committed assets under `docs/assets/img/themes/`
 - Binary copies for static images now use `fs.promises.copyFile` instead of `gulp.src().pipe(dest())` because the stream path was corrupting some `.webp` assets in `docs/`
+- Project-facing text should be written in English by default; chat replies should mirror the user's language
 
 ## Architecture Snapshot
 
