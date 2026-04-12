@@ -33,6 +33,7 @@ This file stores durable project context so future conversations can resume work
 - CI now uses current `actions/checkout@v4` and `actions/setup-node@v4` on Node 24
 - Build workflow now runs automatically on pushes to `main` that affect site/build inputs and commits regenerated `docs/` output back to the branch
 - PR validation now runs `npm test` and `npm run build` for site-related changes instead of only checking `themes.json`
+- The build workflow syntax also requires `workflow_dispatch:` with a trailing colon; missing it makes GitHub mark the workflow file as invalid even if other checks still pass
 
 ## Repo Notes
 
