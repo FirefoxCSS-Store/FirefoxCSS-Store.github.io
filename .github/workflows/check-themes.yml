@@ -1,18 +1,33 @@
-name: Check themes.json
+name: Validate Site
 
 on:
   pull_request:
     branches: [ main ]
     paths:
+      - 'dev/**'
+      - 'images/**'
       - 'themes.json'
+      - 'gulpfile.js'
+      - 'gulpconfig.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'dev/config/**'
+      - '.github/workflows/**'
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
-  test_pull_requests:
+  validate_pull_requests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
         with:
-          node-version: 14
-      - run: npm i
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
       - run: npm test
+      - run: npm run build
