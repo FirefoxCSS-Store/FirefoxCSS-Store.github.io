@@ -10,6 +10,7 @@ FirefoxCSS-Store is a static community catalog for discovering and sharing Firef
 - A GitHub Issue Form that collects theme submissions and opens candidate PRs through automation.
 - Validation scripts that keep catalog entries structured, reviewable, and safe to publish.
 
+
 ## Local Development
 
 ```sh
