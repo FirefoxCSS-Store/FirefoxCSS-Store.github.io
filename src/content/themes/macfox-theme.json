@@ -1,0 +1,31 @@
+{
+  "title": "MacFox-Theme",
+  "slug": "macfox-theme",
+  "description": "Safari-like minimalistic theme with system accent color",
+  "repository": "https://github.com/d0sse/macFox-theme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/d0sse_mac_fox_screen.webp",
+      "alt": "MacFox-Theme screenshot"
+    }
+  ],
+  "tags": [
+    "accent",
+    "autocolor",
+    "dark",
+    "light",
+    "mac",
+    "macos",
+    "minimal",
+    "safari"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 100,
+  "stats": {
+    "stars": 40,
+    "updatedAt": "2026-04-20T09:06:29Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/16508608?v=4",
+    "accessible": true
+  }
+}

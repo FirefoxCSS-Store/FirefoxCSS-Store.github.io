@@ -1,0 +1,27 @@
+{
+  "title": "minimal-functional-fox",
+  "slug": "minimal-functional-fox",
+  "description": "A minimal, yet functional configuration for Firefox!",
+  "repository": "https://github.com/mut-ex/minimal-functional-fox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/minimalfuntionalfox.webp",
+      "alt": "minimal-functional-fox screenshot"
+    }
+  ],
+  "tags": [
+    "animations",
+    "centre",
+    "dark",
+    "minimal"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 14,
+  "stats": {
+    "stars": 725,
+    "updatedAt": "2023-05-19T00:16:56Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/21265981?v=4",
+    "accessible": true
+  }
+}

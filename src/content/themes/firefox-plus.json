@@ -1,0 +1,33 @@
+{
+  "title": "Firefox Plus",
+  "slug": "firefox-plus",
+  "description": "Firefox Plus, CSS tweaks for Firefox",
+  "repository": "https://github.com/amnweb/firefox-plus",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/6299firefox-26-11-2023.webp",
+      "alt": "Firefox Plus screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "firefox",
+    "firefox-customization",
+    "firefox-theme",
+    "minimal"
+  ],
+  "submitterRole": "legacy",
+  "status": "archived",
+  "catalogIndex": 89,
+  "stats": {
+    "stars": 297,
+    "updatedAt": "2025-12-29T13:06:49Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/16545063?v=4",
+    "accessible": true
+  },
+  "retirement": {
+    "reason": "repository-archived",
+    "checkedAt": "2026-04-25T20:04:49.167Z",
+    "details": "Repository is archived by its owner."
+  }
+}

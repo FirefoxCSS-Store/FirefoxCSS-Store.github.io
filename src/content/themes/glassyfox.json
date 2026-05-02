@@ -1,0 +1,25 @@
+{
+  "title": "GlassyFox",
+  "slug": "glassyfox",
+  "description": "Keeps the original new tab page layout while making it look as glassy as possible.",
+  "repository": "https://github.com/AnhNguyenlost13/GlassyFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/glassyfox.webp",
+      "alt": "GlassyFox screenshot"
+    }
+  ],
+  "tags": [
+    "anhnguyenlost13",
+    "blur"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 110,
+  "stats": {
+    "stars": 12,
+    "updatedAt": "2024-10-04T03:38:39Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/94160753?v=4",
+    "accessible": true
+  }
+}

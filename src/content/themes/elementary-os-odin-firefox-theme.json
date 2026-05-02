@@ -1,0 +1,28 @@
+{
+  "title": "Elementary OS Odin Firefox theme",
+  "slug": "elementary-os-odin-firefox-theme",
+  "description": "This theme supports all the window buttons layouts from Tweaks and it blends into the elementary OS Odin user interface. \n Compatibility: V91+",
+  "repository": "https://github.com/Zonnev/elementaryos-firefox-theme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/firefox-eos6-theme.webp",
+      "alt": "Elementary OS Odin Firefox theme screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "elementary-os",
+    "light",
+    "os",
+    "zonnev"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 53,
+  "stats": {
+    "stars": 443,
+    "updatedAt": "2026-03-04T18:57:14Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/32688765?v=4",
+    "accessible": true
+  }
+}

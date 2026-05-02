@@ -1,0 +1,25 @@
+{
+  "title": "Compact Mode to Firefox Css",
+  "slug": "compact-mode-to-firefox-css",
+  "description": "Theme to Make Firefox Compact and keep it's Beauty\n Compatibility: V89+",
+  "repository": "https://github.com/Godiesc/compactmodefirefoxcss",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/splashcompact.webp",
+      "alt": "Compact Mode to Firefox Css screenshot"
+    }
+  ],
+  "tags": [
+    "godiesc",
+    "toolkit"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 31,
+  "stats": {
+    "stars": 18,
+    "updatedAt": "2021-08-27T17:47:51Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/22057609?v=4",
+    "accessible": true
+  }
+}

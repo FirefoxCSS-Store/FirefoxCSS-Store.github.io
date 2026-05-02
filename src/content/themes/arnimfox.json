@@ -1,0 +1,28 @@
+{
+  "title": "ArnimFox",
+  "slug": "arnimfox",
+  "description": "A Minimalist Dark Themed Firefox enabling vertical tabs support and modern URL Bar",
+  "repository": "https://github.com/SecondMikasa/ArnimFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/ArnimFox.webp",
+      "alt": "ArnimFox screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "minimalistic",
+    "sidebar",
+    "sidebery",
+    "vertical"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 91,
+  "stats": {
+    "stars": 6,
+    "updatedAt": "2024-01-28T10:20:05Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/129872339?v=4",
+    "accessible": true
+  }
+}

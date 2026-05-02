@@ -1,0 +1,27 @@
+{
+  "title": "Minimalist-DarkGreen",
+  "slug": "minimalist-darkgreen",
+  "description": "A theme for firefox with dark green colors.",
+  "repository": "https://github.com/andev0x/Minimalist-DarkGreen",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/Minimalist-DarkGreen.gif",
+      "alt": "Minimalist-DarkGreen screenshot"
+    }
+  ],
+  "tags": [
+    "andev0x",
+    "dark",
+    "green",
+    "minimalist"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 116,
+  "stats": {
+    "stars": 3,
+    "updatedAt": "2025-08-13T05:32:28Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/152575252?v=4",
+    "accessible": true
+  }
+}

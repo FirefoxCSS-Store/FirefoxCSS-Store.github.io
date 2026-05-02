@@ -1,0 +1,37 @@
+{
+  "title": "RealFire",
+  "slug": "realfire",
+  "description": "A minimalist animated oneliner theme for Firefox perfectly matching Real Dark",
+  "repository": "https://github.com/Hakanbaban53/RealFire",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/RealFire-main.webp",
+      "alt": "RealFire screenshot"
+    }
+  ],
+  "tags": [
+    "animation",
+    "black",
+    "compact",
+    "dark",
+    "light",
+    "minimalistic",
+    "oneline",
+    "responsive",
+    "rounded"
+  ],
+  "submitterRole": "legacy",
+  "status": "archived",
+  "catalogIndex": 84,
+  "stats": {
+    "stars": 32,
+    "updatedAt": "2025-03-06T06:27:34Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/93117749?v=4",
+    "accessible": true
+  },
+  "retirement": {
+    "reason": "repository-archived",
+    "checkedAt": "2026-04-25T20:04:49.167Z",
+    "details": "Repository is archived by its owner."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Shina Fox",
+  "slug": "shina-fox",
+  "description": "A Minimal, Cozy, Vertical Optimized Firefox Theme",
+  "repository": "https://github.com/Shina-SG/Shina-Fox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/Shina.webp",
+      "alt": "Shina Fox screenshot"
+    }
+  ],
+  "tags": [
+    "adaptive",
+    "dark",
+    "light",
+    "minimal",
+    "shina",
+    "sidebery",
+    "vertical"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 90,
+  "stats": {
+    "stars": 480,
+    "updatedAt": "2024-05-24T23:41:47Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/135497382?v=4",
+    "accessible": true
+  }
+}

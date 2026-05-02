@@ -1,0 +1,28 @@
+{
+  "title": "Elegant Floorp",
+  "slug": "elegant-floorp",
+  "description": "Default Floorp Fluential UI modded",
+  "repository": "https://github.com/Mingo-coder/Elegant-Floorp",
+  "homepage": "https://github.com/Mingo-coder/Elegant-Floorp/releases/download/v1.0/Elegant_Floorp.zip",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/elegant_floorp.webp",
+      "alt": "Elegant Floorp screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "floorp",
+    "light",
+    "mingo-coder"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 123,
+  "stats": {
+    "stars": 1,
+    "updatedAt": "2025-04-06T03:53:06Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/177513443?v=4",
+    "accessible": true
+  }
+}

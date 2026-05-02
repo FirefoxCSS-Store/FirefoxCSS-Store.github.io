@@ -1,0 +1,84 @@
+name: Audit Theme Repositories
+
+on:
+  schedule:
+    - cron: '17 3 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: audit-theme-repositories
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Audit published and archived theme repositories
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          RETIREMENT_REPORT: theme-repository-audit.md
+        run: npm run audit:theme-repos
+
+      - run: npm test
+      - run: npm run build
+
+      - name: Open repository audit review PR
+        env:
+          GH_TOKEN: ${{ secrets.AUDIT_PR_TOKEN || github.token }}
+        shell: bash
+        run: |
+          if git diff --quiet -- src/content/themes; then
+            echo "No theme archive or removal changes proposed."
+            exit 0
+          fi
+
+          branch="automation/theme-repository-audit-$(date -u +%Y-%m)"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add src/content/themes
+          git commit -m "chore: propose theme repository audit changes"
+          git fetch --no-tags --depth=1 origin "$branch:refs/remotes/origin/$branch" || true
+          git push --force-with-lease origin "$branch"
+
+          manual_url="https://github.com/${GITHUB_REPOSITORY}/pull/new/${branch}"
+          title="Review archived or unavailable theme repositories"
+
+          if pr_url="$(gh pr view "$branch" --json url --jq .url 2>/dev/null)"; then
+            gh pr edit "$branch" \
+              --title "$title" \
+              --body-file theme-repository-audit.md
+            echo "Updated repository audit PR: ${pr_url}" >> "$GITHUB_STEP_SUMMARY"
+          else
+            if pr_url="$(gh pr create \
+              --base main \
+              --head "$branch" \
+              --title "$title" \
+              --body-file theme-repository-audit.md 2>pr-create-error.txt)"; then
+              echo "Created repository audit PR: ${pr_url}" >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "::warning::The audit branch was pushed, but GitHub refused to create the PR automatically."
+              cat pr-create-error.txt
+              {
+                echo "Repository audit changes were pushed to \`${branch}\`, but the workflow token could not create the PR automatically."
+                echo ""
+                echo "Open it manually: ${manual_url}"
+                echo ""
+                echo "To allow automatic PR creation, enable **Settings > Actions > General > Workflow permissions > Allow GitHub Actions to create and approve pull requests**, or add an \`AUDIT_PR_TOKEN\` secret with permission to create pull requests."
+              } >> "$GITHUB_STEP_SUMMARY"
+            fi
+          fi

@@ -1,0 +1,27 @@
+{
+  "title": "Simplify Darkish for Firefox",
+  "slug": "simplify-darkish-for-firefox",
+  "description": "A minimal Firefox Theme for those who would like to properly enjoy my Simplify 10 Darkish - Windows 10 Themes\n Compatibility: V89+",
+  "repository": "https://github.com/CristianDragos/FirefoxThemes",
+  "homepage": "https://github.com/CristianDragos/FirefoxThemes/tree/master/Simplify%20Darkish",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/simplify_darkish_for_firefox_preview.webp",
+      "alt": "Simplify Darkish for Firefox screenshot"
+    }
+  ],
+  "tags": [
+    "cristiandragos",
+    "dark",
+    "windows 10"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 6,
+  "stats": {
+    "stars": 141,
+    "updatedAt": "2021-10-07T12:23:11Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/3705687?v=4",
+    "accessible": true
+  }
+}

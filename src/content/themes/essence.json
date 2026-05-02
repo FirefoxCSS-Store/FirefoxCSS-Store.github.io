@@ -1,0 +1,30 @@
+{
+  "title": "Essence",
+  "slug": "essence",
+  "description": "Compact, beautiful and minimalistic theme for the Firefox web browser.",
+  "repository": "https://github.com/JarnotMaciej/Essence",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/essence.webp",
+      "alt": "Essence screenshot"
+    }
+  ],
+  "tags": [
+    "clean",
+    "compact",
+    "light",
+    "minimal",
+    "modern",
+    "oneline",
+    "rounded"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 82,
+  "stats": {
+    "stars": 42,
+    "updatedAt": "2024-07-08T10:58:01Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/92025751?v=4",
+    "accessible": true
+  }
+}

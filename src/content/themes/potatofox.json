@@ -1,0 +1,33 @@
+{
+  "title": "PotatoFox",
+  "slug": "potatofox",
+  "description": "A compact and minimal firefox theme using Sidebery",
+  "repository": "https://codeberg.org/awwpotato/PotatoFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/PotatoFox.webp",
+      "alt": "PotatoFox screenshot"
+    }
+  ],
+  "tags": [
+    "arc",
+    "compact",
+    "minimal",
+    "sidebery",
+    "vertical tabs"
+  ],
+  "submitterRole": "legacy",
+  "status": "archived",
+  "catalogIndex": 105,
+  "stats": {
+    "stars": 41,
+    "updatedAt": "2025-12-09T18:34:10+01:00",
+    "ownerAvatar": "https://codeberg.org/avatars/bd252d906010a016f1fd29e68e873ea983c8491eb70820d838ef2fa255d8a703",
+    "accessible": true
+  },
+  "retirement": {
+    "reason": "repository-archived",
+    "checkedAt": "2026-04-25T20:04:49.167Z",
+    "details": "Repository is archived by its owner."
+  }
+}

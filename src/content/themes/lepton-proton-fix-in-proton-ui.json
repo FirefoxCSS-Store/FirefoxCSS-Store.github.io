@@ -1,0 +1,24 @@
+{
+  "title": "Lepton(Proton Fix) in Proton UI",
+  "slug": "lepton-proton-fix-in-proton-ui",
+  "description": "🦊 I respect proton UI and aim to fix it. Icons, Padding, Tab Design...\n Compatibility: V89+",
+  "repository": "https://github.com/black7375/Firefox-UI-Fix",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/Lepton.webp",
+      "alt": "Lepton(Proton Fix) in Proton UI screenshot"
+    }
+  ],
+  "tags": [
+    "uncategorized"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 35,
+  "stats": {
+    "stars": 5805,
+    "updatedAt": "2026-02-06T00:06:12Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/25581533?v=4",
+    "accessible": true
+  }
+}

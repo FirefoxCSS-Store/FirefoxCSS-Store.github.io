@@ -1,0 +1,75 @@
+name: Submit a theme
+description: Share a Firefox userChrome.css theme repository with the hub.
+title: "[Theme]: "
+labels:
+  - theme submission
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing a Firefox CSS theme. This form opens a review issue; automation will turn it into a candidate pull request when possible.
+  - type: input
+    id: title
+    attributes:
+      label: Theme title
+      description: Use the public name of the theme.
+      placeholder: My Firefox Theme
+    validations:
+      required: true
+  - type: input
+    id: repository
+    attributes:
+      label: Original repository
+      description: Link to the source repository maintained by the author or project.
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+  - type: input
+    id: homepage
+    attributes:
+      label: Homepage
+      description: Optional project page, docs page, or website.
+      placeholder: https://example.com
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description
+      description: Keep it concise. Mention the visual style, layout idea, or main browser customization.
+      placeholder: A compact dark Firefox theme with vertical tabs and rounded controls.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshot URLs
+      description: Attach images here or paste direct image URLs. Use one screenshot per line when pasting links.
+      placeholder: Drag screenshots into this field, or paste image URLs.
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Use lowercase tags separated by commas, such as dark, compact, sidebery, oneline.
+      placeholder: dark, compact, sidebery
+    validations:
+      required: true
+  - type: dropdown
+    id: submitter_role
+    attributes:
+      label: Your relationship to the theme
+      options:
+        - Author
+        - Maintainer
+        - User or recommender
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes for reviewers
+      description: Optional compatibility notes, install caveats, or context for maintainers.
+    validations:
+      required: false

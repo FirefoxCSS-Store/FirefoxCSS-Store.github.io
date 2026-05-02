@@ -1,0 +1,29 @@
+{
+  "title": "SimpleFox",
+  "slug": "simplefox",
+  "description": "🦊 A Userstyle theme for Firefox minimalist and Keyboard centered.",
+  "repository": "https://github.com/migueravila/Simplefox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/simplefox.webp",
+      "alt": "SimpleFox screenshot"
+    }
+  ],
+  "tags": [
+    "compact",
+    "dark",
+    "keyboard",
+    "linux",
+    "migueravila",
+    "minimal"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 7,
+  "stats": {
+    "stars": 1878,
+    "updatedAt": "2022-04-24T18:56:19Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/35583825?v=4",
+    "accessible": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "TransparentFox",
+  "slug": "transparentfox",
+  "description": "Simple transparent title bar theme for Firefox and Thunderbird",
+  "repository": "https://github.com/ScanuNicco/TransperentFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/remote-131-transparentfox.webp",
+      "alt": "TransparentFox screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "firefox",
+    "scanurag",
+    "thunderbird",
+    "transparent"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 131,
+  "stats": {
+    "stars": 4,
+    "updatedAt": "2026-01-22T04:35:52Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/30136040?v=4",
+    "accessible": true
+  }
+}

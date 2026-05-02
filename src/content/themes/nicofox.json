@@ -1,0 +1,25 @@
+{
+  "title": "NicoFox",
+  "slug": "nicofox",
+  "description": "A simple rounded theme",
+  "repository": "https://github.com/SlowNicoFish/NicoFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/22381112138598-fe8cd400-8bd1-11eb-8eed-edcca2c689d8.webp",
+      "alt": "NicoFox screenshot"
+    }
+  ],
+  "tags": [
+    "minimal",
+    "rounded"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 23,
+  "stats": {
+    "stars": 6,
+    "updatedAt": "2021-03-23T00:04:37Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/19305293?v=4",
+    "accessible": true
+  }
+}

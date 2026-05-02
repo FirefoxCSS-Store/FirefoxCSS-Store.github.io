@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+
+const themeSubmissionUrl = 'https://github.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io/issues/new?template=theme-submission.yml'
+---
+<BaseLayout title="Submit a Theme | FirefoxCSS-Store" description="Share a Firefox userChrome.css theme with the FirefoxCSS-Store catalog.">
+  <main class="submit-page">
+    <section class="submit-hero">
+      <p class="eyebrow">Community submissions</p>
+      <h1>Share a Firefox theme repository with the hub.</h1>
+      <p>Submissions start as GitHub issues. Automation turns complete reports into candidate pull requests, and entries become public only after maintainer review.</p>
+      <div class="detail-actions">
+        <a href={themeSubmissionUrl}>Submit on GitHub</a>
+      </div>
+    </section>
+
+    <section class="submission-grid" aria-label="Submission expectations">
+      <div>
+        <h2>What to submit</h2>
+        <p>Use the original repository URL, a short description, screenshots, and normalized tags. You can submit your own theme or recommend someone else's work.</p>
+      </div>
+      <div>
+        <h2>What automation does</h2>
+        <p>Automation creates a candidate JSON entry, stores submitted screenshots with the site assets, and opens a pull request for review. It does not publish themes directly.</p>
+      </div>
+      <div>
+        <h2>Review status</h2>
+        <p>Candidate themes are kept out of the public catalog until they are reviewed and switched to published.</p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

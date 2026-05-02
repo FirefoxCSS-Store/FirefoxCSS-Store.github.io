@@ -1,0 +1,28 @@
+{
+  "title": "Firefox-Mod-Blur",
+  "slug": "firefox-mod-blur",
+  "description": "Tested 84.0.1 Windows 10 / Default Dark Theme",
+  "repository": "https://github.com/datguypiko/Firefox-Mod-Blur",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/firefoxmodblur.webp",
+      "alt": "Firefox-Mod-Blur screenshot"
+    }
+  ],
+  "tags": [
+    "blur",
+    "centre",
+    "dark",
+    "datguypiko",
+    "rounded"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 12,
+  "stats": {
+    "stars": 1685,
+    "updatedAt": "2026-04-24T15:34:30Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/61329159?v=4",
+    "accessible": true
+  }
+}

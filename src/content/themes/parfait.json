@@ -1,0 +1,29 @@
+{
+  "title": "Parfait",
+  "slug": "parfait",
+  "description": "A tasty theme modification for Firefox 🦊",
+  "repository": "https://github.com/reizumii/parfait",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/parfait.webp",
+      "alt": "Parfait screenshot"
+    }
+  ],
+  "tags": [
+    "compact",
+    "lightweight",
+    "minimal",
+    "reizumii",
+    "sidebar",
+    "vertical tabs"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 129,
+  "stats": {
+    "stars": 144,
+    "updatedAt": "2026-04-22T12:51:51Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/204603744?v=4",
+    "accessible": true
+  }
+}

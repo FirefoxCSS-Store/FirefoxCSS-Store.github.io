@@ -1,0 +1,29 @@
+{
+  "title": "minimalFOX",
+  "slug": "minimalfox",
+  "description": "A compact & minimal Firefox theme built for macOS.",
+  "repository": "https://github.com/marmmaz/FirefoxCSS",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/minimalfox.webp",
+      "alt": "minimalFOX screenshot"
+    }
+  ],
+  "tags": [
+    "auto-hide",
+    "compact",
+    "dark",
+    "floating bar",
+    "macos",
+    "marmazz"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 3,
+  "stats": {
+    "stars": 77,
+    "updatedAt": "2021-10-13T19:11:07Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/71498246?v=4",
+    "accessible": true
+  }
+}

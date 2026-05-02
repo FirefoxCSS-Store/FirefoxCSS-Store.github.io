@@ -1,0 +1,31 @@
+{
+  "title": "Oneliner Deluxe",
+  "slug": "oneliner-deluxe",
+  "description": "Minimal, customizable and theme compatible \n Compatibility: V91+",
+  "repository": "https://github.com/Doosty/Oneliner-Deluxe",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/Oneliner_Deluxe.webp",
+      "alt": "Oneliner Deluxe screenshot"
+    }
+  ],
+  "tags": [
+    "doosty",
+    "one-line",
+    "v91"
+  ],
+  "submitterRole": "legacy",
+  "status": "archived",
+  "catalogIndex": 54,
+  "stats": {
+    "stars": 18,
+    "updatedAt": "2022-01-18T22:09:39Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/747588?v=4",
+    "accessible": true
+  },
+  "retirement": {
+    "reason": "repository-archived",
+    "checkedAt": "2026-04-25T20:04:49.167Z",
+    "details": "Repository is archived by its owner."
+  }
+}

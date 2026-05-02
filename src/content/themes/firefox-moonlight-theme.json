@@ -1,0 +1,28 @@
+{
+  "title": "Firefox Moonlight Theme",
+  "slug": "firefox-moonlight-theme",
+  "description": "A sleek and modern dark blue Firefox theme with smooth, rounded elements for a refined browsing experience.",
+  "repository": "https://github.com/sinazadeh/Firefox-Moonlight-Theme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/remote-122-firefox-moonlight-theme.webp",
+      "alt": "Firefox Moonlight Theme screenshot"
+    }
+  ],
+  "tags": [
+    "blue",
+    "cerulean",
+    "dark",
+    "round",
+    "sina"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 122,
+  "stats": {
+    "stars": 4,
+    "updatedAt": "2025-02-13T22:08:42Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/63080674?v=4",
+    "accessible": true
+  }
+}

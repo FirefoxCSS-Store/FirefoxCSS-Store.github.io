@@ -1,0 +1,31 @@
+{
+  "title": "Edge-Frfox",
+  "slug": "edge-frfox",
+  "description": "A Firefox userChrome.css theme that aims to recreate the look and feel of Microsoft Edge.",
+  "repository": "https://github.com/bmFtZQ/Edge-FrFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/Edge-Frfox.webp",
+      "alt": "Edge-Frfox screenshot"
+    }
+  ],
+  "tags": [
+    "bmftzq",
+    "dark",
+    "fluent",
+    "light",
+    "linux",
+    "mac",
+    "microsoft",
+    "windows"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 22,
+  "stats": {
+    "stars": 763,
+    "updatedAt": "2026-04-03T12:59:23Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/62812711?v=4",
+    "accessible": true
+  }
+}

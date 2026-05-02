@@ -1,0 +1,29 @@
+{
+  "title": "NewFox",
+  "slug": "newfox",
+  "description": "A minimal medieval animated theme for Firefox",
+  "repository": "https://github.com/Mr-the-beginner/NewFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/remote-130-newfox.webp",
+      "alt": "NewFox screenshot"
+    }
+  ],
+  "tags": [
+    "animated",
+    "auto",
+    "lightweight",
+    "medieval",
+    "minimal",
+    "mr-the-beginner"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 130,
+  "stats": {
+    "stars": 86,
+    "updatedAt": "2026-04-25T18:13:34Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/134204793?v=4",
+    "accessible": true
+  }
+}

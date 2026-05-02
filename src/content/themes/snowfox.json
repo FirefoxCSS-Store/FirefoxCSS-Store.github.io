@@ -1,0 +1,27 @@
+{
+  "title": "SnowFox",
+  "slug": "snowfox",
+  "description": "Modern blue glass theme with side bookmark bar",
+  "repository": "https://github.com/naveensagar765/SnowFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/snowfox.webp",
+      "alt": "SnowFox screenshot"
+    }
+  ],
+  "tags": [
+    "blue",
+    "home page",
+    "moder",
+    "side-bookmark-bar"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 107,
+  "stats": {
+    "stars": 12,
+    "updatedAt": "2025-02-09T13:37:31Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/155926112?v=4",
+    "accessible": true
+  }
+}

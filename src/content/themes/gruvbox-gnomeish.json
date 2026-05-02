@@ -1,0 +1,27 @@
+{
+  "title": "Gruvbox GNOMEish",
+  "slug": "gruvbox-gnomeish",
+  "description": "A minimal Firefox theme inspired by the aesthetics of Gruvbox and GNOME.",
+  "repository": "https://github.com/xslhub/gruvbox-gnomeish-firefox-theme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/remote-128-gruvbox-gnomeish.webp",
+      "alt": "Gruvbox GNOMEish screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "gnome",
+    "gruvbox",
+    "xslhub"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 128,
+  "stats": {
+    "stars": 7,
+    "updatedAt": "2025-10-14T20:58:43Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/158527507?v=4",
+    "accessible": true
+  }
+}

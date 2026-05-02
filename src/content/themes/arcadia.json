@@ -1,0 +1,31 @@
+{
+  "title": "arcadia",
+  "slug": "arcadia",
+  "description": "Minimal Firefox theme and user.js focused on speed and design",
+  "repository": "https://github.com/tyrohellion/arcadia",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/arcadia.webp",
+      "alt": "arcadia screenshot"
+    }
+  ],
+  "tags": [
+    "clean",
+    "compact",
+    "dark",
+    "hovercards",
+    "minimal",
+    "minimalistic",
+    "simple",
+    "tyro"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 0,
+  "stats": {
+    "stars": 20,
+    "updatedAt": "2026-01-28T10:47:31Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/51808054?v=4",
+    "accessible": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "git userChrome",
+  "slug": "git-userchrome",
+  "description": "An automation tool for installing userChrome Themes",
+  "repository": "https://github.com/soulhotel/git-userChrome",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/remote-127-git-userchrome.gif",
+      "alt": "git userChrome screenshot"
+    }
+  ],
+  "tags": [
+    "automation",
+    "firefox",
+    "git",
+    "tool",
+    "userchrome"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 127,
+  "stats": {
+    "stars": 56,
+    "updatedAt": "2025-08-27T21:28:32Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/155501797?v=4",
+    "accessible": true
+  }
+}

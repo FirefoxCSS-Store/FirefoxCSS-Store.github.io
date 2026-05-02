@@ -1,0 +1,27 @@
+{
+  "title": "TYH Fox",
+  "slug": "tyh-fox",
+  "description": "A firefox Theme CSS",
+  "repository": "https://github.com/tyuhao/TYHfox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/TYHFox.webp",
+      "alt": "TYH Fox screenshot"
+    }
+  ],
+  "tags": [
+    "adaptive",
+    "dark",
+    "light",
+    "tyhfox"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 66,
+  "stats": {
+    "stars": 13,
+    "updatedAt": "2025-09-21T07:44:01Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/47909858?v=4",
+    "accessible": true
+  }
+}

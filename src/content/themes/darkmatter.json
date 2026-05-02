@@ -1,0 +1,27 @@
+{
+  "title": "DarkMatter",
+  "slug": "darkmatter",
+  "description": "An intensively worked on, and highly customized dark theme made for Firefox Proton, stretching darkness into every corner of the browser and perfecting even the tiniest details",
+  "repository": "https://github.com/BloodyHell619/Firefox-Theme-DarkMatter",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/darkmatter.webp",
+      "alt": "DarkMatter screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "proton",
+    "squared",
+    "vertical"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 79,
+  "stats": {
+    "stars": 75,
+    "updatedAt": "2024-10-13T06:44:57Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/65298540?v=4",
+    "accessible": true
+  }
+}

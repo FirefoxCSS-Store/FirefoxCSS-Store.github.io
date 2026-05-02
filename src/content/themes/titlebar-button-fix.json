@@ -1,0 +1,26 @@
+{
+  "title": "Titlebar-Button-Fix",
+  "slug": "titlebar-button-fix",
+  "description": "This theme fixes titlebar min max close buttons for Firefox in linux.",
+  "repository": "https://github.com/birbkeks/Firefox-Titlebar-Button-Fix",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/titlebarfix.webp",
+      "alt": "Titlebar-Button-Fix screenshot"
+    }
+  ],
+  "tags": [
+    "birbkeks",
+    "fix",
+    "titlebar"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 1,
+  "stats": {
+    "stars": 6,
+    "updatedAt": "2024-05-12T18:57:05Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/67545942?v=4",
+    "accessible": true
+  }
+}

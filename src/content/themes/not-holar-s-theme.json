@@ -1,0 +1,27 @@
+{
+  "title": "not-holar's theme",
+  "slug": "not-holar-s-theme",
+  "description": "Welcome to the repo for my Firefox theme, a theme that aims to look nice and clean while not compromising functionality.\n Compatibility: V89+",
+  "repository": "https://github.com/not-holar/my_firefox_theme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/MyFirefoxThemenotholar.webp",
+      "alt": "not-holar's theme screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "not-holar",
+    "stylus",
+    "tree style"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 11,
+  "stats": {
+    "stars": 88,
+    "updatedAt": "2022-10-17T13:05:29Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/58831297?v=4",
+    "accessible": true
+  }
+}

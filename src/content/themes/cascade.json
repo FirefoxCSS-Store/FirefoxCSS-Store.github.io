@@ -1,0 +1,32 @@
+{
+  "title": "Cascade",
+  "slug": "cascade",
+  "description": "A responsive \"One-Line\" theme based on SimpleFox for the new ProtonUI.  \n Compatibility: V91+",
+  "repository": "https://github.com/andreasgrafen/cascade",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/cascade.webp",
+      "alt": "Cascade screenshot"
+    }
+  ],
+  "tags": [
+    "andreasgrafen",
+    "dark",
+    "light",
+    "minial",
+    "one-line",
+    "oneline",
+    "proton",
+    "responsive",
+    "v91"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 50,
+  "stats": {
+    "stars": 1597,
+    "updatedAt": "2025-10-02T01:05:43Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/159644623?v=4",
+    "accessible": true
+  }
+}

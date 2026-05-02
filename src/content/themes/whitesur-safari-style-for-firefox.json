@@ -1,0 +1,26 @@
+{
+  "title": "WhiteSur Safari style for Firefox",
+  "slug": "whitesur-safari-style-for-firefox",
+  "description": "Make your Firefox look like Safari. MacOS Big Sur inspired theme for Firefox on MacOS & Windows.\n Compatibility: V89+",
+  "repository": "https://github.com/adamxweb/WhiteSurFirefoxThemeMacOS",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/whitesur.webp",
+      "alt": "WhiteSur Safari style for Firefox screenshot"
+    }
+  ],
+  "tags": [
+    "apple",
+    "mac",
+    "safari"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 28,
+  "stats": {
+    "stars": 614,
+    "updatedAt": "2025-07-26T05:43:43Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/6800453?v=4",
+    "accessible": true
+  }
+}

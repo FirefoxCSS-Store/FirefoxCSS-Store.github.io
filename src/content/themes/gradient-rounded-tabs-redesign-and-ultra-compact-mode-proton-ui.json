@@ -1,0 +1,24 @@
+{
+  "title": "Gradient rounded tabs redesign and ultra compact mode [Proton UI]",
+  "slug": "gradient-rounded-tabs-redesign-and-ultra-compact-mode-proton-ui",
+  "description": "Firefox Proton UI minimal changes with nav-bar-connected rounded tabs, reduced compact mode, nightly color gradient accents etc.. \n Compatibility: V89+",
+  "repository": "https://github.com/sagars007/Proton-UI-connected-rounded-tabs-firefox-css",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/proton-ui-gradient-rounded-tabs-display.webp",
+      "alt": "Gradient rounded tabs redesign and ultra compact mode [Proton UI] screenshot"
+    }
+  ],
+  "tags": [
+    "uncategorized"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 38,
+  "stats": {
+    "stars": 36,
+    "updatedAt": "2023-05-14T06:24:23Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/56472130?v=4",
+    "accessible": true
+  }
+}

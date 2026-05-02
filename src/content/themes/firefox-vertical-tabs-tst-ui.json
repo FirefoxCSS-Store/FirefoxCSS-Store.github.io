@@ -1,0 +1,26 @@
+{
+  "title": "Firefox vertical tabs (TST) UI",
+  "slug": "firefox-vertical-tabs-tst-ui",
+  "description": "Vertical tabs in Firefox using tree style tabs. Vibrant tab selectors, full dark mode, titlebar text in nav-bar and much more.\n Compatibility: V89+",
+  "repository": "https://github.com/sagars007/Firefox-vertical-tabs-customUI",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/compact_verticaltabs_view.webp",
+      "alt": "Firefox vertical tabs (TST) UI screenshot"
+    }
+  ],
+  "tags": [
+    "sidebar",
+    "sidetab",
+    "tree"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 34,
+  "stats": {
+    "stars": 33,
+    "updatedAt": "2021-09-04T19:49:09Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/56472130?v=4",
+    "accessible": true
+  }
+}

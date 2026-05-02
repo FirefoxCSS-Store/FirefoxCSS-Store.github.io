@@ -1,0 +1,31 @@
+{
+  "title": "wmfox",
+  "slug": "wmfox",
+  "description": "Minimalist keyboard oriented theme with tab numbering for easier navigation.",
+  "repository": "https://github.com/cankurttekin/wmfox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/remote-132-wmfox.webp",
+      "alt": "wmfox screenshot"
+    }
+  ],
+  "tags": [
+    "cankurttekin/wmfox",
+    "dark",
+    "i3",
+    "keyboard",
+    "light",
+    "sway",
+    "tab numbers",
+    "wm"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 132,
+  "stats": {
+    "stars": 2,
+    "updatedAt": "2026-04-11T15:47:45Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/29798399?v=4",
+    "accessible": true
+  }
+}

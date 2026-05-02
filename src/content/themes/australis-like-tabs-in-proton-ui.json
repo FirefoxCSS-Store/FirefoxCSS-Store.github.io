@@ -1,0 +1,24 @@
+{
+  "title": "Australis like tabs in Proton UI",
+  "slug": "australis-like-tabs-in-proton-ui",
+  "description": "Changes to make the new proton UI redesign in Firefox better; including changes to tabs, more compact-compact mode, proton gradient accents in elements and much more\n Compatibility: V89+",
+  "repository": "https://github.com/sagars007/Australis-like-tabs-FF-ProtonUI-changes",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/custom_australistabs_protonUI.webp",
+      "alt": "Australis like tabs in Proton UI screenshot"
+    }
+  ],
+  "tags": [
+    "compact"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 33,
+  "stats": {
+    "stars": 12,
+    "updatedAt": "2021-06-10T07:37:39Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/56472130?v=4",
+    "accessible": true
+  }
+}

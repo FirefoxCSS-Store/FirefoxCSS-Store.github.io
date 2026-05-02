@@ -1,0 +1,29 @@
+{
+  "title": "Minimal-Arc",
+  "slug": "minimal-arc",
+  "description": "Minimal light Firefox theme with Arc like design with vertical tabs",
+  "repository": "https://github.com/zayihu/Minimal-Arc",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/minimal_arc.webp",
+      "alt": "Minimal-Arc screenshot"
+    }
+  ],
+  "tags": [
+    "arc browser",
+    "compact",
+    "light",
+    "minimal",
+    "sidebery",
+    "vertical-tabs"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 106,
+  "stats": {
+    "stars": 63,
+    "updatedAt": "2024-09-07T06:13:59Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/167391787?v=4",
+    "accessible": true
+  }
+}

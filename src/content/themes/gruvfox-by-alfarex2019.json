@@ -1,0 +1,28 @@
+{
+  "title": "GruvFox by Alfarex2019",
+  "slug": "gruvfox-by-alfarex2019",
+  "description": "GruvFox is a remix of dpcdpc11's theme, featuring the gruvbox color palette.\n Compatibility: V91+",
+  "repository": "https://github.com/FirefoxCSSThemers/GruvFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/20930130265614-a7559ea7-70fd-44f9-a790-34c5c0e31493.webp",
+      "alt": "GruvFox by Alfarex2019 screenshot"
+    }
+  ],
+  "tags": [
+    "alfarexguy2019",
+    "dark",
+    "gruv",
+    "pure",
+    "v91"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 46,
+  "stats": {
+    "stars": 22,
+    "updatedAt": "2021-08-31T02:33:56Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/84518514?v=4",
+    "accessible": true
+  }
+}

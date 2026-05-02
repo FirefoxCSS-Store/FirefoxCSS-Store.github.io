@@ -1,0 +1,31 @@
+{
+  "title": "FrameUI for Firefox",
+  "slug": "frameui-for-firefox",
+  "description": "A new way to view your web content. Like looking at photos printed from an old Polaroid camera.",
+  "repository": "https://github.com/FineFuturity/FrameUIForFirefox/",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/FrameUIScreenshot.webp",
+      "alt": "FrameUI for Firefox screenshot"
+    }
+  ],
+  "tags": [
+    "finefuturity",
+    "immersive",
+    "minimal",
+    "one line",
+    "sidebery",
+    "tab center reborn",
+    "toolbars on bottom",
+    "vertical tabs"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 96,
+  "stats": {
+    "stars": 68,
+    "updatedAt": "2024-12-03T23:57:05Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/19298107?v=4",
+    "accessible": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "title": "ArcWTF",
+  "slug": "arcwtf",
+  "description": "UserChrome.css theme to bring Arc Browser look from Windows to Firefox!",
+  "repository": "https://github.com/KiKaraage/ArcWTF/",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/arcwtf.webp",
+      "alt": "ArcWTF screenshot"
+    }
+  ],
+  "tags": [
+    "arc browser",
+    "autohide",
+    "dark",
+    "kikaraage",
+    "light",
+    "minimal",
+    "sidebery",
+    "vertical tabs"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 95,
+  "stats": {
+    "stars": 1733,
+    "updatedAt": "2025-11-14T07:18:17Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/10529881?v=4",
+    "accessible": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Dark Star",
+  "slug": "dark-star",
+  "description": "A color-customizable, zero navbar padding skin, modified from Starry Fox",
+  "repository": "https://gitlab.com/ivelieu/dark-star-firefox-skin",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/11608darkstar_3.webp",
+      "alt": "Dark Star screenshot"
+    }
+  ],
+  "tags": [
+    "customizable",
+    "dark",
+    "ivelieu",
+    "minimal",
+    "zeropadding"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 86,
+  "stats": {
+    "stars": 3,
+    "updatedAt": "2023-11-19T00:38:22.034Z",
+    "ownerAvatar": "https://gitlab.com/uploads/-/system/user/avatar/18385334/avatar.png",
+    "accessible": true
+  }
+}

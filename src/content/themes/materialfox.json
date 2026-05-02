@@ -1,0 +1,27 @@
+{
+  "title": "MaterialFox",
+  "slug": "materialfox",
+  "description": "A Material Design-inspired userChrome.css theme for Firefox",
+  "repository": "https://github.com/muckSponge/MaterialFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/materialfox.webp",
+      "alt": "MaterialFox screenshot"
+    }
+  ],
+  "tags": [
+    "colorscheme",
+    "dark",
+    "light",
+    "mucksponge"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 15,
+  "stats": {
+    "stars": 1971,
+    "updatedAt": "2024-09-23T08:58:42Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/5405629?v=4",
+    "accessible": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Modoki Firefox",
+  "slug": "modoki-firefox",
+  "description": "Bringing the classic Modern Modoki Netscape theme back",
+  "repository": "https://github.com/soup-bowl/Modoki-Firefox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/soupbowlmodoki.webp",
+      "alt": "Modoki Firefox screenshot"
+    }
+  ],
+  "tags": [
+    "classic",
+    "light",
+    "netscape",
+    "retro",
+    "skeuomorphic",
+    "soup-bowl"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 70,
+  "stats": {
+    "stars": 96,
+    "updatedAt": "2026-04-25T22:39:53Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/11209477?v=4",
+    "accessible": true
+  }
+}

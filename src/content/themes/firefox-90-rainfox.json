@@ -1,0 +1,29 @@
+{
+  "title": "[Firefox 90+] RainFox",
+  "slug": "firefox-90-rainfox",
+  "description": "Restores Photon's look and feel but keeps Proton's clarity with some improvements and new features. \n Compatibility: V89+",
+  "repository": "https://github.com/1280px/rainfox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/rainfox.webp",
+      "alt": "[Firefox 90+] RainFox screenshot"
+    }
+  ],
+  "tags": [
+    "uncategorized"
+  ],
+  "submitterRole": "legacy",
+  "status": "archived",
+  "catalogIndex": 37,
+  "stats": {
+    "stars": 73,
+    "updatedAt": "2022-02-04T15:28:44Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/71165491?v=4",
+    "accessible": true
+  },
+  "retirement": {
+    "reason": "repository-archived",
+    "checkedAt": "2026-04-25T20:04:49.167Z",
+    "details": "Repository is archived by its owner."
+  }
+}

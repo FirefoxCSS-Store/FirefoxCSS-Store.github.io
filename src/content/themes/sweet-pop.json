@@ -1,0 +1,30 @@
+{
+  "title": "Sweet_Pop!",
+  "slug": "sweet-pop",
+  "description": "Sweet_Pop! Minimalist oneliner theme for Firefox perfectly matching Sweet Dark.",
+  "repository": "https://github.com/PROxZIMA/Sweet-Pop",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/sweetpop.webp",
+      "alt": "Sweet_Pop! screenshot"
+    }
+  ],
+  "tags": [
+    "auto-hide",
+    "blue",
+    "dark",
+    "floating bar",
+    "light",
+    "modern",
+    "proxzima"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 2,
+  "stats": {
+    "stars": 264,
+    "updatedAt": "2023-03-25T10:54:34Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/43103163?v=4",
+    "accessible": true
+  }
+}

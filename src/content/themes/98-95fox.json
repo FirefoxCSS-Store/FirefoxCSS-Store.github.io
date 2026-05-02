@@ -1,0 +1,29 @@
+{
+  "title": "98/95fox",
+  "slug": "98-95fox",
+  "description": "Chicago 95 & Windows95/98-like theme for firefox",
+  "repository": "https://github.com/osem598/Firefox-98",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/ff95.webp",
+      "alt": "98/95fox screenshot"
+    }
+  ],
+  "tags": [
+    "95",
+    "98",
+    "chicago",
+    "light",
+    "osem598",
+    "retro"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 94,
+  "stats": {
+    "stars": 44,
+    "updatedAt": "2026-04-04T18:10:09Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/67332812?v=4",
+    "accessible": true
+  }
+}

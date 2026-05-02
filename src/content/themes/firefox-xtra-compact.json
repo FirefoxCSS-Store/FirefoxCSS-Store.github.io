@@ -1,0 +1,26 @@
+{
+  "title": "Firefox Xtra Compact",
+  "slug": "firefox-xtra-compact",
+  "description": "Aims to make Firefox more compact and give a tiny bit more web view area for low-screen devices.",
+  "repository": "https://github.com/CarterSnich/firefox-xtra-compact",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/xtracompact.webp",
+      "alt": "Firefox Xtra Compact screenshot"
+    }
+  ],
+  "tags": [
+    "cartersnich",
+    "compact",
+    "themeless"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 103,
+  "stats": {
+    "stars": 25,
+    "updatedAt": "2025-09-21T00:00:31Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/52433531?v=4",
+    "accessible": true
+  }
+}

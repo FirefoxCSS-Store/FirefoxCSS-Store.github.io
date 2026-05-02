@@ -1,0 +1,32 @@
+{
+  "title": "Material Fox Updated",
+  "slug": "material-fox-updated",
+  "description": "🦊 Firefox user CSS theme looks similar to Chrome.",
+  "repository": "https://github.com/edelvarden/material-fox-updated",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/material-fox-updated-preview.webp",
+      "alt": "Material Fox Updated screenshot"
+    }
+  ],
+  "tags": [
+    "customizable",
+    "dark",
+    "light",
+    "material",
+    "material-design",
+    "modern",
+    "refresh",
+    "rtl",
+    "updated"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 117,
+  "stats": {
+    "stars": 655,
+    "updatedAt": "2025-08-29T18:54:12Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/42596339?v=4",
+    "accessible": true
+  }
+}

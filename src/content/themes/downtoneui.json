@@ -1,0 +1,26 @@
+{
+  "title": "DownToneUI",
+  "slug": "downtoneui",
+  "description": "A modular UI customization for Firefox, using Sidebery for vertical tabs.",
+  "repository": "https://github.com/oviung/DownToneUI-Firefox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/remote-121-downtoneui.gif",
+      "alt": "DownToneUI screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "sidebery",
+    "vertical"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 121,
+  "stats": {
+    "stars": 63,
+    "updatedAt": "2026-03-09T16:39:58Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/8101674?v=4",
+    "accessible": true
+  }
+}

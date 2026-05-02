@@ -1,0 +1,30 @@
+{
+  "title": "Clean and Transparent",
+  "slug": "clean-and-transparent",
+  "description": "Clean theme with as much transparency as Firefox lets you do \n Compatibility: V91+",
+  "repository": "https://github.com/Filip-Sutkowy/blurclean-firefox-theme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/Clean_and_Transparent.webp",
+      "alt": "Clean and Transparent screenshot"
+    }
+  ],
+  "tags": [
+    "blur",
+    "dark",
+    "filip-sutkowy",
+    "light",
+    "pure",
+    "transparency",
+    "v91"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 57,
+  "stats": {
+    "stars": 111,
+    "updatedAt": "2021-09-29T21:49:09Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/24491499?v=4",
+    "accessible": true
+  }
+}

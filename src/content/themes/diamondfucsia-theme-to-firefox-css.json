@@ -1,0 +1,24 @@
+{
+  "title": "DiamondFucsia Theme to Firefox Css",
+  "slug": "diamondfucsia-theme-to-firefox-css",
+  "description": "Dark Theme to Firefox with Fuchsia Colors\n Compatibility: V89+",
+  "repository": "https://github.com/Godiesc/DiamondFucsia",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/diamondfucsia.webp",
+      "alt": "DiamondFucsia Theme to Firefox Css screenshot"
+    }
+  ],
+  "tags": [
+    "godiesc"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 32,
+  "stats": {
+    "stars": 6,
+    "updatedAt": "2023-11-25T12:46:57Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/22057609?v=4",
+    "accessible": true
+  }
+}

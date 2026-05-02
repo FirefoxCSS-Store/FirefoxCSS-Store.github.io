@@ -1,0 +1,25 @@
+{
+  "title": "Pseudo-fullscreen Firefox",
+  "slug": "pseudo-fullscreen-firefox",
+  "description": "Hides and improves interface Firefox and YouTube, giving maximum space for content and aiding concentration",
+  "repository": "https://github.com/ongots/pseudo-fullscreen-firefox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/always-fullscreen-firefox.webp",
+      "alt": "Pseudo-fullscreen Firefox screenshot"
+    }
+  ],
+  "tags": [
+    "sidebar",
+    "toolkit"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 27,
+  "stats": {
+    "stars": 69,
+    "updatedAt": "2026-02-28T16:48:31Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/43604031?v=4",
+    "accessible": true
+  }
+}

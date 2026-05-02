@@ -1,0 +1,27 @@
+{
+  "title": "cyanmatrx",
+  "slug": "cyanmatrx",
+  "description": "a simple, cool-esque, cyan monospace theme.",
+  "repository": "https://github.com/Barnacl437/cyanmatrx",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/cyanmatrx.webp",
+      "alt": "cyanmatrx screenshot"
+    }
+  ],
+  "tags": [
+    "cyan",
+    "cyanmatrx",
+    "dark",
+    "minimal"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 120,
+  "stats": {
+    "stars": 2,
+    "updatedAt": "2025-06-13T15:42:36Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/87983017?v=4",
+    "accessible": true
+  }
+}

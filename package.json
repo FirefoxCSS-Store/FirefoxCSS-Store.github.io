@@ -1,34 +1,26 @@
 {
-  "name": "FirefoxCSSStore",
+  "name": "firefoxcss-store",
   "version": "1.0.0",
-  "description": "Firefox CSS Store",
+  "description": "A community catalog for discovering and sharing Firefox userChrome.css themes.",
   "scripts": {
-    "build": "gulp",
-    "test": "node tests/themes.check.js"
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "test": "node scripts/validate-themes.mjs",
+    "audit:theme-repos": "node scripts/audit-theme-repositories.mjs",
+    "refresh:themes": "node scripts/refresh-theme-stats.mjs"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:FirefoxCSS-Store/FirefoxCSS-Store.github.io.git"
   },
   "overrides": {
-    "@parcel/watcher": {
-      "picomatch": "^4.0.4"
-    },
-    "jstransformer-markdown-it": {
-      "markdown-it": "^14.1.1"
-    }
+    "yaml": "^2.8.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.29.0",
-    "@babel/preset-env": "^7.29.2",
-    "gulp": "^5.0.1",
-    "gulp-autoprefixer": "^10.0.0",
-    "gulp-babel": "^8.0.0",
-    "gulp-pug": "^5.0.0",
-    "gulp-sass": "^6.0.1",
-    "gulp-terser": "^2.1.0",
-    "jstransformer-markdown-it": "^3.0.0",
-    "sass": "^1.99.0",
-    "sharp": "^0.34.5"
+    "@astrojs/check": "^0.9.8",
+    "astro": "^6.1.9",
+    "typescript": "^5.9.3",
+    "zod": "^4.3.6"
   }
 }

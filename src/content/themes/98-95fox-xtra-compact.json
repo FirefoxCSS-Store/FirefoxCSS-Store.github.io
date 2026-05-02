@@ -1,0 +1,31 @@
+{
+  "title": "98/95fox Xtra Compact",
+  "slug": "98-95fox-xtra-compact",
+  "description": "The mix of nostalgia and compact.",
+  "repository": "https://github.com/vintnarni/Firefox-98-Xtra-Compact",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/ff95xtracompact.webp",
+      "alt": "98/95fox Xtra Compact screenshot"
+    }
+  ],
+  "tags": [
+    "95",
+    "98",
+    "chicago",
+    "compact",
+    "light",
+    "programneer",
+    "retro",
+    "xtra"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 111,
+  "stats": {
+    "stars": 13,
+    "updatedAt": "2024-11-02T17:56:51Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/132811907?v=4",
+    "accessible": true
+  }
+}

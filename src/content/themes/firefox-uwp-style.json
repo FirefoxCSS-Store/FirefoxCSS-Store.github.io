@@ -1,0 +1,26 @@
+{
+  "title": "Firefox UWP Style",
+  "slug": "firefox-uwp-style",
+  "description": "A theme that follows UWP styling. Featuring the original MDL2 design and Sun Valley refresh",
+  "repository": "https://github.com/Guerra24/Firefox-UWP-Style",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/firefoxuwpstyle.webp",
+      "alt": "Firefox UWP Style screenshot"
+    }
+  ],
+  "tags": [
+    "colorscheme",
+    "dark",
+    "guerra24"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 16,
+  "stats": {
+    "stars": 453,
+    "updatedAt": "2026-04-13T02:21:32Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/9023392?v=4",
+    "accessible": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "minimal-one-line-firefox",
+  "slug": "minimal-one-line-firefox",
+  "description": "A minimal oneliner, to minimizing the space used for url and tab bar",
+  "repository": "https://github.com/ttntm/minimal-one-line-firefox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/molff.webp",
+      "alt": "minimal-one-line-firefox screenshot"
+    }
+  ],
+  "tags": [
+    "compact",
+    "dark",
+    "light",
+    "minimalistic",
+    "oneline",
+    "squared"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 83,
+  "stats": {
+    "stars": 46,
+    "updatedAt": "2024-06-15T16:07:30Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/41571384?v=4",
+    "accessible": true
+  }
+}

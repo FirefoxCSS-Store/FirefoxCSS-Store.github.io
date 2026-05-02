@@ -1,0 +1,32 @@
+{
+  "title": "Arc UI",
+  "slug": "arc-ui",
+  "description": "Make your Firefox like the Arc Browser.",
+  "repository": "https://github.com/dxdotdev/arc-ui",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/29957ui.webp",
+      "alt": "Arc UI screenshot"
+    }
+  ],
+  "tags": [
+    "arc browser",
+    "compact",
+    "dxdotdev",
+    "modern"
+  ],
+  "submitterRole": "legacy",
+  "status": "archived",
+  "catalogIndex": 115,
+  "stats": {
+    "stars": 74,
+    "updatedAt": "2025-01-05T13:34:56Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/157044645?v=4",
+    "accessible": true
+  },
+  "retirement": {
+    "reason": "repository-archived",
+    "checkedAt": "2026-04-25T20:04:49.167Z",
+    "details": "Repository is archived by its owner."
+  }
+}

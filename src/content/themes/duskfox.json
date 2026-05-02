@@ -1,0 +1,25 @@
+{
+  "title": "duskFox",
+  "slug": "duskfox",
+  "description": "A dark indigo theme integrated with extensive functional and visual scripts.\n Compatibility: V89+",
+  "repository": "https://github.com/aminomancer/uc.css.js",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/duskfox.webp",
+      "alt": "duskFox screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "dusk"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 30,
+  "stats": {
+    "stars": 379,
+    "updatedAt": "2026-01-06T17:30:39Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/33384265?v=4",
+    "accessible": true
+  }
+}

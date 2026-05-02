@@ -1,0 +1,33 @@
+{
+  "title": "Bali10050's theme",
+  "slug": "bali10050-s-theme",
+  "description": "A minimal looking oneliner, with modular code for easy editing",
+  "repository": "https://github.com/Bali10050/FirefoxCSS",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/Bali10050sPreview.webp",
+      "alt": "Bali10050's theme screenshot"
+    }
+  ],
+  "tags": [
+    "bali10050",
+    "dark",
+    "light",
+    "linux",
+    "minimalistic",
+    "oneline",
+    "proton",
+    "responsive",
+    "rounded",
+    "windows"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 77,
+  "stats": {
+    "stars": 381,
+    "updatedAt": "2026-01-22T13:30:49Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/110120798?v=4",
+    "accessible": true
+  }
+}

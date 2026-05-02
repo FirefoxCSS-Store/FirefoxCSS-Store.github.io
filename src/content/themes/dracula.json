@@ -1,0 +1,27 @@
+{
+  "title": "Dracula",
+  "slug": "dracula",
+  "description": "A Firefox CSS Theme that aims to recreate the look and feel of the Chromium version of Microsoft Edge in the style of Dracula.",
+  "repository": "https://github.com/jannikbuscha/firefox-dracula",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/dracula.webp",
+      "alt": "Dracula screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "dracula",
+    "edge",
+    "microsoft"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 74,
+  "stats": {
+    "stars": 20,
+    "updatedAt": "2024-07-10T07:08:42Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/74017697?v=4",
+    "accessible": true
+  }
+}

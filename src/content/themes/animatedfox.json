@@ -1,0 +1,33 @@
+{
+  "title": "AnimatedFox",
+  "slug": "animatedfox",
+  "description": "A minimal Firefox/LibreWolf theme with satisfying animations and a hidden URL bar.",
+  "repository": "https://github.com/RemyIsCool/AnimatedFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/animatedfox.webp",
+      "alt": "AnimatedFox screenshot"
+    }
+  ],
+  "tags": [
+    "animations",
+    "dark",
+    "hidden url bar",
+    "minimal",
+    "remyiscool"
+  ],
+  "submitterRole": "legacy",
+  "status": "archived",
+  "catalogIndex": 108,
+  "stats": {
+    "stars": 193,
+    "updatedAt": "2024-07-16T13:55:19Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/97812130?v=4",
+    "accessible": true
+  },
+  "retirement": {
+    "reason": "repository-archived",
+    "checkedAt": "2026-04-25T20:04:49.167Z",
+    "details": "Repository is archived by its owner."
+  }
+}

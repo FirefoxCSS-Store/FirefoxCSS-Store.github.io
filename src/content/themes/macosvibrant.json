@@ -1,0 +1,28 @@
+{
+  "title": "MacOSVibrant",
+  "slug": "macosvibrant",
+  "description": "A theme that uses MacOS Vibrancy and is styled after other Apple Apps \n Compatibility: V91+",
+  "repository": "https://github.com/Tnings/MacosVibrant",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/MacOSVibrant.webp",
+      "alt": "MacOSVibrant screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "rounded",
+    "tnings",
+    "transparency",
+    "v91"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 49,
+  "stats": {
+    "stars": 47,
+    "updatedAt": "2023-09-16T17:32:42Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/55812511?v=4",
+    "accessible": true
+  }
+}

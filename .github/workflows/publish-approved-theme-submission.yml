@@ -1,0 +1,66 @@
+name: Publish Approved Theme Submission
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: publish-theme-submission-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  publish_candidate:
+    if: ${{ github.event.review.state == 'approved' && github.event.pull_request.head.repo.full_name == github.repository && startsWith(github.event.pull_request.head.ref, 'submissions/theme-') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Merge latest main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --no-tags origin main
+          git merge --no-edit origin/main
+
+      - name: Publish candidate theme
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/publish-approved-theme-submission.mjs
+
+      - run: npm test
+      - run: npm run build
+
+      - name: Commit publication update
+        env:
+          GH_TOKEN: ${{ secrets.SUBMISSION_PR_TOKEN || github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_BRANCH: ${{ github.event.pull_request.head.ref }}
+        shell: bash
+        run: |
+          if [ -z "$(git status --porcelain -- src/content/themes)" ]; then
+            echo "No publication changes were needed."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/content/themes
+          git commit -m "chore: publish approved theme submission #${PR_NUMBER}"
+          git push origin "HEAD:${PR_BRANCH}"
+
+          gh pr comment "$PR_NUMBER" --body "Approved submission prepared for publishing. I switched the theme to \`published\` and assigned the next catalog index. You can merge this PR when the checks pass."

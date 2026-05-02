@@ -1,0 +1,28 @@
+{
+  "title": "Elegant Fox",
+  "slug": "elegant-fox",
+  "description": "A firefox context menu theme and background wallpaper support with linux desktops being the main focus",
+  "repository": "https://github.com/ayushhroyy/elegantfox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/elegantfox.webp",
+      "alt": "Elegant Fox screenshot"
+    }
+  ],
+  "tags": [
+    "adaptive",
+    "ayushhroyy",
+    "dark",
+    "light",
+    "nord"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 65,
+  "stats": {
+    "stars": 35,
+    "updatedAt": "2025-01-31T15:10:20Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/77523847?v=4",
+    "accessible": true
+  }
+}

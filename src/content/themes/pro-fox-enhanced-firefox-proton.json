@@ -1,0 +1,30 @@
+{
+  "title": "pro-fox: enhanced firefox proton",
+  "slug": "pro-fox-enhanced-firefox-proton",
+  "description": "a proton based theme to make it even better \n Compatibility: V89+",
+  "repository": "https://github.com/xmansyx/Pro-Fox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/pro-fox.webp",
+      "alt": "pro-fox: enhanced firefox proton screenshot"
+    }
+  ],
+  "tags": [
+    "bigger",
+    "centered",
+    "dark",
+    "light",
+    "rounded",
+    "v89",
+    "xmansyx"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 41,
+  "stats": {
+    "stars": 27,
+    "updatedAt": "2021-06-16T17:19:03Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/23141127?v=4",
+    "accessible": true
+  }
+}

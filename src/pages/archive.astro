@@ -1,0 +1,69 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { byLatestCatalogEntry, formatDate, isArchivedTheme, repositoryLabel, withBasePath } from '../lib/themes'
+
+const themes = (await getCollection('themes'))
+  .filter(isArchivedTheme)
+  .sort(byLatestCatalogEntry)
+---
+<BaseLayout title="Archived Themes | FirefoxCSS-Store" description="Unsupported Firefox userChrome.css themes preserved for historical discovery.">
+  <main>
+    <section class="hub-intro" aria-labelledby="archive-title">
+      <div>
+        <p class="eyebrow archived-label">Archive</p>
+        <h1 id="archive-title">Unsupported themes preserved for discovery.</h1>
+      </div>
+      <div class="intro-stats" aria-label="Archive statistics">
+        <span><strong>{themes.length}</strong> archived themes</span>
+      </div>
+    </section>
+
+    <section class="archive-warning" aria-label="Archive note">
+      <h2>What archived means</h2>
+      <p>These themes point to repositories that still exist but have been archived by their owners. They are kept here for reference, but they should be treated as unsupported.</p>
+    </section>
+
+    {themes.length === 0 ? (
+      <p class="empty-state">No archived themes yet.</p>
+    ) : (
+      <section class="theme-grid" aria-label="Archived theme results">
+        {themes.map((theme) => {
+          const data = theme.data
+          const image = data.screenshots[0]
+          return (
+            <article class="theme-card archived-card">
+              <a class="theme-card-image" href={withBasePath(`/themes/${data.slug}/`)} aria-label={`Open ${data.title}`}>
+                <img src={withBasePath(image.src)} alt={image.alt} loading="lazy" />
+              </a>
+              <div class="theme-card-body">
+                <div>
+                  <p class="eyebrow archived-label">Unsupported</p>
+                  <h2><a href={withBasePath(`/themes/${data.slug}/`)}>{data.title}</a></h2>
+                  <p>{data.retirement?.details ?? data.description}</p>
+                </div>
+                <div class="theme-tags" aria-label={`${data.title} tags`}>
+                  {data.tags.slice(0, 5).map((tag) => <span>{tag}</span>)}
+                </div>
+                <dl class="theme-meta">
+                  <div>
+                    <dt>Repository</dt>
+                    <dd>{repositoryLabel(data.repository)}</dd>
+                  </div>
+                  <div>
+                    <dt>Checked</dt>
+                    <dd>{formatDate(data.retirement?.checkedAt ?? null)}</dd>
+                  </div>
+                </dl>
+                <div class="theme-actions">
+                  <a href={withBasePath(`/themes/${data.slug}/`)}>Details</a>
+                  <a href={data.repository}>Repository</a>
+                </div>
+              </div>
+            </article>
+          )
+        })}
+      </section>
+    )}
+  </main>
+</BaseLayout>

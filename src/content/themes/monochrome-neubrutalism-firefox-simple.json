@@ -1,0 +1,28 @@
+{
+  "title": "Monochrome Neubrutalism Firefox Simple",
+  "slug": "monochrome-neubrutalism-firefox-simple",
+  "description": "A simple light theme I made to explore the world of Firefox theming.",
+  "repository": "https://github.com/Kaskapa/Monochrome-Neubrutalism-Firefox-Theme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/monochromeNeubrutalism.webp",
+      "alt": "Monochrome Neubrutalism Firefox Simple screenshot"
+    }
+  ],
+  "tags": [
+    "kaskapa",
+    "light",
+    "monochrome",
+    "neubrutalislm",
+    "simple"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 113,
+  "stats": {
+    "stars": 24,
+    "updatedAt": "2024-06-02T13:53:52Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/100031511?v=4",
+    "accessible": true
+  }
+}

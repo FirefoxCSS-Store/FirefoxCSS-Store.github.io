@@ -1,0 +1,33 @@
+{
+  "title": "Firefox Review",
+  "slug": "firefox-review",
+  "description": "Firefox Review is a CSS redesign of the browser, changing the look of Firefox to match the color scheme and design language of Firefox Preview, the previous name of Mozilla's new mobile app.",
+  "repository": "https://github.com/fellowish/firefox-review",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/firefoxreview.webp",
+      "alt": "Firefox Review screenshot"
+    }
+  ],
+  "tags": [
+    "archived",
+    "colorscheme",
+    "dark",
+    "fellowish",
+    "light"
+  ],
+  "submitterRole": "legacy",
+  "status": "archived",
+  "catalogIndex": 9,
+  "stats": {
+    "stars": 137,
+    "updatedAt": "2021-04-22T18:14:52Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/28973978?v=4",
+    "accessible": true
+  },
+  "retirement": {
+    "reason": "repository-archived",
+    "checkedAt": "2026-04-25T20:04:49.167Z",
+    "details": "Repository is archived by its owner."
+  }
+}

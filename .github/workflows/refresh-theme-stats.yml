@@ -1,0 +1,99 @@
+name: Refresh Theme Stats
+
+on:
+  schedule:
+    - cron: '43 4 8 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh-theme-stats
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Refresh repository metadata
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+          CODEBERG_TOKEN: ${{ secrets.CODEBERG_TOKEN }}
+        run: npm run refresh:themes
+
+      - run: npm test
+      - run: npm run build
+
+      - name: Open theme stats refresh PR
+        env:
+          GH_TOKEN: ${{ secrets.STATS_PR_TOKEN || github.token }}
+        shell: bash
+        run: |
+          if git diff --quiet -- src/content/themes; then
+            echo "No theme stats changes found."
+            exit 0
+          fi
+
+          branch="automation/theme-stats-refresh-$(date -u +%Y-%m)"
+          report="theme-stats-refresh.md"
+
+          {
+            echo "## Theme stats refresh"
+            echo ""
+            echo "Updates repository metadata for existing catalog entries:"
+            echo ""
+            echo "- stars"
+            echo "- last update date"
+            echo "- owner avatar"
+            echo "- accessibility status"
+            echo ""
+            echo "This workflow does not discover new themes or change editorial fields."
+          } > "$report"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add src/content/themes
+          git commit -m "chore: refresh theme repository stats"
+          git fetch --no-tags --depth=1 origin "$branch:refs/remotes/origin/$branch" || true
+          git push --force-with-lease origin "$branch"
+
+          manual_url="https://github.com/${GITHUB_REPOSITORY}/pull/new/${branch}"
+          title="Refresh theme repository stats"
+
+          if pr_url="$(gh pr view "$branch" --json url --jq .url 2>/dev/null)"; then
+            gh pr edit "$branch" \
+              --title "$title" \
+              --body-file "$report"
+            echo "Updated theme stats refresh PR: ${pr_url}" >> "$GITHUB_STEP_SUMMARY"
+          else
+            if pr_url="$(gh pr create \
+              --base main \
+              --head "$branch" \
+              --title "$title" \
+              --body-file "$report" 2>pr-create-error.txt)"; then
+              echo "Created theme stats refresh PR: ${pr_url}" >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "::warning::The stats refresh branch was pushed, but GitHub refused to create the PR automatically."
+              cat pr-create-error.txt
+              {
+                echo "Theme stats changes were pushed to \`${branch}\`, but the workflow token could not create the PR automatically."
+                echo ""
+                echo "Open it manually: ${manual_url}"
+                echo ""
+                echo "To allow automatic PR creation, enable **Settings > Actions > General > Workflow permissions > Allow GitHub Actions to create and approve pull requests**, or add a \`STATS_PR_TOKEN\` secret with permission to create pull requests."
+              } >> "$GITHUB_STEP_SUMMARY"
+            fi
+          fi

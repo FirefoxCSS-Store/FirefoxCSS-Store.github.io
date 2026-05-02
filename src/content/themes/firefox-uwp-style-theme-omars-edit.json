@@ -1,0 +1,28 @@
+{
+  "title": "Firefox-UWP-Style-Theme-Omars-Edit",
+  "slug": "firefox-uwp-style-theme-omars-edit",
+  "description": "A minimalistic-retro theme based off the UWP interface",
+  "repository": "https://github.com/omarb737/Firefox-UWP-Style-Theme-Omars-Edit",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/321608U0N6E.webp",
+      "alt": "Firefox-UWP-Style-Theme-Omars-Edit screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "minimalist",
+    "omarb737",
+    "retro",
+    "uwp"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 69,
+  "stats": {
+    "stars": 4,
+    "updatedAt": "2022-07-31T05:44:56Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/41845164?v=4",
+    "accessible": true
+  }
+}

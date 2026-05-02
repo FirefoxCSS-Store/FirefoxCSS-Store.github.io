@@ -1,0 +1,31 @@
+name: Close Merged Theme Submission Issue
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  issues: write
+  pull-requests: read
+
+jobs:
+  close_issue:
+    if: ${{ github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'submissions/theme-') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close source issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        shell: bash
+        run: |
+          issue_number="$(printf '%s' "$PR_BODY" | sed -nE 's/^Generated from #([0-9]+)\.$/\1/p' | head -n 1)"
+
+          if [ -z "$issue_number" ]; then
+            echo "No source issue number found in PR #${PR_NUMBER}."
+            exit 0
+          fi
+
+          gh issue close "$issue_number" \
+            --comment "Theme submission was merged in #${PR_NUMBER}. Thanks for sharing it."

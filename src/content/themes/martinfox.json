@@ -1,0 +1,27 @@
+{
+  "title": "MartinFox",
+  "slug": "martinfox",
+  "description": "Really simple userChrome.css to make the active tab stand out more; 61 lines. \n Compatibility: V89+",
+  "repository": "https://github.com/arp242/MartinFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/martinfox.webp",
+      "alt": "MartinFox screenshot"
+    }
+  ],
+  "tags": [
+    "arp242",
+    "compact",
+    "pure",
+    "v91"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 42,
+  "stats": {
+    "stars": 12,
+    "updatedAt": "2023-01-15T13:01:04Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/1032692?v=4",
+    "accessible": true
+  }
+}

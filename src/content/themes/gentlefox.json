@@ -1,0 +1,29 @@
+{
+  "title": "GentleFox",
+  "slug": "gentlefox",
+  "description": "A Firefox theme, which features gentle curves, transparency and a minimal interface. \n Compatibility: V91+",
+  "repository": "https://github.com/alfarexguy2019/gentlefox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/GentleFox.webp",
+      "alt": "GentleFox screenshot"
+    }
+  ],
+  "tags": [
+    "alfarexguy2019",
+    "blur",
+    "dark",
+    "light",
+    "rounded",
+    "transparency"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 56,
+  "stats": {
+    "stars": 61,
+    "updatedAt": "2025-12-05T10:26:40Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/78948152?v=4",
+    "accessible": true
+  }
+}

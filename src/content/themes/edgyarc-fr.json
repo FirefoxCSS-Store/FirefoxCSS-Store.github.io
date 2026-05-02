@@ -1,0 +1,34 @@
+{
+  "title": "EdgyArc Fr",
+  "slug": "edgyarc-fr",
+  "description": "Combining the sleekness of Microsoft Edge and the aesthetics of the Arc browser",
+  "repository": "https://github.com/artsyfriedchicken/EdgyArc-fr/",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/edgyarc-fr.webp",
+      "alt": "EdgyArc Fr screenshot"
+    }
+  ],
+  "tags": [
+    "arc",
+    "artsyfriedchicken",
+    "blur",
+    "dark",
+    "edge",
+    "light",
+    "mac",
+    "macos",
+    "sidebery",
+    "translucent",
+    "vertical tabs"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 101,
+  "stats": {
+    "stars": 704,
+    "updatedAt": "2024-06-29T17:41:05Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/100123017?v=4",
+    "accessible": true
+  }
+}

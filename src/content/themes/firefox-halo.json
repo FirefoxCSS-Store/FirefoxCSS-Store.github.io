@@ -1,0 +1,24 @@
+{
+  "title": "Firefox Halo",
+  "slug": "firefox-halo",
+  "description": "A mininmalist Firefox theme with a lot of about: pages edited to act as resources. Updates about every month.",
+  "repository": "https://github.com/seirin-blu/Firefox-Halo",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/firefoxhalo.webp",
+      "alt": "Firefox Halo screenshot"
+    }
+  ],
+  "tags": [
+    "toolkit"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 26,
+  "stats": {
+    "stars": 48,
+    "updatedAt": "2023-11-27T19:29:22Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/61664123?v=4",
+    "accessible": true
+  }
+}

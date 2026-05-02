@@ -1,0 +1,30 @@
+{
+  "title": "OnelineProton",
+  "slug": "onelineproton",
+  "description": "An oneline userChrome.css theme for Firefox, which aims to keep the Proton experience  \n Compatibility: V89+",
+  "repository": "https://github.com/lr-tech/OnelineProton",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/onelineproton.webp",
+      "alt": "OnelineProton screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "light",
+    "lr-tech",
+    "minimal",
+    "one-line",
+    "proton",
+    "v89"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 44,
+  "stats": {
+    "stars": 136,
+    "updatedAt": "2024-06-27T04:03:42Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/75286649?v=4",
+    "accessible": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "PretoFox",
+  "slug": "pretofox",
+  "description": "A Black n White AMOLED theme for Firefox, inspired by the Preto color scheme. \n Compatibility: V91+",
+  "repository": "https://github.com/alfarexguy2019/pretofox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/PretoFox.webp",
+      "alt": "PretoFox screenshot"
+    }
+  ],
+  "tags": [
+    "alfarexguy2019",
+    "black",
+    "dark",
+    "light",
+    "v91",
+    "white"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 52,
+  "stats": {
+    "stars": 12,
+    "updatedAt": "2025-12-05T10:28:59Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/78948152?v=4",
+    "accessible": true
+  }
+}

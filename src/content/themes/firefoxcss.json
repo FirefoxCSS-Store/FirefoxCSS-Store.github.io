@@ -1,0 +1,27 @@
+{
+  "title": "FirefoxCss",
+  "slug": "firefoxcss",
+  "description": "Custom userChrome.css for firefox based on Material Fox and Flying Fox with few small changes.",
+  "repository": "https://github.com/h4wwk3ye/firefoxCSS",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/firefoxcss.webp",
+      "alt": "FirefoxCss screenshot"
+    }
+  ],
+  "tags": [
+    "h4wwk3ye",
+    "light",
+    "sidebar",
+    "tree style tab"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 4,
+  "stats": {
+    "stars": 24,
+    "updatedAt": "2021-01-25T11:22:25Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/24487030?v=4",
+    "accessible": true
+  }
+}

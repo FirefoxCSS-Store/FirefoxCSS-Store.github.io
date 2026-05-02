@@ -1,0 +1,24 @@
+{
+  "title": "Moonlight 🌌",
+  "slug": "moonlight",
+  "description": "A dark userstyle for Firefox inspired by moonlight-vscode-theme and github-moonlight",
+  "repository": "https://github.com/eduardhojbota/moonlight-userChrome",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/moonlight.webp",
+      "alt": "Moonlight 🌌 screenshot"
+    }
+  ],
+  "tags": [
+    "dark"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 25,
+  "stats": {
+    "stars": 144,
+    "updatedAt": "2023-11-25T14:46:00Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/2820538?v=4",
+    "accessible": true
+  }
+}

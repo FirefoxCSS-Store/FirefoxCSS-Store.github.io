@@ -1,0 +1,31 @@
+{
+  "title": "Sakuras Simple Sidebar",
+  "slug": "sakuras-simple-sidebar",
+  "description": "A simple Firefox theme using Sidebery sidebar.",
+  "repository": "https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/remote-124-sakuras-simple-sidebar.gif",
+      "alt": "Sakuras Simple Sidebar screenshot"
+    }
+  ],
+  "tags": [
+    "catppuccin",
+    "dark",
+    "light",
+    "sakurameadows",
+    "sidebar",
+    "sidebery",
+    "simple",
+    "vertical"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 124,
+  "stats": {
+    "stars": 23,
+    "updatedAt": "2025-12-28T03:03:45Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/93335748?v=4",
+    "accessible": true
+  }
+}

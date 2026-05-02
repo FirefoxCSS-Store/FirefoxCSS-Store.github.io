@@ -1,28 +1,27 @@
-name: Build And Publish Docs
+name: Build And Deploy
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'dev/**'
-      - 'images/**'
-      - 'themes.json'
-      - 'gulpfile.js'
-      - 'gulpconfig.js'
+      - 'src/**'
+      - 'public/**'
+      - 'scripts/**'
+      - 'astro.config.mjs'
+      - 'tsconfig.json'
       - 'package.json'
       - 'package-lock.json'
-      - 'dev/config/**'
+      - '.github/workflows/**'
   workflow_dispatch:
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
-
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
-  group: build-and-publish-${{ github.ref }}
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -42,16 +41,8 @@ jobs:
       - run: npm test
       - run: npm run build
 
-      - name: Commit generated docs
-        shell: bash
-        run: |
-          if git diff --quiet -- docs; then
-            echo "No generated docs changes to commit."
-            exit 0
-          fi
-
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add docs
-          git commit -m "ci(build): compile and deploy"
-          git push
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v5

@@ -1,0 +1,28 @@
+{
+  "title": "Firefox Onebar",
+  "slug": "firefox-onebar",
+  "description": "A single bar for Firefox's UI.",
+  "repository": "https://git.gay/freeplay/Firefox-Onebar",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/onebar.webp",
+      "alt": "Firefox Onebar screenshot"
+    }
+  ],
+  "tags": [
+    "compact",
+    "freeplay",
+    "minimal",
+    "onebar",
+    "oneline"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 73,
+  "stats": {
+    "stars": 8,
+    "updatedAt": "2026-03-25T20:23:19Z",
+    "ownerAvatar": "https://git.gay/avatars/25ef717d14080c74d7a215792ff28c5ba2590585985036074bf9c0723fd9c582?size=512",
+    "accessible": true
+  }
+}

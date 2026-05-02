@@ -1,0 +1,31 @@
+{
+  "title": "quietfox",
+  "slug": "quietfox",
+  "description": "This userChrome mod was created to make the Firefox UI cleaner and more modern without sacrificing any of its original features. You can still use themes, and you can still use Compact Mode and Touch Mode. You can pretty much forget that you have a mod installed, it works quietly in the background.",
+  "repository": "https://github.com/coekuss/quietfox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/quietfox.webp",
+      "alt": "quietfox screenshot"
+    }
+  ],
+  "tags": [
+    "coekuss",
+    "simple",
+    "toolkit"
+  ],
+  "submitterRole": "legacy",
+  "status": "archived",
+  "catalogIndex": 13,
+  "stats": {
+    "stars": 172,
+    "updatedAt": "2021-07-05T22:51:14Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/45906331?v=4",
+    "accessible": true
+  },
+  "retirement": {
+    "reason": "repository-archived",
+    "checkedAt": "2026-04-25T20:04:49.167Z",
+    "details": "Repository is archived by its owner."
+  }
+}

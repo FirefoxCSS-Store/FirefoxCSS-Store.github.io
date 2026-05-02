@@ -1,0 +1,29 @@
+{
+  "title": "Monochrome Tree",
+  "slug": "monochrome-tree",
+  "description": "A custom minimalist theme for Firefox with Tree Style Tab support",
+  "repository": "https://github.com/MatejKafka/FirefoxTheme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/19.webp",
+      "alt": "Monochrome Tree screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "light",
+    "matejkafka",
+    "monochrome",
+    "one-line",
+    "tree style"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 17,
+  "stats": {
+    "stars": 17,
+    "updatedAt": "2025-04-06T13:59:21Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/6414091?v=4",
+    "accessible": true
+  }
+}

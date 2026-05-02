@@ -1,0 +1,28 @@
+{
+  "title": "Simplify Silver Peach for Firefox",
+  "slug": "simplify-silver-peach-for-firefox",
+  "description": "A minimal Firefox Theme for those who would like to properly enjoy my Simplify 10 Silver Peach - Windows 10 Themes\n Compatibility: V89+",
+  "repository": "https://github.com/CristianDragos/FirefoxThemes",
+  "homepage": "https://github.com/CristianDragos/FirefoxThemes/tree/master/Simplify%20Silver%20Peach",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/simplify_silver_peach_for_firefox_preview.webp",
+      "alt": "Simplify Silver Peach for Firefox screenshot"
+    }
+  ],
+  "tags": [
+    "cristiandragos",
+    "light",
+    "pastel",
+    "rounded"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 5,
+  "stats": {
+    "stars": 141,
+    "updatedAt": "2021-10-07T12:23:11Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/3705687?v=4",
+    "accessible": true
+  }
+}

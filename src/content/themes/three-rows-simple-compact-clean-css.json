@@ -1,0 +1,27 @@
+{
+  "title": "Three Rows Simple Compact Clean CSS",
+  "slug": "three-rows-simple-compact-clean-css",
+  "description": "A compact theme based on use multiple rows",
+  "repository": "https://github.com/hornster02/Firefox-Three-Rows-Simple-Compact-Clean-CSS",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/Three_Rows.webp",
+      "alt": "Three Rows Simple Compact Clean CSS screenshot"
+    }
+  ],
+  "tags": [
+    "compact",
+    "minimalist",
+    "rows",
+    "simple"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 76,
+  "stats": {
+    "stars": 24,
+    "updatedAt": "2026-02-01T16:39:27Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/127822397?v=4",
+    "accessible": true
+  }
+}

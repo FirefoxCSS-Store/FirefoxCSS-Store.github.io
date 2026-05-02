@@ -1,0 +1,27 @@
+{
+  "title": "minimalistest oneliner",
+  "slug": "minimalistest-oneliner",
+  "description": "buttons are for nerds.",
+  "repository": "https://github.com/yari-dog/minimalistest-oneliner-librewolf",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/minimalist-oneliner.webp",
+      "alt": "minimalistest oneliner screenshot"
+    }
+  ],
+  "tags": [
+    "compact",
+    "oneline",
+    "oneliner",
+    "simple"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 114,
+  "stats": {
+    "stars": 8,
+    "updatedAt": "2024-08-28T10:11:56Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/75224849?v=4",
+    "accessible": true
+  }
+}

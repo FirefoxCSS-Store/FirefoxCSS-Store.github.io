@@ -1,0 +1,28 @@
+{
+  "title": "blurredfox",
+  "slug": "blurredfox",
+  "description": "A modern Firefox CSS Theme",
+  "repository": "https://github.com/manilarome/blurredfox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/blurred.webp",
+      "alt": "blurredfox screenshot"
+    }
+  ],
+  "tags": [
+    "blur",
+    "dark",
+    "light",
+    "linux",
+    "manilarome"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 8,
+  "stats": {
+    "stars": 923,
+    "updatedAt": "2023-06-27T10:12:27Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/40349590?v=4",
+    "accessible": true
+  }
+}

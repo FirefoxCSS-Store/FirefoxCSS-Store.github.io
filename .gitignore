@@ -47,15 +47,11 @@ Icon?
 
 # Build output
 /dist/
+/.astro/
 /build/
-/docs/assets/css/
-/docs/assets/js/
 
-# Gulp cache
-.cache/
-
-# SASS cache
-.sass-cache/
+# Generated workflow reports
+/theme-repository-audit.md
 
 # Coverage directory used by tools like istanbul
 coverage/

@@ -1,0 +1,38 @@
+{
+  "title": "TileFox",
+  "slug": "tilefox",
+  "description": "A minimalistic Firefox userChrome.css that integrates well with tiling window managers like i3",
+  "repository": "https://github.com/davquar/tilefox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/tilefox.webp",
+      "alt": "TileFox screenshot"
+    }
+  ],
+  "tags": [
+    "brutalist",
+    "compact",
+    "dark",
+    "davquar",
+    "dwm",
+    "i3",
+    "keyboard",
+    "light",
+    "linux",
+    "minimal",
+    "minimalistic",
+    "sway",
+    "tile",
+    "tilefox",
+    "tiling"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 71,
+  "stats": {
+    "stars": 24,
+    "updatedAt": "2022-10-21T20:00:50Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/30431538?v=4",
+    "accessible": true
+  }
+}

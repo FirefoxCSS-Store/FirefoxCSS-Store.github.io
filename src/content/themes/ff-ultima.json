@@ -1,0 +1,27 @@
+{
+  "title": "FF Ultima",
+  "slug": "ff-ultima",
+  "description": "The Firefox theme with too many options",
+  "repository": "https://github.com/soulhotel/FF-ULTIMA",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/remote-102-ff-ultima.gif",
+      "alt": "FF Ultima screenshot"
+    }
+  ],
+  "tags": [
+    "adaptive",
+    "customizable",
+    "modern",
+    "multiple layouts"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 102,
+  "stats": {
+    "stars": 1168,
+    "updatedAt": "2026-02-16T22:41:35Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/155501797?v=4",
+    "accessible": true
+  }
+}

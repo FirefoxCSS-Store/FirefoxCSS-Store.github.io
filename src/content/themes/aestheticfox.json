@@ -1,0 +1,34 @@
+{
+  "title": "AestheticFox",
+  "slug": "aestheticfox",
+  "description": "A minamist and aesthetic userstyle theme for Firefox",
+  "repository": "https://github.com/AidanMercer/AestheticFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/AestheticFox.webp",
+      "alt": "AestheticFox screenshot"
+    }
+  ],
+  "tags": [
+    "aesthetic",
+    "aestheticfox",
+    "clean",
+    "compact",
+    "minimal",
+    "minimalistic"
+  ],
+  "submitterRole": "legacy",
+  "status": "archived",
+  "catalogIndex": 72,
+  "stats": {
+    "stars": 30,
+    "updatedAt": "2023-05-22T18:16:55Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/96552673?v=4",
+    "accessible": true
+  },
+  "retirement": {
+    "reason": "repository-archived",
+    "checkedAt": "2026-04-25T20:04:49.167Z",
+    "details": "Repository is archived by its owner."
+  }
+}

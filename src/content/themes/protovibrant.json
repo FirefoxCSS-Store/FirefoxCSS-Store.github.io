@@ -1,0 +1,29 @@
+{
+  "title": "ProtoVibrant",
+  "slug": "protovibrant",
+  "description": "Add macOS vibrancy to the Proton titlebar. Supports dark and light mode. \n Compatibility: V89+",
+  "repository": "https://github.com/bpwned/protovibrant",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/protovibrant.webp",
+      "alt": "ProtoVibrant screenshot"
+    }
+  ],
+  "tags": [
+    "bpwned",
+    "macos",
+    "pure",
+    "transparency",
+    "v89",
+    "vibrancy"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 43,
+  "stats": {
+    "stars": 23,
+    "updatedAt": "2021-11-21T18:25:54Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/446744?v=4",
+    "accessible": true
+  }
+}

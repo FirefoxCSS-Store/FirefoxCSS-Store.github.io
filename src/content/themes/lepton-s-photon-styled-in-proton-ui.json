@@ -1,0 +1,24 @@
+{
+  "title": "Lepton's Photon-Styled in Proton UI",
+  "slug": "lepton-s-photon-styled-in-proton-ui",
+  "description": "🦊 I tried to preserve Proton’s feeling while preserving Photon’s strengths. Icons, Padding, Tab Design...\n Compatibility: V89+",
+  "repository": "https://github.com/black7375/Firefox-UI-Fix/tree/photon-style",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/Lepton-PhotonStyle.webp",
+      "alt": "Lepton's Photon-Styled in Proton UI screenshot"
+    }
+  ],
+  "tags": [
+    "uncategorized"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 36,
+  "stats": {
+    "stars": 5805,
+    "updatedAt": "2026-02-06T00:06:12Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/25581533?v=4",
+    "accessible": true
+  }
+}

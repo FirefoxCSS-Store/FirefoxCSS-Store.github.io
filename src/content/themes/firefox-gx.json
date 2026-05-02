@@ -1,0 +1,31 @@
+{
+  "title": "Firefox-GX",
+  "slug": "firefox-gx",
+  "description": "Firefox Theme to Opera-GX skin Lovers.",
+  "repository": "https://github.com/Godiesc/firefox-gx",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/firefox-gx.webp",
+      "alt": "Firefox-GX screenshot"
+    }
+  ],
+  "tags": [
+    "adapted",
+    "dark",
+    "fuchsia",
+    "godiesc",
+    "gx",
+    "light",
+    "opera",
+    "theme"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 64,
+  "stats": {
+    "stars": 1057,
+    "updatedAt": "2026-04-23T15:06:55Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/22057609?v=4",
+    "accessible": true
+  }
+}

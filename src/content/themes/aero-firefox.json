@@ -1,0 +1,29 @@
+{
+  "title": "Aero Firefox",
+  "slug": "aero-firefox",
+  "description": "Brings the Windows 7 titlebar buttons to modern versions of Firefox",
+  "repository": "https://github.com/SandTechStuff/AeroFirefox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/aeroFirefox.webp",
+      "alt": "Aero Firefox screenshot"
+    }
+  ],
+  "tags": [
+    "aero",
+    "dark",
+    "light",
+    "lightweight",
+    "minimal",
+    "windows7"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 104,
+  "stats": {
+    "stars": 31,
+    "updatedAt": "2025-10-03T04:53:38Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/164842290?v=4",
+    "accessible": true
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "title": "FirefoxW10ContextMenus",
+  "slug": "firefoxw10contextmenus",
+  "description": "Emulates the Windows 10 context menus in Firefox.",
+  "repository": "https://github.com/M1ch431/FirefoxW10ContextMenus",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/20.webp",
+      "alt": "FirefoxW10ContextMenus screenshot"
+    }
+  ],
+  "tags": [
+    "context",
+    "menu",
+    "toolkit",
+    "windows"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 19,
+  "stats": {
+    "stars": 113,
+    "updatedAt": "2021-09-20T04:21:08Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/46256998?v=4",
+    "accessible": true
+  }
+}

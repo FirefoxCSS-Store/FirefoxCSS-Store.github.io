@@ -1,0 +1,28 @@
+{
+  "title": "Chameleons-Beauty to Firefox CSS",
+  "slug": "chameleons-beauty-to-firefox-css",
+  "description": "Adaptive Theme to Firefox Themes \n Compatibility: V89+",
+  "repository": "https://github.com/Godiesc/Chameleons-Beauty",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/Chameleons-Beauty.webp",
+      "alt": "Chameleons-Beauty to Firefox CSS screenshot"
+    }
+  ],
+  "tags": [
+    "colourful",
+    "dark",
+    "godiesc",
+    "light",
+    "v89"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 40,
+  "stats": {
+    "stars": 116,
+    "updatedAt": "2025-10-09T23:05:40Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/22057609?v=4",
+    "accessible": true
+  }
+}

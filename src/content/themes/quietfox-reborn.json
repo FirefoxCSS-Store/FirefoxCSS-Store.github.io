@@ -1,0 +1,27 @@
+{
+  "title": "Quietfox Reborn",
+  "slug": "quietfox-reborn",
+  "description": "Resurrecting a very Clean Firefox userChrome Mod",
+  "repository": "https://github.com/TheGITofTeo997/quietfoxReborn",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/20053home.webp",
+      "alt": "Quietfox Reborn screenshot"
+    }
+  ],
+  "tags": [
+    "minimal",
+    "quiet",
+    "sleek",
+    "teo"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 109,
+  "stats": {
+    "stars": 90,
+    "updatedAt": "2026-04-22T11:20:10Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/26879664?v=4",
+    "accessible": true
+  }
+}

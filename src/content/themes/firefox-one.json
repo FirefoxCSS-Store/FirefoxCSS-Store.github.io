@@ -1,0 +1,33 @@
+{
+  "title": "Firefox-ONE",
+  "slug": "firefox-one",
+  "description": "Dress Firefox with the Opera One skin",
+  "repository": "https://github.com/Godiesc/firefox-one",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/firefox-one.webp",
+      "alt": "Firefox-ONE screenshot"
+    }
+  ],
+  "tags": [
+    "adaptive",
+    "firefox",
+    "firefox-one",
+    "godiesc",
+    "one",
+    "opera",
+    "opera-one",
+    "tabs",
+    "theme",
+    "tree"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 81,
+  "stats": {
+    "stars": 429,
+    "updatedAt": "2026-04-21T05:45:27Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/22057609?v=4",
+    "accessible": true
+  }
+}

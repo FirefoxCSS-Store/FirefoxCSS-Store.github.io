@@ -1,0 +1,27 @@
+{
+  "title": "MiniSthetic_Firefox",
+  "slug": "ministhetic-firefox",
+  "description": "Minimal Aesthetic Firefox CSS",
+  "repository": "https://github.com/ashish-kus/MiniSthetic_Firefox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/remote-118-ministhetic-firefox.gif",
+      "alt": "MiniSthetic_Firefox screenshot"
+    }
+  ],
+  "tags": [
+    "aesthetic",
+    "dark",
+    "minimal",
+    "minimal aesthetic firefox css"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 118,
+  "stats": {
+    "stars": 19,
+    "updatedAt": "2025-01-12T05:02:51Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/78788195?v=4",
+    "accessible": true
+  }
+}

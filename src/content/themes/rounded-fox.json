@@ -1,0 +1,29 @@
+{
+  "title": "rounded-fox",
+  "slug": "rounded-fox",
+  "description": "A minimalist theme that uses animation to hide visual clutter.",
+  "repository": "https://github.com/Etesam913/rounded-fox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/rounded_fox.webp",
+      "alt": "rounded-fox screenshot"
+    }
+  ],
+  "tags": [
+    "animation",
+    "clean",
+    "compact",
+    "dark",
+    "light",
+    "minimalist"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 75,
+  "stats": {
+    "stars": 95,
+    "updatedAt": "2023-09-02T19:29:12Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/55665282?v=4",
+    "accessible": true
+  }
+}

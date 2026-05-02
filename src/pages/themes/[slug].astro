@@ -1,0 +1,94 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { formatDate, isVisibleTheme, repositoryLabel, withBasePath } from '../../lib/themes'
+
+export async function getStaticPaths() {
+  const themes = (await getCollection('themes')).filter(isVisibleTheme)
+
+  return themes.map((theme) => ({
+    params: { slug: theme.data.slug },
+    props: { theme }
+  }))
+}
+
+const { theme } = Astro.props
+const data = theme.data
+const repoLabel = repositoryLabel(data.repository)
+const isArchived = data.status === 'archived'
+---
+<BaseLayout title={`${data.title} | FirefoxCSS-Store`} description={data.description}>
+  <main class="theme-detail">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href={withBasePath(isArchived ? '/archive/' : '/')}>{isArchived ? 'Archive' : 'Themes'}</a>
+      <span>{data.title}</span>
+    </nav>
+
+    <section class="detail-hero">
+      <div>
+        <p class={isArchived ? 'eyebrow archived-label' : 'eyebrow'}>{isArchived ? 'Archived unsupported theme' : 'Published theme'}</p>
+        <h1>{data.title}</h1>
+        <p>{data.description}</p>
+        <div class="detail-actions">
+          <a href={data.repository}>Open original repository</a>
+          {data.homepage && <a href={data.homepage}>Theme homepage</a>}
+        </div>
+      </div>
+      <dl class="detail-stats">
+        <div>
+          <dt>Repository</dt>
+          <dd>{repoLabel}</dd>
+        </div>
+        <div>
+          <dt>Stars</dt>
+          <dd>{data.stats.stars.toLocaleString('en')}</dd>
+        </div>
+        <div>
+          <dt>Last update</dt>
+          <dd>{formatDate(data.stats.updatedAt)}</dd>
+        </div>
+        <div>
+          <dt>Submitted as</dt>
+          <dd>{data.submitterRole}</dd>
+        </div>
+      </dl>
+    </section>
+
+    {isArchived && (
+      <section class="archive-warning" aria-label="Archived theme warning">
+        <h2>This theme is preserved for discovery, but it is no longer supported.</h2>
+        <p>{data.retirement?.details ?? 'The original repository was marked as archived by its owner.'}</p>
+      </section>
+    )}
+
+    <section class="screenshot-gallery" aria-label={`${data.title} screenshots`}>
+      {data.screenshots.map((screenshot) => (
+        <img src={withBasePath(screenshot.src)} alt={screenshot.alt} loading="lazy" />
+      ))}
+    </section>
+
+    <section class="detail-layout">
+      <div class="detail-section">
+        <h2>Tags</h2>
+        <div class="theme-tags large">
+          {data.tags.map((tag) => <span>{tag}</span>)}
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <h2>Install overview</h2>
+        <ol class="install-list">
+          <li>Open the original repository and read the maintainer's installation notes.</li>
+          <li>Enable <code>toolkit.legacyUserProfileCustomizations.stylesheets</code> in <code>about:config</code>.</li>
+          <li>Create or open the <code>chrome</code> folder in your Firefox profile.</li>
+          <li>Copy the theme files requested by the original repository and restart Firefox.</li>
+        </ol>
+      </div>
+
+      <div class="detail-section notice">
+        <h2>Ownership note</h2>
+        <p>FirefoxCSS-Store indexes this submission for discovery. The code, license, support, and installation details belong to the original repository.</p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

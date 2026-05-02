@@ -1,0 +1,104 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { byLatestCatalogEntry, formatDate, isPublishedTheme, repositoryLabel, withBasePath } from '../lib/themes'
+
+const themes = (await getCollection('themes'))
+  .filter(isPublishedTheme)
+  .sort(byLatestCatalogEntry)
+
+const tags = Array.from(new Set(themes.flatMap((theme) => theme.data.tags))).sort((a, b) => a.localeCompare(b))
+const totalStars = themes.reduce((total, theme) => total + theme.data.stats.stars, 0)
+---
+<BaseLayout>
+  <main>
+    <section class="hub-intro" aria-labelledby="hub-title">
+      <div>
+        <p class="eyebrow">Community Firefox themes</p>
+        <h1 id="hub-title">Discover userChrome.css themes shared by the Firefox community.</h1>
+      </div>
+      <div class="intro-stats" aria-label="Catalog statistics">
+        <span><strong>{themes.length}</strong> themes</span>
+        <span><strong>{tags.length}</strong> tags</span>
+        <span><strong>{totalStars.toLocaleString('en')}</strong> stars across theme repos</span>
+      </div>
+    </section>
+
+    <section class="catalog-tools" aria-label="Theme catalog controls">
+      <label class="search-field">
+        <span>Search</span>
+        <input id="theme-search" type="search" placeholder="Search by name, repo, tag, or description" autocomplete="off" />
+      </label>
+      <label class="select-field">
+        <span>Sort</span>
+        <select id="theme-sort">
+          <option value="latest">Latest shared</option>
+          <option value="updated">Recently updated</option>
+          <option value="popular">Most starred</option>
+          <option value="name">Name</option>
+        </select>
+      </label>
+      <a class="submit-link" href={withBasePath('/submit/')}>Submit a theme</a>
+    </section>
+
+    <section class="tag-strip" aria-label="Filter by tag">
+      {tags.map((tag) => (
+        <button class="tag-filter" type="button" data-tag={tag}>{tag}</button>
+      ))}
+    </section>
+
+    <div class="catalog-summary" aria-live="polite">
+      <span id="theme-count">{themes.length} themes</span>
+      <button id="clear-filters" type="button">Clear filters</button>
+    </div>
+
+    <section id="theme-grid" class="theme-grid" aria-label="Theme results">
+      {themes.map((theme) => {
+        const data = theme.data
+        const image = data.screenshots[0]
+        return (
+          <article
+            class="theme-card"
+            data-title={data.title.toLowerCase()}
+            data-description={data.description.toLowerCase()}
+            data-repository={repositoryLabel(data.repository).toLowerCase()}
+            data-tags={data.tags.join(' ')}
+            data-stars={data.stats.stars}
+            data-updated={data.stats.updatedAt ?? ''}
+            data-index={data.catalogIndex}
+          >
+            <a class="theme-card-image" href={withBasePath(`/themes/${data.slug}/`)} aria-label={`Open ${data.title}`}>
+              <img src={withBasePath(image.src)} alt={image.alt} loading="lazy" />
+            </a>
+            <div class="theme-card-body">
+              <div>
+                <h2><a href={withBasePath(`/themes/${data.slug}/`)}>{data.title}</a></h2>
+                <p>{data.description}</p>
+              </div>
+              <div class="theme-tags" aria-label={`${data.title} tags`}>
+                {data.tags.slice(0, 5).map((tag) => <span>{tag}</span>)}
+              </div>
+              <dl class="theme-meta">
+                <div>
+                  <dt>Stars</dt>
+                  <dd>{data.stats.stars.toLocaleString('en')}</dd>
+                </div>
+                <div>
+                  <dt>Updated</dt>
+                  <dd>{formatDate(data.stats.updatedAt)}</dd>
+                </div>
+              </dl>
+              <div class="theme-actions">
+                <a href={withBasePath(`/themes/${data.slug}/`)}>Details</a>
+                <a href={data.repository}>Repository</a>
+              </div>
+            </div>
+          </article>
+        )
+      })}
+    </section>
+
+    <p id="empty-state" class="empty-state" hidden>No published themes match the current filters.</p>
+  </main>
+  <script src="../scripts/hub.ts"></script>
+</BaseLayout>

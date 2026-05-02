@@ -1,0 +1,27 @@
+{
+  "title": "SimpleFox Feather Edition",
+  "slug": "simplefox-feather-edition",
+  "description": "A fork of SimpleFox that uses feather icons!",
+  "repository": "https://github.com/BlueFalconHD/SimpleFox-Feather/",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/simplefox-feather.webp",
+      "alt": "SimpleFox Feather Edition screenshot"
+    }
+  ],
+  "tags": [
+    "bluefalconhd",
+    "fork",
+    "icons",
+    "simplefox"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 67,
+  "stats": {
+    "stars": 78,
+    "updatedAt": "2022-10-31T04:33:20Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/72631767?v=4",
+    "accessible": true
+  }
+}

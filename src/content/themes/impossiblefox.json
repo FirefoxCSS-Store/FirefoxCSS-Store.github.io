@@ -1,0 +1,32 @@
+{
+  "title": "ImpossibleFox",
+  "slug": "impossiblefox",
+  "description": "A simple and fast one-line theme for Firefox inspired by Safari's compact layout.",
+  "repository": "https://github.com/Naezr/ImpossibleFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/ImpossibleFox.webp",
+      "alt": "ImpossibleFox screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "light",
+    "naezr",
+    "oneline"
+  ],
+  "submitterRole": "legacy",
+  "status": "archived",
+  "catalogIndex": 87,
+  "stats": {
+    "stars": 25,
+    "updatedAt": "2024-05-24T15:24:49Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/95460152?v=4",
+    "accessible": true
+  },
+  "retirement": {
+    "reason": "repository-archived",
+    "checkedAt": "2026-04-25T20:04:49.167Z",
+    "details": "Repository is archived by its owner."
+  }
+}

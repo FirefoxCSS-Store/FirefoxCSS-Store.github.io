@@ -1,0 +1,31 @@
+{
+  "title": "starry-fox",
+  "slug": "starry-fox",
+  "description": "Firefox CSS stylesheets for the Dark Space Theme. Matching more UI elements with the theme.",
+  "repository": "https://github.com/sagars007/starry-fox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/starry-fox-resize.webp",
+      "alt": "starry-fox screenshot"
+    }
+  ],
+  "tags": [
+    "compact",
+    "dark",
+    "darkspace",
+    "gradient",
+    "nightsky",
+    "sagars007",
+    "stars",
+    "windows11"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 63,
+  "stats": {
+    "stars": 159,
+    "updatedAt": "2024-05-18T15:17:34Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/56472130?v=4",
+    "accessible": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Dynamic Color",
+  "slug": "dynamic-color",
+  "description": "Dark, dynamic (based on the system's accent color), theme for Firefox",
+  "repository": "https://github.com/zachvlat/Dynamic-Color-Firefox-Theme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/remote-134-dynamic-color.webp",
+      "alt": "Dynamic Color screenshot"
+    }
+  ],
+  "tags": [
+    "accent",
+    "dark",
+    "dynamic",
+    "lightweight",
+    "zachvlat"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 134,
+  "stats": {
+    "stars": 8,
+    "updatedAt": "2026-04-18T12:37:26Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/28532979?v=4",
+    "accessible": true
+  }
+}

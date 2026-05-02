@@ -1,0 +1,26 @@
+{
+  "title": "VP-NightSky",
+  "slug": "vp-nightsky",
+  "description": "Firefox reimagined",
+  "repository": "https://github.com/VertexProximity/VP_NightSky",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/NightSky.webp",
+      "alt": "VP-NightSky screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "purple",
+    "vertexproximity"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 119,
+  "stats": {
+    "stars": 2,
+    "updatedAt": "2025-10-22T05:03:17Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/121351756?v=4",
+    "accessible": true
+  }
+}

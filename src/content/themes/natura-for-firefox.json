@@ -1,0 +1,29 @@
+{
+  "title": "Natura for Firefox",
+  "slug": "natura-for-firefox",
+  "description": "Nature theme for Firefox \n Compatibility: V91+",
+  "repository": "https://github.com/firefoxcssthemers/natura-for-firefox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/natura.webp",
+      "alt": "Natura for Firefox screenshot"
+    }
+  ],
+  "tags": [
+    "alfarexguy2019",
+    "firefoxcssthemers",
+    "green",
+    "pure",
+    "v91",
+    "yellow"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 48,
+  "stats": {
+    "stars": 4,
+    "updatedAt": "2021-09-01T06:34:05Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/84518514?v=4",
+    "accessible": true
+  }
+}

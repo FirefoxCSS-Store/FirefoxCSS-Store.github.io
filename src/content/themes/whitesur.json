@@ -1,0 +1,31 @@
+{
+  "title": "WhiteSur",
+  "slug": "whitesur",
+  "description": "A MacOSX Safari theme for Firefox 80+",
+  "repository": "https://github.com/vinceliuice/WhiteSur-firefox-theme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/whitesur_vinceliuice.webp",
+      "alt": "WhiteSur screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "light",
+    "mac",
+    "macosx",
+    "monterey",
+    "oneline",
+    "safari",
+    "vinceliuice"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 98,
+  "stats": {
+    "stars": 543,
+    "updatedAt": "2026-01-05T05:56:11Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/7604295?v=4",
+    "accessible": true
+  }
+}

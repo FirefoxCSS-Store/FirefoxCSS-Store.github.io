@@ -1,0 +1,25 @@
+{
+  "title": "ShyFox",
+  "slug": "shyfox",
+  "description": "A very shy little theme that hides the entire browser interface in the window border",
+  "repository": "https://github.com/Naezr/ShyFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/shyfox.webp",
+      "alt": "ShyFox screenshot"
+    }
+  ],
+  "tags": [
+    "minimal",
+    "naezr"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 92,
+  "stats": {
+    "stars": 2125,
+    "updatedAt": "2025-01-21T07:39:15Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/95460152?v=4",
+    "accessible": true
+  }
+}

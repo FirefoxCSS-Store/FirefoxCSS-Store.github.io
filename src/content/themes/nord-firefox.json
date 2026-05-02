@@ -1,0 +1,26 @@
+{
+  "title": "nord-firefox",
+  "slug": "nord-firefox",
+  "description": "Firefox userChrome.css theme, based on https://github.com/AnubisZ9/Global-Dark-Nordic-theme/.",
+  "repository": "https://github.com/daaniiieel/nord-firefox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/nord.webp",
+      "alt": "nord-firefox screenshot"
+    }
+  ],
+  "tags": [
+    "colorscheme",
+    "daaniiieel",
+    "nord"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 10,
+  "stats": {
+    "stars": 29,
+    "updatedAt": "2020-04-18T08:08:07Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/41679054?v=4",
+    "accessible": true
+  }
+}

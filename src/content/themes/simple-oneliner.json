@@ -1,0 +1,30 @@
+{
+  "title": "Simple Oneliner",
+  "slug": "simple-oneliner",
+  "description": "A simple theme to maximize the vertical space of your monitor \n Compatibility: V91+",
+  "repository": "https://github.com/hakan-demirli/Firefox_Custom_CSS",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/Simple_Oneliner.webp",
+      "alt": "Simple Oneliner screenshot"
+    }
+  ],
+  "tags": [
+    "dark",
+    "hakan-demirli",
+    "light",
+    "one-line",
+    "pdf",
+    "sidebery",
+    "v91"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 55,
+  "stats": {
+    "stars": 87,
+    "updatedAt": "2024-02-12T15:16:03Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/78746991?v=4",
+    "accessible": true
+  }
+}

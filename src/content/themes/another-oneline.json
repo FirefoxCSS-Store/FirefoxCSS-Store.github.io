@@ -1,0 +1,32 @@
+{
+  "title": "Another Oneline",
+  "slug": "another-oneline",
+  "description": "Another simple, oneline, minimal, keyboard-centered Firefox CSS theme.",
+  "repository": "https://github.com/mimipile/firefoxCSS",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/screenshot-site.webp",
+      "alt": "Another Oneline screenshot"
+    }
+  ],
+  "tags": [
+    "adaptative",
+    "dark",
+    "keyboard",
+    "keyboard centered",
+    "light",
+    "mimipile",
+    "minimal",
+    "onebar",
+    "oneline"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 99,
+  "stats": {
+    "stars": 134,
+    "updatedAt": "2024-08-26T09:06:51Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/74282993?v=4",
+    "accessible": true
+  }
+}

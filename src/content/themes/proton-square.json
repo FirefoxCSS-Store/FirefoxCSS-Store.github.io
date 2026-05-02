@@ -1,0 +1,28 @@
+{
+  "title": "Proton Square",
+  "slug": "proton-square",
+  "description": "Recreates the feel of Quantum with its squared tabs and menus. No rounded corners to be seen.\n Compatibility: V91+",
+  "repository": "https://github.com/leadweedy/Firefox-Proton-Square",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/24535ff_protonbutquantum.webp",
+      "alt": "Proton Square screenshot"
+    }
+  ],
+  "tags": [
+    "leadweedy",
+    "pure",
+    "quantum",
+    "squared",
+    "v91"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 47,
+  "stats": {
+    "stars": 135,
+    "updatedAt": "2025-03-12T09:23:50Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/72583854?v=4",
+    "accessible": true
+  }
+}

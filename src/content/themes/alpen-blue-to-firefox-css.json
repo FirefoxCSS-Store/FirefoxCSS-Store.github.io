@@ -1,0 +1,26 @@
+{
+  "title": "Alpen Blue to Firefox CSS",
+  "slug": "alpen-blue-to-firefox-css",
+  "description": "Theme to Blue and Alpenglow lovers\n Compatibility: V89+",
+  "repository": "https://github.com/Godiesc/AlpenBlue",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/alpenblue.webp",
+      "alt": "Alpen Blue to Firefox CSS screenshot"
+    }
+  ],
+  "tags": [
+    "alpenglow",
+    "aplenblue",
+    "godiesc"
+  ],
+  "submitterRole": "legacy",
+  "status": "published",
+  "catalogIndex": 29,
+  "stats": {
+    "stars": 67,
+    "updatedAt": "2022-06-19T19:00:45Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/22057609?v=4",
+    "accessible": true
+  }
+}

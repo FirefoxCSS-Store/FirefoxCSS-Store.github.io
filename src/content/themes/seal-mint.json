@@ -1,0 +1,28 @@
+{
+  "title": "Seal mint",
+  "slug": "seal-mint",
+  "description": "Minimal mint&blue theme for Firefox",
+  "repository": "https://github.com/Kess-UwU/Seal-Mint",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/seal-mint-1.png",
+      "alt": "Seal mint screenshot 1"
+    }
+  ],
+  "tags": [
+    "blue",
+    "kess-uwu",
+    "minimal",
+    "mint"
+  ],
+  "submitterRole": "author",
+  "status": "published",
+  "catalogIndex": 135,
+  "submittedBy": "Neikon",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-04-09T11:08:17Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/273342409?v=4",
+    "accessible": true
+  }
+}
