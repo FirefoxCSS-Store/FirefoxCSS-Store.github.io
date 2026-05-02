@@ -23,6 +23,7 @@ This file stores durable project context so future conversations can resume work
 - Dev container config: `.devcontainer/devcontainer.json`
 - Devcontainer bootstrap script: `.devcontainer/post-create.sh`
 - Devcontainer automation runs `.devcontainer/post-create.sh` from `postCreateCommand` to install project dependencies after container creation/rebuild
+- The devcontainer installs GitHub CLI through the `ghcr.io/devcontainers/features/github-cli:1` feature; `gh` still requires `gh auth login` or `GH_TOKEN` for GitHub API/Actions commands
 - The build toolchain runs on Node 24 with Astro 6
 - `npm audit` is currently clean after adding a targeted `yaml` override for the Astro check toolchain
 
@@ -58,7 +59,7 @@ This file stores durable project context so future conversations can resume work
 - Client behavior for catalog search/filter/sort is implemented in `src/scripts/hub.ts`
 - Styles are authored in `src/styles/global.css`
 - Public static assets live under `public/`
-- Local containerized development is configured to install Node, npm, and `jq`; Nushell is no longer required for catalog refresh
+- Local containerized development is configured to install Node, npm, `gh`, and `jq`; Nushell is no longer required for catalog refresh
 - The devcontainer also runs `npm ci` automatically, so rebuilds recreate `node_modules` without manual setup
 - Optimized legacy screenshots were moved into `public/assets/img/themes/`
 - Project-facing text should be written in English by default; chat replies should mirror the user's language
