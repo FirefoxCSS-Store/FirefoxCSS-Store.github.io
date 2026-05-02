@@ -18,7 +18,7 @@
     "yaml": "^2.8.3"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.8",
+    "@astrojs/check": "^0.9.9",
     "astro": "^6.2.1",
     "typescript": "^5.9.3",
     "zod": "^4.4.2"
