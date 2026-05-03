@@ -27,5 +27,12 @@ jobs:
             exit 0
           fi
 
+          issue_state="$(gh issue view "$issue_number" --json state --jq .state)"
+
+          if [ "$issue_state" = "CLOSED" ]; then
+            echo "Source issue #${issue_number} is already closed."
+            exit 0
+          fi
+
           gh issue close "$issue_number" \
             --comment "Theme submission was merged in #${PR_NUMBER}. Thanks for sharing it."
