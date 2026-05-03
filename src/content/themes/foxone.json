@@ -1,0 +1,28 @@
+{
+  "title": "FoxOne",
+  "slug": "foxone",
+  "description": "A minimalistic one-line theme for Firefox. \nThe theme collapses the tab bar and URL bar into a single row. Non-essential icons are hidden by default and slide in on hover with transitions. The hamburger menu sits next to the window controls instead of floating in the toolbar.",
+  "repository": "https://github.com/Firnschnee/FoxOne",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/foxone-1.png",
+      "alt": "FoxOne screenshot 1"
+    }
+  ],
+  "tags": [
+    "compact",
+    "dark",
+    "minimalistic",
+    "oneline"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100336,
+  "submittedBy": "Firnschnee",
+  "stats": {
+    "stars": 12,
+    "updatedAt": "2026-05-03T10:23:04Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/99618191?v=4",
+    "accessible": true
+  }
+}
