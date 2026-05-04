@@ -1,0 +1,26 @@
+{
+  "title": "Malevich",
+  "slug": "malevich",
+  "description": "very UI panel is hidden by default, leaving nothing but your content. Inspired by ShyFox.",
+  "repository": "https://github.com/hermitm0nk/malevich",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/malevich-1.png",
+      "alt": "Malevich screenshot 1"
+    }
+  ],
+  "tags": [
+    "dark",
+    "minimal"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100339,
+  "submittedBy": "hermitm0nk",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-05-01T19:55:17Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/280970762?v=4",
+    "accessible": true
+  }
+}
