@@ -45,7 +45,7 @@ This file stores durable project context so future conversations can resume work
 - Theme submission automation uses GitHub Issue Forms plus `.github/workflows/create-theme-submission.yml`; it creates candidate PRs from complete submission issues without Decap or external auth hosting
 - Approved submission PRs are finalized by `.github/workflows/publish-approved-theme-submission.yml`, which sets `status: "published"` and assigns the next available low `catalogIndex`; maintainers still merge the PR explicitly
 - Merged submission PRs close their source issue through `.github/workflows/close-merged-theme-submission.yml`; new generated PR bodies also include `Closes #<issue>`
-- The close-merged submission workflow became idempotent on 2026-05-03: it now exits successfully when the source issue was already closed by GitHub's `Closes #<issue>` automation.
+- The close-merged submission workflow became idempotent on 2026-05-03 and was hardened on 2026-05-04: it now exits successfully when the source issue was already closed by GitHub's `Closes #<issue>` automation, accepting both uppercase and lowercase issue state values from `gh`.
 - `.github/workflows/refresh-theme-stats.yml` runs monthly and opens a PR for changed repository stars, update dates, owner avatars, or accessibility values
 - The build workflow syntax also requires `workflow_dispatch:` with a trailing colon; missing it makes GitHub mark the workflow file as invalid even if other checks still pass
 

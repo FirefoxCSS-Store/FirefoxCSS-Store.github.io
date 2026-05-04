@@ -29,7 +29,7 @@ jobs:
 
           issue_state="$(gh issue view "$issue_number" --json state --jq .state)"
 
-          if [ "$issue_state" = "CLOSED" ]; then
+          if [ "$issue_state" = "CLOSED" ] || [ "$issue_state" = "closed" ]; then
             echo "Source issue #${issue_number} is already closed."
             exit 0
           fi
