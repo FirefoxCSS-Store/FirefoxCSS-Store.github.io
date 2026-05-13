@@ -8,6 +8,10 @@
 		"ghcr.io/devcontainers/features/github-cli:1": {},
 		"ghcr.io/devcontainers-extra/features/npm-package:1": {}
 	},
+	"runArgs": [
+		"--tmpfs",
+		"/tmp:rw,exec,nosuid,nodev,mode=1777"
+	],
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},

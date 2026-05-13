@@ -24,6 +24,7 @@ This file stores durable project context so future conversations can resume work
 - Devcontainer bootstrap script: `.devcontainer/post-create.sh`
 - Devcontainer automation runs `.devcontainer/post-create.sh` from `postCreateCommand` to install project dependencies after container creation/rebuild
 - The devcontainer installs GitHub CLI through the `ghcr.io/devcontainers/features/github-cli:1` feature; `gh` still requires `gh auth login` or `GH_TOKEN` for GitHub API/Actions commands
+- The devcontainer mounts `/tmp` as a `tmpfs` with mode `1777` through `runArgs` so VS Code Dev Containers can start under rootless Podman; without this, the generated feature image can leave `/tmp` at `755` and fail creating `/tmp/.X11-unix`.
 - The build toolchain runs on Node 24 with Astro 6
 - `npm audit` is currently clean after adding a targeted `yaml` override for the Astro check toolchain
 
