@@ -1,0 +1,41 @@
+{
+  "title": "Natsumi Browser",
+  "slug": "natsumi-browser",
+  "description": "Beautiful, modern, usable, yet extremely customizable theme for Firefox and its forks. Natsumi keeps your browser's design familiar while adding a modern touch to it.",
+  "repository": "https://github.com/greeeen-dev/natsumi-browser",
+  "homepage": "https://natsumi.greeeen.dev/",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/natsumi-browser-1.webp",
+      "alt": "Natsumi Browser screenshot 1"
+    },
+    {
+      "src": "/assets/img/themes/natsumi-browser-2.webp",
+      "alt": "Natsumi Browser screenshot 2"
+    }
+  ],
+  "tags": [
+    "compact",
+    "customizable",
+    "floorp",
+    "gradient",
+    "options",
+    "rounded",
+    "sidebar",
+    "translucent",
+    "transparency",
+    "transparent",
+    "vertical",
+    "vertical tabs"
+  ],
+  "submitterRole": "user",
+  "status": "published",
+  "catalogIndex": 138,
+  "submittedBy": "InterstellarOne",
+  "stats": {
+    "stars": 666,
+    "updatedAt": "2026-05-13T23:33:22Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/41323182?v=4",
+    "accessible": true
+  }
+}
