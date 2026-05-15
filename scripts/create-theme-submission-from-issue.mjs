@@ -22,60 +22,97 @@ if (!issueAuthor) {
   throw new Error('ISSUE_AUTHOR must be set.')
 }
 
-const fields = parseIssueForm(issueBody)
-const title = requiredField(fields, 'Theme title')
-const repository = requiredUrl(requiredField(fields, 'Original repository'), 'Original repository')
-const homepage = optionalUrl(optionalField(fields, 'Homepage'), 'Homepage')
-const description = requiredField(fields, 'Short description')
-const screenshotUrls = extractScreenshotUrls(requiredField(fields, 'Screenshot URLs'))
-const tags = normalizeTags(requiredField(fields, 'Tags'))
-const submitterRole = normalizeSubmitterRole(requiredField(fields, 'Your relationship to the theme'))
-const notes = optionalField(fields, 'Notes for reviewers')
-const slug = uniqueSlug(slugify(title))
-const submittedBy = issueAuthor.length >= 2 ? issueAuthor : null
-const repositoryStats = await fetchRepositoryStats(repository)
-
-if (title.length < 2 || title.length > 80) {
-  throw new Error('Theme title must be between 2 and 80 characters.')
+class SubmissionInputError extends Error {
+  constructor(message) {
+    super(message)
+    this.name = 'SubmissionInputError'
+  }
 }
 
-if (description.length < 12 || description.length > 420) {
-  throw new Error('Short description must be between 12 and 420 characters.')
+try {
+  await createThemeSubmission()
+} catch (error) {
+  if (error instanceof SubmissionInputError) {
+    writeSubmissionError(error.message)
+    console.error(error.message)
+    process.exit(78)
+  }
+
+  throw error
 }
 
-fs.mkdirSync(imagesDir, { recursive: true })
+async function createThemeSubmission() {
+  const fields = parseIssueForm(issueBody)
+  const title = requiredField(fields, 'Theme title')
+  const repository = requiredUrl(requiredField(fields, 'Original repository'), 'Original repository')
+  const homepage = optionalUrl(optionalField(fields, 'Homepage'), 'Homepage')
+  const description = requiredField(fields, 'Short description')
+  const screenshotUrls = extractScreenshotUrls(requiredField(fields, 'Screenshot URLs'))
+  const tags = normalizeTags(requiredField(fields, 'Tags'))
+  const submitterRole = normalizeSubmitterRole(requiredField(fields, 'Your relationship to the theme'))
+  const notes = optionalField(fields, 'Notes for reviewers')
+  const slug = uniqueSlug(slugify(title))
+  const submittedBy = issueAuthor.length >= 2 ? issueAuthor : null
+  const repositoryStats = await fetchRepositoryStats(repository)
 
-const screenshots = []
-for (const [index, url] of screenshotUrls.entries()) {
-  const image = await downloadImage(url)
-  const filename = `${slug}-${index + 1}.${image.extension}`
-  const destination = path.join(imagesDir, filename)
+  if (title.length < 2 || title.length > 80) {
+    throw inputError('Theme title must be between 2 and 80 characters.')
+  }
 
-  fs.writeFileSync(destination, image.buffer)
-  screenshots.push({
-    src: `/assets/img/themes/${filename}`,
-    alt: `${title} screenshot ${index + 1}`
-  })
+  if (description.length < 12 || description.length > 420) {
+    throw inputError('Short description must be between 12 and 420 characters.')
+  }
+
+  fs.mkdirSync(imagesDir, { recursive: true })
+
+  const screenshots = []
+  for (const [index, url] of screenshotUrls.entries()) {
+    const image = await downloadImage(url)
+    const filename = `${slug}-${index + 1}.${image.extension}`
+    const destination = path.join(imagesDir, filename)
+
+    fs.writeFileSync(destination, image.buffer)
+    screenshots.push({
+      src: `/assets/img/themes/${filename}`,
+      alt: `${title} screenshot ${index + 1}`
+    })
+  }
+
+  const theme = {
+    title,
+    slug,
+    description,
+    repository,
+    ...(homepage ? { homepage } : {}),
+    screenshots,
+    tags,
+    submitterRole,
+    status: 'candidate',
+    catalogIndex: candidateCatalogIndex(),
+    ...(submittedBy ? { submittedBy } : {}),
+    stats: repositoryStats
+  }
+
+  const themePath = path.join(themesDir, `${slug}.json`)
+  fs.writeFileSync(themePath, `${JSON.stringify(theme, null, 2)}\n`)
+  fs.writeFileSync(path.join(root, 'theme-submission-pr.md'), prBody({ theme, notes, issueNumber, issueAuthor, screenshotUrls }))
 }
 
-const theme = {
-  title,
-  slug,
-  description,
-  repository,
-  ...(homepage ? { homepage } : {}),
-  screenshots,
-  tags,
-  submitterRole,
-  status: 'candidate',
-  catalogIndex: candidateCatalogIndex(),
-  ...(submittedBy ? { submittedBy } : {}),
-  stats: repositoryStats
+function inputError(message) {
+  return new SubmissionInputError(message)
 }
 
-const themePath = path.join(themesDir, `${slug}.json`)
-fs.writeFileSync(themePath, `${JSON.stringify(theme, null, 2)}\n`)
-fs.writeFileSync(path.join(root, 'theme-submission-pr.md'), prBody({ theme, notes, issueNumber, issueAuthor, screenshotUrls }))
+function writeSubmissionError(message) {
+  const body = `<!-- theme-submission-validation-error -->
+Thanks for submitting a theme. I could not generate the candidate pull request yet because the submission form needs one fix:
+
+> ${message}
+
+Please edit this issue with the missing or corrected information. The automation will try again after the issue is updated.
+`
+
+  fs.writeFileSync(path.join(root, 'theme-submission-error.md'), body)
+}
 
 function parseIssueForm(body) {
   const headings = [...body.matchAll(/^###\s+(.+?)\s*$/gm)]
@@ -97,7 +134,7 @@ function requiredField(fields, label) {
   const value = optionalField(fields, label)
 
   if (!value) {
-    throw new Error(`Missing required issue field: ${label}`)
+    throw inputError(`Missing required issue field: ${label}`)
   }
 
   return value
@@ -111,7 +148,7 @@ function requiredUrl(value, label) {
   const url = parseUrl(value, label)
 
   if (!['http:', 'https:'].includes(url.protocol)) {
-    throw new Error(`${label} must be an HTTP or HTTPS URL.`)
+    throw inputError(`${label} must be an HTTP or HTTPS URL.`)
   }
 
   return url.toString()
@@ -127,7 +164,7 @@ function parseUrl(value, label) {
   try {
     return new URL(value.trim())
   } catch {
-    throw new Error(`${label} must be a valid URL.`)
+    throw inputError(`${label} must be a valid URL.`)
   }
 }
 
@@ -147,11 +184,11 @@ function extractScreenshotUrls(value) {
   const screenshotUrls = [...urls].filter(Boolean)
 
   if (screenshotUrls.length === 0) {
-    throw new Error('At least one screenshot URL or attachment is required.')
+    throw inputError('At least one screenshot URL or attachment is required.')
   }
 
   if (screenshotUrls.length > 6) {
-    throw new Error('Use 6 screenshots or fewer for a single submission.')
+    throw inputError('Use 6 screenshots or fewer for a single submission.')
   }
 
   return screenshotUrls
@@ -173,16 +210,16 @@ function normalizeTags(value) {
     .sort((a, b) => a.localeCompare(b))
 
   if (tags.length === 0) {
-    throw new Error('At least one tag is required.')
+    throw inputError('At least one tag is required.')
   }
 
   if (tags.length > 24) {
-    throw new Error('Use 24 tags or fewer.')
+    throw inputError('Use 24 tags or fewer.')
   }
 
   for (const tag of tags) {
     if (!/^[a-z0-9][a-z0-9 .:+/_-]*[a-z0-9]$|^[a-z0-9]$/.test(tag)) {
-      throw new Error(`Invalid tag "${tag}". Tags must be lowercase and use letters, numbers, spaces, dots, colons, plus signs, slashes, underscores, or hyphens.`)
+      throw inputError(`Invalid tag "${tag}". Tags must be lowercase and use letters, numbers, spaces, dots, colons, plus signs, slashes, underscores, or hyphens.`)
     }
   }
 
@@ -201,7 +238,7 @@ function normalizeSubmitterRole(value) {
   const role = roles.get(normalized)
 
   if (!role) {
-    throw new Error(`Unsupported submitter role: ${value}`)
+    throw inputError(`Unsupported submitter role: ${value}`)
   }
 
   return role
@@ -216,7 +253,7 @@ function slugify(value) {
     .replace(/^-+|-+$/g, '')
 
   if (!slug) {
-    throw new Error('Theme title could not be converted into a valid slug.')
+    throw inputError('Theme title could not be converted into a valid slug.')
   }
 
   return slug
@@ -236,7 +273,7 @@ function uniqueSlug(baseSlug) {
     return issueSlug
   }
 
-  throw new Error(`A theme entry already exists for slug "${baseSlug}" and issue slug "${issueSlug}".`)
+  throw inputError(`A theme entry already exists for slug "${baseSlug}" and issue slug "${issueSlug}".`)
 }
 
 function candidateCatalogIndex() {
@@ -247,11 +284,11 @@ async function downloadImage(value) {
   const url = parseUrl(value, 'Screenshot URL')
 
   if (url.protocol !== 'https:') {
-    throw new Error(`Screenshot URLs must use HTTPS: ${value}`)
+    throw inputError(`Screenshot URLs must use HTTPS: ${value}`)
   }
 
   if (isBlockedHost(url.hostname)) {
-    throw new Error(`Screenshot URL uses a blocked host: ${url.hostname}`)
+    throw inputError(`Screenshot URL uses a blocked host: ${url.hostname}`)
   }
 
   const response = await fetch(url, {
@@ -262,21 +299,21 @@ async function downloadImage(value) {
   })
 
   if (!response.ok) {
-    throw new Error(`Could not download screenshot ${value}: ${response.status} ${response.statusText}`)
+    throw inputError(`Could not download screenshot ${value}: ${response.status} ${response.statusText}`)
   }
 
   const contentType = response.headers.get('content-type')?.split(';')[0].trim().toLowerCase()
   const extension = extensionFor(contentType, url.pathname)
 
   if (!extension) {
-    throw new Error(`Screenshot must be a PNG, JPG, WEBP, or GIF image: ${value}`)
+    throw inputError(`Screenshot must be a PNG, JPG, WEBP, or GIF image: ${value}`)
   }
 
   const buffer = Buffer.from(await response.arrayBuffer())
   const maxBytes = 8 * 1024 * 1024
 
   if (buffer.length > maxBytes) {
-    throw new Error(`Screenshot is larger than 8 MB: ${value}`)
+    throw inputError(`Screenshot is larger than 8 MB: ${value}`)
   }
 
   return { buffer, extension }

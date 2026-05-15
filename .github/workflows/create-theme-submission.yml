@@ -61,18 +61,48 @@ jobs:
           } >> "$GITHUB_OUTPUT"
 
       - name: Generate candidate entry
+        id: generate
         env:
           ISSUE_NUMBER: ${{ steps.issue.outputs.number }}
           ISSUE_TITLE: ${{ steps.issue.outputs.title }}
           ISSUE_AUTHOR: ${{ steps.issue.outputs.author }}
           ISSUE_BODY_FILE: issue-body.md
           GITHUB_TOKEN: ${{ github.token }}
-        run: node scripts/create-theme-submission-from-issue.mjs
+        shell: bash
+        run: |
+          set +e
+          node scripts/create-theme-submission-from-issue.mjs
+          status="$?"
+          set -e
 
-      - run: npm test
-      - run: npm run build
+          if [ "$status" -eq 78 ]; then
+            echo "valid=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if [ "$status" -ne 0 ]; then
+            exit "$status"
+          fi
+
+          echo "valid=true" >> "$GITHUB_OUTPUT"
+
+      - name: Comment on incomplete submission
+        if: ${{ steps.generate.outputs.valid == 'false' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ steps.issue.outputs.number }}
+        shell: bash
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body-file theme-submission-error.md
+          cat theme-submission-error.md >> "$GITHUB_STEP_SUMMARY"
+
+      - if: ${{ steps.generate.outputs.valid == 'true' }}
+        run: npm test
+      - if: ${{ steps.generate.outputs.valid == 'true' }}
+        run: npm run build
 
       - name: Open or update candidate PR
+        if: ${{ steps.generate.outputs.valid == 'true' }}
         env:
           GH_TOKEN: ${{ secrets.SUBMISSION_PR_TOKEN || github.token }}
           ISSUE_NUMBER: ${{ steps.issue.outputs.number }}

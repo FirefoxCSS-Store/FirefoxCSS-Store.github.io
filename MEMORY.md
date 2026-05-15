@@ -44,6 +44,7 @@ This file stores durable project context so future conversations can resume work
 - Build workflow runs automatically on pushes to `main` that affect Astro site/build inputs and deploys `dist/` through GitHub Pages artifacts
 - PR validation runs `npm test` and `npm run build` for site-related changes
 - Theme submission automation uses GitHub Issue Forms plus `.github/workflows/create-theme-submission.yml`; it creates candidate PRs from complete submission issues without Decap or external auth hosting
+- Theme submission automation was hardened on 2026-05-15 so user-correctable issue form errors exit as incomplete submissions, comment the required fix on the issue, and skip PR generation without hiding internal workflow failures.
 - Approved submission PRs are finalized by `.github/workflows/publish-approved-theme-submission.yml`, which sets `status: "published"` and assigns the next available low `catalogIndex`; maintainers still merge the PR explicitly
 - Merged submission PRs close their source issue through `.github/workflows/close-merged-theme-submission.yml`; new generated PR bodies also include `Closes #<issue>`
 - The close-merged submission workflow became idempotent on 2026-05-03 and was hardened on 2026-05-04: it now exits successfully when the source issue was already closed by GitHub's `Closes #<issue>` automation, accepting both uppercase and lowercase issue state values from `gh`.
