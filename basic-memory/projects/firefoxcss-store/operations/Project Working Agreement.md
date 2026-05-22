@@ -10,7 +10,7 @@ permalink: firefoxcss-store/projects/firefoxcss-store/operations/project-working
 
 # Project Working Agreement
 
-Future coding agents should read `MEMORY.md` before making assumptions about project state, use it as persistent context, and keep it updated manually after relevant changes, decisions, blockers, or workflow updates. This Basic Memory migration preserves that knowledge in a graph, but the physical `MEMORY.md` and `AGENTS.md` files remain in place until the maintainer explicitly authorizes deletion.
+Future coding agents should use the repository-backed `firefoxcss-store` Basic Memory project before making assumptions about project state. Start from `memory://firefoxcss-store/projects/firefoxcss-store/firefox-css-store-project-overview`, gather linked notes with `build_context`, and keep the topic-focused notes under `basic-memory/` updated after relevant changes, decisions, blockers, or workflow updates. `AGENTS.md` remains the repository entry point for agent instructions.
 
 Work should favor minimal, reversible changes. Use English for repository-facing output by default, including code, comments, commit messages, pull request text, documentation, workflow messages, and user-facing project strings, unless a specific part of the repository already requires another language. In chat, reply in the same language used by the user.
 
