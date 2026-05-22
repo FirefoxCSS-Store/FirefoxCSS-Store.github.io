@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "skills": {
+    "memory-defrag": {
+      "source": "basicmachines-co/basic-memory-skills",
+      "sourceType": "github",
+      "skillPath": "memory-defrag/SKILL.md",
+      "computedHash": "82da4efe339bfb37fe68e97909df5a966d821fb790a4c0ab092a020f1252621e"
+    },
+    "memory-ingest": {
+      "source": "basicmachines-co/basic-memory-skills",
+      "sourceType": "github",
+      "skillPath": "memory-ingest/SKILL.md",
+      "computedHash": "c1ecd6237ae2cba8073082f7bc9a54b06a41101bfe2643c3b302c66400f3d98b"
+    },
+    "memory-lifecycle": {
+      "source": "basicmachines-co/basic-memory-skills",
+      "sourceType": "github",
+      "skillPath": "memory-lifecycle/SKILL.md",
+      "computedHash": "13d1b99948c6341735d9e65d6a697edc83fc51bc7fab7e84df8da625fb24e081"
+    },
+    "memory-literary-analysis": {
+      "source": "basicmachines-co/basic-memory-skills",
+      "sourceType": "github",
+      "skillPath": "memory-literary-analysis/SKILL.md",
+      "computedHash": "db21a59bfdd5ca395b26c991473a0d8bbed10d9f58dc657ac39d306d45730119"
+    },
+    "memory-metadata-search": {
+      "source": "basicmachines-co/basic-memory-skills",
+      "sourceType": "github",
+      "skillPath": "memory-metadata-search/SKILL.md",
+      "computedHash": "b4f9e5f4bdabc9e191e4c5b807cc29b5e57da532f77f3eacf84e36d1e57ee297"
+    },
+    "memory-notes": {
+      "source": "basicmachines-co/basic-memory-skills",
+      "sourceType": "github",
+      "skillPath": "memory-notes/SKILL.md",
+      "computedHash": "c6ac355ae99e11a963f05a1d2452598403078d33eb9f7e096b1e43aa60caec15"
+    },
+    "memory-reflect": {
+      "source": "basicmachines-co/basic-memory-skills",
+      "sourceType": "github",
+      "skillPath": "memory-reflect/SKILL.md",
+      "computedHash": "a2fcd9a3141857bce1ce34f55ba98b0d941c40542a1be4f53ee3d776f57127b1"
+    },
+    "memory-research": {
+      "source": "basicmachines-co/basic-memory-skills",
+      "sourceType": "github",
+      "skillPath": "memory-research/SKILL.md",
+      "computedHash": "294b3a6c9978a93e3bfc613ec33646c2e47a01d15633e31cb294daf79c7d81aa"
+    },
+    "memory-schema": {
+      "source": "basicmachines-co/basic-memory-skills",
+      "sourceType": "github",
+      "skillPath": "memory-schema/SKILL.md",
+      "computedHash": "876c3923dde4f88ce9502314832471f52a4fc15a4563b31cdbd74396fba33043"
+    },
+    "memory-tasks": {
+      "source": "basicmachines-co/basic-memory-skills",
+      "sourceType": "github",
+      "skillPath": "memory-tasks/SKILL.md",
+      "computedHash": "35c7286251d478b35ed6a771a55fd457c0332ad14ff7e9710787d5cebaef5b9f"
+    }
+  }
+}
