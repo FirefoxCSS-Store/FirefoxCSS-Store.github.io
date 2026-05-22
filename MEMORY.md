@@ -88,7 +88,7 @@ This file stores durable project context so future conversations can resume work
 
 - Read this file before making assumptions about project state
 - Update this file manually when there are relevant decisions, branch changes, automation updates, or persistent blockers
-- Basic Memory migration completed on 2026-05-22 under `projects/firefoxcss-store/` in the `main` Basic Memory project; keep `MEMORY.md` and `AGENTS.md` until the maintainer explicitly confirms removal
+- Basic Memory migration completed on 2026-05-22 and moved into the repo-backed `firefoxcss-store` Basic Memory project at `basic-memory/`; keep `MEMORY.md` and `AGENTS.md` until the maintainer explicitly confirms removal
 - Keep entries concise and durable; avoid transient noise
 - Future agents should create a commit and push after implementing relevant changes or new functionality so work stays traceable and reversible
 - Future agents must not merge without explicit user authorization
