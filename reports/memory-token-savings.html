@@ -292,6 +292,32 @@
         color: var(--ink);
       }
 
+      .turn-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .turn-card {
+        min-height: 160px;
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fbfcfe;
+      }
+
+      .turn-card strong {
+        display: block;
+        color: var(--blue);
+        font-size: 2rem;
+        line-height: 1;
+        margin: 12px 0 8px;
+      }
+
+      .turn-card span {
+        color: var(--muted);
+      }
+
       .callout {
         padding: 22px;
         border-left: 6px solid var(--green);
@@ -316,7 +342,8 @@
         header,
         .grid,
         .comparison,
-        .flow {
+        .flow,
+        .turn-grid {
           grid-template-columns: 1fr;
         }
 
@@ -343,14 +370,15 @@
           <p class="eyebrow">Migración a Basic Memory</p>
           <h1>Menos contexto inicial, más memoria disponible</h1>
           <p class="lead">
-            Antes cargábamos toda la memoria del proyecto al empezar. Ahora
-            arrancamos con una guía pequeña y recuperamos solo las notas
-            relevantes del grafo cuando hacen falta.
+            Antes cargábamos toda la memoria del proyecto al abrir una nueva
+            sesión de trabajo o reconstruir contexto desde cero. Ahora empezamos
+            con una guía pequeña y recuperamos solo las notas relevantes del
+            grafo cuando hacen falta.
           </p>
         </section>
         <aside class="hero-stat panel">
           <div class="hero-number">84%</div>
-          <p class="hero-label">menos tokens en el arranque mínimo</p>
+          <p class="hero-label">menos tokens al reconstruir contexto inicial</p>
           <p class="small">De 2.523 tokens estimados a 399.</p>
         </aside>
       </header>
@@ -359,12 +387,12 @@
         <article class="metric before panel">
           <h3>Antes</h3>
           <strong>2.523</strong>
-          <span>tokens estimados cargados al inicio</span>
+          <span>tokens estimados al abrir una nueva sesión de trabajo</span>
         </article>
         <article class="metric now panel">
           <h3>Ahora</h3>
           <strong>399</strong>
-          <span>tokens estimados para arrancar con AGENTS.md</span>
+          <span>tokens estimados para reconstruir contexto con AGENTS.md</span>
         </article>
         <article class="metric memory panel">
           <h3>Memoria disponible</h3>
@@ -412,11 +440,11 @@
           <h2>Ahorro por escenario</h2>
           <div class="token-stack">
             <div class="token-pill">
-              <span>Arranque mínimo</span>
+              <span>Nueva sesión: mínimo</span>
               <strong>-2.124 tokens</strong>
             </div>
             <div class="token-pill">
-              <span>Con nota principal</span>
+              <span>Nueva sesión: con nota principal</span>
               <strong>-1.610 tokens</strong>
             </div>
             <div class="token-pill">
@@ -429,8 +457,8 @@
           <h2>Lectura para el equipo</h2>
           <ul>
             <li>
-              El coste de arranque baja mucho porque AGENTS.md ya no carga toda
-              la historia.
+              El coste de reconstrucción inicial baja mucho porque AGENTS.md ya
+              no carga toda la historia.
             </li>
             <li>
               La memoria total crece, pero vive en archivos Markdown
@@ -445,6 +473,42 @@
       </section>
 
       <section class="section panel">
+        <h2>Dentro de una misma conversación</h2>
+        <p class="small">
+          Si el historial completo se reenvía en cada turno, los tokens cargados
+          al principio siguen viajando en cada intercambio. Al no meter
+          MEMORY.md en el historial, evitamos ese lastre en cada mensaje
+          posterior salvo que consultemos memoria explícitamente.
+        </p>
+        <div class="turn-grid" style="margin-top: 16px">
+          <article class="turn-card">
+            <h3>Por intercambio</h3>
+            <strong>-2.124</strong>
+            <span>tokens si solo hace falta el contexto mínimo nuevo.</span>
+          </article>
+          <article class="turn-card">
+            <h3>Por intercambio</h3>
+            <strong>-1.610</strong>
+            <span
+              >tokens si además cargamos la nota principal del proyecto.</span
+            >
+          </article>
+          <article class="turn-card">
+            <h3>10 intercambios</h3>
+            <strong>-21.240</strong>
+            <span>
+              tokens de entrada evitados en una conversación de trabajo típica.
+            </span>
+          </article>
+        </div>
+        <p class="small" style="margin-top: 14px">
+          Nota: si el proveedor aplica caché de prompt, el coste económico puede
+          variar; la ventaja de contexto sigue siendo que esos tokens ya no
+          ocupan la ventana por defecto.
+        </p>
+      </section>
+
+      <section class="section panel">
         <h2>Cambio de modelo mental</h2>
         <div class="flow">
           <article class="flow-card old">
@@ -452,7 +516,10 @@
             <p><strong>Un archivo monolítico</strong></p>
             <ul>
               <li>AGENTS.md apuntaba a MEMORY.md.</li>
-              <li>La memoria completa entraba al contexto al inicio.</li>
+              <li>
+                La memoria completa entraba al contexto al reconstruir la
+                sesión.
+              </li>
               <li>Más coste aunque la tarea no necesitara todo.</li>
             </ul>
           </article>
@@ -471,7 +538,8 @@
 
       <section class="callout">
         Resultado: casi 4 veces más conocimiento documentado, pero normalmente
-        solo se cargan entre 399 y 913 tokens al empezar.
+        solo se cargan entre 399 y 913 tokens al abrir una nueva sesión de
+        trabajo.
       </section>
 
       <footer>
