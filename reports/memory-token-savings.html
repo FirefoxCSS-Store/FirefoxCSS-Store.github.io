@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Basic Memory: ahorro de contexto</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #18202a;
+        --muted: #5b6673;
+        --line: #d8dee6;
+        --paper: #f6f8fb;
+        --panel: #ffffff;
+        --blue: #2563eb;
+        --teal: #0f9f8f;
+        --amber: #d97706;
+        --coral: #dc4c4c;
+        --green: #15803d;
+        --slate: #334155;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family:
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        line-height: 1.45;
+      }
+
+      main {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 40px 0;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+        gap: 24px;
+        align-items: stretch;
+        margin-bottom: 24px;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        max-width: 760px;
+        font-size: clamp(2rem, 4vw, 4.25rem);
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        font-size: 1.35rem;
+        margin-bottom: 14px;
+      }
+
+      h3 {
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 8px;
+      }
+
+      .eyebrow {
+        color: var(--teal);
+        font-weight: 800;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+      }
+
+      .lead {
+        max-width: 760px;
+        color: var(--muted);
+        font-size: 1.1rem;
+        margin-top: 18px;
+      }
+
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        box-shadow: 0 18px 45px rgba(24, 32, 42, 0.07);
+      }
+
+      .hero-copy,
+      .hero-stat {
+        padding: 28px;
+      }
+
+      .hero-stat {
+        display: grid;
+        align-content: center;
+        gap: 12px;
+        border-top: 5px solid var(--teal);
+      }
+
+      .hero-number {
+        color: var(--teal);
+        font-size: clamp(4rem, 12vw, 8rem);
+        font-weight: 900;
+        line-height: 0.88;
+      }
+
+      .hero-label {
+        color: var(--slate);
+        font-size: 1.1rem;
+        font-weight: 800;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+
+      .metric {
+        padding: 22px;
+      }
+
+      .metric strong {
+        display: block;
+        color: var(--ink);
+        font-size: 2.25rem;
+        line-height: 1;
+        margin-bottom: 10px;
+      }
+
+      .metric span {
+        color: var(--muted);
+      }
+
+      .metric.before {
+        border-top: 5px solid var(--coral);
+      }
+
+      .metric.now {
+        border-top: 5px solid var(--teal);
+      }
+
+      .metric.memory {
+        border-top: 5px solid var(--blue);
+      }
+
+      .section {
+        padding: 26px;
+        margin-bottom: 24px;
+      }
+
+      .bars {
+        display: grid;
+        gap: 18px;
+      }
+
+      .bar-row {
+        display: grid;
+        grid-template-columns: 170px minmax(0, 1fr) 110px;
+        gap: 16px;
+        align-items: center;
+      }
+
+      .bar-label {
+        color: var(--slate);
+        font-weight: 800;
+      }
+
+      .bar-track {
+        height: 24px;
+        background: #e9edf3;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+
+      .bar-fill {
+        height: 100%;
+        border-radius: 6px;
+      }
+
+      .bar-fill.before {
+        width: 100%;
+        background: var(--coral);
+      }
+
+      .bar-fill.minimum {
+        width: 15.8%;
+        background: var(--teal);
+      }
+
+      .bar-fill.overview {
+        width: 36.2%;
+        background: var(--blue);
+      }
+
+      .bar-fill.selective {
+        width: 105.7%;
+        max-width: 100%;
+        background: var(--amber);
+      }
+
+      .bar-value {
+        color: var(--ink);
+        font-weight: 900;
+        text-align: right;
+      }
+
+      .comparison {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .flow {
+        display: grid;
+        grid-template-columns: 1fr 52px 1fr;
+        gap: 14px;
+        align-items: stretch;
+      }
+
+      .flow-card {
+        min-height: 190px;
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fbfcfe;
+      }
+
+      .flow-card.old {
+        border-top: 5px solid var(--coral);
+      }
+
+      .flow-card.new {
+        border-top: 5px solid var(--teal);
+      }
+
+      .arrow {
+        display: grid;
+        place-items: center;
+        color: var(--blue);
+        font-size: 2rem;
+        font-weight: 900;
+      }
+
+      .flow-card ul,
+      .notes ul {
+        margin: 12px 0 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      .flow-card li,
+      .notes li {
+        margin: 8px 0;
+      }
+
+      .token-stack {
+        display: grid;
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      .token-pill {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 12px 14px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fbfcfe;
+        color: var(--slate);
+        font-weight: 700;
+      }
+
+      .token-pill strong {
+        color: var(--ink);
+      }
+
+      .callout {
+        padding: 22px;
+        border-left: 6px solid var(--green);
+        background: #f1fbf5;
+        border-radius: 8px;
+        color: #14532d;
+        font-weight: 800;
+      }
+
+      .small {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      footer {
+        color: var(--muted);
+        font-size: 0.9rem;
+        padding: 4px 2px 0;
+      }
+
+      @media (max-width: 860px) {
+        header,
+        .grid,
+        .comparison,
+        .flow {
+          grid-template-columns: 1fr;
+        }
+
+        .arrow {
+          min-height: 24px;
+          transform: rotate(90deg);
+        }
+
+        .bar-row {
+          grid-template-columns: 1fr;
+          gap: 8px;
+        }
+
+        .bar-value {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <section class="hero-copy panel">
+          <p class="eyebrow">Migración a Basic Memory</p>
+          <h1>Menos contexto inicial, más memoria disponible</h1>
+          <p class="lead">
+            Antes cargábamos toda la memoria del proyecto al empezar. Ahora
+            arrancamos con una guía pequeña y recuperamos solo las notas
+            relevantes del grafo cuando hacen falta.
+          </p>
+        </section>
+        <aside class="hero-stat panel">
+          <div class="hero-number">84%</div>
+          <p class="hero-label">menos tokens en el arranque mínimo</p>
+          <p class="small">De 2.523 tokens estimados a 399.</p>
+        </aside>
+      </header>
+
+      <section class="grid">
+        <article class="metric before panel">
+          <h3>Antes</h3>
+          <strong>2.523</strong>
+          <span>tokens estimados cargados al inicio</span>
+        </article>
+        <article class="metric now panel">
+          <h3>Ahora</h3>
+          <strong>399</strong>
+          <span>tokens estimados para arrancar con AGENTS.md</span>
+        </article>
+        <article class="metric memory panel">
+          <h3>Memoria disponible</h3>
+          <strong>9.985</strong>
+          <span>tokens estimados persistidos y consultables bajo demanda</span>
+        </article>
+      </section>
+
+      <section class="section panel">
+        <h2>Comparativa rápida</h2>
+        <div class="bars" aria-label="Comparativa de tokens por escenario">
+          <div class="bar-row">
+            <div class="bar-label">Antes: todo</div>
+            <div class="bar-track">
+              <div class="bar-fill before"></div>
+            </div>
+            <div class="bar-value">2.523</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Ahora: mínimo</div>
+            <div class="bar-track">
+              <div class="bar-fill minimum"></div>
+            </div>
+            <div class="bar-value">399</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Ahora: overview</div>
+            <div class="bar-track">
+              <div class="bar-fill overview"></div>
+            </div>
+            <div class="bar-value">913</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Ahora: selectivo</div>
+            <div class="bar-track">
+              <div class="bar-fill selective"></div>
+            </div>
+            <div class="bar-value">2.668</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="comparison">
+        <article class="section panel">
+          <h2>Ahorro por escenario</h2>
+          <div class="token-stack">
+            <div class="token-pill">
+              <span>Arranque mínimo</span>
+              <strong>-2.124 tokens</strong>
+            </div>
+            <div class="token-pill">
+              <span>Con nota principal</span>
+              <strong>-1.610 tokens</strong>
+            </div>
+            <div class="token-pill">
+              <span>Contexto selectivo amplio</span>
+              <strong>+145 tokens</strong>
+            </div>
+          </div>
+        </article>
+        <article class="section panel notes">
+          <h2>Lectura para el equipo</h2>
+          <ul>
+            <li>
+              El coste de arranque baja mucho porque AGENTS.md ya no carga toda
+              la historia.
+            </li>
+            <li>
+              La memoria total crece, pero vive en archivos Markdown
+              consultables por tema.
+            </li>
+            <li>
+              Cuando se necesita más contexto, Basic Memory recupera notas
+              enlazadas en lugar de meterlo todo siempre.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section panel">
+        <h2>Cambio de modelo mental</h2>
+        <div class="flow">
+          <article class="flow-card old">
+            <h3>Antes</h3>
+            <p><strong>Un archivo monolítico</strong></p>
+            <ul>
+              <li>AGENTS.md apuntaba a MEMORY.md.</li>
+              <li>La memoria completa entraba al contexto al inicio.</li>
+              <li>Más coste aunque la tarea no necesitara todo.</li>
+            </ul>
+          </article>
+          <div class="arrow">→</div>
+          <article class="flow-card new">
+            <h3>Ahora</h3>
+            <p><strong>Grafo de notas atómicas</strong></p>
+            <ul>
+              <li>AGENTS.md apunta al proyecto Basic Memory del repo.</li>
+              <li>Las notas viven en basic-memory/ y se versionan.</li>
+              <li>El contexto se recupera por relevancia y enlaces.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="callout">
+        Resultado: casi 4 veces más conocimiento documentado, pero normalmente
+        solo se cargan entre 399 y 913 tokens al empezar.
+      </section>
+
+      <footer>
+        Cálculo basado en los archivos reales del repositorio. Estimación: 4
+        caracteres por token. Fecha: 2026-05-22.
+      </footer>
+    </main>
+  </body>
+</html>
