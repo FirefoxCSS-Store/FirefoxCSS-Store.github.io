@@ -1,0 +1,26 @@
+{
+  "title": "Firefox WinUI",
+  "slug": "firefox-winui",
+  "description": "A custom CSS theme that transforms Firefox to seamlessly integrate with Windows 11's design language.",
+  "repository": "https://github.com/Lockframe/Firefox-WinUI",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/firefox-winui-1.png",
+      "alt": "Firefox WinUI screenshot 1"
+    }
+  ],
+  "tags": [
+    "dark",
+    "fluent"
+  ],
+  "submitterRole": "user",
+  "status": "candidate",
+  "catalogIndex": 100357,
+  "submittedBy": "Epico1525",
+  "stats": {
+    "stars": 145,
+    "updatedAt": "2026-06-04T05:06:58Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/128317347?v=4",
+    "accessible": true
+  }
+}
