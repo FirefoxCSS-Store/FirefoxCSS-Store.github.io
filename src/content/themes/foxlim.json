@@ -1,0 +1,31 @@
+{
+  "title": "Foxlim",
+  "slug": "foxlim",
+  "description": "Foxlim is a slim, compact, and simple oneline stylesheet for the Proton UI Refresh in Firefox Desktop.",
+  "repository": "https://github.com/shoplukche/foxlim",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/foxlim-1.png",
+      "alt": "Foxlim screenshot 1"
+    }
+  ],
+  "tags": [
+    "adaptive",
+    "compact",
+    "layout-only",
+    "minimal",
+    "oneline",
+    "proton",
+    "themeless"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100360,
+  "submittedBy": "shoplukche",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-06-13T19:16:43Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/240685141?v=4",
+    "accessible": true
+  }
+}
