@@ -16,12 +16,17 @@
     "qutebrowser"
   ],
   "submitterRole": "legacy",
-  "status": "published",
+  "status": "archived",
   "catalogIndex": 21,
   "stats": {
-    "stars": 166,
+    "stars": 167,
     "updatedAt": "2023-07-27T09:02:57Z",
     "ownerAvatar": "https://avatars.githubusercontent.com/u/31581044?v=4",
     "accessible": true
+  },
+  "retirement": {
+    "reason": "repository-archived",
+    "checkedAt": "2026-07-01T07:51:50.176Z",
+    "details": "Repository is archived by its owner."
   }
 }
