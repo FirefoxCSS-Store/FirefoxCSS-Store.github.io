@@ -1,20 +1,20 @@
 {
   "title": "FlexFox",
   "slug": "flexfox",
-  "description": "A lightweight Firefox theme focused on usability, flexibility, and smooth performance.",
+  "description": "A lightweight Firefox userChrome theme designed to optimize screen space without sacrificing accessibility.",
   "repository": "https://github.com/yuuqilin/FlexFox",
   "screenshots": [
     {
-      "src": "/assets/img/themes/remote-126-flexfox.webp",
+      "src": "/assets/img/themes/FlexFox.webp",
       "alt": "FlexFox screenshot"
     }
   ],
   "tags": [
-    "flexible",
-    "lightweight",
-    "mica",
+    "autohide",
+    "customizable",
     "minimal",
-    "sidebery"
+    "sidebery",
+    "vertical-tabs"
   ],
   "submitterRole": "legacy",
   "status": "published",
