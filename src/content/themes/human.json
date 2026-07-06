@@ -1,0 +1,25 @@
+{
+  "title": "Human",
+  "slug": "human",
+  "description": "The “Human” theme for Firefox 152, like the “Human” theme for GTK 2.24 / 3.24 / 4.8..4.23 & Qt 5.15 / 6.x, to harmonize the appearance of your programs within your classic MATE desktop environment. It uses icons from gnome-theme on Linux.",
+  "repository": "https://github.com/luigifab/human-theme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/human-1.png",
+      "alt": "Human screenshot 1"
+    }
+  ],
+  "tags": [
+    "classic"
+  ],
+  "submitterRole": "author",
+  "status": "published",
+  "catalogIndex": 141,
+  "submittedBy": "luigifab",
+  "stats": {
+    "stars": 92,
+    "updatedAt": "2026-07-05T10:10:14Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/31816829?v=4",
+    "accessible": true
+  }
+}
