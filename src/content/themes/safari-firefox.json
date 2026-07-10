@@ -1,0 +1,47 @@
+{
+  "title": "Safari-Firefox",
+  "slug": "safari-firefox",
+  "description": "A highly refined, premium CSS theme that brings the sleek, flawless macOS Safari aesthetic to Firefox and Firefox based browsers. Built on top of the GWfox-T theme, this project fixes common visual glitches, perfects the UI elements, and introduces true Safari-like \"Compact Mode\" to firefox",
+  "repository": "https://github.com/gauravrocks009/safari-firefox",
+  "homepage": "https://github.com/gauravrocks009/safari-firefox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/safari-firefox-1.png",
+      "alt": "Safari-Firefox screenshot 1"
+    },
+    {
+      "src": "/assets/img/themes/safari-firefox-2.png",
+      "alt": "Safari-Firefox screenshot 2"
+    },
+    {
+      "src": "/assets/img/themes/safari-firefox-3.png",
+      "alt": "Safari-Firefox screenshot 3"
+    },
+    {
+      "src": "/assets/img/themes/safari-firefox-4.png",
+      "alt": "Safari-Firefox screenshot 4"
+    },
+    {
+      "src": "/assets/img/themes/safari-firefox-5.png",
+      "alt": "Safari-Firefox screenshot 5"
+    },
+    {
+      "src": "/assets/img/themes/safari-firefox-6.png",
+      "alt": "Safari-Firefox screenshot 6"
+    }
+  ],
+  "tags": [
+    "compact",
+    "safari"
+  ],
+  "submitterRole": "maintainer",
+  "status": "candidate",
+  "catalogIndex": 100371,
+  "submittedBy": "gauravrocks009",
+  "stats": {
+    "stars": 3,
+    "updatedAt": "2026-07-10T04:52:39Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/191748715?v=4",
+    "accessible": true
+  }
+}
