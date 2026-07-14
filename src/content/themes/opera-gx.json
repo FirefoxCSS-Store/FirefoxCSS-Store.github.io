@@ -1,0 +1,25 @@
+{
+  "title": "Opera GX",
+  "slug": "opera-gx",
+  "description": "A theme for Opera GX Skin Lovers. Complete compatibility with the stable version of the browser.\n一款专为 Opera GX 皮肤爱好者打造的主题。与浏览器稳定版完全兼容。",
+  "repository": "https://github.com/Godiesc/firefox-gx",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/opera-gx-1.png",
+      "alt": "Opera GX screenshot 1"
+    }
+  ],
+  "tags": [
+    "opera gx"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100375,
+  "submittedBy": "2034975548",
+  "stats": {
+    "stars": 1078,
+    "updatedAt": "2026-07-07T18:31:46Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/22057609?v=4",
+    "accessible": true
+  }
+}
