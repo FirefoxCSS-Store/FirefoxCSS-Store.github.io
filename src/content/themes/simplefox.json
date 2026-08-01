@@ -18,12 +18,17 @@
     "minimal"
   ],
   "submitterRole": "legacy",
-  "status": "published",
+  "status": "archived",
   "catalogIndex": 7,
   "stats": {
-    "stars": 1875,
+    "stars": 1873,
     "updatedAt": "2022-04-24T18:56:19Z",
     "ownerAvatar": "https://avatars.githubusercontent.com/u/35583825?v=4",
     "accessible": true
+  },
+  "retirement": {
+    "reason": "repository-archived",
+    "checkedAt": "2026-08-01T06:11:13.339Z",
+    "details": "Repository is archived by its owner."
   }
 }
