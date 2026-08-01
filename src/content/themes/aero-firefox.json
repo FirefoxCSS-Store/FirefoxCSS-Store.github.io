@@ -18,12 +18,17 @@
     "windows7"
   ],
   "submitterRole": "legacy",
-  "status": "published",
+  "status": "archived",
   "catalogIndex": 104,
   "stats": {
     "stars": 34,
     "updatedAt": "2025-10-03T04:53:38Z",
     "ownerAvatar": "https://avatars.githubusercontent.com/u/164842290?v=4",
     "accessible": true
+  },
+  "retirement": {
+    "reason": "repository-archived",
+    "checkedAt": "2026-08-01T06:11:13.339Z",
+    "details": "Repository is archived by its owner."
   }
 }
