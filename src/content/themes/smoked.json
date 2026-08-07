@@ -1,0 +1,31 @@
+{
+  "title": "Smoked",
+  "slug": "smoked",
+  "description": "Mostly just custom color scheme and a disappearing nav bar that reappears when you hover near the top. Very minimal. Very demure.",
+  "repository": "https://github.com/theelderemo/Smoked",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/smoked-1.png",
+      "alt": "Smoked screenshot 1"
+    },
+    {
+      "src": "/assets/img/themes/smoked-2.png",
+      "alt": "Smoked screenshot 2"
+    }
+  ],
+  "tags": [
+    "dark",
+    "minimal",
+    "oneline"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100382,
+  "submittedBy": "theelderemo",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-08-06T23:49:53Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/211416773?v=4",
+    "accessible": true
+  }
+}
