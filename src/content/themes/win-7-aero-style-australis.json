@@ -1,0 +1,26 @@
+{
+  "title": "Win 7 Aero Style + Australis",
+  "slug": "win-7-aero-style-australis",
+  "description": "My first firefox theme, I hope you will like it.",
+  "repository": "https://github.com/prooyuncubruh/firefox-win7-australis-theme",
+  "homepage": "https://github.com/prooyuncubruh/firefox-win7-australis-theme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/win-7-aero-style-australis-1.png",
+      "alt": "Win 7 Aero Style + Australis screenshot 1"
+    }
+  ],
+  "tags": [
+    "australis"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100388,
+  "submittedBy": "prooyuncubruh",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-08-10T11:47:24Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/315349183?v=4",
+    "accessible": true
+  }
+}
