@@ -1,0 +1,50 @@
+{
+  "title": "Liquid Mica",
+  "slug": "liquid-mica",
+  "description": "Windows의 mica에 리퀴드 글래스 느낌을 섞은 FireFox의 userChrome 테마입니다.\nThis is a FireFox userChrome theme that blends the feel of liquid glass with Windows Mica.",
+  "repository": "https://github.com/cyanworks-git/liquidmica-userChrome",
+  "homepage": "https://github.com/cyanworks-git/liquidmica-userChrome",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/liquid-mica-1.png",
+      "alt": "Liquid Mica screenshot 1"
+    },
+    {
+      "src": "/assets/img/themes/liquid-mica-2.png",
+      "alt": "Liquid Mica screenshot 2"
+    },
+    {
+      "src": "/assets/img/themes/liquid-mica-3.png",
+      "alt": "Liquid Mica screenshot 3"
+    },
+    {
+      "src": "/assets/img/themes/liquid-mica-4.png",
+      "alt": "Liquid Mica screenshot 4"
+    },
+    {
+      "src": "/assets/img/themes/liquid-mica-5.png",
+      "alt": "Liquid Mica screenshot 5"
+    },
+    {
+      "src": "/assets/img/themes/liquid-mica-6.png",
+      "alt": "Liquid Mica screenshot 6"
+    }
+  ],
+  "tags": [
+    "dark",
+    "floorp",
+    "liquid glass",
+    "mica",
+    "windows"
+  ],
+  "submitterRole": "author",
+  "status": "published",
+  "catalogIndex": 146,
+  "submittedBy": "cyanworks-git",
+  "stats": {
+    "stars": 2,
+    "updatedAt": "2026-08-13T01:19:18Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/312789744?v=4",
+    "accessible": true
+  }
+}
