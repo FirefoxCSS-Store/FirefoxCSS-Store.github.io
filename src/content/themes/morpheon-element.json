@@ -1,0 +1,30 @@
+{
+  "title": "Morpheon Element",
+  "slug": "morpheon-element",
+  "description": "Morpheon Element is a dark theme for Firefox built around smooth gradients and authentic skeuomorphic styling. Inspired by Morpheon Dark for Google Chrome, Enlightenment GTK, and Microsoft Zune.",
+  "repository": "https://codeberg.org/eclecRC/Morpheon_Element_Theme_for_Firefox",
+  "homepage": "https://codeberg.org/eclecRC/Morpheon_Element_Theme_for_Firefox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/morpheon-element-1.png",
+      "alt": "Morpheon Element screenshot 1"
+    }
+  ],
+  "tags": [
+    "classic",
+    "compact",
+    "dark",
+    "frutiger",
+    "skeuomorphic"
+  ],
+  "submitterRole": "author",
+  "status": "published",
+  "catalogIndex": 147,
+  "submittedBy": "docrR",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-08-18T15:31:27+02:00",
+    "ownerAvatar": "https://codeberg.org/avatars/8a38dda60236aba3b1556522924a6f4f0aa88808c064f60a714fe68a4b7bfdb7",
+    "accessible": true
+  }
+}
