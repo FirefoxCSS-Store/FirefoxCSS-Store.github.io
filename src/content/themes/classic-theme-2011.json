@@ -1,0 +1,37 @@
+{
+  "title": "Classic Theme 2011",
+  "slug": "classic-theme-2011",
+  "description": "Custom classic theme for firefox 155 \nA mix of custom code alongside Echelon and customcssforfx bits",
+  "repository": "https://github.com/DiegoSainzPardoLaso/Firefox-Classic-Theme-155",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/classic-theme-2011-1.jpg",
+      "alt": "Classic Theme 2011 screenshot 1"
+    },
+    {
+      "src": "/assets/img/themes/classic-theme-2011-2.png",
+      "alt": "Classic Theme 2011 screenshot 2"
+    },
+    {
+      "src": "/assets/img/themes/classic-theme-2011-3.png",
+      "alt": "Classic Theme 2011 screenshot 3"
+    },
+    {
+      "src": "/assets/img/themes/classic-theme-2011-4.png",
+      "alt": "Classic Theme 2011 screenshot 4"
+    }
+  ],
+  "tags": [
+    "classic"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100401,
+  "submittedBy": "DiegoSainzPardoLaso",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-09-04T23:56:36Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/114008071?v=4",
+    "accessible": true
+  }
+}
