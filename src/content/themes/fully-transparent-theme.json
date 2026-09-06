@@ -1,0 +1,33 @@
+{
+  "title": "Fully Transparent Theme",
+  "slug": "fully-transparent-theme",
+  "description": "Dissolves the toolbar band ; tab strip, address bar and bookmarks bar ; into your desktop instead of painting a solid bar. Includes an optional wallpaper mode that keeps your wallpaper visible even when other windows sit behind Firefox.",
+  "repository": "https://github.com/6meowscles/firefox-transparent-toolbar",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/fully-transparent-theme-1.png",
+      "alt": "Fully Transparent Theme screenshot 1"
+    },
+    {
+      "src": "/assets/img/themes/fully-transparent-theme-2.png",
+      "alt": "Fully Transparent Theme screenshot 2"
+    }
+  ],
+  "tags": [
+    "gnome",
+    "linux",
+    "minimal",
+    "transparent",
+    "wallpaper"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100406,
+  "submittedBy": "6meowscles",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-09-06T09:42:33Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/93034986?v=4",
+    "accessible": true
+  }
+}
