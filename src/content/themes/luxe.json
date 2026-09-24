@@ -1,0 +1,31 @@
+{
+  "title": "LUXE",
+  "slug": "luxe",
+  "description": "Transform your browsing experience with LUXE, a premium, dark-gold aesthetic custom setup pack for Firefox. Designed for cross-platform performance, this theme overhauls your browser user interface into a sleek, modern, and minimalist workspace.",
+  "repository": "https://github.com/sudo-apt-Omarion/LUXE-Firefox-Theme",
+  "homepage": "https://selar.com/2g2x19qm8v?currency=USD",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/luxe-1.png",
+      "alt": "LUXE screenshot 1"
+    }
+  ],
+  "tags": [
+    "dark",
+    "gold",
+    "minimalist",
+    "premium",
+    "sleek",
+    "workspace"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100411,
+  "submittedBy": "sudo-apt-Omarion",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-09-23T09:47:42Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/246322698?v=4",
+    "accessible": true
+  }
+}
