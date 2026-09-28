@@ -1,0 +1,31 @@
+{
+  "title": "LIQUID GLASS",
+  "slug": "liquid-glass",
+  "description": "A premium, vibrant Aurora Neon glass-morphic setup pack for Firefox.",
+  "repository": "https://github.com/sudo-apt-Omarion/LIQUID-GLASS-Firefox-Theme",
+  "homepage": "https://selar.com/k115171q22?currency=USD",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/liquid-glass-1.png",
+      "alt": "LIQUID GLASS screenshot 1"
+    }
+  ],
+  "tags": [
+    "compact",
+    "cyberpunk",
+    "dark",
+    "glassmorphic",
+    "minimalist",
+    "neon"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100415,
+  "submittedBy": "sudo-apt-Omarion",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-09-28T13:02:02Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/246322698?v=4",
+    "accessible": true
+  }
+}
