@@ -1,0 +1,28 @@
+{
+  "title": "Firefox-Σigma",
+  "slug": "firefox-igma",
+  "description": "A minimal, gesture-driven Firefox setup — zero window chrome, multi-row tabs, and a UI that gets out of your way.",
+  "repository": "https://github.com/zxxtlz/Firefox-Sigma",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/firefox-igma-1.png",
+      "alt": "Firefox-Σigma screenshot 1"
+    }
+  ],
+  "tags": [
+    "firefox",
+    "gestures",
+    "minimal",
+    "multi-row"
+  ],
+  "submitterRole": "author",
+  "status": "published",
+  "catalogIndex": 152,
+  "submittedBy": "zxxtlz",
+  "stats": {
+    "stars": 2,
+    "updatedAt": "2026-08-24T07:49:14Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/75642081?v=4",
+    "accessible": true
+  }
+}
