@@ -1,0 +1,37 @@
+{
+  "title": "Firefox Graphite Blue",
+  "slug": "firefox-graphite-blue",
+  "description": "**Graphite Blue** — a minimalist dark theme for Firefox, combining graphite tones with deep blue accents. Clean UI elements, subtle tab separators, and smooth rounded corners create a modern, elegant look while keeping browsing comfortable and distraction-free.",
+  "repository": "https://github.com/Forki404/firefox-graphite-blue",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/firefox-graphite-blue-1.png",
+      "alt": "Firefox Graphite Blue screenshot 1"
+    }
+  ],
+  "tags": [
+    "blue",
+    "blue accents",
+    "clean",
+    "dark",
+    "dark mode",
+    "dark theme",
+    "elegant",
+    "graphite",
+    "minimalist",
+    "modern",
+    "rounded tabs",
+    "simple",
+    "sleek"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100426,
+  "submittedBy": "Forki404",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-10-17T11:40:51Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/334572150?v=4",
+    "accessible": true
+  }
+}
