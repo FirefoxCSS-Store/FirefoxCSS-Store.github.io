@@ -1,0 +1,27 @@
+{
+  "title": "Glass Firefox Theme",
+  "slug": "glass-firefox-theme",
+  "description": "A personal CSS theme that makes parts of the Firefox interface and home page more transparent, with navy blue and gold accents.",
+  "repository": "https://github.com/ChaosMx11/Glass-Firefox-Theme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/glass-firefox-theme-1.png",
+      "alt": "Glass Firefox Theme screenshot 1"
+    }
+  ],
+  "tags": [
+    "gold",
+    "navyblue",
+    "transparent"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100428,
+  "submittedBy": "ChaosMx11",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-10-18T16:24:27Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/192258789?v=4",
+    "accessible": true
+  }
+}
