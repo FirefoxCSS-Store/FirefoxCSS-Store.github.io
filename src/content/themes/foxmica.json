@@ -35,12 +35,12 @@
     "winui"
   ],
   "submitterRole": "author",
-  "status": "candidate",
-  "catalogIndex": 100432,
+  "status": "published",
+  "catalogIndex": 155,
   "submittedBy": "snkiz",
   "stats": {
     "stars": 4,
-    "updatedAt": "2026-10-26T03:48:35Z",
+    "updatedAt": "2026-10-26T05:58:55Z",
     "ownerAvatar": "https://avatars.githubusercontent.com/u/150942834?v=4",
     "accessible": true
   }
