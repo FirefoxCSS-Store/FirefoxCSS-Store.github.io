@@ -1,0 +1,27 @@
+{
+  "title": "OneLineSafari",
+  "slug": "onelinesafari",
+  "description": "Firefox OneLine Safari Style Theme\nCloned from FoxOne theme.\nAdded transparency and Bonjourr new tab plugin custom styles.",
+  "repository": "https://github.com/acpuma/firefoxOneLineSafariTheme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/onelinesafari-1.jpg",
+      "alt": "OneLineSafari screenshot 1"
+    }
+  ],
+  "tags": [
+    "oneline",
+    "safari",
+    "transparent"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100434,
+  "submittedBy": "acpuma",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-10-26T19:51:29Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/10362902?v=4",
+    "accessible": true
+  }
+}
