@@ -1,0 +1,47 @@
+{
+  "title": "FoxMica",
+  "slug": "foxmica",
+  "description": "A 3 mode theme with less padding all the way around.\nMeant to blend in with WinUI and Windows Explorer Styled in [Micabar from Windhawk](https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/blob/main/Themes/MicaBar/README.md). Built on [FoxOne by Firnschnee](https://github.com/firnschnee/foxone). StockMica+ supports [PWAsForFirefox](https://github.com/filips123/PWAsForFirefox)",
+  "repository": "https://github.com/snkiz/FoxMica",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/foxmica-1.png",
+      "alt": "FoxMica screenshot 1"
+    },
+    {
+      "src": "/assets/img/themes/foxmica-2.png",
+      "alt": "FoxMica screenshot 2"
+    },
+    {
+      "src": "/assets/img/themes/foxmica-3.png",
+      "alt": "FoxMica screenshot 3"
+    },
+    {
+      "src": "/assets/img/themes/foxmica-4.png",
+      "alt": "FoxMica screenshot 4"
+    },
+    {
+      "src": "/assets/img/themes/foxmica-5.png",
+      "alt": "FoxMica screenshot 5"
+    }
+  ],
+  "tags": [
+    "compact",
+    "dark",
+    "mica",
+    "oneline",
+    "stock",
+    "transparent",
+    "winui"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100432,
+  "submittedBy": "snkiz",
+  "stats": {
+    "stars": 4,
+    "updatedAt": "2026-10-26T03:48:35Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/150942834?v=4",
+    "accessible": true
+  }
+}
