@@ -16,6 +16,8 @@ Approved submission PRs are finalized by `.github/workflows/publish-approved-the
 
 The issue-form automation was hardened on 2026-05-15 so user-correctable issue form errors exit as incomplete submissions, comment the required fix on the issue, and skip PR generation without hiding internal workflow failures.
 
+GitHub `blob` screenshot links are normalized to include `raw=true` before download so submission automation stores the image rather than the GitHub HTML page.
+
 ## Observations
 - [entry_point] New theme submissions use the `Submit a theme` GitHub Issue Form #submissions
 - [automation] Complete submission issues become candidate PRs #submissions
@@ -26,6 +28,7 @@ The issue-form automation was hardened on 2026-05-15 so user-correctable issue f
 - [human_review] Maintainers still merge approved submission PRs explicitly #review
 - [issue_closure] Merged submission PRs close their source issue through `close-merged-theme-submission.yml` #issues
 - [hardening] On 2026-05-15, user-correctable issue form errors began exiting as incomplete submissions with a comment and no PR #history
+- [screenshots] GitHub `blob` screenshot URLs receive `raw=true` before download #images
 
 ## Relations
 - contributes_to [[Theme Catalog Source of Truth]]

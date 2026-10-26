@@ -195,11 +195,31 @@ function extractScreenshotUrls(value) {
 }
 
 function cleanUrl(value) {
-  return value
+  const cleaned = value
     .trim()
     .replace(/^["']+|["']+$/g, '')
     .replace(/[.,;:]+$/, '')
     .replace(/["'\]]+$/, '')
+
+  return normalizeScreenshotUrl(cleaned)
+}
+
+function normalizeScreenshotUrl(value) {
+  let url
+
+  try {
+    url = new URL(value)
+  } catch {
+    return value
+  }
+
+  if (['github.com', 'www.github.com'].includes(url.hostname.toLowerCase()) && url.pathname.includes('/blob/')) {
+    if (url.searchParams.get('raw') !== 'true') {
+      url.searchParams.set('raw', 'true')
+    }
+  }
+
+  return url.toString()
 }
 
 function normalizeTags(value) {
