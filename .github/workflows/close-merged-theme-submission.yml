@@ -16,6 +16,7 @@ jobs:
       - name: Close source issue
         env:
           GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
           PR_BODY: ${{ github.event.pull_request.body }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
         shell: bash
@@ -27,7 +28,7 @@ jobs:
             exit 0
           fi
 
-          issue_state="$(gh issue view "$issue_number" --json state --jq .state)"
+          issue_state="$(gh issue view "$issue_number" --repo "$GH_REPO" --json state --jq .state)"
 
           if [ "$issue_state" = "CLOSED" ] || [ "$issue_state" = "closed" ]; then
             echo "Source issue #${issue_number} is already closed."
@@ -35,4 +36,5 @@ jobs:
           fi
 
           gh issue close "$issue_number" \
+            --repo "$GH_REPO" \
             --comment "Theme submission was merged in #${PR_NUMBER}. Thanks for sharing it."
