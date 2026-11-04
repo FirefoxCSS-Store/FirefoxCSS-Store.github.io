@@ -1,0 +1,31 @@
+{
+  "title": "Planus",
+  "slug": "planus",
+  "description": "Planus is a custom CSS theme for Firefox’s interface, tabs, tab previews and New Tab page, with flatter controls and consistent spacing.",
+  "repository": "https://github.com/marindominikovic/Planus-Firefox-Theme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/planus-1.png",
+      "alt": "Planus screenshot 1"
+    },
+    {
+      "src": "/assets/img/themes/planus-2.png",
+      "alt": "Planus screenshot 2"
+    }
+  ],
+  "tags": [
+    "compact",
+    "minimal",
+    "readable"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100440,
+  "submittedBy": "marindominikovic",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-11-04T20:06:25Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/5888859?v=4",
+    "accessible": true
+  }
+}
