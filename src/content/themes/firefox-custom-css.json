@@ -41,12 +41,12 @@
     "ui"
   ],
   "submitterRole": "author",
-  "status": "candidate",
-  "catalogIndex": 100443,
+  "status": "published",
+  "catalogIndex": 158,
   "submittedBy": "DionatanFelipe",
   "stats": {
     "stars": 0,
-    "updatedAt": "2026-11-05T21:03:08Z",
+    "updatedAt": "2026-11-05T21:15:06Z",
     "ownerAvatar": "https://avatars.githubusercontent.com/u/122566200?v=4",
     "accessible": true
   }
