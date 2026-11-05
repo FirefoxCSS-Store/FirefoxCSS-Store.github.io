@@ -1,0 +1,53 @@
+{
+  "title": "Firefox Custom CSS",
+  "slug": "firefox-custom-css",
+  "description": "A modern, clean redesign of Firefox focused on a more pleasant and visually appealing experience. Rounded corners across the interface, including the tab bar, menus, navigation area, and webpage container. The background adapts to the selected theme, creating a cohesive, smooth, and harmonious look.",
+  "repository": "https://github.com/DionatanFelipe/firefox",
+  "homepage": "https://github.com/DionatanFelipe/firefox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/firefox-custom-css-1.png",
+      "alt": "Firefox Custom CSS screenshot 1"
+    },
+    {
+      "src": "/assets/img/themes/firefox-custom-css-2.png",
+      "alt": "Firefox Custom CSS screenshot 2"
+    },
+    {
+      "src": "/assets/img/themes/firefox-custom-css-3.png",
+      "alt": "Firefox Custom CSS screenshot 3"
+    },
+    {
+      "src": "/assets/img/themes/firefox-custom-css-4.png",
+      "alt": "Firefox Custom CSS screenshot 4"
+    },
+    {
+      "src": "/assets/img/themes/firefox-custom-css-5.png",
+      "alt": "Firefox Custom CSS screenshot 5"
+    }
+  ],
+  "tags": [
+    "aesthetic",
+    "clean",
+    "customization",
+    "firefox",
+    "interface",
+    "minimalist",
+    "modern",
+    "redesign",
+    "rounded",
+    "smooth",
+    "theme",
+    "ui"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100443,
+  "submittedBy": "DionatanFelipe",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-11-05T21:03:08Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/122566200?v=4",
+    "accessible": true
+  }
+}
