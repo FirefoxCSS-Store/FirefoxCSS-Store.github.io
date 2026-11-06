@@ -1,0 +1,32 @@
+{
+  "title": "Stillfox",
+  "slug": "stillfox",
+  "description": "A quiet theme inspired by Linear and Apple Notes. No borders: the toolbar, tab list and page melt into one surface that takes on each site's colour. Tabs on the left or on top, an optional hover sidebar, a sun and moon dark/light button, and an ultrawide-friendly toolbar. Inter included.",
+  "repository": "https://github.com/FurkanCodes/stillfox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/stillfox-1.webp",
+      "alt": "Stillfox screenshot 1"
+    }
+  ],
+  "tags": [
+    "adaptive color",
+    "clean",
+    "dark",
+    "light",
+    "minimal",
+    "tab groups",
+    "ultrawide",
+    "vertical tabs"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100445,
+  "submittedBy": "FurkanCodes",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-11-06T18:46:16Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/74744821?v=4",
+    "accessible": true
+  }
+}
