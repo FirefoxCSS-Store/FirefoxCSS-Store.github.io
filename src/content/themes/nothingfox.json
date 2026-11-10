@@ -1,0 +1,25 @@
+{
+  "title": "Nothingfox",
+  "slug": "nothingfox",
+  "description": "A cleanest firefox for use",
+  "repository": "https://github.com/ledangquangdangquang/NothingFox",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/nothingfox-1.png",
+      "alt": "Nothingfox screenshot 1"
+    }
+  ],
+  "tags": [
+    "compact"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100449,
+  "submittedBy": "ledangquangdangquang",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-11-10T10:24:48Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/116963134?v=4",
+    "accessible": true
+  }
+}
