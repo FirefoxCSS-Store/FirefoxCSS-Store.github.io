@@ -1,0 +1,34 @@
+{
+  "title": "Firefox Chrome Look",
+  "slug": "firefox-chrome-look",
+  "description": "Chrome-like layout for Firefox's native vertical tabs. The tab panel runs the full height of the window, the navigation bar sits to its right, tabs are rounded rows, and colors follow the active Firefox theme instead of being imposed.",
+  "repository": "https://github.com/cjean-fr/firefox-chrome-look",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/firefox-chrome-look-1.png",
+      "alt": "Firefox Chrome Look screenshot 1"
+    },
+    {
+      "src": "/assets/img/themes/firefox-chrome-look-2.png",
+      "alt": "Firefox Chrome Look screenshot 2"
+    }
+  ],
+  "tags": [
+    "adaptive color",
+    "chrome",
+    "containers",
+    "tab groups",
+    "ubuntu",
+    "vertical tabs"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100455,
+  "submittedBy": "cjean-fr",
+  "stats": {
+    "stars": 0,
+    "updatedAt": "2026-11-24T09:50:04Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/87385?v=4",
+    "accessible": true
+  }
+}
