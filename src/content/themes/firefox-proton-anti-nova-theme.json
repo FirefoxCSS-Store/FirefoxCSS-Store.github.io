@@ -1,0 +1,39 @@
+{
+  "title": "Firefox Proton Anti-Nova Theme",
+  "slug": "firefox-proton-anti-nova-theme",
+  "description": "A faithful CSS theme and complete SVG icon pack that restores Firefox's classic Proton interface on modern builds with the Nova redesign. Covers browser chrome, floating tabs, tab groups, containers, address bar, menus, and internal pages across Light, Dark, and Private modes, using only userChrome.css and userContent.css.\n\nhttps://github.com/user-attachments/assets/3446834e-33a6-4bf3-a8e2-639bc46f8904",
+  "repository": "https://github.com/JibsouX/firefox-proton-anti-nova-theme",
+  "homepage": "https://github.com/JibsouX/firefox-proton-anti-nova-theme",
+  "screenshots": [
+    {
+      "src": "/assets/img/themes/firefox-proton-anti-nova-theme-1.jpg",
+      "alt": "Firefox Proton Anti-Nova Theme screenshot 1"
+    }
+  ],
+  "tags": [
+    "css",
+    "firefox",
+    "firefox-css",
+    "firefox-customisation",
+    "nova",
+    "proton",
+    "userchrome",
+    "userchrome-css",
+    "userchrome-style",
+    "userchromecss",
+    "usercontent",
+    "usercontent-css",
+    "usercontent-style",
+    "usercontentcss"
+  ],
+  "submitterRole": "author",
+  "status": "candidate",
+  "catalogIndex": 100458,
+  "submittedBy": "JibsouX",
+  "stats": {
+    "stars": 14,
+    "updatedAt": "2026-11-25T10:35:53Z",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/5707449?v=4",
+    "accessible": true
+  }
+}
