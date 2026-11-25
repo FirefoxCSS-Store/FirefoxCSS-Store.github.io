@@ -16,6 +16,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -44,7 +45,26 @@ jobs:
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:
+          name: github-pages-${{ github.run_attempt }}
           path: dist
+
+      - name: Wait for Pages artifact availability
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_NAME: github-pages-${{ github.run_attempt }}
+        run: |
+          for attempt in {1..12}; do
+            artifact_count=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts?per_page=100" \
+              --jq "[.artifacts[] | select(.name == \"${ARTIFACT_NAME}\" and .expired == false)] | length")
+            if [[ "$artifact_count" == "1" ]]; then
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "Pages artifact ${ARTIFACT_NAME} was not available after 60 seconds." >&2
+          exit 1
+
       - uses: actions/deploy-pages@v5
         with:
+          artifact_name: github-pages-${{ github.run_attempt }}
           timeout: 1800000

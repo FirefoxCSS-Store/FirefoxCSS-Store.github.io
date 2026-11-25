@@ -14,7 +14,7 @@ The repository uses GitHub Actions for build, validation, theme submission proce
 
 Known workflow files include `.github/workflows/build.yml`, `.github/workflows/check-themes.yml`, `.github/workflows/create-theme-submission.yml`, `.github/workflows/publish-approved-theme-submission.yml`, `.github/workflows/close-merged-theme-submission.yml`, and `.github/workflows/refresh-theme-stats.yml`. The audit workflow is `.github/workflows/audit-theme-repositories.yml`.
 
-CI workflows explicitly opt into Node 24 for JavaScript actions and use `actions/checkout@v6` plus `actions/setup-node@v6`. The build workflow runs on pushes to `main` that affect Astro site or build inputs and deploys `dist/` through GitHub Pages artifacts. PR validation runs `npm test` and `npm run build` for site-related changes.
+CI workflows explicitly opt into Node 24 for JavaScript actions and use `actions/checkout@v6` plus `actions/setup-node@v6`. The build workflow runs on pushes to `main` that affect Astro site or build inputs and deploys `dist/` through GitHub Pages artifacts. It gives each run attempt a unique artifact name and waits for the artifact to appear in the Actions API before deploying, avoiding artifact-indexing delays and duplicate names on reruns. PR validation runs `npm test` and `npm run build` for site-related changes.
 
 The build workflow syntax requires `workflow_dispatch:` with a trailing colon; omitting the colon makes GitHub mark the workflow file invalid even when other checks pass.
 
@@ -28,6 +28,7 @@ The build workflow syntax requires `workflow_dispatch:` with a trailing colon; o
 - [workflow] `.github/workflows/audit-theme-repositories.yml` audits theme repository availability monthly #audit
 - [runtime] CI workflows explicitly use Node 24 for JavaScript actions #node
 - [actions_version] CI uses `actions/checkout@v6` and `actions/setup-node@v6` #github-actions
+- [artifact_readiness] The Pages workflow polls the Actions API for its run-attempt-specific artifact before deployment #github-pages
 - [syntax_risk] `workflow_dispatch:` must include a trailing colon in build workflow YAML #github-actions
 
 ## Relations
