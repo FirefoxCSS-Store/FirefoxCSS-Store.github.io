@@ -1,30 +1,23 @@
 {
   "title": "Safari Golden Gate",
   "slug": "safari-golden-gate",
-  "description": "A refined light Firefox CSS theme inspired by modern macOS Safari, featuring a compact single-row navigation layout, Liquid Glass styling for Firefox Home, polished menus and panels, subtle animations, and optional wallpapers.",
+  "description": "A macOS Safari-inspired Firefox CSS theme with light and dark appearances, compact toolbar pills, Liquid Glass Home widgets, configurable window controls, optional update notifications, and an offline Windows installer. For Firefox 161+ on Windows 10/11.",
   "repository": "https://github.com/carlosjrrr/Safari-Golden-Gate",
   "homepage": "https://github.com/carlosjrrr/Safari-Golden-Gate",
   "screenshots": [
     {
-      "src": "/assets/img/themes/safari-golden-gate-1.png",
-      "alt": "Safari Golden Gate screenshot 1"
+      "src": "/assets/img/themes/safari-golden-gate-v1-1-demo.gif",
+      "alt": "Animated demonstration of Safari Golden Gate in Firefox"
     },
     {
-      "src": "/assets/img/themes/safari-golden-gate-2.png",
-      "alt": "Safari Golden Gate screenshot 2"
-    },
-    {
-      "src": "/assets/img/themes/safari-golden-gate-3.png",
-      "alt": "Safari Golden Gate screenshot 3"
-    },
-    {
-      "src": "/assets/img/themes/safari-golden-gate-4.png",
-      "alt": "Safari Golden Gate screenshot 4"
+      "src": "/assets/img/themes/safari-golden-gate-v1-1-features.png",
+      "alt": "Light and dark toolbar styles, Liquid Glass features, and Golden Gate settings"
     }
   ],
   "tags": [
     "animated",
     "compact",
+    "dark",
     "light",
     "liquid-glass",
     "macos",
@@ -38,8 +31,8 @@
   "catalogIndex": 153,
   "submittedBy": "carlosjrrr",
   "stats": {
-    "stars": 4,
-    "updatedAt": "2026-10-14T06:30:12Z",
+    "stars": 6,
+    "updatedAt": "2026-11-28T03:51:00Z",
     "ownerAvatar": "https://avatars.githubusercontent.com/u/143542190?v=4",
     "accessible": true
   }
